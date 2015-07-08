@@ -1,0 +1,69 @@
+﻿빌드 시작: 2015-07-08 오전 11:37:02
+     1>2 노드의 "C:\Users\Administrator\Desktop\WinLibmobiledevice-master\libimobiledevice\libimobiledevice.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I.\ /I.\include /I.\common /I"C:\Users\Administrator\Desktop\WinLibmobiledevice-master\libimobiledevice\libplist\include" /I"C:\Users\Administrator\Desktop\WinLibmobiledevice-master\libimobiledevice\libusbmuxd\include" /I"C:\Users\Administrator\Desktop\WinLibmobiledevice-master\libimobiledevice\libgen" /I"C:\Users\Administrator\Desktop\WinLibmobiledevice-master\libimobiledevice\getopt" /I"C:\Users\Administrator\Desktop\WinLibmobiledevice-master\libimobiledevice\vendors\include" /I"C:\Users\Administrator\Desktop\WinLibmobiledevice-master\libimobiledevice\vendors\openssl\include" /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D WIN32 /D _DEBUG /D _IMOBILE_DLL /D _PLIST_STATIC /D _USBMUXD_STATIC /D HAVE_OPENSSL /D __STDC_FORMAT_MACROS /D __LITTLE_ENDIAN__ /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"dll_Debug\\" /Fd"dll_Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt common\debug.c common\socket.c common\userpref.c common\utils.c src\afc.c src\debugserver.c src\device_link_service.c src\diagnostics_relay.c src\file_relay.c src\heartbeat.c src\house_arrest.c src\idevice.c src\installation_proxy.c src\lockdown.c src\misagent.c src\mobile_image_mounter.c src\mobilebackup.c src\mobilebackup2.c src\mobilesync.c src\notification_proxy.c src\property_list_service.c src\restore.c src\sbservices.c src\screenshotr.c src\service.c src\syslog_relay.c src\webinspector.c
+         webinspector.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\webinspector.c(27): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         syslog_relay.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\include\libimobiledevice\libimobiledevice.h(35): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         service.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\include\libimobiledevice\libimobiledevice.h(35): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         screenshotr.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\screenshotr.c(22): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         sbservices.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\sbservices.c(24): fatal error C1083: 포함 파일을 열 수 없습니다. 'unistd.h': No such file or directory
+         restore.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\restore.c(25): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         property_list_service.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\include\libimobiledevice\lockdown.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\include\libimobiledevice\libimobiledevice.h(35): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         notification_proxy.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\notification_proxy.c(24): fatal error C1083: 포함 파일을 열 수 없습니다. 'unistd.h': No such file or directory
+         mobilesync.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\mobilesync.c(26): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         mobilebackup2.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\mobilebackup2.c(22): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         mobilebackup.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\mobilebackup.c(22): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         mobile_image_mounter.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\mobile_image_mounter.c(24): fatal error C1083: 포함 파일을 열 수 없습니다. 'unistd.h': No such file or directory
+         misagent.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\misagent.c(24): fatal error C1083: 포함 파일을 열 수 없습니다. 'unistd.h': No such file or directory
+         lockdown.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\lockdown.c(35): fatal error C1083: 포함 파일을 열 수 없습니다. 'unistd.h': No such file or directory
+         installation_proxy.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\installation_proxy.c(26): fatal error C1083: 포함 파일을 열 수 없습니다. 'unistd.h': No such file or directory
+         idevice.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\idevice.c(36): fatal error C1083: 포함 파일을 열 수 없습니다. 'usbmuxd.h': No such file or directory
+         house_arrest.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\house_arrest.c(24): fatal error C1083: 포함 파일을 열 수 없습니다. 'unistd.h': No such file or directory
+         heartbeat.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\heartbeat.c(27): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         file_relay.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\include\libimobiledevice\libimobiledevice.h(35): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         diagnostics_relay.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\include\libimobiledevice\libimobiledevice.h(35): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         코드를 생성하고 있습니다...
+         컴파일하고 있습니다...
+         device_link_service.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\include\libimobiledevice\lockdown.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\include\libimobiledevice\libimobiledevice.h(35): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         debugserver.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\include\libimobiledevice\libimobiledevice.h(35): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         afc.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\src\afc.c(29): fatal error C1083: 포함 파일을 열 수 없습니다. 'unistd.h': No such file or directory
+         utils.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\common\utils.h(34): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         userpref.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\common\userpref.c(37): fatal error C1083: 포함 파일을 열 수 없습니다. 'unistd.h': No such file or directory
+         socket.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\common\socket.c(26): fatal error C1083: 포함 파일을 열 수 없습니다. 'unistd.h': No such file or directory
+         debug.c
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\common\debug.h(48): error C2061: 구문 오류: 식별자 'plist_t'
+     1>c:\users\administrator\desktop\winlibmobiledevice-master\libimobiledevice\include\libimobiledevice\libimobiledevice.h(35): fatal error C1083: 포함 파일을 열 수 없습니다. 'plist/plist.h': No such file or directory
+         코드를 생성하고 있습니다...
+     1>"C:\Users\Administrator\Desktop\WinLibmobiledevice-master\libimobiledevice\libimobiledevice.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:03.45

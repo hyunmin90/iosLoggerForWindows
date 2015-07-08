@@ -1,0 +1,9 @@
+c:\users\administrator\documents\visual studio 2015\Projects\IosSysLogger\IosSysLogger\bin\Debug\IosSysLogger.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\IosSysLogger\IosSysLogger\bin\Debug\IosSysLogger.exe
+c:\users\administrator\documents\visual studio 2015\Projects\IosSysLogger\IosSysLogger\bin\Debug\IosSysLogger.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\IosSysLogger\IosSysLogger\obj\Debug\IosSysLogger.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\IosSysLogger\IosSysLogger\obj\Debug\IosSysLogger.Form1.resources
+c:\users\administrator\documents\visual studio 2015\Projects\IosSysLogger\IosSysLogger\obj\Debug\IosSysLogger.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2015\Projects\IosSysLogger\IosSysLogger\obj\Debug\IosSysLogger.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2015\Projects\IosSysLogger\IosSysLogger\obj\Debug\IosSysLogger.exe
+c:\users\administrator\documents\visual studio 2015\Projects\IosSysLogger\IosSysLogger\obj\Debug\IosSysLogger.pdb
