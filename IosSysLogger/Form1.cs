@@ -21,14 +21,14 @@ namespace IosSysLogger
             string currentPath = System.Environment.CurrentDirectory;
 
 
-            FileSystemWatcher watcher = new FileSystemWatcher();
+           /* FileSystemWatcher watcher = new FileSystemWatcher();
             watcher.Path = currentPath;
             watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite
                                    | NotifyFilters.FileName | NotifyFilters.DirectoryName;
             watcher.Filter = "*.*";
             watcher.Changed += new FileSystemEventHandler(OnChanged);
             watcher.EnableRaisingEvents = true;
-
+            */
 
 
 
@@ -55,21 +55,23 @@ namespace IosSysLogger
 
         }
 
-        private void OnChanged(object source, FileSystemEventArgs e)
+        public string TextBoxText
         {
-            textBox1.AppendText("hello ah");
+            get { return textBox1.Text; }
+            set { textBox1.AppendText(value+'\n'); }
         }
 
+        /* private void OnChanged(object source, FileSystemEventArgs e)
+         {
+             textBox1.AppendText("hello ah");
+         }
+         */
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-        public string TextBoxText
-        {
-            get { return textBox1.Text; }
-            set { textBox1.Text = value; }
-        }
+        
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
