@@ -29,7 +29,6 @@ extern "C" {
 #endif
 
 #include <libimobiledevice/lockdown.h>
-#include "src/idevice.h"
 
 /* Error Codes */
 typedef enum {
@@ -59,7 +58,7 @@ typedef property_list_service_private* property_list_service_client_t; /**< The 
  *     PROPERTY_LIST_SERVICE_E_INVALID_ARG when one of the arguments is invalid,
  *     or PROPERTY_LIST_SERVICE_E_MUX_ERROR when connecting to the device failed.
  */
-LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_client_new(idevice_t device, lockdownd_service_descriptor_t service, property_list_service_client_t *client);
+property_list_service_error_t property_list_service_client_new(idevice_t device, lockdownd_service_descriptor_t service, property_list_service_client_t *client);
 
 /**
  * Frees a PropertyList service.
@@ -70,7 +69,7 @@ LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_client_
  *     PROPERTY_LIST_SERVICE_E_INVALID_ARG when client is invalid, or a
  *     PROPERTY_LIST_SERVICE_E_UNKNOWN_ERROR when another error occured.
  */
-LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_client_free(property_list_service_client_t client);
+property_list_service_error_t property_list_service_client_free(property_list_service_client_t client);
 
 /**
  * Sends an XML plist.
@@ -83,7 +82,7 @@ LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_client_
  *      PROPERTY_LIST_SERVICE_E_PLIST_ERROR when dict is not a valid plist,
  *      or PROPERTY_LIST_SERVICE_E_UNKNOWN_ERROR when an unspecified error occurs.
  */
-LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_send_xml_plist(property_list_service_client_t client, plist_t plist);
+property_list_service_error_t property_list_service_send_xml_plist(property_list_service_client_t client, plist_t plist);
 
 /**
  * Sends a binary plist.
@@ -96,7 +95,7 @@ LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_send_xm
  *      PROPERTY_LIST_SERVICE_E_PLIST_ERROR when dict is not a valid plist,
  *      or PROPERTY_LIST_SERVICE_E_UNKNOWN_ERROR when an unspecified error occurs.
  */
-LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_send_binary_plist(property_list_service_client_t client, plist_t plist);
+property_list_service_error_t property_list_service_send_binary_plist(property_list_service_client_t client, plist_t plist);
 
 /**
  * Receives a plist using the given property list service client with specified
@@ -115,7 +114,7 @@ LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_send_bi
  *      communication error occurs, or PROPERTY_LIST_SERVICE_E_UNKNOWN_ERROR when
  *      an unspecified error occurs.
  */
-LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_receive_plist_with_timeout(property_list_service_client_t client, plist_t *plist, unsigned int timeout);
+property_list_service_error_t property_list_service_receive_plist_with_timeout(property_list_service_client_t client, plist_t *plist, unsigned int timeout);
 
 /**
  * Receives a plist using the given property list service client.
@@ -136,7 +135,7 @@ LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_receive
  *      communication error occurs, or PROPERTY_LIST_SERVICE_E_UNKNOWN_ERROR when
  *      an unspecified error occurs.
  */
-LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_receive_plist(property_list_service_client_t client, plist_t *plist);
+property_list_service_error_t property_list_service_receive_plist(property_list_service_client_t client, plist_t *plist);
 
 /**
  * Enable SSL for the given property list service client.
@@ -149,7 +148,7 @@ LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_receive
  *     NULL, PROPERTY_LIST_SERVICE_E_SSL_ERROR when SSL could not be enabled,
  *     or PROPERTY_LIST_SERVICE_E_UNKNOWN_ERROR otherwise.
  */
-LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_enable_ssl(property_list_service_client_t client);
+property_list_service_error_t property_list_service_enable_ssl(property_list_service_client_t client);
 
 /**
  * Disable SSL for the given property list service client.
@@ -161,7 +160,7 @@ LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_enable_
  *     PROPERTY_LIST_SERVICE_E_INVALID_ARG if client or client->connection is
  *     NULL, or PROPERTY_LIST_SERVICE_E_UNKNOWN_ERROR otherwise.
  */
-LIBIMOBILEDEVICE_API property_list_service_error_t property_list_service_disable_ssl(property_list_service_client_t client);
+property_list_service_error_t property_list_service_disable_ssl(property_list_service_client_t client);
 
 #ifdef __cplusplus
 }

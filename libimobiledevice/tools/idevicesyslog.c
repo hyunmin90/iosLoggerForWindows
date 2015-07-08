@@ -24,7 +24,7 @@
 #include <errno.h>
 #include <signal.h>
 #include <stdlib.h>
-
+#include <unistd.h>
 
 #ifdef WIN32
 #include <windows.h>
@@ -106,7 +106,7 @@ static void device_event_cb(const idevice_event_t* event, void* userdata)
 	if (event->event == IDEVICE_DEVICE_ADD) {
 		if (!syslog) {
 			if (!udid) {
-				udid = _strdup(event->udid);
+				udid = strdup(event->udid);
 			}
 			if (strcmp(udid, event->udid) == 0) {
 				if (start_logging() != 0) {
@@ -154,7 +154,7 @@ int main(int argc, char *argv[])
 				print_usage(argc, argv);
 				return 0;
 			}
-			udid = _strdup(argv[i]);
+			udid = strdup(argv[i]);
 			continue;
 		}
 		else if (!strcmp(argv[i], "-h") || !strcmp(argv[i], "--help")) {

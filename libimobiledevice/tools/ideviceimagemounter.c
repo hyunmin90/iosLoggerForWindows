@@ -28,11 +28,7 @@
 #include <errno.h>
 #include <libgen.h>
 #include <time.h>
-#ifdef WIN32
-#include <time.h>
-#else
 #include <sys/time.h>
-#endif
 #include <inttypes.h>
 
 #include <libimobiledevice/libimobiledevice.h>

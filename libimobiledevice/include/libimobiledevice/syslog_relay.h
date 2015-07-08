@@ -29,7 +29,6 @@ extern "C" {
 
 #include <libimobiledevice/libimobiledevice.h>
 #include <libimobiledevice/lockdown.h>
-#include "src/idevice.h"
 
 #define SYSLOG_RELAY_SERVICE_NAME "com.apple.syslog_relay"
 
@@ -40,7 +39,7 @@ typedef enum {
 	SYSLOG_RELAY_E_MUX_ERROR     = -2,
 	SYSLOG_RELAY_E_SSL_ERROR     = -3,
 	SYSLOG_RELAY_E_UNKNOWN_ERROR = -256
-} LIBIMOBILEDEVICE_API syslog_relay_error_t;
+} syslog_relay_error_t;
 
 typedef struct syslog_relay_client_private syslog_relay_client_private;
 typedef syslog_relay_client_private *syslog_relay_client_t; /**< The client handle. */
@@ -62,7 +61,7 @@ typedef void (*syslog_relay_receive_cb_t)(char c, void *user_data);
  * @return SYSLOG_RELAY_E_SUCCESS on success, SYSLOG_RELAY_E_INVALID_ARG when
  *     client is NULL, or an SYSLOG_RELAY_E_* error code otherwise.
  */
-LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_client_new(idevice_t device, lockdownd_service_descriptor_t service, syslog_relay_client_t * client);
+syslog_relay_error_t syslog_relay_client_new(idevice_t device, lockdownd_service_descriptor_t service, syslog_relay_client_t * client);
 
 /**
  * Starts a new syslog_relay service on the specified device and connects to it.
@@ -77,7 +76,7 @@ LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_client_new(idevice_t devi
  * @return SYSLOG_RELAY_E_SUCCESS on success, or an SYSLOG_RELAY_E_* error
  *     code otherwise.
  */
-LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_client_start_service(idevice_t device, syslog_relay_client_t * client, const char* label);
+syslog_relay_error_t syslog_relay_client_start_service(idevice_t device, syslog_relay_client_t * client, const char* label);
 
 /**
  * Disconnects a syslog_relay client from the device and frees up the
@@ -88,7 +87,7 @@ LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_client_start_service(idev
  * @return SYSLOG_RELAY_E_SUCCESS on success, SYSLOG_RELAY_E_INVALID_ARG when
  *     client is NULL, or an SYSLOG_RELAY_E_* error code otherwise.
  */
-LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_client_free(syslog_relay_client_t client);
+syslog_relay_error_t syslog_relay_client_free(syslog_relay_client_t client);
 
 
 /**
@@ -105,7 +104,7 @@ LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_client_free(syslog_relay_
  *      invalid or SYSLOG_RELAY_E_UNKNOWN_ERROR when an unspecified
  *      error occurs or a syslog capture has already been started.
  */
-LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_start_capture(syslog_relay_client_t client, syslog_relay_receive_cb_t callback, void* user_data);
+syslog_relay_error_t syslog_relay_start_capture(syslog_relay_client_t client, syslog_relay_receive_cb_t callback, void* user_data);
 
 /**
  * Stops capturing the syslog of the device.
@@ -119,7 +118,7 @@ LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_start_capture(syslog_rela
  *      invalid or SYSLOG_RELAY_E_UNKNOWN_ERROR when an unspecified
  *      error occurs or a syslog capture has already been started.
  */
-LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_stop_capture(syslog_relay_client_t client);
+syslog_relay_error_t syslog_relay_stop_capture(syslog_relay_client_t client);
 
 /* Receiving */
 
@@ -138,7 +137,7 @@ LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_stop_capture(syslog_relay
  *      occurs, or SYSLOG_RELAY_E_UNKNOWN_ERROR when an unspecified
  *      error occurs.
  */
-LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_receive_with_timeout(syslog_relay_client_t client, char *data, uint32_t size, uint32_t *received, unsigned int timeout);
+syslog_relay_error_t syslog_relay_receive_with_timeout(syslog_relay_client_t client, char *data, uint32_t size, uint32_t *received, unsigned int timeout);
 
 /**
  * Receives data from the service.
@@ -152,7 +151,7 @@ LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_receive_with_timeout(sysl
  * @return SYSLOG_RELAY_E_SUCCESS on success,
  *  SYSLOG_RELAY_E_INVALID_ARG when client or plist is NULL
  */
-LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_receive(syslog_relay_client_t client, char *data, uint32_t size, uint32_t *received);
+syslog_relay_error_t syslog_relay_receive(syslog_relay_client_t client, char *data, uint32_t size, uint32_t *received);
 
 #ifdef __cplusplus
 }

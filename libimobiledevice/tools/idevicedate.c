@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
 	time_t rawtime;
 	struct tm * tmp;
 	char const *format = NULL;
-	char buffer[80] = { 0, };
+	char buffer[80];
 	int result = 0;
 
 	/* parse cmdline args */
@@ -125,8 +125,7 @@ int main(int argc, char *argv[])
 	if (!format) {
 		format = DATE_FMT_LANGINFO ();
 		if (!*format) {
-			//format = "%a %b %e %H:%M:%S %Z %Y";
-			format = "%a %b %H:%M:%S %Z %Y";
+			format = "%a %b %e %H:%M:%S %Z %Y";
 		}
 	}
 
@@ -187,7 +186,6 @@ int main(int argc, char *argv[])
 
 		/* finally we format and print the current date */
 		strftime(buffer, 80, format, tmp);
-		
 		puts(buffer);
 	} else {
 		datetime = setdate;

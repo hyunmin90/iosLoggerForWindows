@@ -23,6 +23,7 @@
 #ifndef __DEBUG_H
 #define __DEBUG_H
 
+#include <plist/plist.h>
 
 #if defined(__STDC_VERSION__) && __STDC_VERSION__ >= 199901L && !defined(STRIP_DEBUG_CODE)
 #define debug_info(...) debug_info_real (__func__, __FILE__, __LINE__, __VA_ARGS__)

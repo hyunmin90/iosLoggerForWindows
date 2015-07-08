@@ -274,7 +274,7 @@ userpref_error_t userpref_get_paired_udids(char ***list, unsigned int *count)
 					udids = listp;
 				} else {
 					listp->next = ne;
-					listp = (slist_t *)listp->next;
+					listp = listp->next;
 				}
 				found++;
 			}
@@ -286,7 +286,7 @@ userpref_error_t userpref_get_paired_udids(char ***list, unsigned int *count)
 	while (udids) {
 		(*list)[i++] = udids->name;
 		struct slist_t *old = udids;
-		udids = (slist_t *)udids->next;
+		udids = udids->next;
 		free(old);
 	}
 	(*list)[i] = NULL;

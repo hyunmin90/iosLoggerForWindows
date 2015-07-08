@@ -86,13 +86,13 @@ LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_client_new(idevice_t devi
 	*client = client_loc;
 
 	debug_info("syslog_relay_client successfully created.");
-	return (syslog_relay_error_t)0;
+	return 0;
 }
 
 LIBIMOBILEDEVICE_API syslog_relay_error_t syslog_relay_client_start_service(idevice_t device, syslog_relay_client_t * client, const char* label)
 {
 	syslog_relay_error_t err = SYSLOG_RELAY_E_UNKNOWN_ERROR;
-	service_client_factory_start_service(device, SYSLOG_RELAY_SERVICE_NAME, (void**)client, label, SERVICE_CONSTRUCTOR(syslog_relay_client_new), (int32_t*)&err);
+	service_client_factory_start_service(device, SYSLOG_RELAY_SERVICE_NAME, (void**)client, label, SERVICE_CONSTRUCTOR(syslog_relay_client_new), &err);
 	return err;
 }
 

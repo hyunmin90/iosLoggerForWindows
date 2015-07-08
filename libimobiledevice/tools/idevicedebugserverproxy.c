@@ -31,14 +31,8 @@
 #include "common/socket.h"
 #include "common/thread.h"
 
-#define WIN32_LEAN_AND_MEAN
-
 #define info(...) fprintf(stdout, __VA_ARGS__); fflush(stdout)
 #define debug(...) if(debug_mode) fprintf(stdout, __VA_ARGS__)
-
-#ifndef __func__
-#define __func__ __FUNCTION__
-#endif
 
 static int debug_mode = 0;
 static int quit_flag = 0;

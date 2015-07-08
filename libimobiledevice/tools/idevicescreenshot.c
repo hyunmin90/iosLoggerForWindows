@@ -63,7 +63,7 @@ int main(int argc, char **argv)
 			return 0;
 		}
 		else if (argv[i][0] != '-' && !filename) {
-			filename = _strdup(argv[i]);
+			filename = strdup(argv[i]);
 			continue;
 		}
 		else {

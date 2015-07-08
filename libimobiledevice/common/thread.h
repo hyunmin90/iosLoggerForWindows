@@ -22,10 +22,6 @@
 #ifndef __THREAD_H
 #define __THREAD_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #ifdef WIN32
 #include <windows.h>
 typedef HANDLE thread_t;
@@ -57,9 +53,5 @@ void mutex_lock(mutex_t* mutex);
 void mutex_unlock(mutex_t* mutex);
 
 void thread_once(thread_once_t *once_control, void (*init_routine)(void));
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif

@@ -34,15 +34,7 @@
 #endif
 
 #ifdef WIN32
-#ifdef _IMOBILE_DLL
 #define LIBIMOBILEDEVICE_API __declspec( dllexport )
-#else
-#ifdef _IMOBILE_STATIC
-#define LIBIMOBILEDEVICE_API
-#else
-#define LIBIMOBILEDEVICE_API __declspec( dllimport )
-#endif
-#endif
 #else
 #ifdef HAVE_FVISIBILITY
 #define LIBIMOBILEDEVICE_API __attribute__((visibility("default")))

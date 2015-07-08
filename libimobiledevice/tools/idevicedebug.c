@@ -245,9 +245,9 @@ int main(int argc, char *argv[])
 			}
 			/* add environment variable */
 			if (!newlist)
-				newlist = (char **)malloc((environment_count + 1) * sizeof(char*));
+				newlist = malloc((environment_count + 1) * sizeof(char*));
 			else
-				newlist = (char **)realloc(environment, (environment_count + 1) * sizeof(char*));
+				newlist = realloc(environment, (environment_count + 1) * sizeof(char*));
 			newlist[environment_count++] = strdup(argv[i]);
 			environment = newlist;
 			continue;
@@ -277,7 +277,7 @@ int main(int argc, char *argv[])
 	}
 
 	if (environment) {
-		newlist = (char **)realloc(environment, (environment_count + 1) * sizeof(char*));
+		newlist = realloc(environment, (environment_count + 1) * sizeof(char*));
 		newlist[environment_count] = NULL;
 		environment = newlist;
 	}

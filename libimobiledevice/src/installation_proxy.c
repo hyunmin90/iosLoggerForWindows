@@ -249,7 +249,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_client_new(idevice_t device, lo
 LIBIMOBILEDEVICE_API instproxy_error_t instproxy_client_start_service(idevice_t device, instproxy_client_t * client, const char* label)
 {
 	instproxy_error_t err = INSTPROXY_E_UNKNOWN_ERROR;
-	service_client_factory_start_service(device, INSTPROXY_SERVICE_NAME, (void**)client, label, SERVICE_CONSTRUCTOR(instproxy_client_new), (int32_t*)&err);
+	service_client_factory_start_service(device, INSTPROXY_SERVICE_NAME, (void**)client, label, SERVICE_CONSTRUCTOR(instproxy_client_new), &err);
 	return err;
 }
 
@@ -928,8 +928,7 @@ LIBIMOBILEDEVICE_API void instproxy_client_options_add(plist_t client_options, .
 	va_start(args, client_options);
 	char *arg = va_arg(args, char*);
 	while (arg) {
-		//char *key = strdup(arg);
-		char *key = _strdup(arg);
+		char *key = strdup(arg);
 		if (!strcmp(key, "SkipUninstall")) {
 			int intval = va_arg(args, int);
 			plist_dict_set_item(client_options, key, plist_new_bool(intval));

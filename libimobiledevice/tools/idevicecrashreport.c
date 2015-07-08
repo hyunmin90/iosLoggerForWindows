@@ -33,22 +33,8 @@
 
 #ifdef WIN32
 #include <windows.h>
-
-#include <dirent.h>
-#include <direct.h>
-
-#ifndef S_IFLNK
 #define S_IFLNK S_IFREG
-#endif
-
-#ifndef S_IFSOCK
 #define S_IFSOCK S_IFREG
-#endif
-
-#ifndef atoll
-#define atoll _atoi64
-#endif
-
 #endif
 
 const char* target_directory = NULL;
@@ -69,7 +55,7 @@ static int extract_raw_crash_report(const char* filename) {
 	int res = 0;
 	plist_t report = NULL;
 	char* raw = NULL;
-	char* raw_filename = _strdup(filename);
+	char* raw_filename = strdup(filename);
 
 	/* create filename with '.crash' extension */
 	char* p = strrchr(raw_filename, '.');
@@ -228,7 +214,7 @@ static int afc_client_copy_and_remove_crash_reports(afc_client_t afc, const char
 		/* recurse into child directories */
 		if (S_ISDIR(stbuf.st_mode)) {
 #ifdef WIN32
-			_mkdir(target_filename);
+			mkdir(target_filename);
 #else
 			mkdir(target_filename, 0755);
 #endif
@@ -413,7 +399,7 @@ int main(int argc, char* argv[]) {
 	}
 
 	/* read "ping" message which indicates the crash logs have been moved to a safe harbor */
-	char *ping = (char *)malloc(4);
+	char *ping = malloc(4);
 	int attempts = 0;
 	while ((strncmp(ping, "ping", 4) != 0) && (attempts > 10)) {
 		uint32_t bytes = 0;

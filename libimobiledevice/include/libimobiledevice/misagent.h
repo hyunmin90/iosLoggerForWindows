@@ -30,7 +30,6 @@ extern "C" {
 
 #include <libimobiledevice/libimobiledevice.h>
 #include <libimobiledevice/lockdown.h>
-#include "src/idevice.h"
 
 #define MISAGENT_SERVICE_NAME "com.apple.misagent"
 
@@ -60,7 +59,7 @@ typedef misagent_client_private *misagent_client_t; /**< The client handle. */
  * @return MISAGENT_E_SUCCESS on success, MISAGENT_E_INVALID_ARG when
  *     client is NULL, or an MISAGENT_E_* error code otherwise.
  */
-LIBIMOBILEDEVICE_API misagent_error_t misagent_client_new(idevice_t device, lockdownd_service_descriptor_t service, misagent_client_t *client);
+misagent_error_t misagent_client_new(idevice_t device, lockdownd_service_descriptor_t service, misagent_client_t *client);
 
 /**
  * Starts a new misagent service on the specified device and connects to it.
@@ -75,7 +74,7 @@ LIBIMOBILEDEVICE_API misagent_error_t misagent_client_new(idevice_t device, lock
  * @return MISAGENT_E_SUCCESS on success, or an MISAGENT_E_* error
  *     code otherwise.
  */
-LIBIMOBILEDEVICE_API misagent_error_t misagent_client_start_service(idevice_t device, misagent_client_t* client, const char* label);
+misagent_error_t misagent_client_start_service(idevice_t device, misagent_client_t* client, const char* label);
 
 /**
  * Disconnects an misagent client from the device and frees up the
@@ -86,7 +85,7 @@ LIBIMOBILEDEVICE_API misagent_error_t misagent_client_start_service(idevice_t de
  * @return MISAGENT_E_SUCCESS on success, MISAGENT_E_INVALID_ARG when
  *     client is NULL, or an MISAGENT_E_* error code otherwise.
  */
-LIBIMOBILEDEVICE_API misagent_error_t misagent_client_free(misagent_client_t client);
+misagent_error_t misagent_client_free(misagent_client_t client);
 
 
 /**
@@ -99,7 +98,7 @@ LIBIMOBILEDEVICE_API misagent_error_t misagent_client_free(misagent_client_t cli
  * @return MISAGENT_E_SUCCESS on success, MISAGENT_E_INVALID_ARG when
  *     client is invalid, or an MISAGENT_E_* error code otherwise.
  */
-LIBIMOBILEDEVICE_API misagent_error_t misagent_install(misagent_client_t client, plist_t profile);
+misagent_error_t misagent_install(misagent_client_t client, plist_t profile);
 
 /**
  * Retrieves an array of all installed provisioning profiles.
@@ -115,7 +114,7 @@ LIBIMOBILEDEVICE_API misagent_error_t misagent_install(misagent_client_t client,
  *     still returns MISAGENT_E_SUCCESS and profiles will just point to an
  *     empty array.
  */
-LIBIMOBILEDEVICE_API misagent_error_t misagent_copy(misagent_client_t client, plist_t* profiles);
+misagent_error_t misagent_copy(misagent_client_t client, plist_t* profiles);
 
 /**
  * Removes a given provisioning profile.
@@ -128,7 +127,7 @@ LIBIMOBILEDEVICE_API misagent_error_t misagent_copy(misagent_client_t client, pl
  * @return MISAGENT_E_SUCCESS on success, MISAGENT_E_INVALID_ARG when
  *     client is invalid, or an MISAGENT_E_* error code otherwise.
  */
-LIBIMOBILEDEVICE_API misagent_error_t misagent_remove(misagent_client_t client, const char* profileID);
+misagent_error_t misagent_remove(misagent_client_t client, const char* profileID);
 
 /**
  * Retrieves the status code from the last operation.
@@ -137,7 +136,7 @@ LIBIMOBILEDEVICE_API misagent_error_t misagent_remove(misagent_client_t client, 
  *
  * @return -1 if client is invalid, or the status code from the last operation
  */
-LIBIMOBILEDEVICE_API int misagent_get_status_code(misagent_client_t client);
+int misagent_get_status_code(misagent_client_t client);
 
 #ifdef __cplusplus
 }

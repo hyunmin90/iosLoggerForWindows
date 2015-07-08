@@ -46,31 +46,7 @@
 #ifdef WIN32
 #include <windows.h>
 #include <conio.h>
-#include <direct.h>
 #define sleep(x) Sleep(x*1000)
-
-#ifndef usleep
-
-void usleep(__int64 usec) 
-{ 
-    HANDLE timer; 
-    LARGE_INTEGER ft; 
-
-    ft.QuadPart = -(10*usec); // Convert to 100 nanosecond interval, negative value indicates relative time
-
-    timer = CreateWaitableTimer(NULL, TRUE, NULL); 
-    SetWaitableTimer(timer, &ft, 0, NULL, NULL, 0); 
-    WaitForSingleObject(timer, INFINITE); 
-    CloseHandle(timer); 
-}
-
-#endif
-
-#ifndef __func__
-#define __func__ __FUNCTION__
-#endif
-
-
 #else
 #include <termios.h>
 #include <sys/statvfs.h>
@@ -183,7 +159,7 @@ static void mobilebackup_afc_get_file_contents(afc_client_t afc, const char *fil
 static int __mkdir(const char* path, int mode)
 {
 #ifdef WIN32
-	return _mkdir(path);
+	return mkdir(path);
 #else
 	return mkdir(path, mode);
 #endif
@@ -198,7 +174,7 @@ static int mkdir_with_parents(const char *dir, int mode)
 		if (errno == EEXIST) return 0;
 	}
 	int res;
-	char *parent = _strdup(dir);
+	char *parent = strdup(dir);
 	char *parentdir = dirname(parent);
 	if (parentdir) {
 		res = mkdir_with_parents(parentdir, mode);
@@ -1510,7 +1486,6 @@ int main(int argc, char *argv[])
 	/* start mobilebackup service and retrieve port */
 	mobilebackup2_client_t mobilebackup2 = NULL;
 	ldret = lockdownd_start_service_with_escrow_bag(lockdown, MOBILEBACKUP2_SERVICE_NAME, &service);
-	//ldret = lockdownd_start_service(lockdown, MOBILEBACKUP2_SERVICE_NAME, &service);
 	if ((ldret == LOCKDOWN_E_SUCCESS) && service && service->port) {
 		PRINT_VERBOSE(1, "Started \"%s\" service on port %d.\n", MOBILEBACKUP2_SERVICE_NAME, service->port);
 		mobilebackup2_client_new(device, service, &mobilebackup2);
@@ -1602,84 +1577,82 @@ checkpoint:
 
 		switch(cmd) {
 			case CMD_CLOUD:
-			{
-				opts = plist_new_dict();
-				plist_dict_set_item(opts, "CloudBackupState", plist_new_bool(cmd_flags & CMD_FLAG_CLOUD_ENABLE ? 1: 0));
-				err = mobilebackup2_send_request(mobilebackup2, "EnableCloudBackup", udid, source_udid, opts);
-				plist_free(opts);
-				opts = NULL;
-				if (err != MOBILEBACKUP2_E_SUCCESS) {
-					printf("Error setting cloud backup state on device, error code %d\n", err);
-					cmd = CMD_LEAVE;
-				}
-				break;
-				case CMD_BACKUP:
-				PRINT_VERBOSE(1, "Starting backup...\n");
+			opts = plist_new_dict();
+			plist_dict_set_item(opts, "CloudBackupState", plist_new_bool(cmd_flags & CMD_FLAG_CLOUD_ENABLE ? 1: 0));
+			err = mobilebackup2_send_request(mobilebackup2, "EnableCloudBackup", udid, source_udid, opts);
+			plist_free(opts);
+			opts = NULL;
+			if (err != MOBILEBACKUP2_E_SUCCESS) {
+				printf("Error setting cloud backup state on device, error code %d\n", err);
+				cmd = CMD_LEAVE;
+			}
+			break;
+			case CMD_BACKUP:
+			PRINT_VERBOSE(1, "Starting backup...\n");
 
-				/* make sure backup device sub-directory exists */
-				char* devbackupdir = string_build_path(backup_directory, source_udid, NULL);
+			/* make sure backup device sub-directory exists */
+			char* devbackupdir = string_build_path(backup_directory, source_udid, NULL);
+			__mkdir(devbackupdir, 0755);
+			free(devbackupdir);
+
+			if (strcmp(source_udid, udid) != 0) {
+				/* handle different source backup directory */
+				// make sure target backup device sub-directory exists
+				devbackupdir = string_build_path(backup_directory, udid, NULL);
 				__mkdir(devbackupdir, 0755);
 				free(devbackupdir);
 
-				if (strcmp(source_udid, udid) != 0) {
-					/* handle different source backup directory */
-					// make sure target backup device sub-directory exists
-					devbackupdir = string_build_path(backup_directory, udid, NULL);
-					__mkdir(devbackupdir, 0755);
-					free(devbackupdir);
-
-					// use Info.plist path in target backup folder */
-					free(info_path);
-					info_path = string_build_path(backup_directory, udid, "Info.plist", NULL);
-				}
-
-				/* TODO: check domain com.apple.mobile.backup key RequiresEncrypt and WillEncrypt with lockdown */
-				/* TODO: verify battery on AC enough battery remaining */
-
-				/* re-create Info.plist (Device infos, IC-Info.sidb, photos, app_ids, iTunesPrefs) */
-				if (info_plist) {
-					plist_free(info_plist);
-					info_plist = NULL;
-				}
-				info_plist = mobilebackup_factory_info_plist_new(udid, lockdown, afc);
-				remove(info_path);
-				plist_write_to_filename(info_plist, info_path, PLIST_FORMAT_XML);
+				// use Info.plist path in target backup folder */
 				free(info_path);
+				info_path = string_build_path(backup_directory, udid, "Info.plist", NULL);
+			}
 
+			/* TODO: check domain com.apple.mobile.backup key RequiresEncrypt and WillEncrypt with lockdown */
+			/* TODO: verify battery on AC enough battery remaining */
+
+			/* re-create Info.plist (Device infos, IC-Info.sidb, photos, app_ids, iTunesPrefs) */
+			if (info_plist) {
 				plist_free(info_plist);
 				info_plist = NULL;
+			}
+			info_plist = mobilebackup_factory_info_plist_new(udid, lockdown, afc);
+			remove(info_path);
+			plist_write_to_filename(info_plist, info_path, PLIST_FORMAT_XML);
+			free(info_path);
 
-				if (cmd_flags & CMD_FLAG_FORCE_FULL_BACKUP) {
-					PRINT_VERBOSE(1, "Enforcing full backup from device.\n");
-					opts = plist_new_dict();
-					plist_dict_set_item(opts, "ForceFullBackup", plist_new_bool(1));
+			plist_free(info_plist);
+			info_plist = NULL;
+
+			if (cmd_flags & CMD_FLAG_FORCE_FULL_BACKUP) {
+				PRINT_VERBOSE(1, "Enforcing full backup from device.\n");
+				opts = plist_new_dict();
+				plist_dict_set_item(opts, "ForceFullBackup", plist_new_bool(1));
+			}
+			/* request backup from device with manifest from last backup */
+			if (willEncrypt) {
+				PRINT_VERBOSE(1, "Backup will be encrypted.\n");
+			} else {
+				PRINT_VERBOSE(1, "Backup will be unencrypted.\n");
+			}
+			PRINT_VERBOSE(1, "Requesting backup from device...\n");
+			err = mobilebackup2_send_request(mobilebackup2, "Backup", udid, source_udid, opts);
+			if (opts)
+				plist_free(opts);
+			if (err == MOBILEBACKUP2_E_SUCCESS) {
+				if (is_full_backup) {
+					PRINT_VERBOSE(1, "Full backup mode.\n");
+				}	else {
+					PRINT_VERBOSE(1, "Incremental backup mode.\n");
 				}
-				/* request backup from device with manifest from last backup */
-				if (willEncrypt) {
-					PRINT_VERBOSE(1, "Backup will be encrypted.\n");
+			} else {
+				if (err == MOBILEBACKUP2_E_BAD_VERSION) {
+					printf("ERROR: Could not start backup process: backup protocol version mismatch!\n");
+				} else if (err == MOBILEBACKUP2_E_REPLY_NOT_OK) {
+					printf("ERROR: Could not start backup process: device refused to start the backup process.\n");
 				} else {
-					PRINT_VERBOSE(1, "Backup will be unencrypted.\n");
+					printf("ERROR: Could not start backup process: unspecified error occured\n");
 				}
-				PRINT_VERBOSE(1, "Requesting backup from device...\n");
-				err = mobilebackup2_send_request(mobilebackup2, "Backup", udid, source_udid, opts);
-				if (opts)
-					plist_free(opts);
-				if (err == MOBILEBACKUP2_E_SUCCESS) {
-					if (is_full_backup) {
-						PRINT_VERBOSE(1, "Full backup mode.\n");
-					}	else {
-						PRINT_VERBOSE(1, "Incremental backup mode.\n");
-					}
-				} else {
-					if (err == MOBILEBACKUP2_E_BAD_VERSION) {
-						printf("ERROR: Could not start backup process: backup protocol version mismatch!\n");
-					} else if (err == MOBILEBACKUP2_E_REPLY_NOT_OK) {
-						printf("ERROR: Could not start backup process: device refused to start the backup process.\n");
-					} else {
-						printf("ERROR: Could not start backup process: unspecified error occured\n");
-					}
-					cmd = CMD_LEAVE;
-				}
+				cmd = CMD_LEAVE;
 			}
 			break;
 			case CMD_RESTORE:

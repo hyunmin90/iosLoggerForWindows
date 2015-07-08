@@ -118,7 +118,7 @@ LIBIMOBILEDEVICE_API afc_error_t afc_client_new(idevice_t device, lockdownd_serv
 LIBIMOBILEDEVICE_API afc_error_t afc_client_start_service(idevice_t device, afc_client_t * client, const char* label)
 {
 	afc_error_t err = AFC_E_UNKNOWN_ERROR;
-	service_client_factory_start_service(device, AFC_SERVICE_NAME, (void**)client, label, SERVICE_CONSTRUCTOR(afc_client_new), (int32_t *)&err);
+	service_client_factory_start_service(device, AFC_SERVICE_NAME, (void**)client, label, SERVICE_CONSTRUCTOR(afc_client_new), &err);
 	return err;
 }
 
@@ -176,7 +176,7 @@ static afc_error_t afc_dispatch_packet(afc_client_t client, uint64_t operation, 
 	/* send AFC packet header */
 	AFCPacket_to_LE(client->afc_packet);
 	sent = 0;
-	service_send(client->parent, (const char*)client->afc_packet, sizeof(AFCPacket), &sent);
+	service_send(client->parent, (void*)client->afc_packet, sizeof(AFCPacket), &sent);
 	AFCPacket_from_LE(client->afc_packet);
 	*bytes_sent += sent;
 	if (sent < sizeof(AFCPacket)) {
@@ -394,8 +394,7 @@ static char **make_strings_list(char *tokens, uint32_t length)
 	nulls = count_nullspaces(tokens, length);
 	list = (char **) malloc(sizeof(char *) * (nulls + 1));
 	for (i = 0; i < nulls; i++) {
-		//list[i] = strdup(tokens + j);
-		list[i] = _strdup(tokens + j);
+		list[i] = strdup(tokens + j);
 		j += strlen(list[i]) + 1;
 	}
 	list[i] = NULL;
@@ -491,8 +490,7 @@ LIBIMOBILEDEVICE_API afc_error_t afc_get_device_info_key(afc_client_t client, co
 
 	for (ptr = kvps; *ptr; ptr++) {
 		if (!strcmp(*ptr, key)) {
-			//*value = strdup(*(ptr+1));
-			*value = _strdup(*(ptr+1));
+			*value = strdup(*(ptr+1));
 			break;
 		}
 	}

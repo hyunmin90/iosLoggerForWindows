@@ -53,7 +53,7 @@ int main(int argc, char** argv)
 		{ NULL, 0, NULL, 0}
 	};
 
-	while ((c = getopt_long(argc, argv, "du:h", (option *)longopts, &optidx)) != -1) {
+	while ((c = getopt_long(argc, argv, "du:h", longopts, &optidx)) != -1) {
 		switch (c) {
 		case 'u':
 			udid = strdup(optarg);

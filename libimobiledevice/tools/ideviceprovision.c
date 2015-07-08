@@ -25,10 +25,6 @@
 
 #ifdef WIN32
 #include <windows.h>
-#include <unistd.h>
-#ifndef __func__
-#define __func__ __FUNCTION__
-#endif
 #else
 #include <arpa/inet.h>
 #endif
@@ -217,7 +213,7 @@ static int profile_read_from_file(const char* path, unsigned char **profile_data
 		return -1;
 	}
 
-	unsigned char* buf = (unsigned char*)malloc(size);
+	unsigned char* buf = malloc(size);
 	if (!buf) {
 		fprintf(stderr, "Could not allocate memory...\n");
 		fclose(f);

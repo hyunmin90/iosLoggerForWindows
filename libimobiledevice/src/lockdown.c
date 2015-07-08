@@ -633,10 +633,8 @@ LIBIMOBILEDEVICE_API lockdownd_error_t lockdownd_client_new(idevice_t device, lo
 		return LOCKDOWN_E_INVALID_ARG;
 
 	static struct lockdownd_service_descriptor service = {
-		/*.port = 0xf27e,
-		.ssl_enabled = 0*/
-		0xf27e,
-		0
+		.port = 0xf27e,
+		.ssl_enabled = 0
 	};
 
 	property_list_service_client_t plistclient = NULL;
@@ -962,8 +960,6 @@ static lockdownd_error_t lockdownd_do_pair(lockdownd_client_t client, lockdownd_
 					if (extra_node && plist_get_node_type(extra_node) == PLIST_DATA) {
 						debug_info("Saving EscrowBag from response in pair record");
 						plist_dict_set_item(pair_record_plist, USERPREF_ESCROW_BAG_KEY, plist_copy(extra_node));
-						plist_free(extra_node);
-						extra_node = NULL;
 					}
 
 					/* save previously retrieved wifi mac address in pair record */
@@ -993,9 +989,6 @@ static lockdownd_error_t lockdownd_do_pair(lockdownd_client_t client, lockdownd_
 				ret = lockdownd_strtoerr(value);
 				free(value);
 			}
-
-			plist_free(error_node);
-			error_node = NULL;
 		}
 	}
 
@@ -1466,7 +1459,7 @@ LIBIMOBILEDEVICE_API lockdownd_error_t lockdownd_get_sync_data_classes(lockdownd
 
 	while((value = plist_array_get_item(dict, *count)) != NULL) {
 		plist_get_string_val(value, &val);
-		newlist = (char **)realloc(*classes, sizeof(char*) * (*count+1));
+		newlist = realloc(*classes, sizeof(char*) * (*count+1));
 		str_remove_spaces(val);
 		if (asprintf(&newlist[*count], "com.apple.%s", val) < 0) {
 			debug_info("ERROR: asprintf failed");
@@ -1477,7 +1470,7 @@ LIBIMOBILEDEVICE_API lockdownd_error_t lockdownd_get_sync_data_classes(lockdownd
 		*count = *count+1;
 	}
 
-	newlist = (char **)realloc(*classes, sizeof(char*) * (*count+1));
+	newlist = realloc(*classes, sizeof(char*) * (*count+1));
 	newlist[*count] = NULL;
 	*classes = newlist;
 

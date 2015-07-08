@@ -32,7 +32,6 @@ extern "C" {
 
 #include <libimobiledevice/libimobiledevice.h>
 #include <libimobiledevice/lockdown.h>
-#include "src/idevice.h"
 
 #define INSTPROXY_SERVICE_NAME "com.apple.mobile.installation_proxy"
 
@@ -127,7 +126,7 @@ typedef void (*instproxy_status_cb_t) (plist_t command, plist_t status, void *us
  * @return INSTPROXY_E_SUCCESS on success, or an INSTPROXY_E_* error value
  *         when an error occured.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_client_new(idevice_t device, lockdownd_service_descriptor_t service, instproxy_client_t *client);
+instproxy_error_t instproxy_client_new(idevice_t device, lockdownd_service_descriptor_t service, instproxy_client_t *client);
 
 /**
  * Starts a new installation_proxy service on the specified device and connects to it.
@@ -142,7 +141,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_client_new(idevice_t device, lo
  * @return INSTPROXY_E_SUCCESS on success, or an INSTPROXY_E_* error
  *         code otherwise.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_client_start_service(idevice_t device, instproxy_client_t * client, const char* label);
+instproxy_error_t instproxy_client_start_service(idevice_t device, instproxy_client_t * client, const char* label);
 
 /**
  * Disconnects an installation_proxy client from the device and frees up the
@@ -153,7 +152,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_client_start_service(idevice_t 
  * @return INSTPROXY_E_SUCCESS on success
  *         or INSTPROXY_E_INVALID_ARG if client is NULL.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_client_free(instproxy_client_t client);
+instproxy_error_t instproxy_client_free(instproxy_client_t client);
 
 /**
  * List installed applications. This function runs synchronously.
@@ -171,7 +170,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_client_free(instproxy_client_t 
  * @return INSTPROXY_E_SUCCESS on success or an INSTPROXY_E_* error value if
  *         an error occured.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_browse(instproxy_client_t client, plist_t client_options, plist_t *result);
+instproxy_error_t instproxy_browse(instproxy_client_t client, plist_t client_options, plist_t *result);
 
 /**
  * List pages of installed applications in a callback.
@@ -190,7 +189,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_browse(instproxy_client_t clien
  * @return INSTPROXY_E_SUCCESS on success or an INSTPROXY_E_* error value if
  *         an error occured.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_browse_with_callback(instproxy_client_t client, plist_t client_options, instproxy_status_cb_t status_cb, void *user_data);
+instproxy_error_t instproxy_browse_with_callback(instproxy_client_t client, plist_t client_options, instproxy_status_cb_t status_cb, void *user_data);
 
 /**
  * Lookup information about specific applications from the device.
@@ -206,7 +205,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_browse_with_callback(instproxy_
  * @return INSTPROXY_E_SUCCESS on success or an INSTPROXY_E_* error value if
  *         an error occured.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_lookup(instproxy_client_t client, const char** appids, plist_t client_options, plist_t *result);
+instproxy_error_t instproxy_lookup(instproxy_client_t client, const char** appids, plist_t client_options, plist_t *result);
 
 /**
  * Install an application on the device.
@@ -232,7 +231,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_lookup(instproxy_client_t clien
  *       created successfully; any error occuring during the command has to be
  *       handled inside the specified callback function.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_install(instproxy_client_t client, const char *pkg_path, plist_t client_options, instproxy_status_cb_t status_cb, void *user_data);
+instproxy_error_t instproxy_install(instproxy_client_t client, const char *pkg_path, plist_t client_options, instproxy_status_cb_t status_cb, void *user_data);
 
 /**
  * Upgrade an application on the device. This function is nearly the same as
@@ -260,7 +259,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_install(instproxy_client_t clie
  *       created successfully; any error occuring during the command has to be
  *       handled inside the specified callback function.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_upgrade(instproxy_client_t client, const char *pkg_path, plist_t client_options, instproxy_status_cb_t status_cb, void *user_data);
+instproxy_error_t instproxy_upgrade(instproxy_client_t client, const char *pkg_path, plist_t client_options, instproxy_status_cb_t status_cb, void *user_data);
 
 /**
  * Uninstall an application from the device.
@@ -281,7 +280,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_upgrade(instproxy_client_t clie
  *       created successfully; any error occuring during the command has to be
  *       handled inside the specified callback function.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_uninstall(instproxy_client_t client, const char *appid, plist_t client_options, instproxy_status_cb_t status_cb, void *user_data);
+instproxy_error_t instproxy_uninstall(instproxy_client_t client, const char *appid, plist_t client_options, instproxy_status_cb_t status_cb, void *user_data);
 
 /**
  * List archived applications. This function runs synchronously.
@@ -297,7 +296,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_uninstall(instproxy_client_t cl
  * @return INSTPROXY_E_SUCCESS on success or an INSTPROXY_E_* error value if
  *         an error occured.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_lookup_archives(instproxy_client_t client, plist_t client_options, plist_t *result);
+instproxy_error_t instproxy_lookup_archives(instproxy_client_t client, plist_t client_options, plist_t *result);
 
 /**
  * Archive an application on the device.
@@ -323,7 +322,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_lookup_archives(instproxy_clien
  *       created successfully; any error occuring during the command has to be
  *       handled inside the specified callback function.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_archive(instproxy_client_t client, const char *appid, plist_t client_options, instproxy_status_cb_t status_cb, void *user_data);
+instproxy_error_t instproxy_archive(instproxy_client_t client, const char *appid, plist_t client_options, instproxy_status_cb_t status_cb, void *user_data);
 
 /**
  * Restore a previously archived application on the device.
@@ -347,7 +346,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_archive(instproxy_client_t clie
  *       created successfully; any error occuring during the command has to be
  *       handled inside the specified callback function.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_restore(instproxy_client_t client, const char *appid, plist_t client_options, instproxy_status_cb_t status_cb, void *user_data);
+instproxy_error_t instproxy_restore(instproxy_client_t client, const char *appid, plist_t client_options, instproxy_status_cb_t status_cb, void *user_data);
 
 /**
  * Removes a previously archived application from the device.
@@ -370,7 +369,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_restore(instproxy_client_t clie
  *       created successfully; any error occuring during the command has to be
  *       handled inside the specified callback function.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_remove_archive(instproxy_client_t client, const char *appid, plist_t client_options, instproxy_status_cb_t status_cb, void *user_data);
+instproxy_error_t instproxy_remove_archive(instproxy_client_t client, const char *appid, plist_t client_options, instproxy_status_cb_t status_cb, void *user_data);
 
 /**
  * Checks a device for certain capabilities.
@@ -386,7 +385,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_remove_archive(instproxy_client
  * @return INSTPROXY_E_SUCCESS on success or an INSTPROXY_E_* error value if
  *         an error occured.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_check_capabilities_match(instproxy_client_t client, const char** capabilities, plist_t client_options, plist_t *result);
+instproxy_error_t instproxy_check_capabilities_match(instproxy_client_t client, const char** capabilities, plist_t client_options, plist_t *result);
 
 /* Helper */
 
@@ -396,7 +395,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_check_capabilities_match(instpr
  * @param command The dictionary describing the command.
  * @param name Pointer to store the name of the command.
  */
-LIBIMOBILEDEVICE_API void instproxy_command_get_name(plist_t command, char** name);
+void instproxy_command_get_name(plist_t command, char** name);
 
 /**
  * Gets the name of a status.
@@ -404,7 +403,7 @@ LIBIMOBILEDEVICE_API void instproxy_command_get_name(plist_t command, char** nam
  * @param status The dictionary status response to use.
  * @param name Pointer to store the name of the status.
  */
-LIBIMOBILEDEVICE_API void instproxy_status_get_name(plist_t status, char **name);
+void instproxy_status_get_name(plist_t status, char **name);
 
 /**
  * Gets error name, code and description from a response if available.
@@ -420,7 +419,7 @@ LIBIMOBILEDEVICE_API void instproxy_status_get_name(plist_t status, char **name)
  * @return INSTPROXY_E_SUCCESS if no error is found or an INSTPROXY_E_* error
  *   value matching the error that ẃas found in the status.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_status_get_error(plist_t status, char **name, char** description, uint64_t* code);
+instproxy_error_t instproxy_status_get_error(plist_t status, char **name, char** description, uint64_t* code);
 
 /**
  * Gets total and current item information from a browse response if available.
@@ -435,7 +434,7 @@ LIBIMOBILEDEVICE_API instproxy_error_t instproxy_status_get_error(plist_t status
  *        If NULL is passed no list will be returned. If NULL is returned no
  *        list was found in the status.
  */
-LIBIMOBILEDEVICE_API void instproxy_status_get_current_list(plist_t status, uint64_t* total, uint64_t* current_index, uint64_t* current_amount, plist_t* list);
+void instproxy_status_get_current_list(plist_t status, uint64_t* total, uint64_t* current_index, uint64_t* current_amount, plist_t* list);
 
 
 /**
@@ -445,14 +444,14 @@ LIBIMOBILEDEVICE_API void instproxy_status_get_current_list(plist_t status, uint
  * @param name Pointer to store the progress in percent (0-100) or -1 if not
  *        progress was found in the status.
  */
-LIBIMOBILEDEVICE_API void instproxy_status_get_percent_complete(plist_t status, int *percent);
+void instproxy_status_get_percent_complete(plist_t status, int *percent);
 
 /**
  * Creates a new client_options plist.
  *
  * @return A new plist_t of type PLIST_DICT.
  */
-LIBIMOBILEDEVICE_API plist_t instproxy_client_options_new(void);
+plist_t instproxy_client_options_new(void);
 
 /**
  * Adds one or more new key:value pairs to the given client_options.
@@ -464,7 +463,7 @@ LIBIMOBILEDEVICE_API plist_t instproxy_client_options_new(void);
  *       keys "ApplicationSINF", "iTunesMetadata", "ReturnAttributes" which are
  *       expecting a plist_t node as value and "SkipUninstall" expects int.
  */
-LIBIMOBILEDEVICE_API void instproxy_client_options_add(plist_t client_options, ...);
+void instproxy_client_options_add(plist_t client_options, ...);
 
 /**
  * Adds attributes to the given client_options to filter browse results.
@@ -474,7 +473,7 @@ LIBIMOBILEDEVICE_API void instproxy_client_options_add(plist_t client_options, .
  *
  * @note The values passed are expected to be strings.
  */
-LIBIMOBILEDEVICE_API void instproxy_client_options_set_return_attributes(plist_t client_options, ...);
+void instproxy_client_options_set_return_attributes(plist_t client_options, ...);
 
 /**
  * Frees client_options plist.
@@ -482,7 +481,7 @@ LIBIMOBILEDEVICE_API void instproxy_client_options_set_return_attributes(plist_t
  * @param client_options The client options plist to free. Does nothing if NULL
  *        is passed.
  */
-LIBIMOBILEDEVICE_API void instproxy_client_options_free(plist_t client_options);
+void instproxy_client_options_free(plist_t client_options);
 
 /**
  * Queries the device for the path of an application.
@@ -496,7 +495,7 @@ LIBIMOBILEDEVICE_API void instproxy_client_options_free(plist_t client_options);
  *         the path could not be determined or an INSTPROXY_E_* error
  *         value if an error occured.
  */
-LIBIMOBILEDEVICE_API instproxy_error_t instproxy_client_get_path_for_bundle_identifier(instproxy_client_t client, const char* bundle_id, char** path);
+instproxy_error_t instproxy_client_get_path_for_bundle_identifier(instproxy_client_t client, const char* bundle_id, char** path);
 
 #ifdef __cplusplus
 }

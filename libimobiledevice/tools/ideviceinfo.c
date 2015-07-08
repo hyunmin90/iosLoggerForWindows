@@ -141,7 +141,7 @@ int main(int argc, char *argv[])
 			if (!is_domain_known(argv[i])) {
 				fprintf(stderr, "WARNING: Sending query with unknown domain \"%s\".\n", argv[i]);
 			}
-			domain = _strdup(argv[i]);
+			domain = strdup(argv[i]);
 			continue;
 		}
 		else if (!strcmp(argv[i], "-k") || !strcmp(argv[i], "--key")) {
@@ -150,7 +150,7 @@ int main(int argc, char *argv[])
 				print_usage(argc, argv);
 				return 0;
 			}
-			key = _strdup(argv[i]);
+			key = strdup(argv[i]);
 			continue;
 		}
 		else if (!strcmp(argv[i], "-x") || !strcmp(argv[i], "--xml")) {

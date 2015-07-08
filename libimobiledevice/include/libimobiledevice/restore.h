@@ -30,7 +30,6 @@ extern "C" {
 #endif
 
 #include <libimobiledevice/libimobiledevice.h>
-#include "src/idevice.h"
 
 /** Error Codes */
 typedef enum {
@@ -60,7 +59,7 @@ typedef restored_client_private *restored_client_t; /**< The client handle. */
  *
  * @return RESTORE_E_SUCCESS on success, RESTORE_E_INVALID_ARG when client is NULL
  */
-LIBIMOBILEDEVICE_API restored_error_t restored_client_new(idevice_t device, restored_client_t *client, const char *label);
+restored_error_t restored_client_new(idevice_t device, restored_client_t *client, const char *label);
 
 /**
  * Closes the restored client session if one is running and frees up the
@@ -70,7 +69,7 @@ LIBIMOBILEDEVICE_API restored_error_t restored_client_new(idevice_t device, rest
  *
  * @return RESTORE_E_SUCCESS on success, RESTORE_E_INVALID_ARG when client is NULL
  */
-LIBIMOBILEDEVICE_API restored_error_t restored_client_free(restored_client_t client);
+restored_error_t restored_client_free(restored_client_t client);
 
 
 /**
@@ -83,7 +82,7 @@ LIBIMOBILEDEVICE_API restored_error_t restored_client_free(restored_client_t cli
  *
  * @return RESTORE_E_SUCCESS on success, RESTORE_E_INVALID_ARG when client is NULL
  */
-LIBIMOBILEDEVICE_API restored_error_t restored_query_type(restored_client_t client, char **type, uint64_t *version);
+restored_error_t restored_query_type(restored_client_t client, char **type, uint64_t *version);
 
 /**
  * Queries a value from the device specified by a key.
@@ -94,7 +93,7 @@ LIBIMOBILEDEVICE_API restored_error_t restored_query_type(restored_client_t clie
  *
  * @return RESTORE_E_SUCCESS on success, RESTORE_E_INVALID_ARG when client is NULL, RESTORE_E_PLIST_ERROR if value for key can't be found
  */
-LIBIMOBILEDEVICE_API restored_error_t restored_query_value(restored_client_t client, const char *key, plist_t *value);
+restored_error_t restored_query_value(restored_client_t client, const char *key, plist_t *value);
 
 /**
  * Retrieves a value from information plist specified by a key.
@@ -105,7 +104,7 @@ LIBIMOBILEDEVICE_API restored_error_t restored_query_value(restored_client_t cli
  *
  * @return RESTORE_E_SUCCESS on success, RESTORE_E_INVALID_ARG when client is NULL, RESTORE_E_PLIST_ERROR if value for key can't be found
  */
-LIBIMOBILEDEVICE_API restored_error_t restored_get_value(restored_client_t client, const char *key, plist_t *value) ;
+restored_error_t restored_get_value(restored_client_t client, const char *key, plist_t *value) ;
 
 /**
  * Sends a plist to restored.
@@ -119,7 +118,7 @@ LIBIMOBILEDEVICE_API restored_error_t restored_get_value(restored_client_t clien
  * @return RESTORE_E_SUCCESS on success, RESTORE_E_INVALID_ARG when client or
  *  plist is NULL
  */
-LIBIMOBILEDEVICE_API restored_error_t restored_send(restored_client_t client, plist_t plist);
+restored_error_t restored_send(restored_client_t client, plist_t plist);
 
 /**
  * Receives a plist from restored.
@@ -130,7 +129,7 @@ LIBIMOBILEDEVICE_API restored_error_t restored_send(restored_client_t client, pl
  * @return RESTORE_E_SUCCESS on success, RESTORE_E_INVALID_ARG when client or
  *  plist is NULL
  */
-LIBIMOBILEDEVICE_API restored_error_t restored_receive(restored_client_t client, plist_t *plist);
+restored_error_t restored_receive(restored_client_t client, plist_t *plist);
 
 /**
  * Sends the Goodbye request to restored signaling the end of communication.
@@ -140,7 +139,7 @@ LIBIMOBILEDEVICE_API restored_error_t restored_receive(restored_client_t client,
  * @return RESTORE_E_SUCCESS on success, RESTORE_E_INVALID_ARG when client is NULL,
  *  RESTORE_E_PLIST_ERROR if the device did not acknowledge the request
  */
-LIBIMOBILEDEVICE_API restored_error_t restored_goodbye(restored_client_t client);
+restored_error_t restored_goodbye(restored_client_t client);
 
 
 /**
@@ -153,7 +152,7 @@ LIBIMOBILEDEVICE_API restored_error_t restored_goodbye(restored_client_t client)
  * @return RESTORE_E_SUCCESS on success, RESTORE_E_INVALID_ARG if a parameter
  *  is NULL, RESTORE_E_START_RESTORE_FAILED if the request fails
  */
-LIBIMOBILEDEVICE_API restored_error_t restored_start_restore(restored_client_t client, plist_t options, uint64_t version);
+restored_error_t restored_start_restore(restored_client_t client, plist_t options, uint64_t version);
 
 /**
  * Requests device to reboot.
@@ -163,7 +162,7 @@ LIBIMOBILEDEVICE_API restored_error_t restored_start_restore(restored_client_t c
  * @return RESTORE_E_SUCCESS on success, RESTORE_E_INVALID_ARG if a parameter
  *  is NULL
  */
-LIBIMOBILEDEVICE_API restored_error_t restored_reboot(restored_client_t client);
+restored_error_t restored_reboot(restored_client_t client);
 
 /* Helper */
 
@@ -174,7 +173,7 @@ LIBIMOBILEDEVICE_API restored_error_t restored_reboot(restored_client_t client);
  * @param label The label to set or NULL to disable sending a label
  *
  */
-LIBIMOBILEDEVICE_API void restored_client_set_label(restored_client_t client, const char *label);
+void restored_client_set_label(restored_client_t client, const char *label);
 
 #ifdef __cplusplus
 }

@@ -98,7 +98,7 @@ LIBIMOBILEDEVICE_API mobilesync_error_t mobilesync_client_new(idevice_t device, 
 LIBIMOBILEDEVICE_API mobilesync_error_t mobilesync_client_start_service(idevice_t device, mobilesync_client_t * client, const char* label)
 {
 	mobilesync_error_t err = MOBILESYNC_E_UNKNOWN_ERROR;
-	service_client_factory_start_service(device, MOBILESYNC_SERVICE_NAME, (void**)client, label, SERVICE_CONSTRUCTOR(mobilesync_client_new), (int32_t*)&err);
+	service_client_factory_start_service(device, MOBILESYNC_SERVICE_NAME, (void**)client, label, SERVICE_CONSTRUCTOR(mobilesync_client_new), &err);
 	return err;
 }
 
@@ -248,8 +248,7 @@ LIBIMOBILEDEVICE_API mobilesync_error_t mobilesync_start(mobilesync_client_t cli
 		msg = NULL;
 	}
 
-	//client->data_class = strdup(data_class);
-	client->data_class = _strdup(data_class);
+	client->data_class = strdup(data_class);
 	client->direction = MOBILESYNC_SYNC_DIR_DEVICE_TO_COMPUTER;
 	return err;
 }
@@ -285,7 +284,6 @@ LIBIMOBILEDEVICE_API mobilesync_error_t mobilesync_finish(mobilesync_client_t cl
 		goto out;
 	}
 
-	err = MOBILESYNC_E_UNKNOWN_ERROR;
 	response_type_node = plist_array_get_item(msg, 0);
 	if (!response_type_node) {
 		err = MOBILESYNC_E_PLIST_ERROR;
@@ -312,12 +310,9 @@ LIBIMOBILEDEVICE_API mobilesync_error_t mobilesync_finish(mobilesync_client_t cl
 		msg = NULL;
 	}
 
-	if(err == MOBILESYNC_E_SUCCESS)
-	{
-		free(client->data_class);
-		client->data_class = NULL;
-		client->direction = MOBILESYNC_SYNC_DIR_DEVICE_TO_COMPUTER;
-	}
+	free(client->data_class);
+	client->data_class = NULL;
+	client->direction = MOBILESYNC_SYNC_DIR_DEVICE_TO_COMPUTER;
 	return err;
 }
 
@@ -717,8 +712,7 @@ LIBIMOBILEDEVICE_API mobilesync_anchors_t mobilesync_anchors_new(const char *dev
 {
 	mobilesync_anchors_t anchors = (mobilesync_anchors_t) malloc(sizeof(mobilesync_anchors));
 	if (device_anchor != NULL) {
-		//anchors->device_anchor = strdup(device_anchor);
-		anchors->device_anchor = _strdup(device_anchor);
+		anchors->device_anchor = strdup(device_anchor);
 	} else {
 		anchors->device_anchor = NULL;
 	}
