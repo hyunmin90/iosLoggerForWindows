@@ -1,0 +1,9 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubForIos\IosSysLogger\bin\Debug\IosSysLogger.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubForIos\IosSysLogger\bin\Debug\IosSysLogger.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubForIos\IosSysLogger\bin\Debug\IosSysLogger.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubForIos\IosSysLogger\obj\Debug\IosSysLogger.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubForIos\IosSysLogger\obj\Debug\iOSloggerUI.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubForIos\IosSysLogger\obj\Debug\IosSysLogger.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubForIos\IosSysLogger\obj\Debug\IosSysLogger.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubForIos\IosSysLogger\obj\Debug\IosSysLogger.iosSyslogger.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubForIos\IosSysLogger\obj\Debug\iOSloggerUI.csprojResolveAssemblyReference.cache
