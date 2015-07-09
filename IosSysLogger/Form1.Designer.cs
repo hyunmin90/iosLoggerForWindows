@@ -39,6 +39,7 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.clearSearchBtn = new System.Windows.Forms.Button();
+            this.fixScroll = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,11 +146,22 @@
             this.clearSearchBtn.Text = "clear search";
             this.clearSearchBtn.UseVisualStyleBackColor = true;
             // 
+            // fixScroll
+            // 
+            this.fixScroll.AutoSize = true;
+            this.fixScroll.Location = new System.Drawing.Point(740, 65);
+            this.fixScroll.Name = "fixScroll";
+            this.fixScroll.Size = new System.Drawing.Size(72, 16);
+            this.fixScroll.TabIndex = 8;
+            this.fixScroll.Text = "fix scroll";
+            this.fixScroll.UseVisualStyleBackColor = true;
+            // 
             // iosSyslogger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 496);
+            this.Controls.Add(this.fixScroll);
             this.Controls.Add(this.clearSearchBtn);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.dataGridView1);
@@ -177,6 +189,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Log;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Button clearSearchBtn;
+        private System.Windows.Forms.CheckBox fixScroll;
     }
 }
 

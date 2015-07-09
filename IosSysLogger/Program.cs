@@ -46,7 +46,7 @@ namespace IosSysLogger
 
         static void OnProcessExit(object sender, EventArgs e)
         { //Temporary way of killing background process. Need this fixed.**IMPORTANT**
-            foreach (Process proc in Process.GetProcessesByName("idevicesyslog"))
+            foreach (Process proc in Process.GetProcessesByName("cmdLogger"))
             {
                 proc.Kill();
             }

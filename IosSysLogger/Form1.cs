@@ -17,7 +17,8 @@ namespace IosSysLogger
         int indexOfSearchText = 0;
         int rowNumber = 0;
         bool firstRowf = false;
-        
+        bool configurationNotice = false;
+        bool fixScrollCheck = false;
         public iosSyslogger()
         {
             
@@ -26,6 +27,7 @@ namespace IosSysLogger
             string currentPath = System.Environment.CurrentDirectory;
             this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             this.clearSearchBtn.Click += new System.EventHandler(this.clearSearchBtn_Click);
+            this.fixScroll.Click += new System.EventHandler(this.fixScroll_Click);
 
         }
 
@@ -39,32 +41,70 @@ namespace IosSysLogger
                 string[] month = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
                 if (month.Any(e => value.StartsWith(e))) //Start with one of the month code
                 {
-                   
-                    dataGridView1.Rows.Add(); 
+
+                    dataGridView1.Rows.Add();
                     //richTextBox1.AppendText(value + Environment.NewLine);
 
                     string[] words = value.Split(' ');
-                    foreach (string word in words)
+                    if (value.Contains("<Notice>:"))
                     {
-                        if (textBox2.Text!=""&& word.Contains(textBox2.Text))
+                        dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.ForestGreen;
+                    }
+                    else if (value.Contains("<Debug>:"))
+                    {
+
+                    }
+                    else if (value.Contains("<Info>:"))
+                    {
+
+                    }
+                    else if (value.Contains("<Warning>:"))
+                    {
+                        dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.Orange;
+                    }
+                    else if (value.Contains("<Error>:"))
+                    {
+                        dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.DarkRed;
+                    }
+                    else if (value.Contains("<Critical>:"))
+                    {
+                        dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.DarkRed;
+                    }
+                    else if (value.Contains("<Alert>:"))
+                    {
+
+                    }
+                    else if (value.Contains("<Emergency>:"))
+                    {
+
+                    }
+
+                    foreach (string word in words)
                         {
-                            highlightNew = true;
+                            if (textBox2.Text != "" && word.Contains(textBox2.Text))
+                            {
+                                highlightNew = true;
+                            }
+                            if (month.Any(e => word.StartsWith(e)))
+                            {
+                                firstRowf = true;
+                            }
+
+                            if (firstRowf == true && index < 4) //Date
+                                dataGridView1.Rows[rowNumber].Cells[0].Value += word + " ";
+                            else if (firstRowf == true && index == 4) //Device
+                                dataGridView1.Rows[rowNumber].Cells[1].Value += word + " ";
+                            else if (firstRowf == true && index == 5) //Process
+                                dataGridView1.Rows[rowNumber].Cells[2].Value += word + " ";
+                            else if (firstRowf == true && (index == 6 || word.Contains(">:"))) //LogLevel
+                                dataGridView1.Rows[rowNumber].Cells[3].Value += word + " ";
+                            else if (firstRowf == true && index > 6)//Log
+                                dataGridView1.Rows[rowNumber].Cells[4].Value += word + " ";
+                            index++;
                         }
-                        if (month.Any(e => word.StartsWith(e)))
-                        {
-                            firstRowf = true;
-                        }
-                        if (firstRowf == true && index<4) //Date
-                            dataGridView1.Rows[rowNumber].Cells[0].Value += word+" ";
-                        else if(firstRowf == true &&index==4) //Device
-                            dataGridView1.Rows[rowNumber].Cells[1].Value += word + " ";
-                        else if (firstRowf == true && index == 5) //Process
-                            dataGridView1.Rows[rowNumber].Cells[2].Value += word + " ";
-                        else if (firstRowf == true && (index == 6||word.Contains(">:"))) //LogLevel
-                            dataGridView1.Rows[rowNumber].Cells[3].Value += word + " ";
-                        else if (firstRowf == true && index > 6)//Log
-                            dataGridView1.Rows[rowNumber].Cells[4].Value += word + " ";
-                        index++;
+                    if (dataGridView1.Rows[rowNumber].Cells[4].Value.ToString().Contains("Configuration Notice:"))
+                    {
+                        configurationNotice = true;
                     }
                     if (highlightNew == true)
                     {
@@ -76,14 +116,28 @@ namespace IosSysLogger
                         dataGridView1.Rows[rowNumber].Visible = false;
                         dataGridView1.Rows[rowNumber].Selected = false;
                     }
-                    rowNumber++;
                     firstRowf = false;
-                    dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.RowCount - 1;
+                    rowNumber++;
+                    scrollToBottom();
 
                     //dataGridView1.Rows[0].Cells[4].Value = value;
                 }
+                else
+                {
+                    //MessageBox.Show(value); Need to solve multi line problem
+                }
+                
+                
+
+
             }
 
+        }
+
+        private void scrollToBottom()
+        {
+            if(fixScrollCheck != true)
+                dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.RowCount - 1;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -102,6 +156,13 @@ namespace IosSysLogger
         {
             textBox2.Text = "";
             clearHighlight();   
+        }
+        private void fixScroll_Click(object sender, EventArgs e)
+        {
+            if (fixScroll.Checked)
+                fixScrollCheck = true;
+            else
+                fixScrollCheck = false;
         }
         private void clearHighlight()
         {
