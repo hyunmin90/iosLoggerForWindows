@@ -10,11 +10,12 @@ namespace IosSysLogger
 {
     class loggerTool
     {
-        static string outdata;
+       
         public void readLog(Form1 form)
         {
+            
             string currentPath = System.Environment.CurrentDirectory;
-
+           
             FileSystemWatcher watcher = new FileSystemWatcher();
             watcher.Path = currentPath;
             watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite
@@ -23,7 +24,7 @@ namespace IosSysLogger
             watcher.Changed += new FileSystemEventHandler((source, e) => OnChanged(source, e, form));
             watcher.EnableRaisingEvents = true;
 
-
+           
             Process process = new Process();
             process.StartInfo.FileName = currentPath+@"\idevicesyslog.exe"; 
             process.StartInfo.Arguments = "";
@@ -31,17 +32,16 @@ namespace IosSysLogger
             process.StartInfo.CreateNoWindow = true;
             process.StartInfo.RedirectStandardOutput = true;
             process.StartInfo.RedirectStandardError = true;
-
+         
             //* Set your output and error (asynchronous) handlers
-            process.OutputDataReceived += new DataReceivedEventHandler(OutputHandler);
-            process.ErrorDataReceived += new DataReceivedEventHandler(OutputHandler);
+            process.OutputDataReceived += new DataReceivedEventHandler((source, e)=>OutputHandler(source,e,form));
+            process.ErrorDataReceived += new DataReceivedEventHandler((source, e) => OutputHandler(source, e, form));
             //* Start process and handlers
             process.Start();
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
 
-            
         }
 
         private void OnChanged(object source, FileSystemEventArgs e, Form1 form)
@@ -49,18 +49,31 @@ namespace IosSysLogger
             
         }
 
-        public void OutputHandler(object sendingProcess, DataReceivedEventArgs outLine)
+        public void OutputHandler(object sendingProcess, DataReceivedEventArgs outLine, Form1 form)
         {
             //*Includes writing to a temporary PATH that need a fix later on *IMPORTANT*
             //Console.WriteLine(outLine.Data); FOR DEBUGGING PURPOSES
 
             string currentPath = System.Environment.CurrentDirectory;
+
+
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(currentPath+@"\syslog.txt", true))
             {
+                form.BeginInvoke(new Action(() =>
+                {
+
+
+                    form.TextBoxText = outLine.Data;
+
+
+                }));
                 file.WriteLine(outLine.Data);
             }
             //*Most of the logic for outputing the log should be dealt from this output Handler
 
+
+            
+            
         }
 
 

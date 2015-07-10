@@ -27,6 +27,7 @@ namespace IosSysLogger
             loggingThread.Start(); //Multi Threading the syslog process in background.
 
             Application.Run(LoggerWindow);
+            
             AppDomain.CurrentDomain.ProcessExit += new EventHandler(OnProcessExit);
         }
 
