@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 using System.IO;
+
 
 namespace IosSysLogger
 {
@@ -23,6 +23,7 @@ namespace IosSysLogger
         List<string> checkedList = new List<string>();
         List<string> processlist = new List<string>();
         List<string> devicenameList = new List<string>();
+        List<string> selectedDeviceList = new List<string>();
         public iosSyslogger()
         {
 
@@ -37,23 +38,76 @@ namespace IosSysLogger
             dataGridView1.ContextMenuStrip = mnu;
 
 
-            this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
+            this.highlightBtn.Click += new System.EventHandler(this.highlightBtn_Click);
             this.clearSearchBtn.Click += new System.EventHandler(this.clearSearchBtn_Click);
             this.fixScroll.Click += new System.EventHandler(this.fixScroll_Click);
             this.devicename.SelectedIndexChanged += new System.EventHandler(this.devicename_SelectedIndexChanged);
             this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             this.processlistname.SelectedIndexChanged += new System.EventHandler(this.processlistname_SelectedIndexChanged);
+            this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
+            this.savedatagrid.Click += new System.EventHandler(this.saveBtn_Click);
+            this.load.Click += new System.EventHandler(this.loadBtn_click);
+
            
         }
-        public String uuidnameText
+        private void Save()
         {
-            get { return null; }
-            set
+            string currentPath = System.Environment.CurrentDirectory;
+
+
+            DataTable dt = new DataTable();
+            for (int i = 1; i < dataGridView1.Columns.Count + 1; i++)
             {
-                if (value == null) return;
-                uuidname.AppendText(value);
+                DataColumn column = new DataColumn(dataGridView1.Columns[i - 1].HeaderText);
+                dt.Columns.Add(column);
             }
+            int columnCount = dataGridView1.Columns.Count;
+            foreach (DataGridViewRow dr in dataGridView1.Rows)
+            {
+                DataRow dataRow = dt.NewRow();
+                for (int i = 0; i < columnCount; i++)
+                {
+                    //returns checkboxes and dropdowns as string with .value..... nearly got it
+                    dataRow[i] = dr.Cells[i].Value;
+                }
+                dt.Rows.Add(dataRow);
+            }
+
+            DataSet ds = new DataSet();
+            ds.Tables.Add(dt);
+            
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "XML-File | *.xml";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                XmlTextWriter xmlSave = new XmlTextWriter(saveFileDialog.FileName, Encoding.UTF8);
+                ds.WriteXml(xmlSave);
+                xmlSave.Close();
+            }
+            
         }
+
+        private void loadXML()
+        {
+            DataSet dataSet = new DataSet();
+
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "XML-File | *.xml";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                dataSet.ReadXml(openFileDialog.FileName);
+                dataGridView1.DataSource = dataSet.Tables[0];
+
+            }
+
+
+            
+
+        }
+
+
+
         public String DeviceNameText
         {
             get { return null; }
@@ -248,10 +302,25 @@ namespace IosSysLogger
         {
 
         }
-        private void searchBtn_Click(object sender, EventArgs e)
+        private void highlightBtn_Click(object sender, EventArgs e)
         {
             string search = textBox2.Text; 
             highLight(search);   
+        }
+
+        private void saveBtn_Click(object sender, EventArgs e)
+        {
+            Save();
+        }
+        private void loadBtn_click(object sender, EventArgs e)
+        {
+            dataGridView1.Columns.Clear();
+            loadXML();
+        }
+        private void searchBtn_Click(object sender, EventArgs e)
+        {
+            string search = textBox2.Text;
+            searchResult(search);
         }
         private void clearSearchBtn_Click(object sender, EventArgs e)
         {
@@ -297,21 +366,21 @@ namespace IosSysLogger
                             {
                                 
                                 dataGridView1.Rows[i+z].Selected = true;
-                                dataGridView1.Rows[i+z].Visible = true;
+                                //dataGridView1.Rows[i+z].Visible = true;
                             }
                             i=i+z;
                         }
                         else
                         {
                             dataGridView1.Rows[i].Selected = true;
-                            dataGridView1.Rows[i].Visible = true;
+                            //dataGridView1.Rows[i].Visible = true;
                             i++;
                         }
                     }
                     else
                     {
-                        dataGridView1.Rows[i].Visible = false;
-                        dataGridView1.Rows[i].Selected = false;
+                        //dataGridView1.Rows[i].Visible = false;
+                        //dataGridView1.Rows[i].Selected = false;
                         i++;
                     }
                     
@@ -319,6 +388,54 @@ namespace IosSysLogger
                 }
             }
         }
+
+        private void searchResult(string term)
+        {
+
+            if (term != null)
+            {
+                int i = 0;
+                while (i < dataGridView1.Rows.Count - 1)
+                {
+                    if (dataGridView1.Rows[i].Cells[3] == null)
+                    { return; }
+
+                    else if (dataGridView1.Rows[i].Cells[0].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[1].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(term))
+                    {
+
+                        string multirow = dataGridView1.Rows[i].Cells[5].Value.ToString();
+                        int count = Convert.ToInt32(multirow);
+                        if (count > 0)
+                        {
+                            int z = 0;
+                            // MessageBox.Show(count.ToString());
+                            for (z = 0; z <= count; z++)
+                            {
+
+                                //dataGridView1.Rows[i + z].Selected = true;
+                                dataGridView1.Rows[i + z].Visible = true;
+                            }
+                            i = i + z;
+                        }
+                        else
+                        {
+                            //dataGridView1.Rows[i].Selected = true;
+                            dataGridView1.Rows[i].Visible = true;
+                            i++;
+                        }
+                    }
+                    else
+                    {
+                        dataGridView1.Rows[i].Visible = false;
+                        //dataGridView1.Rows[i].Selected = false;
+                        i++;
+                    }
+
+
+                }
+            }
+        }
+
 
         private void showByProcess()
         {
@@ -372,7 +489,7 @@ namespace IosSysLogger
                 dataGridView1.Rows[i].Visible = false;
                 dataGridView1.Rows[i].Selected = false;
             }
-            foreach (string term in devicenameList)
+            foreach (string term in selectedDeviceList)
             {
                 for (int i = 0; i<dataGridView1.Rows.Count - 1; i++)
                 {
@@ -384,13 +501,9 @@ namespace IosSysLogger
                     }
                 }
             }
-            devicenameList.Clear();
+            selectedDeviceList.Clear();
 
         }
-
-
-
-
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -429,6 +542,7 @@ namespace IosSysLogger
             }
         }
 
+        
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (checkedListBox1.CheckedItems.Count == 0)
@@ -472,7 +586,7 @@ namespace IosSysLogger
                     string selectedName = devicename.Items[indexChecked].ToString();
                     //MessageBox.Show(selectedName);
 
-                    devicenameList.Add(selectedName);
+                    selectedDeviceList.Add(selectedName);
                     //MessageBox.Show("Index#: " + indexChecked.ToString() + ", is checked. Checked state is:" +
                                    // devicename.GetItemCheckState(indexChecked).ToString() + ".");
                 }

@@ -129,10 +129,7 @@ namespace IosSysLogger
 
             string currentPath = System.Environment.CurrentDirectory;
 
-            if (!File.Exists(currentPath + @"\syslog.txt"+uuid))
-            {
-                File.Create(currentPath + @"\syslog.txt"+ uuid).Close();
-            }
+            
 
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(currentPath+ @"\syslog" + uuid + ".txt", true))
             {

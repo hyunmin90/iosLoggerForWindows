@@ -43,7 +43,12 @@
             this.fixScroll = new System.Windows.Forms.CheckBox();
             this.devicename = new System.Windows.Forms.CheckedListBox();
             this.processlistname = new System.Windows.Forms.CheckedListBox();
-            this.uuidname = new System.Windows.Forms.TextBox();
+            this.highlightBtn = new System.Windows.Forms.Button();
+            this.DevicenameLabel = new System.Windows.Forms.Label();
+            this.ProcessLabel = new System.Windows.Forms.Label();
+            this.loglevelLabel = new System.Windows.Forms.Label();
+            this.savedatagrid = new System.Windows.Forms.Button();
+            this.load = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -146,14 +151,14 @@
             "Critical",
             "Alert",
             "Emergency"});
-            this.checkedListBox1.Location = new System.Drawing.Point(502, 15);
+            this.checkedListBox1.Location = new System.Drawing.Point(505, 45);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(130, 180);
             this.checkedListBox1.TabIndex = 6;
             // 
             // clearSearchBtn
             // 
-            this.clearSearchBtn.Location = new System.Drawing.Point(946, 45);
+            this.clearSearchBtn.Location = new System.Drawing.Point(946, 74);
             this.clearSearchBtn.Name = "clearSearchBtn";
             this.clearSearchBtn.Size = new System.Drawing.Size(75, 36);
             this.clearSearchBtn.TabIndex = 7;
@@ -173,7 +178,7 @@
             // devicename
             // 
             this.devicename.FormattingEnabled = true;
-            this.devicename.Location = new System.Drawing.Point(45, 15);
+            this.devicename.Location = new System.Drawing.Point(101, 45);
             this.devicename.Name = "devicename";
             this.devicename.Size = new System.Drawing.Size(120, 84);
             this.devicename.TabIndex = 9;
@@ -182,25 +187,77 @@
             // 
             this.processlistname.FormattingEnabled = true;
             this.processlistname.HorizontalScrollbar = true;
-            this.processlistname.Location = new System.Drawing.Point(297, 15);
+            this.processlistname.Location = new System.Drawing.Point(300, 45);
             this.processlistname.Name = "processlistname";
             this.processlistname.Size = new System.Drawing.Size(138, 180);
             this.processlistname.TabIndex = 10;
             // 
-            // uuidname
+            // highlightBtn
             // 
-            this.uuidname.Location = new System.Drawing.Point(182, 45);
-            this.uuidname.Multiline = true;
-            this.uuidname.Name = "uuidname";
-            this.uuidname.Size = new System.Drawing.Size(100, 103);
-            this.uuidname.TabIndex = 11;
+            this.highlightBtn.Location = new System.Drawing.Point(946, 45);
+            this.highlightBtn.Name = "highlightBtn";
+            this.highlightBtn.Size = new System.Drawing.Size(75, 23);
+            this.highlightBtn.TabIndex = 12;
+            this.highlightBtn.Text = "highlight";
+            this.highlightBtn.UseVisualStyleBackColor = true;
+            // 
+            // DevicenameLabel
+            // 
+            this.DevicenameLabel.AutoSize = true;
+            this.DevicenameLabel.Location = new System.Drawing.Point(101, 15);
+            this.DevicenameLabel.Name = "DevicenameLabel";
+            this.DevicenameLabel.Size = new System.Drawing.Size(81, 12);
+            this.DevicenameLabel.TabIndex = 13;
+            this.DevicenameLabel.Text = "Device Name";
+            // 
+            // ProcessLabel
+            // 
+            this.ProcessLabel.AutoSize = true;
+            this.ProcessLabel.Location = new System.Drawing.Point(300, 15);
+            this.ProcessLabel.Name = "ProcessLabel";
+            this.ProcessLabel.Size = new System.Drawing.Size(66, 12);
+            this.ProcessLabel.TabIndex = 14;
+            this.ProcessLabel.Text = "Processes";
+            this.ProcessLabel.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            // 
+            // loglevelLabel
+            // 
+            this.loglevelLabel.AutoSize = true;
+            this.loglevelLabel.Location = new System.Drawing.Point(505, 13);
+            this.loglevelLabel.Name = "loglevelLabel";
+            this.loglevelLabel.Size = new System.Drawing.Size(61, 12);
+            this.loglevelLabel.TabIndex = 15;
+            this.loglevelLabel.Text = "Log Label";
+            // 
+            // savedatagrid
+            // 
+            this.savedatagrid.Location = new System.Drawing.Point(946, 116);
+            this.savedatagrid.Name = "savedatagrid";
+            this.savedatagrid.Size = new System.Drawing.Size(75, 23);
+            this.savedatagrid.TabIndex = 16;
+            this.savedatagrid.Text = "save ";
+            this.savedatagrid.UseVisualStyleBackColor = true;
+            // 
+            // load
+            // 
+            this.load.Location = new System.Drawing.Point(946, 146);
+            this.load.Name = "load";
+            this.load.Size = new System.Drawing.Size(75, 23);
+            this.load.TabIndex = 17;
+            this.load.Text = "load";
+            this.load.UseVisualStyleBackColor = true;
             // 
             // iosSyslogger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 496);
-            this.Controls.Add(this.uuidname);
+            this.Controls.Add(this.load);
+            this.Controls.Add(this.savedatagrid);
+            this.Controls.Add(this.loglevelLabel);
+            this.Controls.Add(this.ProcessLabel);
+            this.Controls.Add(this.DevicenameLabel);
+            this.Controls.Add(this.highlightBtn);
             this.Controls.Add(this.processlistname);
             this.Controls.Add(this.devicename);
             this.Controls.Add(this.fixScroll);
@@ -235,7 +292,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn LogLevel;
         private System.Windows.Forms.DataGridViewTextBoxColumn Log;
         private System.Windows.Forms.DataGridViewTextBoxColumn ctr;
-        private System.Windows.Forms.TextBox uuidname;
+        private System.Windows.Forms.Button highlightBtn;
+        private System.Windows.Forms.Label DevicenameLabel;
+        private System.Windows.Forms.Label ProcessLabel;
+        private System.Windows.Forms.Label loglevelLabel;
+        private System.Windows.Forms.Button savedatagrid;
+        private System.Windows.Forms.Button load;
     }
 }
 
