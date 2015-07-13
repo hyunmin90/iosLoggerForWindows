@@ -31,15 +31,18 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.searchBtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.clearSearchBtn = new System.Windows.Forms.Button();
+            this.fixScroll = new System.Windows.Forms.CheckBox();
+            this.devicename = new System.Windows.Forms.CheckedListBox();
+            this.processlistname = new System.Windows.Forms.CheckedListBox();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.device = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Process = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LogLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Log = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.clearSearchBtn = new System.Windows.Forms.Button();
-            this.fixScroll = new System.Windows.Forms.CheckBox();
+            this.aR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,44 +75,14 @@
             this.device,
             this.Process,
             this.LogLevel,
-            this.Log});
+            this.Log,
+            this.aR});
             this.dataGridView1.Location = new System.Drawing.Point(3, 266);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(1024, 202);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // date
-            // 
-            this.date.FillWeight = 28.03262F;
-            this.date.HeaderText = "Date";
-            this.date.Name = "date";
-            // 
-            // device
-            // 
-            this.device.FillWeight = 71.15302F;
-            this.device.HeaderText = "Device";
-            this.device.Name = "device";
-            // 
-            // Process
-            // 
-            this.Process.FillWeight = 118.5104F;
-            this.Process.HeaderText = "Process";
-            this.Process.Name = "Process";
-            // 
-            // LogLevel
-            // 
-            this.LogLevel.FillWeight = 160.6675F;
-            this.LogLevel.HeaderText = "LogLevel";
-            this.LogLevel.Name = "LogLevel";
-            // 
-            // Log
-            // 
-            this.Log.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Log.FillWeight = 121.6365F;
-            this.Log.HeaderText = "Log";
-            this.Log.Name = "Log";
             // 
             // richTextBox1
             // 
@@ -123,7 +96,6 @@
             // 
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
-            "All",
             "Debug",
             "Info",
             "Notice",
@@ -156,11 +128,67 @@
             this.fixScroll.Text = "fix scroll";
             this.fixScroll.UseVisualStyleBackColor = true;
             // 
+            // devicename
+            // 
+            this.devicename.FormattingEnabled = true;
+            this.devicename.Location = new System.Drawing.Point(45, 15);
+            this.devicename.Name = "devicename";
+            this.devicename.Size = new System.Drawing.Size(120, 84);
+            this.devicename.TabIndex = 9;
+            // 
+            // processlistname
+            // 
+            this.processlistname.FormattingEnabled = true;
+            this.processlistname.HorizontalScrollbar = true;
+            this.processlistname.Location = new System.Drawing.Point(297, 15);
+            this.processlistname.Name = "processlistname";
+            this.processlistname.Size = new System.Drawing.Size(138, 180);
+            this.processlistname.TabIndex = 10;
+            // 
+            // date
+            // 
+            this.date.FillWeight = 28.03262F;
+            this.date.HeaderText = "Date";
+            this.date.Name = "date";
+            // 
+            // device
+            // 
+            this.device.FillWeight = 71.15302F;
+            this.device.HeaderText = "Device";
+            this.device.Name = "device";
+            // 
+            // Process
+            // 
+            this.Process.FillWeight = 118.5104F;
+            this.Process.HeaderText = "Process";
+            this.Process.Name = "Process";
+            // 
+            // LogLevel
+            // 
+            this.LogLevel.FillWeight = 160.6675F;
+            this.LogLevel.HeaderText = "LogLevel";
+            this.LogLevel.Name = "LogLevel";
+            // 
+            // Log
+            // 
+            this.Log.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Log.FillWeight = 121.6365F;
+            this.Log.HeaderText = "Log";
+            this.Log.Name = "Log";
+            // 
+            // aR
+            // 
+            this.aR.HeaderText = "ar";
+            this.aR.Name = "aR";
+            this.aR.Visible = false;
+            // 
             // iosSyslogger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 496);
+            this.Controls.Add(this.processlistname);
+            this.Controls.Add(this.devicename);
             this.Controls.Add(this.fixScroll);
             this.Controls.Add(this.clearSearchBtn);
             this.Controls.Add(this.checkedListBox1);
@@ -182,14 +210,17 @@
         private System.Windows.Forms.Button searchBtn;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.Button clearSearchBtn;
+        private System.Windows.Forms.CheckBox fixScroll;
+        private System.Windows.Forms.CheckedListBox devicename;
+        private System.Windows.Forms.CheckedListBox processlistname;
         private System.Windows.Forms.DataGridViewTextBoxColumn date;
         private System.Windows.Forms.DataGridViewTextBoxColumn device;
         private System.Windows.Forms.DataGridViewTextBoxColumn Process;
         private System.Windows.Forms.DataGridViewTextBoxColumn LogLevel;
         private System.Windows.Forms.DataGridViewTextBoxColumn Log;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.Button clearSearchBtn;
-        private System.Windows.Forms.CheckBox fixScroll;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aR;
     }
 }
 

@@ -30,13 +30,18 @@ namespace IosSysLogger
             Application.SetCompatibleTextRenderingDefault(false);
             iosSyslogger LoggerWindow = new iosSyslogger();
             loggerTool tool = new loggerTool();
+       
 
            
             //Check if syslog file exist. If it does not exist, create one 
 
             Thread loggingThread = new Thread(() => tool.readLog(LoggerWindow));
             loggingThread.IsBackground = true;
-            
+
+            Thread deviceInfoThread = new Thread(() => tool.readDeviceinfo(LoggerWindow));
+            deviceInfoThread.IsBackground = true;
+
+            deviceInfoThread.Start(); //Threading the device info process in background.
             loggingThread.Start(); //Threading the syslog process in background.
 
             Application.Run(LoggerWindow);
@@ -47,6 +52,10 @@ namespace IosSysLogger
         static void OnProcessExit(object sender, EventArgs e)
         { //Temporary way of killing background process. Need this fixed.**IMPORTANT**
             foreach (Process proc in Process.GetProcessesByName("cmdLogger"))
+            {
+                proc.Kill();
+            }
+            foreach (Process proc in Process.GetProcessesByName("iOSdeviceinfo"))
             {
                 proc.Kill();
             }

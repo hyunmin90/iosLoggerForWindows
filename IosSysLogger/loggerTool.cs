@@ -16,13 +16,7 @@ namespace IosSysLogger
             
             string currentPath = System.Environment.CurrentDirectory;
            
-            FileSystemWatcher watcher = new FileSystemWatcher();
-            watcher.Path = currentPath;
-            watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite
-                                   | NotifyFilters.FileName | NotifyFilters.DirectoryName;
-            watcher.Filter = "*.*";
-            watcher.Changed += new FileSystemEventHandler((source, e) => OnChanged(source, e, form));
-            watcher.EnableRaisingEvents = true;
+           
 
            
             Process process = new Process();
@@ -33,7 +27,7 @@ namespace IosSysLogger
             process.StartInfo.RedirectStandardOutput = true;
             process.StartInfo.RedirectStandardError = true;
          
-            //* Set your output and error (asynchronous) handlers
+            //* Set output and error (asynchronous) handlers
             process.OutputDataReceived += new DataReceivedEventHandler((source, e)=>OutputHandler(source,e,form));
             process.ErrorDataReceived += new DataReceivedEventHandler((source, e) => OutputHandler(source, e, form));
             //* Start process and handlers
@@ -43,10 +37,36 @@ namespace IosSysLogger
             process.WaitForExit();
 
         }
-
-        private void OnChanged(object source, FileSystemEventArgs e, iosSyslogger form)
+        public void readDeviceinfo(iosSyslogger form)
         {
+            string currentPath = System.Environment.CurrentDirectory;
             
+            Process process = new Process();
+            process.StartInfo.FileName = currentPath + @"\iOSdeviceinfo.exe";
+            process.StartInfo.Arguments = "";
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.CreateNoWindow = true;
+            process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.RedirectStandardError = true;
+
+            process.OutputDataReceived += new DataReceivedEventHandler((source, e) => deviceInfoHandler(source, e, form));
+
+            //* Start process and handlers
+            process.Start();
+            process.BeginOutputReadLine();
+            process.BeginErrorReadLine();
+            process.WaitForExit();
+
+
+        }
+
+
+        private void deviceInfoHandler(object sendingProcess, DataReceivedEventArgs outLine, iosSyslogger form)
+        {
+            form.BeginInvoke(new Action(() =>
+            {
+                form.DeviceNameText = outLine.Data;
+            }));
         }
 
         public void OutputHandler(object sendingProcess, DataReceivedEventArgs outLine, iosSyslogger form)
