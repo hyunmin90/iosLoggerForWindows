@@ -42,7 +42,7 @@
             this.Process = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LogLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Log = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ctr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +76,7 @@
             this.Process,
             this.LogLevel,
             this.Log,
-            this.aR});
+            this.ctr});
             this.dataGridView1.Location = new System.Drawing.Point(3, 266);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
@@ -176,11 +176,10 @@
             this.Log.HeaderText = "Log";
             this.Log.Name = "Log";
             // 
-            // aR
+            // ctr
             // 
-            this.aR.HeaderText = "ar";
-            this.aR.Name = "aR";
-            this.aR.Visible = false;
+            this.ctr.HeaderText = "ctr";
+            this.ctr.Name = "ctr";
             // 
             // iosSyslogger
             // 
@@ -220,7 +219,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Process;
         private System.Windows.Forms.DataGridViewTextBoxColumn LogLevel;
         private System.Windows.Forms.DataGridViewTextBoxColumn Log;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ctr;
     }
 }
 
