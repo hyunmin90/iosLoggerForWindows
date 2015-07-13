@@ -28,7 +28,14 @@ namespace IosSysLogger
 
             InitializeComponent();
 
-            
+            //Allow data grid t
+            ContextMenuStrip mnu = new ContextMenuStrip();
+            ToolStripMenuItem mnuCopy = new ToolStripMenuItem("Copy");
+            ToolStripMenuItem mnuCut = new ToolStripMenuItem("Cut");
+            ToolStripMenuItem mnuPaste = new ToolStripMenuItem("Paste");
+            mnu.Items.AddRange(new ToolStripItem[] { mnuCopy, mnuCut, mnuPaste });
+            dataGridView1.ContextMenuStrip = mnu;
+
 
             this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             this.clearSearchBtn.Click += new System.EventHandler(this.clearSearchBtn_Click);
@@ -38,7 +45,15 @@ namespace IosSysLogger
             this.processlistname.SelectedIndexChanged += new System.EventHandler(this.processlistname_SelectedIndexChanged);
            
         }
-
+        public String uuidnameText
+        {
+            get { return null; }
+            set
+            {
+                if (value == null) return;
+                uuidname.AppendText(value);
+            }
+        }
         public String DeviceNameText
         {
             get { return null; }
@@ -59,7 +74,7 @@ namespace IosSysLogger
                     }
                     devicenameList.Add(deviceName);
                     devicename.Items.Add(deviceName);
-                    devicename.Items.Add("Test");
+                    //devicename.Items.Add("Test");
                     //devicename.AppendText("\n");
 
                 }
@@ -312,7 +327,7 @@ namespace IosSysLogger
                 dataGridView1.Rows[i].Visible = false;
                 dataGridView1.Rows[i].Selected = false;
             }
-            foreach (string term in checkedList)
+            foreach (string term in processlist)
             {
                 for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
                 {
@@ -324,7 +339,7 @@ namespace IosSysLogger
                     }
                 }
             }
-            checkedList.Clear();
+            processlist.Clear();
 
         }
         private void showByLogLevel()
@@ -350,17 +365,32 @@ namespace IosSysLogger
 
         }
 
-        private void updateProcessList()
+        private void showBydeviceName()
         {
-            foreach (string p in processlist)
+            for (int i = 0; i<dataGridView1.Rows.Count - 1; i++)
             {
-                MessageBox.Show(p);
-                //processname.AppendText(p+"\n");
+                dataGridView1.Rows[i].Visible = false;
+                dataGridView1.Rows[i].Selected = false;
             }
+            foreach (string term in devicenameList)
+            {
+                for (int i = 0; i<dataGridView1.Rows.Count - 1; i++)
+                {
+                    if (dataGridView1.Rows[i].Cells[1].Value == null)
+                        return;
+                    if (dataGridView1.Rows[i].Cells[1].Value.ToString().Contains(term))
+                    {
+                        dataGridView1.Rows[i].Visible = true;
+                    }
+                }
+            }
+            devicenameList.Clear();
 
         }
 
-        
+
+
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -391,7 +421,7 @@ namespace IosSysLogger
                     string selectedName = processlistname.Items[indexChecked].ToString();
                     //MessageBox.Show(selectedName);
 
-                    checkedList.Add(selectedName);
+                    processlist.Add(selectedName);
                     //MessageBox.Show("Index#: " + indexChecked.ToString() + ", is checked. Checked state is:" +
                     // devicename.GetItemCheckState(indexChecked).ToString() + ".");
                 }
@@ -442,11 +472,11 @@ namespace IosSysLogger
                     string selectedName = devicename.Items[indexChecked].ToString();
                     //MessageBox.Show(selectedName);
 
-                    checkedList.Add(selectedName);
+                    devicenameList.Add(selectedName);
                     //MessageBox.Show("Index#: " + indexChecked.ToString() + ", is checked. Checked state is:" +
                                    // devicename.GetItemCheckState(indexChecked).ToString() + ".");
                 }
-                showByProcess();
+                showBydeviceName();
             }
             
         }

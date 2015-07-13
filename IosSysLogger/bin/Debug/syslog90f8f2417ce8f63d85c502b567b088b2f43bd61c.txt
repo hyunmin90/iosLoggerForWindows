@@ -1,0 +1,1585 @@
+[connected]
+
+
+Jul 13 14:28:38 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 14:28:38 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 14:28:38 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 14:28:39 Saerom-Wang wifid[34] <Notice>: WiFi:[458458119.502180]: Device display is OFF
+Jul 13 14:28:39 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 14:28:39 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:28:43 Saerom-Wang wifid[34] <Notice>: WiFi:[458458123.322706]: Device display is ON
+Jul 13 14:28:43 Saerom-Wang wifid[34] <Notice>: WiFi:[458458123.323212]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 14:28:43 Saerom-Wang wifid[34] <Notice>: WiFi:[458458123.323556]: Auto association attempt canceled because device is not powered.
+Jul 13 14:28:43 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 14:28:43 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 14:28:43 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 14:28:43 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 14:28:43 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 14:28:43 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 14:28:44 Saerom-Wang SpringBoard[49] <Warning>: unexpected nil window in _UIApplicationHandleEventFromQueueEvent, _windowServerHitTestWindow: <SBAlertWindow: 0x16014ad10; baseClass = UIWindow; frame = (0 0; 768 1024); opaque = NO; gestureRecognizers = <NSArray: 0x171051d90>; layer = <UIWindowLayer: 0x170c37740>>
+Jul 13 14:28:44 Saerom-Wang mediaserverd[20] <Notice>: 'FigPlayer - 26' (pid = 26) setting DiscoveryMode = DiscoveryMode_None, currentDiscoveryMode = DiscoveryMode_PresenceScan
+Jul 13 14:28:44 Saerom-Wang mediaserverd[20] <Notice>: 2015-07-13 02:28:44.938857 PM [AirPlay] BTLE client stopping to browse for AirPlay Solo Target Presence.
+Jul 13 14:28:44 Saerom-Wang wirelessproxd[50] <Notice>: (Error) Failed to stop a scan - central is not powered on: 4
+Jul 13 14:28:44 Saerom-Wang mediaserverd[20] <Notice>: 2015-07-13 02:28:44.939897 PM [AirPlay] BTLE discovery removing all devices
+Jul 13 14:28:44 Saerom-Wang mediaserverd[20] <Notice>: 2015-07-13 02:28:44.940020 PM [AirPlay] BTLE discovery stopped
+Jul 13 14:28:45 Saerom-Wang SpringBoard[49] <Warning>: The view controller <SBBulletinRootViewController: 0x1602bd400> returned NO from -shouldAutorotateToInterfaceOrientation: for all interface orientations. It should support at least one orientation.
+Jul 13 14:28:48 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:28:53 Saerom-Wang wifid[34] <Notice>: WiFi:[458458133.396556]: External power source removed
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableDetect 0
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableType Detached
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: virtual IOReturn AppleUSBDeviceMux::message(UInt32, IOService *, void *) - kMessageInterfaceWasDeActivated
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: AppleUSBDeviceMux::reportStats: USB mux statistics: 
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: USB mux: 38 reads / 0 errors, 1647 writes / 0 errors
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: USB mux: 0 short packets, 0 dups
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: void AppleUSBDeviceMux::asyncWriteComplete(struct USBWriteBuffer *, IOReturn, UInt32) Error sending 141 byte packet: 0xe0004050, failing
+Jul 13 14:28:53 Saerom-Wang ptpd[941] <Notice>: PTP interface has been deactivated.
+Jul 13 14:28:54 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:29:01 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 14:29:01 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 14:29:01 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 14:29:01 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:29:01 Saerom-Wang wifid[34] <Notice>: WiFi:[458458141.983013]: Device display is OFF
+Jul 13 14:29:01 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.480633]: Received kIOMessageSystemWillSleep
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.480979]: System Sleep notification, Disabling auto-join
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.481206]: __WiFiManagerSetEnableState: state FALSE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.481492]: Disabling automatic association
+Jul 13 14:29:16 Saerom-Wang powerd[30] <Notice>: Entering Sleep state due to 'Idle Sleep': Using BATT (Charge:79%) 
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.254834 wlan0.N[10863] AppleBCMWLANCore::setPowerStateGated():   powerState 0, fStateFlags 0x20005, dev 0xffffff808b97c000 (this 0, provider 1)
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.254859 wlan0.N[10864] AppleBCMWLANCore::powerOffSystem():  : Powering Off and sleeping
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.254868 wlan0.N[10865] AppleBCMWLANCore::powerOff():  fStateFlags(20004)
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.254989 wlan0.A[10866] AppleBCMWLANBGScanManager::configurePrivateMACForBGScans(): BG-SCAN PRIVATE MAC 9e a6 c3 7 88 42
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Error>: _dispatchDriverAvailable: available 0, reason -528345084, subreason 0
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.547438]: __WiFiDeviceCopyLinkChangedSubReasonString: Apple80211ReturnToString failed 1
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.547847]: __WiFiDeviceProcessDriverAvailableEvent: driver availability FALSE, reason PowerOff(0xe0821804), subreason (null)(0x0)
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.549436]: WiFiAWDManagerSubmitMetric: metric container could not be generated for metric id <0x9000e>
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.290464 wlan0.N[10867] AppleBCMWLANCore::setPowerStateGated():   powerState 0, fStateFlags 0x20000, dev 0xffffff808ba31000 (this 1, provider 0)
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - msg = 3758096912
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleCS42L81Audio::disableAudio: CS42L81_CODECIntStatus_PDN_DONE bit not read previously
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleSEP: sleep ART ready, saving
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ART: 30 5f 02 01 00 30 38 02 03 01 34 8f 04 14 4e c5 52 d1 b2 c4 09 9d 79 d8 f4 c4 80 ba 1f bd 46 72 3d f6 04 14 2d 5e 43 bb 08 62 fd 5a 73 d2 3a de 85 60 4e 3f 56 30 50 ec 04 00 31 03 c0 01 00 04 20 ff 8c 85 5d d4 c6 c4 0e 21 ab 01 bf 8e eb 0e 41 d2 d6 2b 18 6c fb ff b8 89 94 ed 9d 10 f2 ea 40 
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - msg = 0
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - kSEPNotifyOK2Sleep
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleSEPManager::powerStateChange type(2) to(0) async took 220 ms
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ASPStorage::powerStateChange type(2) to(0) async took 220 ms
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleS5L8960XPerformanceController::_restorePMGRState: _pcPSRegs[2]=> 0x0
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleS5L8960XPerformanceController::_restorePMGRState: _pcPSRegs[1]=> 0x1C0706
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleS5L8960XPerformanceController::_restorePMGRState: _pcPSRegs[0]=> 0x68081B8
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: 047514.641937 wlan0.N[10868] AppleBCMWLANCore::setPowerStateGated():   powerState 1, fStateFlags 0x20000, dev 0xffffff808ba31000 (this 1, provider 0)
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: 047514.641950 wlan0.N[10869] AppleBCMWLANCore::powerOnSystem():  : Powering On
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: 047514.641955 wlan0.N[10870] AppleBCMWLANCore::powerOn():  stateFlags(20001)
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.566047]: Received kIOMessageSystemWillPowerOn
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.567103]: System wake reason: rtc
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.567318]: System Powered ON notification Re-enabling auto-join
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.567824]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.568012]: Enabling automatic association
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.568347]: Auto association attempt canceled because device is not powered.
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.570796]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.572205]: new locale:  , locale: 
+Jul 13 14:50:15 Saerom-Wang discoveryd[51] <Notice>: Basic DNSResolver UDNSServer:: PowerState is Wakeup
+Jul 13 14:50:15 Saerom-Wang powerd[30] <Notice>: 
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: sleeping waiting for endpoint to wake up again.
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: AppleSEPManager::powerStateChange type(2) to(1) async took 58 ms
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - msg = 3758096944
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - msg = 1
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - kSEPNotifyOK2Wrap
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: 047514.846160 wlan0.A[10871] AppleBCMWLANBGScanManager::configurePrivateMACForBGScans(): BG-SCAN PRIVATE MAC e2 6c 1a ef 61 da
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: AppleBCMWLANCore::powerStateChange type(2) to(1) async took 204 ms
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: system wake events:rtc
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Error>: _dispatchDriverAvailable: available 1, reason -528345085, subreason 0
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.770178]: __WiFiDeviceCopyLinkChangedSubReasonString: Apple80211ReturnToString failed 1
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.770465]: __WiFiDeviceProcessDriverAvailableEvent: driver availability TRUE, reason Initializing(0xe0821803), subreason (null)(0x0)
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.772145]: Auto association attempt canceled because device is not powered.
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.772560]: WiFiAWDManagerSubmitMetric: metric container could not be generated for metric id <0x9000e>
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.774003]: Beginning command queue flush with error 82
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.774602]: Finished command queue flush with error 82
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.774880]: scanCache: Purging scan cache
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.775108]: gasCache: Purging GAS cache
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.775387]: Auto association attempt canceled because device is not powered.
+Jul 13 14:50:15 Saerom-Wang powerd[30] <Notice>: Wake [CDNVA] due to /: Using BATT (Charge:79%)
+Jul 13 14:50:15 Saerom-Wang powerd[30] <Notice>: 
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableDetect 1
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableType USBHost
+Jul 13 14:50:15 Saerom-Wang discoveryd[51] <Notice>: Basic DNSResolver UDNSServer:: PowerState is Wakeup
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.920129]: External power source attached
+Jul 13 14:50:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458459416.017248]: Device display is ON
+Jul 13 14:50:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458459416.017692]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 14:50:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458459416.018137]: Auto association attempt canceled because device is not powered.
+Jul 13 14:50:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 14:50:16 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 14:50:16 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 14:50:16 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 14:50:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 14:50:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 14:50:16 Saerom-Wang ptpd[942] <Error>: ptpd: startResponder
+Jul 13 14:50:16 Saerom-Wang ptpd[942] <Notice>: Photo library available
+Jul 13 14:50:16 Saerom-Wang ptpd[942] <Notice>: PTP interface has been activated at high speed.
+Jul 13 14:50:17 Saerom-Wang installd[917] <Notice>: 0x10048c000 -[MIClientConnection lookupUninstalledWithOptions:completion:]: Lookup uninstalled requested by atc (pid 919) with options (null)
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Received time 07/13/2015 05:50:13짹60.00 from "MobileLockdown"
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Want active time in 1193.82min. Need active time in 3345.10min. Remaining retry interval: 0.000000min.
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Setting system time to 2015-07-13 05:50:17 +0000 from TMTimeFilter
+Jul 13 14:50:17 Saerom-Wang UserEventAgent[250] <Warning>: BTA <ERROR>: validateAndAddDefaults(com.apple.timed): End Time (inf) > now (458459417.9) + BACKGROUND_TASK_AGENT_JOB_WINDOW_MAX_TIME_FROM_NOW_SEC (3024000.0) + BACKGROUND_TASK_AGENT_JOB_TIME_ERROR_MARGIN (300.0)
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Error) CoreTime: Error requesting proactive time check job
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Current mcc: '0' simulated:'0'.
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "MobileLockdown" with mcc 0
+Jul 13 14:50:20 Saerom-Wang lockdownd[63] <Error>: CFStringGetCString error in locklog
+Jul 13 14:50:20 Saerom-Wang CLTM[250] <Notice>: CLTM: resetting temps: now = 1436766620, last update = 1436765356
+Jul 13 14:50:21 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:50:22 Saerom-Wang installd[917] <Error>: 0x1006c4000 +[MIContainer allContainersForIdentifier:options:error:]: Failed to find app with bundle ID com.apple.bird.SharedPackageExtensions
+Jul 13 14:50:22 Saerom-Wang mobile_assertion_agent[914] <Notice>: service_one_connection: Connection closed for client (null).
+Jul 13 14:50:23 Saerom-Wang ReportCrash[944] <Error>: task_set_exception_ports(B07, 400, D03, 0, 0) failed with error (4: (os/kern) invalid argument)
+Jul 13 14:50:23 Saerom-Wang ReportCrash[944] <Notice>: ReportCrash acting against PID 928
+Jul 13 14:50:23 Saerom-Wang ReportCrash[944] <Notice>: Formulating crash report for process CacheDeleteAppContainerCaches[928]
+Jul 13 14:50:25 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 14:50:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 14:50:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 14:50:25 Saerom-Wang wifid[34] <Notice>: WiFi:[458459425.813617]: Device display is OFF
+Jul 13 14:50:25 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 14:50:25 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:50:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459438.782839]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:50:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459438.783257]: new locale:  , locale: 
+Jul 13 14:51:47 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 14:52:01 Saerom-Wang syncdefaultsd[946] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "opportunistic" on <APSConnection: 0x135619e30>
+Jul 13 14:52:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459558.784728]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:52:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459558.785172]: new locale:  , locale: 
+Jul 13 14:54:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 14:54:02 Saerom-Wang syncdefaultsd[946] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "opportunistic" on <APSConnection: 0x135619e30>
+Jul 13 14:54:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459678.782838]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:54:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459678.783266]: new locale:  , locale: 
+Jul 13 14:56:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459798.782848]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:56:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459798.783389]: new locale:  , locale: 
+Jul 13 14:57:48 Saerom-Wang apsd[88] <Warning>: Silent Push: Deny app no resources reason: cell quality 0 wifi quality 0 .
+Jul 13 14:58:24 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 14:58:24 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 14:58:24 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 14:58:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459918.782848]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:58:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459918.783299]: new locale:  , locale: 
+Jul 13 14:59:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 14:59:24 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:00:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460038.782846]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:00:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460038.783285]: new locale:  , locale: 
+Jul 13 15:02:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460158.783078]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:02:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460158.783496]: new locale:  , locale: 
+Jul 13 15:04:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:04:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460278.782870]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:04:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460278.783332]: new locale:  , locale: 
+Jul 13 15:05:18 Saerom-Wang apsd[88] <Warning>: Silent Push: Deny app no resources reason: cell quality 0 wifi quality 0 .
+Jul 13 15:06:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460398.782841]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:06:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460398.783267]: new locale:  , locale: 
+Jul 13 15:08:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460518.782846]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:08:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460518.783276]: new locale:  , locale: 
+Jul 13 15:09:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:10:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460638.782848]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:10:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460638.783268]: new locale:  , locale: 
+Jul 13 15:11:25 Saerom-Wang wifid[34] <Notice>: WiFi:[458460685.900999]: BG Application: Not Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:11:25 Saerom-Wang wifid[34] <Notice>: WiFi:[458460685.903268]: BG Application: Not Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:12:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460758.782939]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:12:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460758.783378]: new locale:  , locale: 
+Jul 13 15:14:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:14:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460878.782844]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:14:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460878.783274]: new locale:  , locale: 
+Jul 13 15:16:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460998.782867]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:16:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460998.783300]: new locale:  , locale: 
+Jul 13 15:18:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461118.764477]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:18:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461118.764908]: new locale:  , locale: 
+Jul 13 15:19:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:20:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461238.764479]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:20:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461238.764913]: new locale:  , locale: 
+Jul 13 15:21:38 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:22:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461358.764471]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:22:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461358.764927]: new locale:  , locale: 
+Jul 13 15:24:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:24:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461478.764478]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:24:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461478.764917]: new locale:  , locale: 
+Jul 13 15:26:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461598.764481]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:26:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461598.764918]: new locale:  , locale: 
+Jul 13 15:28:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461718.764477]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:28:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461718.764909]: new locale:  , locale: 
+Jul 13 15:29:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:30:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461838.764508]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:30:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461838.764926]: new locale:  , locale: 
+Jul 13 15:31:29 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:31:43 Saerom-Wang wifid[34] <Notice>: WiFi:[458461903.379173]: Device display is ON
+Jul 13 15:31:43 Saerom-Wang wifid[34] <Notice>: WiFi:[458461903.379592]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:31:43 Saerom-Wang wifid[34] <Notice>: WiFi:[458461903.380012]: Auto association attempt canceled because device is not powered.
+Jul 13 15:31:43 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:31:43 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:31:43 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:31:43 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:31:43 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:31:43 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:31:48 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:31:52 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:31:52 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:31:52 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:31:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458461912.955925]: Device display is OFF
+Jul 13 15:31:52 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:31:52 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:32:06 Saerom-Wang locationd[56] <Notice>: Starting gyro calibration, user initiated, 0
+Jul 13 15:32:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461958.765038]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:32:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461958.765287]: new locale:  , locale: 
+Jul 13 15:34:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:34:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462078.764389]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:34:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462078.764659]: new locale:  , locale: 
+Jul 13 15:35:18 Saerom-Wang apsd[88] <Warning>: Silent Push: Deny app no resources reason: cell quality 0 wifi quality 0 .
+Jul 13 15:35:19 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:36:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462198.764787]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:36:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462198.765035]: new locale:  , locale: 
+Jul 13 15:38:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462318.765238]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:38:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462318.765500]: new locale:  , locale: 
+Jul 13 15:39:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:39:20 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 15:39:20 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:39:30 Saerom-Wang wifid[34] <Notice>: WiFi:[458462370.061215]: Device display is ON
+Jul 13 15:39:30 Saerom-Wang wifid[34] <Notice>: WiFi:[458462370.061517]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:39:30 Saerom-Wang wifid[34] <Notice>: WiFi:[458462370.061780]: Auto association attempt canceled because device is not powered.
+Jul 13 15:39:30 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:39:30 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:39:30 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:39:30 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:39:30 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:39:30 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:39:34 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->3
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.528968]: ATJManager: setting ask-to-join interaction mode to Interactive
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.529227]: ATJManager: no entries to purge
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.529355]: Device is UNLOCKED
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.531630]: Ignoring lock state
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.531913]: problematic networks =  and potentially problematic networks = 
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.532113]: Unblacklisting
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.532290]: Device NOT POWERED. Skip programming Background Scan
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.532466]: Auto association attempt canceled because device is not powered.
+Jul 13 15:39:34 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:39:40 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:39:58 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:39:58 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:39:58 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 3->255
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.866299]: ATJManager: setting ask-to-join interaction mode to NonInteractive
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.866682]: ATJManager: no entries to purge
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.866915]: Device is LOCKED
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.867040]: Ignoring lock state
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.919755]: Device display is OFF
+Jul 13 15:39:58 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:39:59 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:39:59 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:39:59 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:39:59 Saerom-Wang wifid[34] <Notice>: WiFi:[458462399.364428]: Device display is ON
+Jul 13 15:39:59 Saerom-Wang wifid[34] <Notice>: WiFi:[458462399.364796]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:39:59 Saerom-Wang wifid[34] <Notice>: WiFi:[458462399.365050]: Auto association attempt canceled because device is not powered.
+Jul 13 15:39:59 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:39:59 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:39:59 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:39:59 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:39:59 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:39:59 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:00 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:00 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:00 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:00 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:00 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:00 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:00 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:00 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:00 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:01 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:01 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:01 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:02 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:02 Saerom-Wang wifid[34] <Notice>: WiFi:[458462402.110577]: Device display is OFF
+Jul 13 15:40:02 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:02 Saerom-Wang wifid[34] <Notice>: WiFi:[458462402.832493]: Device display is ON
+Jul 13 15:40:02 Saerom-Wang wifid[34] <Notice>: WiFi:[458462402.832818]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:02 Saerom-Wang wifid[34] <Notice>: WiFi:[458462402.833062]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:02 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:02 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:02 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:03 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:03 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:03 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:03 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:03 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:03 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:04 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:04 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:05 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:05 Saerom-Wang wifid[34] <Notice>: WiFi:[458462405.514024]: Device display is OFF
+Jul 13 15:40:05 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:10 Saerom-Wang locationd[56] <Notice>: Stopped sensor calibration, fState, 2, successful, 1
+Jul 13 15:40:10 Saerom-Wang locationd[56] <Notice>: Stopped gyro calibration
+Jul 13 15:40:11 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 15:40:11 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:40:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458462415.806067]: Device display is ON
+Jul 13 15:40:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458462415.806457]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458462415.806751]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:15 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:15 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:15 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:15 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:16 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:16 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:16 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458462416.986428]: Device display is OFF
+Jul 13 15:40:16 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:24 Saerom-Wang wifid[34] <Notice>: WiFi:[458462424.890239]: Device display is ON
+Jul 13 15:40:24 Saerom-Wang wifid[34] <Notice>: WiFi:[458462424.890699]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:24 Saerom-Wang wifid[34] <Notice>: WiFi:[458462424.890995]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:24 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:25 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:25 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:25 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:26 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:26 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:26 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:26 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:26 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:27 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:27 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:27 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:27 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:27 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:27 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:27 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:27 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:27 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:28 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:28 Saerom-Wang wifid[34] <Notice>: WiFi:[458462428.157367]: Device display is OFF
+Jul 13 15:40:28 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.537242]: Background Network Application entered
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.537722]: BG Application: Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.538311]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.538600]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.540731]: Background Network Application entered
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.541053]: BG Application: Not Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.541318]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.541573]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462438.764529]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:40:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462438.765065]: new locale:  , locale: 
+Jul 13 15:40:40 Saerom-Wang wifid[34] <Notice>: WiFi:[458462440.804032]: Device display is ON
+Jul 13 15:40:40 Saerom-Wang wifid[34] <Notice>: WiFi:[458462440.804455]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:40 Saerom-Wang wifid[34] <Notice>: WiFi:[458462440.804770]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:40 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:40 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:40 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:40 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:41 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:41 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:46 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:51 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->3
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202404]: ATJManager: setting ask-to-join interaction mode to Interactive
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202635]: ATJManager: no entries to purge
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202737]: Device is UNLOCKED
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202831]: Ignoring lock state
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202927]: problematic networks =  and potentially problematic networks = 
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.203043]: Unblacklisting
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.203149]: Device NOT POWERED. Skip programming Background Scan
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.203256]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:51 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:51 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:51 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:51 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 3->255
+Jul 13 15:40:51 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.801233]: Device display is OFF
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.159489]: ATJManager: setting ask-to-join interaction mode to NonInteractive
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.159845]: ATJManager: no entries to purge
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.160031]: Device is LOCKED
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.160189]: Ignoring lock state
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.482380]: Device display is ON
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.482775]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.483310]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:52 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:52 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:52 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:52 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:52 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:52 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:53 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:53 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:53 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:53 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:53 Saerom-Wang wifid[34] <Notice>: WiFi:[458462453.650573]: Device display is OFF
+Jul 13 15:40:53 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:41:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458462476.942646]: Device display is ON
+Jul 13 15:41:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458462476.943153]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:41:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458462476.943441]: Auto association attempt canceled because device is not powered.
+Jul 13 15:41:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:41:17 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:41:17 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:41:17 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:41:17 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:41:17 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:41:17 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:41:17 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:41:17 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:41:18 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:41:18 Saerom-Wang wifid[34] <Notice>: WiFi:[458462478.130633]: Device display is OFF
+Jul 13 15:41:18 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.208481]: Background Network Application entered
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.209295]: BG Application: Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.209671]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.210064]: Auto association attempt canceled because device is not powered.
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.212676]: Background Network Application entered
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.212988]: BG Application: Not Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.213257]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.213510]: Auto association attempt canceled because device is not powered.
+Jul 13 15:42:04 Saerom-Wang wifid[34] <Notice>: WiFi:[458462524.022987]: Device display is ON
+Jul 13 15:42:04 Saerom-Wang wifid[34] <Notice>: WiFi:[458462524.023385]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:42:04 Saerom-Wang wifid[34] <Notice>: WiFi:[458462524.023693]: Auto association attempt canceled because device is not powered.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:04 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:04 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:04 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:04 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:05 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:05 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:05 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:06 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:06 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:12 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:12 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:12 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:12 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:12 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:12 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:13 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:13 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:13 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:13 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:13 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->255
+Jul 13 15:42:13 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:13 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:14 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:14 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:14 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:14 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:14 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:14 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:42:14 Saerom-Wang wifid[34] <Notice>: WiFi:[458462534.792980]: Device display is OFF
+Jul 13 15:42:14 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462558.764508]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:42:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462558.764938]: new locale:  , locale: 
+Jul 13 15:43:05 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:44:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:44:05 Saerom-Wang wifid[34] <Notice>: WiFi:[458462645.869949]: Device display is ON
+Jul 13 15:44:05 Saerom-Wang wifid[34] <Notice>: WiFi:[458462645.870343]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:44:05 Saerom-Wang wifid[34] <Notice>: WiFi:[458462645.870662]: Auto association attempt canceled because device is not powered.
+Jul 13 15:44:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:44:05 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:44:06 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:44:06 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:44:06 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:44:06 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:44:15 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:44:15 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:44:15 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:44:15 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:44:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458462655.898252]: Device display is OFF
+Jul 13 15:44:15 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:44:15 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:44:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462678.764480]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:44:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462678.764910]: new locale:  , locale: 
+Jul 13 15:46:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462798.764508]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:46:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462798.764961]: new locale:  , locale: 
+[connected]
+
+
+Jul 13 14:28:48 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:28:53 Saerom-Wang wifid[34] <Notice>: WiFi:[458458133.396556]: External power source removed
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableDetect 0
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableType Detached
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: virtual IOReturn AppleUSBDeviceMux::message(UInt32, IOService *, void *) - kMessageInterfaceWasDeActivated
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: AppleUSBDeviceMux::reportStats: USB mux statistics: 
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: USB mux: 38 reads / 0 errors, 1647 writes / 0 errors
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: USB mux: 0 short packets, 0 dups
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: void AppleUSBDeviceMux::asyncWriteComplete(struct USBWriteBuffer *, IOReturn, UInt32) Error sending 141 byte packet: 0xe0004050, failing
+Jul 13 14:28:53 Saerom-Wang ptpd[941] <Notice>: PTP interface has been deactivated.
+Jul 13 14:28:54 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:29:01 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 14:29:01 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 14:29:01 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 14:29:01 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:29:01 Saerom-Wang wifid[34] <Notice>: WiFi:[458458141.983013]: Device display is OFF
+Jul 13 14:29:01 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.480633]: Received kIOMessageSystemWillSleep
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.480979]: System Sleep notification, Disabling auto-join
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.481206]: __WiFiManagerSetEnableState: state FALSE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.481492]: Disabling automatic association
+Jul 13 14:29:16 Saerom-Wang powerd[30] <Notice>: Entering Sleep state due to 'Idle Sleep': Using BATT (Charge:79%) 
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.254834 wlan0.N[10863] AppleBCMWLANCore::setPowerStateGated():   powerState 0, fStateFlags 0x20005, dev 0xffffff808b97c000 (this 0, provider 1)
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.254859 wlan0.N[10864] AppleBCMWLANCore::powerOffSystem():  : Powering Off and sleeping
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.254868 wlan0.N[10865] AppleBCMWLANCore::powerOff():  fStateFlags(20004)
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.254989 wlan0.A[10866] AppleBCMWLANBGScanManager::configurePrivateMACForBGScans(): BG-SCAN PRIVATE MAC 9e a6 c3 7 88 42
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Error>: _dispatchDriverAvailable: available 0, reason -528345084, subreason 0
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.547438]: __WiFiDeviceCopyLinkChangedSubReasonString: Apple80211ReturnToString failed 1
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.547847]: __WiFiDeviceProcessDriverAvailableEvent: driver availability FALSE, reason PowerOff(0xe0821804), subreason (null)(0x0)
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.549436]: WiFiAWDManagerSubmitMetric: metric container could not be generated for metric id <0x9000e>
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.290464 wlan0.N[10867] AppleBCMWLANCore::setPowerStateGated():   powerState 0, fStateFlags 0x20000, dev 0xffffff808ba31000 (this 1, provider 0)
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - msg = 3758096912
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleCS42L81Audio::disableAudio: CS42L81_CODECIntStatus_PDN_DONE bit not read previously
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleSEP: sleep ART ready, saving
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ART: 30 5f 02 01 00 30 38 02 03 01 34 8f 04 14 4e c5 52 d1 b2 c4 09 9d 79 d8 f4 c4 80 ba 1f bd 46 72 3d f6 04 14 2d 5e 43 bb 08 62 fd 5a 73 d2 3a de 85 60 4e 3f 56 30 50 ec 04 00 31 03 c0 01 00 04 20 ff 8c 85 5d d4 c6 c4 0e 21 ab 01 bf 8e eb 0e 41 d2 d6 2b 18 6c fb ff b8 89 94 ed 9d 10 f2 ea 40 
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - msg = 0
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - kSEPNotifyOK2Sleep
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleSEPManager::powerStateChange type(2) to(0) async took 220 ms
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ASPStorage::powerStateChange type(2) to(0) async took 220 ms
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleS5L8960XPerformanceController::_restorePMGRState: _pcPSRegs[2]=> 0x0
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleS5L8960XPerformanceController::_restorePMGRState: _pcPSRegs[1]=> 0x1C0706
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleS5L8960XPerformanceController::_restorePMGRState: _pcPSRegs[0]=> 0x68081B8
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: 047514.641937 wlan0.N[10868] AppleBCMWLANCore::setPowerStateGated():   powerState 1, fStateFlags 0x20000, dev 0xffffff808ba31000 (this 1, provider 0)
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: 047514.641950 wlan0.N[10869] AppleBCMWLANCore::powerOnSystem():  : Powering On
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: 047514.641955 wlan0.N[10870] AppleBCMWLANCore::powerOn():  stateFlags(20001)
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.566047]: Received kIOMessageSystemWillPowerOn
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.567103]: System wake reason: rtc
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.567318]: System Powered ON notification Re-enabling auto-join
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.567824]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.568012]: Enabling automatic association
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.568347]: Auto association attempt canceled because device is not powered.
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.570796]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.572205]: new locale:  , locale: 
+Jul 13 14:50:15 Saerom-Wang discoveryd[51] <Notice>: Basic DNSResolver UDNSServer:: PowerState is Wakeup
+Jul 13 14:50:15 Saerom-Wang powerd[30] <Notice>: 
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: sleeping waiting for endpoint to wake up again.
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: AppleSEPManager::powerStateChange type(2) to(1) async took 58 ms
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - msg = 3758096944
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - msg = 1
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - kSEPNotifyOK2Wrap
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: 047514.846160 wlan0.A[10871] AppleBCMWLANBGScanManager::configurePrivateMACForBGScans(): BG-SCAN PRIVATE MAC e2 6c 1a ef 61 da
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: AppleBCMWLANCore::powerStateChange type(2) to(1) async took 204 ms
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: system wake events:rtc
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Error>: _dispatchDriverAvailable: available 1, reason -528345085, subreason 0
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.770178]: __WiFiDeviceCopyLinkChangedSubReasonString: Apple80211ReturnToString failed 1
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.770465]: __WiFiDeviceProcessDriverAvailableEvent: driver availability TRUE, reason Initializing(0xe0821803), subreason (null)(0x0)
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.772145]: Auto association attempt canceled because device is not powered.
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.772560]: WiFiAWDManagerSubmitMetric: metric container could not be generated for metric id <0x9000e>
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.774003]: Beginning command queue flush with error 82
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.774602]: Finished command queue flush with error 82
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.774880]: scanCache: Purging scan cache
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.775108]: gasCache: Purging GAS cache
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.775387]: Auto association attempt canceled because device is not powered.
+Jul 13 14:50:15 Saerom-Wang powerd[30] <Notice>: Wake [CDNVA] due to /: Using BATT (Charge:79%)
+Jul 13 14:50:15 Saerom-Wang powerd[30] <Notice>: 
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableDetect 1
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableType USBHost
+Jul 13 14:50:15 Saerom-Wang discoveryd[51] <Notice>: Basic DNSResolver UDNSServer:: PowerState is Wakeup
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.920129]: External power source attached
+Jul 13 14:50:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458459416.017248]: Device display is ON
+Jul 13 14:50:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458459416.017692]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 14:50:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458459416.018137]: Auto association attempt canceled because device is not powered.
+Jul 13 14:50:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 14:50:16 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 14:50:16 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 14:50:16 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 14:50:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 14:50:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 14:50:16 Saerom-Wang ptpd[942] <Error>: ptpd: startResponder
+Jul 13 14:50:16 Saerom-Wang ptpd[942] <Notice>: Photo library available
+Jul 13 14:50:16 Saerom-Wang ptpd[942] <Notice>: PTP interface has been activated at high speed.
+Jul 13 14:50:17 Saerom-Wang installd[917] <Notice>: 0x10048c000 -[MIClientConnection lookupUninstalledWithOptions:completion:]: Lookup uninstalled requested by atc (pid 919) with options (null)
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Received time 07/13/2015 05:50:13짹60.00 from "MobileLockdown"
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Want active time in 1193.82min. Need active time in 3345.10min. Remaining retry interval: 0.000000min.
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Setting system time to 2015-07-13 05:50:17 +0000 from TMTimeFilter
+Jul 13 14:50:17 Saerom-Wang UserEventAgent[250] <Warning>: BTA <ERROR>: validateAndAddDefaults(com.apple.timed): End Time (inf) > now (458459417.9) + BACKGROUND_TASK_AGENT_JOB_WINDOW_MAX_TIME_FROM_NOW_SEC (3024000.0) + BACKGROUND_TASK_AGENT_JOB_TIME_ERROR_MARGIN (300.0)
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Error) CoreTime: Error requesting proactive time check job
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Current mcc: '0' simulated:'0'.
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "MobileLockdown" with mcc 0
+Jul 13 14:50:20 Saerom-Wang lockdownd[63] <Error>: CFStringGetCString error in locklog
+Jul 13 14:50:20 Saerom-Wang CLTM[250] <Notice>: CLTM: resetting temps: now = 1436766620, last update = 1436765356
+Jul 13 14:50:21 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:50:22 Saerom-Wang installd[917] <Error>: 0x1006c4000 +[MIContainer allContainersForIdentifier:options:error:]: Failed to find app with bundle ID com.apple.bird.SharedPackageExtensions
+Jul 13 14:50:22 Saerom-Wang mobile_assertion_agent[914] <Notice>: service_one_connection: Connection closed for client (null).
+Jul 13 14:50:23 Saerom-Wang ReportCrash[944] <Error>: task_set_exception_ports(B07, 400, D03, 0, 0) failed with error (4: (os/kern) invalid argument)
+Jul 13 14:50:23 Saerom-Wang ReportCrash[944] <Notice>: ReportCrash acting against PID 928
+Jul 13 14:50:23 Saerom-Wang ReportCrash[944] <Notice>: Formulating crash report for process CacheDeleteAppContainerCaches[928]
+Jul 13 14:50:25 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 14:50:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 14:50:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 14:50:25 Saerom-Wang wifid[34] <Notice>: WiFi:[458459425.813617]: Device display is OFF
+Jul 13 14:50:25 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 14:50:25 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:50:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459438.782839]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:50:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459438.783257]: new locale:  , locale: 
+Jul 13 14:51:47 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 14:52:01 Saerom-Wang syncdefaultsd[946] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "opportunistic" on <APSConnection: 0x135619e30>
+Jul 13 14:52:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459558.784728]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:52:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459558.785172]: new locale:  , locale: 
+Jul 13 14:54:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 14:54:02 Saerom-Wang syncdefaultsd[946] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "opportunistic" on <APSConnection: 0x135619e30>
+Jul 13 14:54:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459678.782838]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:54:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459678.783266]: new locale:  , locale: 
+Jul 13 14:56:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459798.782848]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:56:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459798.783389]: new locale:  , locale: 
+Jul 13 14:57:48 Saerom-Wang apsd[88] <Warning>: Silent Push: Deny app no resources reason: cell quality 0 wifi quality 0 .
+Jul 13 14:58:24 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 14:58:24 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 14:58:24 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 14:58:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459918.782848]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:58:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459918.783299]: new locale:  , locale: 
+Jul 13 14:59:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 14:59:24 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:00:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460038.782846]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:00:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460038.783285]: new locale:  , locale: 
+Jul 13 15:02:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460158.783078]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:02:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460158.783496]: new locale:  , locale: 
+Jul 13 15:04:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:04:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460278.782870]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:04:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460278.783332]: new locale:  , locale: 
+Jul 13 15:05:18 Saerom-Wang apsd[88] <Warning>: Silent Push: Deny app no resources reason: cell quality 0 wifi quality 0 .
+Jul 13 15:06:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460398.782841]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:06:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460398.783267]: new locale:  , locale: 
+Jul 13 15:08:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460518.782846]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:08:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460518.783276]: new locale:  , locale: 
+Jul 13 15:09:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:10:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460638.782848]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:10:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460638.783268]: new locale:  , locale: 
+Jul 13 15:11:25 Saerom-Wang wifid[34] <Notice>: WiFi:[458460685.900999]: BG Application: Not Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:11:25 Saerom-Wang wifid[34] <Notice>: WiFi:[458460685.903268]: BG Application: Not Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:12:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460758.782939]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:12:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460758.783378]: new locale:  , locale: 
+Jul 13 15:14:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:14:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460878.782844]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:14:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460878.783274]: new locale:  , locale: 
+Jul 13 15:16:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460998.782867]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:16:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460998.783300]: new locale:  , locale: 
+Jul 13 15:18:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461118.764477]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:18:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461118.764908]: new locale:  , locale: 
+Jul 13 15:19:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:20:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461238.764479]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:20:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461238.764913]: new locale:  , locale: 
+Jul 13 15:21:38 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:22:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461358.764471]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:22:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461358.764927]: new locale:  , locale: 
+Jul 13 15:24:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:24:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461478.764478]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:24:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461478.764917]: new locale:  , locale: 
+Jul 13 15:26:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461598.764481]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:26:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461598.764918]: new locale:  , locale: 
+Jul 13 15:28:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461718.764477]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:28:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461718.764909]: new locale:  , locale: 
+Jul 13 15:29:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:30:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461838.764508]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:30:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461838.764926]: new locale:  , locale: 
+Jul 13 15:31:29 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:31:43 Saerom-Wang wifid[34] <Notice>: WiFi:[458461903.379173]: Device display is ON
+Jul 13 15:31:43 Saerom-Wang wifid[34] <Notice>: WiFi:[458461903.379592]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:31:43 Saerom-Wang wifid[34] <Notice>: WiFi:[458461903.380012]: Auto association attempt canceled because device is not powered.
+Jul 13 15:31:43 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:31:43 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:31:43 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:31:43 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:31:43 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:31:43 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:31:48 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:31:52 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:31:52 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:31:52 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:31:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458461912.955925]: Device display is OFF
+Jul 13 15:31:52 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:31:52 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:32:06 Saerom-Wang locationd[56] <Notice>: Starting gyro calibration, user initiated, 0
+Jul 13 15:32:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461958.765038]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:32:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461958.765287]: new locale:  , locale: 
+Jul 13 15:34:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:34:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462078.764389]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:34:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462078.764659]: new locale:  , locale: 
+Jul 13 15:35:18 Saerom-Wang apsd[88] <Warning>: Silent Push: Deny app no resources reason: cell quality 0 wifi quality 0 .
+Jul 13 15:35:19 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:36:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462198.764787]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:36:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462198.765035]: new locale:  , locale: 
+Jul 13 15:38:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462318.765238]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:38:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462318.765500]: new locale:  , locale: 
+Jul 13 15:39:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:39:20 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 15:39:20 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:39:30 Saerom-Wang wifid[34] <Notice>: WiFi:[458462370.061215]: Device display is ON
+Jul 13 15:39:30 Saerom-Wang wifid[34] <Notice>: WiFi:[458462370.061517]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:39:30 Saerom-Wang wifid[34] <Notice>: WiFi:[458462370.061780]: Auto association attempt canceled because device is not powered.
+Jul 13 15:39:30 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:39:30 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:39:30 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:39:30 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:39:30 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:39:30 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:39:34 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->3
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.528968]: ATJManager: setting ask-to-join interaction mode to Interactive
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.529227]: ATJManager: no entries to purge
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.529355]: Device is UNLOCKED
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.531630]: Ignoring lock state
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.531913]: problematic networks =  and potentially problematic networks = 
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.532113]: Unblacklisting
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.532290]: Device NOT POWERED. Skip programming Background Scan
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.532466]: Auto association attempt canceled because device is not powered.
+Jul 13 15:39:34 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:39:40 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:39:58 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:39:58 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:39:58 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 3->255
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.866299]: ATJManager: setting ask-to-join interaction mode to NonInteractive
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.866682]: ATJManager: no entries to purge
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.866915]: Device is LOCKED
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.867040]: Ignoring lock state
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.919755]: Device display is OFF
+Jul 13 15:39:58 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:39:59 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:39:59 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:39:59 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:39:59 Saerom-Wang wifid[34] <Notice>: WiFi:[458462399.364428]: Device display is ON
+Jul 13 15:39:59 Saerom-Wang wifid[34] <Notice>: WiFi:[458462399.364796]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:39:59 Saerom-Wang wifid[34] <Notice>: WiFi:[458462399.365050]: Auto association attempt canceled because device is not powered.
+Jul 13 15:39:59 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:39:59 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:39:59 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:39:59 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:39:59 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:39:59 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:00 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:00 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:00 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:00 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:00 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:00 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:00 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:00 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:00 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:01 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:01 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:01 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:02 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:02 Saerom-Wang wifid[34] <Notice>: WiFi:[458462402.110577]: Device display is OFF
+Jul 13 15:40:02 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:02 Saerom-Wang wifid[34] <Notice>: WiFi:[458462402.832493]: Device display is ON
+Jul 13 15:40:02 Saerom-Wang wifid[34] <Notice>: WiFi:[458462402.832818]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:02 Saerom-Wang wifid[34] <Notice>: WiFi:[458462402.833062]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:02 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:02 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:02 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:03 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:03 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:03 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:03 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:03 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:03 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:04 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:04 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:05 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:05 Saerom-Wang wifid[34] <Notice>: WiFi:[458462405.514024]: Device display is OFF
+Jul 13 15:40:05 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:10 Saerom-Wang locationd[56] <Notice>: Stopped sensor calibration, fState, 2, successful, 1
+Jul 13 15:40:10 Saerom-Wang locationd[56] <Notice>: Stopped gyro calibration
+Jul 13 15:40:11 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 15:40:11 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:40:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458462415.806067]: Device display is ON
+Jul 13 15:40:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458462415.806457]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458462415.806751]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:15 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:15 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:15 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:15 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:16 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:16 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:16 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458462416.986428]: Device display is OFF
+Jul 13 15:40:16 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:24 Saerom-Wang wifid[34] <Notice>: WiFi:[458462424.890239]: Device display is ON
+Jul 13 15:40:24 Saerom-Wang wifid[34] <Notice>: WiFi:[458462424.890699]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:24 Saerom-Wang wifid[34] <Notice>: WiFi:[458462424.890995]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:24 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:25 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:25 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:25 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:26 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:26 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:26 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:26 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:26 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:27 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:27 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:27 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:27 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:27 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:27 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:27 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:27 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:27 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:28 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:28 Saerom-Wang wifid[34] <Notice>: WiFi:[458462428.157367]: Device display is OFF
+Jul 13 15:40:28 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.537242]: Background Network Application entered
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.537722]: BG Application: Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.538311]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.538600]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.540731]: Background Network Application entered
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.541053]: BG Application: Not Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.541318]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.541573]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462438.764529]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:40:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462438.765065]: new locale:  , locale: 
+Jul 13 15:40:40 Saerom-Wang wifid[34] <Notice>: WiFi:[458462440.804032]: Device display is ON
+Jul 13 15:40:40 Saerom-Wang wifid[34] <Notice>: WiFi:[458462440.804455]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:40 Saerom-Wang wifid[34] <Notice>: WiFi:[458462440.804770]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:40 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:40 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:40 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:40 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:41 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:41 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:46 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:51 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->3
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202404]: ATJManager: setting ask-to-join interaction mode to Interactive
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202635]: ATJManager: no entries to purge
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202737]: Device is UNLOCKED
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202831]: Ignoring lock state
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202927]: problematic networks =  and potentially problematic networks = 
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.203043]: Unblacklisting
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.203149]: Device NOT POWERED. Skip programming Background Scan
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.203256]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:51 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:51 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:51 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:51 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 3->255
+Jul 13 15:40:51 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.801233]: Device display is OFF
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.159489]: ATJManager: setting ask-to-join interaction mode to NonInteractive
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.159845]: ATJManager: no entries to purge
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.160031]: Device is LOCKED
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.160189]: Ignoring lock state
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.482380]: Device display is ON
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.482775]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.483310]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:52 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:52 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:52 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:52 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:52 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:52 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:53 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:53 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:53 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:53 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:53 Saerom-Wang wifid[34] <Notice>: WiFi:[458462453.650573]: Device display is OFF
+Jul 13 15:40:53 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:41:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458462476.942646]: Device display is ON
+Jul 13 15:41:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458462476.943153]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:41:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458462476.943441]: Auto association attempt canceled because device is not powered.
+Jul 13 15:41:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:41:17 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:41:17 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:41:17 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:41:17 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:41:17 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:41:17 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:41:17 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:41:17 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:41:18 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:41:18 Saerom-Wang wifid[34] <Notice>: WiFi:[458462478.130633]: Device display is OFF
+Jul 13 15:41:18 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.208481]: Background Network Application entered
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.209295]: BG Application: Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.209671]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.210064]: Auto association attempt canceled because device is not powered.
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.212676]: Background Network Application entered
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.212988]: BG Application: Not Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.213257]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.213510]: Auto association attempt canceled because device is not powered.
+Jul 13 15:42:04 Saerom-Wang wifid[34] <Notice>: WiFi:[458462524.022987]: Device display is ON
+Jul 13 15:42:04 Saerom-Wang wifid[34] <Notice>: WiFi:[458462524.023385]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:42:04 Saerom-Wang wifid[34] <Notice>: WiFi:[458462524.023693]: Auto association attempt canceled because device is not powered.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:04 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:04 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:04 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:04 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:05 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:05 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:05 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:06 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:06 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:12 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:12 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:12 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:12 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:12 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:12 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:13 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:13 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:13 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:13 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:13 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->255
+Jul 13 15:42:13 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:13 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:14 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:14 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:14 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:14 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:14 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:14 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:42:14 Saerom-Wang wifid[34] <Notice>: WiFi:[458462534.792980]: Device display is OFF
+Jul 13 15:42:14 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462558.764508]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:42:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462558.764938]: new locale:  , locale: 
+Jul 13 15:43:05 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:44:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:44:05 Saerom-Wang wifid[34] <Notice>: WiFi:[458462645.869949]: Device display is ON
+Jul 13 15:44:05 Saerom-Wang wifid[34] <Notice>: WiFi:[458462645.870343]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:44:05 Saerom-Wang wifid[34] <Notice>: WiFi:[458462645.870662]: Auto association attempt canceled because device is not powered.
+Jul 13 15:44:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:44:05 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:44:06 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:44:06 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:44:06 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:44:06 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:44:15 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:44:15 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:44:15 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:44:15 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:44:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458462655.898252]: Device display is OFF
+Jul 13 15:44:15 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:44:15 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:44:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462678.764480]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:44:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462678.764910]: new locale:  , locale: 
+Jul 13 15:46:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462798.764508]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:46:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462798.764961]: new locale:  , locale: 
+Jul 13 15:47:50 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+[connected]
+
+
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableType Detached
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: virtual IOReturn AppleUSBDeviceMux::message(UInt32, IOService *, void *) - kMessageInterfaceWasDeActivated
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: AppleUSBDeviceMux::reportStats: USB mux statistics: 
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: USB mux: 38 reads / 0 errors, 1647 writes / 0 errors
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: USB mux: 0 short packets, 0 dups
+Jul 13 14:28:53 Saerom-Wang kernel[0] <Notice>: void AppleUSBDeviceMux::asyncWriteComplete(struct USBWriteBuffer *, IOReturn, UInt32) Error sending 141 byte packet: 0xe0004050, failing
+Jul 13 14:28:53 Saerom-Wang ptpd[941] <Notice>: PTP interface has been deactivated.
+Jul 13 14:28:54 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:29:01 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 14:29:01 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 14:29:01 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 14:29:01 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:29:01 Saerom-Wang wifid[34] <Notice>: WiFi:[458458141.983013]: Device display is OFF
+Jul 13 14:29:01 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.480633]: Received kIOMessageSystemWillSleep
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.480979]: System Sleep notification, Disabling auto-join
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.481206]: __WiFiManagerSetEnableState: state FALSE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.481492]: Disabling automatic association
+Jul 13 14:29:16 Saerom-Wang powerd[30] <Notice>: Entering Sleep state due to 'Idle Sleep': Using BATT (Charge:79%) 
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.254834 wlan0.N[10863] AppleBCMWLANCore::setPowerStateGated():   powerState 0, fStateFlags 0x20005, dev 0xffffff808b97c000 (this 0, provider 1)
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.254859 wlan0.N[10864] AppleBCMWLANCore::powerOffSystem():  : Powering Off and sleeping
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.254868 wlan0.N[10865] AppleBCMWLANCore::powerOff():  fStateFlags(20004)
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.254989 wlan0.A[10866] AppleBCMWLANBGScanManager::configurePrivateMACForBGScans(): BG-SCAN PRIVATE MAC 9e a6 c3 7 88 42
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Error>: _dispatchDriverAvailable: available 0, reason -528345084, subreason 0
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.547438]: __WiFiDeviceCopyLinkChangedSubReasonString: Apple80211ReturnToString failed 1
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.547847]: __WiFiDeviceProcessDriverAvailableEvent: driver availability FALSE, reason PowerOff(0xe0821804), subreason (null)(0x0)
+Jul 13 14:29:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458458156.549436]: WiFiAWDManagerSubmitMetric: metric container could not be generated for metric id <0x9000e>
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: 047514.290464 wlan0.N[10867] AppleBCMWLANCore::setPowerStateGated():   powerState 0, fStateFlags 0x20000, dev 0xffffff808ba31000 (this 1, provider 0)
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - msg = 3758096912
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleCS42L81Audio::disableAudio: CS42L81_CODECIntStatus_PDN_DONE bit not read previously
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleSEP: sleep ART ready, saving
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ART: 30 5f 02 01 00 30 38 02 03 01 34 8f 04 14 4e c5 52 d1 b2 c4 09 9d 79 d8 f4 c4 80 ba 1f bd 46 72 3d f6 04 14 2d 5e 43 bb 08 62 fd 5a 73 d2 3a de 85 60 4e 3f 56 30 50 ec 04 00 31 03 c0 01 00 04 20 ff 8c 85 5d d4 c6 c4 0e 21 ab 01 bf 8e eb 0e 41 d2 d6 2b 18 6c fb ff b8 89 94 ed 9d 10 f2 ea 40 
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - msg = 0
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - kSEPNotifyOK2Sleep
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleSEPManager::powerStateChange type(2) to(0) async took 220 ms
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: ASPStorage::powerStateChange type(2) to(0) async took 220 ms
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleS5L8960XPerformanceController::_restorePMGRState: _pcPSRegs[2]=> 0x0
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleS5L8960XPerformanceController::_restorePMGRState: _pcPSRegs[1]=> 0x1C0706
+Jul 13 14:29:16 Saerom-Wang kernel[0] <Notice>: AppleS5L8960XPerformanceController::_restorePMGRState: _pcPSRegs[0]=> 0x68081B8
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: 047514.641937 wlan0.N[10868] AppleBCMWLANCore::setPowerStateGated():   powerState 1, fStateFlags 0x20000, dev 0xffffff808ba31000 (this 1, provider 0)
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: 047514.641950 wlan0.N[10869] AppleBCMWLANCore::powerOnSystem():  : Powering On
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: 047514.641955 wlan0.N[10870] AppleBCMWLANCore::powerOn():  stateFlags(20001)
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.566047]: Received kIOMessageSystemWillPowerOn
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.567103]: System wake reason: rtc
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.567318]: System Powered ON notification Re-enabling auto-join
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.567824]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.568012]: Enabling automatic association
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.568347]: Auto association attempt canceled because device is not powered.
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.570796]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.572205]: new locale:  , locale: 
+Jul 13 14:50:15 Saerom-Wang discoveryd[51] <Notice>: Basic DNSResolver UDNSServer:: PowerState is Wakeup
+Jul 13 14:50:15 Saerom-Wang powerd[30] <Notice>: 
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: sleeping waiting for endpoint to wake up again.
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: AppleSEPManager::powerStateChange type(2) to(1) async took 58 ms
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - msg = 3758096944
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - msg = 1
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: ASPSEPNotifier::message - kSEPNotifyOK2Wrap
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: 047514.846160 wlan0.A[10871] AppleBCMWLANBGScanManager::configurePrivateMACForBGScans(): BG-SCAN PRIVATE MAC e2 6c 1a ef 61 da
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: AppleBCMWLANCore::powerStateChange type(2) to(1) async took 204 ms
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: system wake events:rtc
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Error>: _dispatchDriverAvailable: available 1, reason -528345085, subreason 0
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.770178]: __WiFiDeviceCopyLinkChangedSubReasonString: Apple80211ReturnToString failed 1
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.770465]: __WiFiDeviceProcessDriverAvailableEvent: driver availability TRUE, reason Initializing(0xe0821803), subreason (null)(0x0)
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.772145]: Auto association attempt canceled because device is not powered.
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.772560]: WiFiAWDManagerSubmitMetric: metric container could not be generated for metric id <0x9000e>
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.774003]: Beginning command queue flush with error 82
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.774602]: Finished command queue flush with error 82
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.774880]: scanCache: Purging scan cache
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.775108]: gasCache: Purging GAS cache
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.775387]: Auto association attempt canceled because device is not powered.
+Jul 13 14:50:15 Saerom-Wang powerd[30] <Notice>: Wake [CDNVA] due to /: Using BATT (Charge:79%)
+Jul 13 14:50:15 Saerom-Wang powerd[30] <Notice>: 
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableDetect 1
+Jul 13 14:50:15 Saerom-Wang kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableType USBHost
+Jul 13 14:50:15 Saerom-Wang discoveryd[51] <Notice>: Basic DNSResolver UDNSServer:: PowerState is Wakeup
+Jul 13 14:50:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458459415.920129]: External power source attached
+Jul 13 14:50:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458459416.017248]: Device display is ON
+Jul 13 14:50:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458459416.017692]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 14:50:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458459416.018137]: Auto association attempt canceled because device is not powered.
+Jul 13 14:50:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 14:50:16 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 14:50:16 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 14:50:16 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 14:50:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 14:50:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 14:50:16 Saerom-Wang ptpd[942] <Error>: ptpd: startResponder
+Jul 13 14:50:16 Saerom-Wang ptpd[942] <Notice>: Photo library available
+Jul 13 14:50:16 Saerom-Wang ptpd[942] <Notice>: PTP interface has been activated at high speed.
+Jul 13 14:50:17 Saerom-Wang installd[917] <Notice>: 0x10048c000 -[MIClientConnection lookupUninstalledWithOptions:completion:]: Lookup uninstalled requested by atc (pid 919) with options (null)
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Received time 07/13/2015 05:50:13짹60.00 from "MobileLockdown"
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Want active time in 1193.82min. Need active time in 3345.10min. Remaining retry interval: 0.000000min.
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Setting system time to 2015-07-13 05:50:17 +0000 from TMTimeFilter
+Jul 13 14:50:17 Saerom-Wang UserEventAgent[250] <Warning>: BTA <ERROR>: validateAndAddDefaults(com.apple.timed): End Time (inf) > now (458459417.9) + BACKGROUND_TASK_AGENT_JOB_WINDOW_MAX_TIME_FROM_NOW_SEC (3024000.0) + BACKGROUND_TASK_AGENT_JOB_TIME_ERROR_MARGIN (300.0)
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Error) CoreTime: Error requesting proactive time check job
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Current mcc: '0' simulated:'0'.
+Jul 13 14:50:17 Saerom-Wang timed[912] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "MobileLockdown" with mcc 0
+Jul 13 14:50:20 Saerom-Wang lockdownd[63] <Error>: CFStringGetCString error in locklog
+Jul 13 14:50:20 Saerom-Wang CLTM[250] <Notice>: CLTM: resetting temps: now = 1436766620, last update = 1436765356
+Jul 13 14:50:21 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:50:22 Saerom-Wang installd[917] <Error>: 0x1006c4000 +[MIContainer allContainersForIdentifier:options:error:]: Failed to find app with bundle ID com.apple.bird.SharedPackageExtensions
+Jul 13 14:50:22 Saerom-Wang mobile_assertion_agent[914] <Notice>: service_one_connection: Connection closed for client (null).
+Jul 13 14:50:23 Saerom-Wang ReportCrash[944] <Error>: task_set_exception_ports(B07, 400, D03, 0, 0) failed with error (4: (os/kern) invalid argument)
+Jul 13 14:50:23 Saerom-Wang ReportCrash[944] <Notice>: ReportCrash acting against PID 928
+Jul 13 14:50:23 Saerom-Wang ReportCrash[944] <Notice>: Formulating crash report for process CacheDeleteAppContainerCaches[928]
+Jul 13 14:50:25 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 14:50:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 14:50:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 14:50:25 Saerom-Wang wifid[34] <Notice>: WiFi:[458459425.813617]: Device display is OFF
+Jul 13 14:50:25 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 14:50:25 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 14:50:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459438.782839]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:50:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459438.783257]: new locale:  , locale: 
+Jul 13 14:51:47 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 14:52:01 Saerom-Wang syncdefaultsd[946] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "opportunistic" on <APSConnection: 0x135619e30>
+Jul 13 14:52:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459558.784728]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:52:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459558.785172]: new locale:  , locale: 
+Jul 13 14:54:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 14:54:02 Saerom-Wang syncdefaultsd[946] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "opportunistic" on <APSConnection: 0x135619e30>
+Jul 13 14:54:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459678.782838]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:54:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459678.783266]: new locale:  , locale: 
+Jul 13 14:56:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459798.782848]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:56:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459798.783389]: new locale:  , locale: 
+Jul 13 14:57:48 Saerom-Wang apsd[88] <Warning>: Silent Push: Deny app no resources reason: cell quality 0 wifi quality 0 .
+Jul 13 14:58:24 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 14:58:24 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 14:58:24 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 14:58:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459918.782848]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 14:58:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458459918.783299]: new locale:  , locale: 
+Jul 13 14:59:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 14:59:24 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:00:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460038.782846]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:00:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460038.783285]: new locale:  , locale: 
+Jul 13 15:02:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460158.783078]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:02:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460158.783496]: new locale:  , locale: 
+Jul 13 15:04:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:04:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460278.782870]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:04:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460278.783332]: new locale:  , locale: 
+Jul 13 15:05:18 Saerom-Wang apsd[88] <Warning>: Silent Push: Deny app no resources reason: cell quality 0 wifi quality 0 .
+Jul 13 15:06:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460398.782841]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:06:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460398.783267]: new locale:  , locale: 
+Jul 13 15:08:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460518.782846]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:08:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460518.783276]: new locale:  , locale: 
+Jul 13 15:09:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:10:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460638.782848]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:10:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460638.783268]: new locale:  , locale: 
+Jul 13 15:11:25 Saerom-Wang wifid[34] <Notice>: WiFi:[458460685.900999]: BG Application: Not Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:11:25 Saerom-Wang wifid[34] <Notice>: WiFi:[458460685.903268]: BG Application: Not Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:12:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460758.782939]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:12:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460758.783378]: new locale:  , locale: 
+Jul 13 15:14:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:14:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460878.782844]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:14:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460878.783274]: new locale:  , locale: 
+Jul 13 15:16:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460998.782867]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:16:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458460998.783300]: new locale:  , locale: 
+Jul 13 15:18:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461118.764477]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:18:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461118.764908]: new locale:  , locale: 
+Jul 13 15:19:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:20:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461238.764479]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:20:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461238.764913]: new locale:  , locale: 
+Jul 13 15:21:38 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:22:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461358.764471]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:22:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461358.764927]: new locale:  , locale: 
+Jul 13 15:24:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:24:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461478.764478]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:24:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461478.764917]: new locale:  , locale: 
+Jul 13 15:26:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461598.764481]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:26:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461598.764918]: new locale:  , locale: 
+Jul 13 15:28:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461718.764477]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:28:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461718.764909]: new locale:  , locale: 
+Jul 13 15:29:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:30:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461838.764508]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:30:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461838.764926]: new locale:  , locale: 
+Jul 13 15:31:29 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:31:43 Saerom-Wang wifid[34] <Notice>: WiFi:[458461903.379173]: Device display is ON
+Jul 13 15:31:43 Saerom-Wang wifid[34] <Notice>: WiFi:[458461903.379592]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:31:43 Saerom-Wang wifid[34] <Notice>: WiFi:[458461903.380012]: Auto association attempt canceled because device is not powered.
+Jul 13 15:31:43 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:31:43 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:31:43 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:31:43 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:31:43 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:31:43 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:31:48 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:31:52 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:31:52 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:31:52 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:31:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458461912.955925]: Device display is OFF
+Jul 13 15:31:52 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:31:52 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:32:06 Saerom-Wang locationd[56] <Notice>: Starting gyro calibration, user initiated, 0
+Jul 13 15:32:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461958.765038]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:32:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458461958.765287]: new locale:  , locale: 
+Jul 13 15:34:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:34:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462078.764389]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:34:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462078.764659]: new locale:  , locale: 
+Jul 13 15:35:18 Saerom-Wang apsd[88] <Warning>: Silent Push: Deny app no resources reason: cell quality 0 wifi quality 0 .
+Jul 13 15:35:19 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:36:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462198.764787]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:36:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462198.765035]: new locale:  , locale: 
+Jul 13 15:38:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462318.765238]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:38:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462318.765500]: new locale:  , locale: 
+Jul 13 15:39:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:39:20 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 15:39:20 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:39:30 Saerom-Wang wifid[34] <Notice>: WiFi:[458462370.061215]: Device display is ON
+Jul 13 15:39:30 Saerom-Wang wifid[34] <Notice>: WiFi:[458462370.061517]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:39:30 Saerom-Wang wifid[34] <Notice>: WiFi:[458462370.061780]: Auto association attempt canceled because device is not powered.
+Jul 13 15:39:30 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:39:30 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:39:30 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:39:30 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:39:30 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:39:30 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:39:34 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->3
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.528968]: ATJManager: setting ask-to-join interaction mode to Interactive
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.529227]: ATJManager: no entries to purge
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.529355]: Device is UNLOCKED
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.531630]: Ignoring lock state
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.531913]: problematic networks =  and potentially problematic networks = 
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.532113]: Unblacklisting
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.532290]: Device NOT POWERED. Skip programming Background Scan
+Jul 13 15:39:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462374.532466]: Auto association attempt canceled because device is not powered.
+Jul 13 15:39:34 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:39:40 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:39:58 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:39:58 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:39:58 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 3->255
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.866299]: ATJManager: setting ask-to-join interaction mode to NonInteractive
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.866682]: ATJManager: no entries to purge
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.866915]: Device is LOCKED
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.867040]: Ignoring lock state
+Jul 13 15:39:58 Saerom-Wang wifid[34] <Notice>: WiFi:[458462398.919755]: Device display is OFF
+Jul 13 15:39:58 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:39:59 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:39:59 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:39:59 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:39:59 Saerom-Wang wifid[34] <Notice>: WiFi:[458462399.364428]: Device display is ON
+Jul 13 15:39:59 Saerom-Wang wifid[34] <Notice>: WiFi:[458462399.364796]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:39:59 Saerom-Wang wifid[34] <Notice>: WiFi:[458462399.365050]: Auto association attempt canceled because device is not powered.
+Jul 13 15:39:59 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:39:59 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:39:59 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:39:59 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:39:59 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:39:59 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:00 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:00 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:00 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:00 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:00 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:00 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:00 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:00 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:00 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:01 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:01 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:01 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:02 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:02 Saerom-Wang wifid[34] <Notice>: WiFi:[458462402.110577]: Device display is OFF
+Jul 13 15:40:02 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:02 Saerom-Wang wifid[34] <Notice>: WiFi:[458462402.832493]: Device display is ON
+Jul 13 15:40:02 Saerom-Wang wifid[34] <Notice>: WiFi:[458462402.832818]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:02 Saerom-Wang wifid[34] <Notice>: WiFi:[458462402.833062]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:02 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:02 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:02 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:03 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:03 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:03 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:03 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:03 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:03 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:04 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:04 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:05 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:05 Saerom-Wang wifid[34] <Notice>: WiFi:[458462405.514024]: Device display is OFF
+Jul 13 15:40:05 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:10 Saerom-Wang locationd[56] <Notice>: Stopped sensor calibration, fState, 2, successful, 1
+Jul 13 15:40:10 Saerom-Wang locationd[56] <Notice>: Stopped gyro calibration
+Jul 13 15:40:11 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 15:40:11 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:40:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458462415.806067]: Device display is ON
+Jul 13 15:40:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458462415.806457]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458462415.806751]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:15 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:15 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:15 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:15 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:16 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:16 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:16 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458462416.986428]: Device display is OFF
+Jul 13 15:40:16 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:24 Saerom-Wang wifid[34] <Notice>: WiFi:[458462424.890239]: Device display is ON
+Jul 13 15:40:24 Saerom-Wang wifid[34] <Notice>: WiFi:[458462424.890699]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:24 Saerom-Wang wifid[34] <Notice>: WiFi:[458462424.890995]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:24 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:25 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:25 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:25 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:25 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:25 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:26 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:26 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:26 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:26 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:26 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:27 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:27 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:27 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:27 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:27 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:27 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:27 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:27 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:27 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:28 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:28 Saerom-Wang wifid[34] <Notice>: WiFi:[458462428.157367]: Device display is OFF
+Jul 13 15:40:28 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.537242]: Background Network Application entered
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.537722]: BG Application: Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.538311]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.538600]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.540731]: Background Network Application entered
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.541053]: BG Application: Not Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.541318]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:34 Saerom-Wang wifid[34] <Notice>: WiFi:[458462434.541573]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462438.764529]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:40:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462438.765065]: new locale:  , locale: 
+Jul 13 15:40:40 Saerom-Wang wifid[34] <Notice>: WiFi:[458462440.804032]: Device display is ON
+Jul 13 15:40:40 Saerom-Wang wifid[34] <Notice>: WiFi:[458462440.804455]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:40 Saerom-Wang wifid[34] <Notice>: WiFi:[458462440.804770]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:40 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:40 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:40 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:40 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:41 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:41 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:46 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:51 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->3
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202404]: ATJManager: setting ask-to-join interaction mode to Interactive
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202635]: ATJManager: no entries to purge
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202737]: Device is UNLOCKED
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202831]: Ignoring lock state
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.202927]: problematic networks =  and potentially problematic networks = 
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.203043]: Unblacklisting
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.203149]: Device NOT POWERED. Skip programming Background Scan
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.203256]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:51 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:51 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:51 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:51 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 3->255
+Jul 13 15:40:51 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462451.801233]: Device display is OFF
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.159489]: ATJManager: setting ask-to-join interaction mode to NonInteractive
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.159845]: ATJManager: no entries to purge
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.160031]: Device is LOCKED
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.160189]: Ignoring lock state
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.482380]: Device display is ON
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.482775]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:40:52 Saerom-Wang wifid[34] <Notice>: WiFi:[458462452.483310]: Auto association attempt canceled because device is not powered.
+Jul 13 15:40:52 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:40:52 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:40:52 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:40:52 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:40:52 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:40:52 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:40:53 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:40:53 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:40:53 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:40:53 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:40:53 Saerom-Wang wifid[34] <Notice>: WiFi:[458462453.650573]: Device display is OFF
+Jul 13 15:40:53 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:41:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458462476.942646]: Device display is ON
+Jul 13 15:41:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458462476.943153]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:41:16 Saerom-Wang wifid[34] <Notice>: WiFi:[458462476.943441]: Auto association attempt canceled because device is not powered.
+Jul 13 15:41:16 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:41:17 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:41:17 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:41:17 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:41:17 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:41:17 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:41:17 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:41:17 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:41:17 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:41:18 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:41:18 Saerom-Wang wifid[34] <Notice>: WiFi:[458462478.130633]: Device display is OFF
+Jul 13 15:41:18 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.208481]: Background Network Application entered
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.209295]: BG Application: Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.209671]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.210064]: Auto association attempt canceled because device is not powered.
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.212676]: Background Network Application entered
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.212988]: BG Application: Not Present, BG Daemon: Present. Daemons: apsd MobileMail dataaccessd 
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.213257]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:41:51 Saerom-Wang wifid[34] <Notice>: WiFi:[458462511.213510]: Auto association attempt canceled because device is not powered.
+Jul 13 15:42:04 Saerom-Wang wifid[34] <Notice>: WiFi:[458462524.022987]: Device display is ON
+Jul 13 15:42:04 Saerom-Wang wifid[34] <Notice>: WiFi:[458462524.023385]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:42:04 Saerom-Wang wifid[34] <Notice>: WiFi:[458462524.023693]: Auto association attempt canceled because device is not powered.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:04 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:04 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:04 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:04 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:04 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:04 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:05 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:05 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:05 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:05 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:06 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:06 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:12 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:12 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:12 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:12 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:12 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:12 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:13 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:13 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:13 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:13 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:13 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->255
+Jul 13 15:42:13 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:42:13 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:42:13 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:13 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:42:14 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:42:14 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:42:14 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:42:14 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:42:14 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:42:14 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:42:14 Saerom-Wang wifid[34] <Notice>: WiFi:[458462534.792980]: Device display is OFF
+Jul 13 15:42:14 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:42:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462558.764508]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:42:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462558.764938]: new locale:  , locale: 
+Jul 13 15:43:05 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:44:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 15:44:05 Saerom-Wang wifid[34] <Notice>: WiFi:[458462645.869949]: Device display is ON
+Jul 13 15:44:05 Saerom-Wang wifid[34] <Notice>: WiFi:[458462645.870343]: __WiFiManagerSetEnableState: state TRUE, manager->enable.setting TRUE, manager->unlockedSinceBoot TRUE
+Jul 13 15:44:05 Saerom-Wang wifid[34] <Notice>: WiFi:[458462645.870662]: Auto association attempt canceled because device is not powered.
+Jul 13 15:44:05 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 15:44:05 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:44:06 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 15:44:06 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 13 15:44:06 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Jul 13 15:44:06 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 15:44:15 Saerom-Wang kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 15:44:15 Saerom-Wang SpringBoard[49] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 15:44:15 Saerom-Wang backboardd[52] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 15:44:15 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:44:15 Saerom-Wang wifid[34] <Notice>: WiFi:[458462655.898252]: Device display is OFF
+Jul 13 15:44:15 Saerom-Wang locationd[56] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 15:44:15 Saerom-Wang wirelessproxd[50] <Notice>: (Error) updateScanner - central is not powered on: 4
+Jul 13 15:44:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462678.764480]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:44:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462678.764910]: new locale:  , locale: 
+Jul 13 15:46:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462798.764508]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:46:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462798.764961]: new locale:  , locale: 
+Jul 13 15:47:50 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:48:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462918.764505]: WiFiLocaleManagerCheckLocale: location service or wifi is off, set locale to default
+Jul 13 15:48:38 Saerom-Wang wifid[34] <Notice>: WiFi:[458462918.764939]: new locale:  , locale: 
+Jul 13 15:48:53 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 15:48:53 Saerom-Wang syslog_relay[875] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 15:49:00 Saerom-Wang routined[897] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
