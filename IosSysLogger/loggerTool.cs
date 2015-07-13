@@ -11,7 +11,7 @@ namespace IosSysLogger
     class loggerTool
     {
        
-        public void readLog(Form1 form)
+        public void readLog(iosSyslogger form)
         {
             
             string currentPath = System.Environment.CurrentDirectory;
@@ -26,7 +26,7 @@ namespace IosSysLogger
 
            
             Process process = new Process();
-            process.StartInfo.FileName = currentPath+@"\idevicesyslog.exe"; 
+            process.StartInfo.FileName = currentPath+ @"\cmdLogger.exe"; 
             process.StartInfo.Arguments = "";
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.CreateNoWindow = true;
@@ -44,12 +44,12 @@ namespace IosSysLogger
 
         }
 
-        private void OnChanged(object source, FileSystemEventArgs e, Form1 form)
+        private void OnChanged(object source, FileSystemEventArgs e, iosSyslogger form)
         {
             
         }
 
-        public void OutputHandler(object sendingProcess, DataReceivedEventArgs outLine, Form1 form)
+        public void OutputHandler(object sendingProcess, DataReceivedEventArgs outLine, iosSyslogger form)
         {
             //*Includes writing to a temporary PATH that need a fix later on *IMPORTANT*
             //Console.WriteLine(outLine.Data); FOR DEBUGGING PURPOSES
@@ -64,7 +64,7 @@ namespace IosSysLogger
 
 
                     form.TextBoxText = outLine.Data;
-
+                    
 
                 }));
                 file.WriteLine(outLine.Data);

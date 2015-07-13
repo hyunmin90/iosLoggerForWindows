@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Diagnostics;
+using System.IO;
 
 namespace IosSysLogger
 {
@@ -16,15 +17,27 @@ namespace IosSysLogger
         [STAThread]
         static void Main()
         {
+
+            string currentPath = System.Environment.CurrentDirectory;
+
+            if (!File.Exists(currentPath + @"\syslog.txt"))
+            {
+                File.Create(currentPath + @"\syslog.txt").Close();
+            }
             
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Form1 LoggerWindow = new Form1();
+            iosSyslogger LoggerWindow = new iosSyslogger();
             loggerTool tool = new loggerTool();
+
+           
+            //Check if syslog file exist. If it does not exist, create one 
+
             Thread loggingThread = new Thread(() => tool.readLog(LoggerWindow));
             loggingThread.IsBackground = true;
             
-            loggingThread.Start(); //Multi Threading the syslog process in background.
+            loggingThread.Start(); //Threading the syslog process in background.
 
             Application.Run(LoggerWindow);
             
@@ -33,7 +46,7 @@ namespace IosSysLogger
 
         static void OnProcessExit(object sender, EventArgs e)
         { //Temporary way of killing background process. Need this fixed.**IMPORTANT**
-            foreach (Process proc in Process.GetProcessesByName("idevicesyslog"))
+            foreach (Process proc in Process.GetProcessesByName("cmdLogger"))
             {
                 proc.Kill();
             }
