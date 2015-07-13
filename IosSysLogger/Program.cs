@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Diagnostics;
-using System.IO;
+using System.Management;
 
 namespace IosSysLogger
 {
@@ -22,7 +22,12 @@ namespace IosSysLogger
         {
             string currentPath = System.Environment.CurrentDirectory;
 
-            
+            var watcher = new ManagementEventWatcher();
+            var query = new WqlEventQuery("SELECT * FROM Win32_DeviceChangeEvent WHERE EventType = 2");
+            watcher.EventArrived += new EventArrivedEventHandler(watcher_USBInserted);
+            watcher.Query = query;
+            watcher.Start();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             iosSyslogger LoggerWindow = new iosSyslogger();
@@ -31,7 +36,6 @@ namespace IosSysLogger
             Thread deviceUUIDThread = new Thread(() => tool.readDeviceUUID(LoggerWindow, tool));
             deviceUUIDThread.Start();
 
-            
             Application.Run(LoggerWindow);
             
             AppDomain.CurrentDomain.ProcessExit += new EventHandler(OnProcessExit);
@@ -39,8 +43,12 @@ namespace IosSysLogger
         public static class GlobalData
         {
             public static List<string> uuid = new List<string>();
-        };
+        }
+        static void watcher_USBInserted(object sender, EventArgs e)
+        {
 
+            MessageBox.Show("Detected");
+        }
         static void OnProcessExit(object sender, EventArgs e)
         { //Temporary way of killing background process. Need this fixed.**IMPORTANT**
             foreach (Process proc in Process.GetProcessesByName("cmdLogger"))

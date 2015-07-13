@@ -126,11 +126,7 @@ namespace IosSysLogger
         {
             //*Includes writing to a temporary PATH that need a fix later on *IMPORTANT*
             //Console.WriteLine(outLine.Data); FOR DEBUGGING PURPOSES
-
             string currentPath = System.Environment.CurrentDirectory;
-
-            
-
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(currentPath+ @"\syslog" + uuid + ".txt", true))
             {
                 form.BeginInvoke(new Action(() =>
@@ -142,10 +138,6 @@ namespace IosSysLogger
                 file.WriteLine(outLine.Data);
             }
             //*Most of the logic for outputing the log should be dealt from this output Handler
-
-
-            
-            
         }
 
 

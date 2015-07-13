@@ -7,3 +7,4 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubForIos\IosSys
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubForIos\IosSysLogger\obj\Debug\IosSysLogger.pdb
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubForIos\IosSysLogger\obj\Debug\IosSysLogger.iosSyslogger.resources
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubForIos\IosSysLogger\obj\Debug\iOSloggerUI.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubForIos\IosSysLogger\bin\Debug\System.Management.Automation.dll

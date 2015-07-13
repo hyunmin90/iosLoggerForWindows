@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using System.IO;
-
+using System.Management;
 
 namespace IosSysLogger
 {
@@ -22,13 +22,13 @@ namespace IosSysLogger
         bool fixScrollCheck = false;
         List<string> checkedList = new List<string>();
         List<string> processlist = new List<string>();
+        List<string> selectedProcessList = new List<string>();
         List<string> devicenameList = new List<string>();
         List<string> selectedDeviceList = new List<string>();
         public iosSyslogger()
         {
-
             InitializeComponent();
-
+            var watcher = new ManagementEventWatcher();
             //Allow data grid t
             ContextMenuStrip mnu = new ContextMenuStrip();
             ToolStripMenuItem mnuCopy = new ToolStripMenuItem("Copy");
@@ -444,8 +444,9 @@ namespace IosSysLogger
                 dataGridView1.Rows[i].Visible = false;
                 dataGridView1.Rows[i].Selected = false;
             }
-            foreach (string term in processlist)
+            foreach (string term in selectedProcessList)
             {
+                //MessageBox.Show(term);
                 for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
                 {
                     if (dataGridView1.Rows[i].Cells[2] == null)
@@ -456,7 +457,7 @@ namespace IosSysLogger
                     }
                 }
             }
-            processlist.Clear();
+            selectedProcessList.Clear();
 
         }
         private void showByLogLevel()
@@ -530,11 +531,12 @@ namespace IosSysLogger
             {
                 foreach (int indexChecked in processlistname.CheckedIndices)
                 {
+                    
                     // The indexChecked variable contains the index of the item.
                     string selectedName = processlistname.Items[indexChecked].ToString();
                     //MessageBox.Show(selectedName);
 
-                    processlist.Add(selectedName);
+                    selectedProcessList.Add(selectedName);
                     //MessageBox.Show("Index#: " + indexChecked.ToString() + ", is checked. Checked state is:" +
                     // devicename.GetItemCheckState(indexChecked).ToString() + ".");
                 }
