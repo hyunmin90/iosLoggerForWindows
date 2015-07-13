@@ -9364,3 +9364,1850 @@ Jul 13 19:09:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/
 Jul 13 19:12:14 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
 Jul 13 19:12:14 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
 Jul 13 19:12:15 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+[connected]
+
+
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/75.1.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 75 for Package <NMSticonPackage: 421660480> id=75, version=1, metaVersion=-1, latestVersion=2, newVersion=1, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/76.1.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 76 for Package <NMSticonPackage: 421653232> id=76, version=1, metaVersion=-1, latestVersion=3, newVersion=1, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/74.1.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 74 for Package <NMSticonPackage: 421742208> id=74, version=1, metaVersion=-1, latestVersion=2, newVersion=1, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/73.1.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 73 for Package <NMSticonPackage: 421732240> id=73, version=1, metaVersion=-1, latestVersion=2, newVersion=1, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/61.1.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 61 for Package <NMSticonPackage: 421796640> id=61, version=1, metaVersion=-1, latestVersion=9, newVersion=1, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/71.1.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 71 for Package <NMSticonPackage: 421774160> id=71, version=1, metaVersion=-1, latestVersion=6, newVersion=2, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/62.1.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 62 for Package <NMSticonPackage: 423398656> id=62, version=1, metaVersion=-1, latestVersion=5, newVersion=1, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/25.3.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 25 for Package <NMSticonPackage: 423366160> id=25, version=3, metaVersion=-1, latestVersion=7, newVersion=0, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/67.1.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 67 for Package <NMSticonPackage: 423385888> id=67, version=1, metaVersion=-1, latestVersion=5, newVersion=1, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/24.3.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 24 for Package <NMSticonPackage: 423359376> id=24, version=3, metaVersion=-1, latestVersion=8, newVersion=0, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/27.3.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 27 for Package <NMSticonPackage: 423367888> id=27, version=3, metaVersion=-1, latestVersion=7, newVersion=0, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/26.3.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 26 for Package <NMSticonPackage: 421807200> id=26, version=3, metaVersion=-1, latestVersion=7, newVersion=0, unzipped=NO
+Jul 13 17:58:45 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:58:50 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 21
+Jul 13 17:58:56 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:00 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 31
+Jul 13 17:59:07 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:10 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 41
+Jul 13 17:59:18 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:19 iPhone-CN kernel[0] <Notice>: AppleH4CamIn::setPowerStateGated: 0
+Jul 13 17:59:19 iPhone-CN kernel[0] <Notice>: AppleH4CamIn::power_off_hardware
+Jul 13 17:59:19 iPhone-CN mediaserverd[36] <Notice>: 'FigPlayer - 41' (pid = 41) setting DiscoveryMode = DiscoveryMode_None, currentDiscoveryMode = DiscoveryMode_PresenceScan
+Jul 13 17:59:19 iPhone-CN mediaserverd[36] <Notice>: 2015-07-13 05:59:19.518624 PM [AirPlay] BTLE client stopping to browse for AirPlay Solo Target Presence.
+Jul 13 17:59:19 iPhone-CN mediaserverd[36] <Notice>: 2015-07-13 05:59:19.520225 PM [AirPlay] BTLE discovery stopped
+Jul 13 17:59:19 iPhone-CN wirelessproxd[45] <Notice>: (Error) trying to stop a scan while the central isn't available
+Jul 13 17:59:20 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 51
+Jul 13 17:59:23 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 17:59:23 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 17:59:23 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 17:59:23 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 17:59:23 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 17:59:23 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:30 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 61
+Jul 13 17:59:51 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 82
+Jul 13 17:59:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 17:59:54 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 17:59:55 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 17:59:55 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 17:59:55 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 17:59:55 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 17:59:56 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 17:59:56 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 17:59:56 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 17:59:56 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:56 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 17:59:56 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 17:59:57 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 17:59:57 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 17:59:57 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 17:59:57 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 17:59:57 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 17:59:57 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 17:59:57 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 17:59:58 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 17:59:58 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 17:59:58 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 17:59:58 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 17:59:58 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 17:59:58 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 17:59:59 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:59 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:00:11 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 102
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:00:25 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:00:31 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 122
+Jul 13 18:00:34 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:00:34 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:00:34 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:00:34 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Not in transaction; writing data directly to output stream.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSPDYSession connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY before_ctrl_send_callback
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY send_callback
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Wrote 12 of 12 bytes.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Wrote 12 bytes to stream. dataLength=12 _bufferOffset=0
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Rescheduled GCD timer <OS_dispatch_source: 0x190c5f80> to fire in 27.500 sec.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY NSStreamEventHasSpaceAvailable
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSPDYSession connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Warning>: -[Reachability isReachableViaWiFi] (632) 
+		Reachability Flags: -R -----l-
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSPDYSession connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY NSStreamEventHasBytesAvailable
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSPDYSession connection:readyToRead:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:readyToRead:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY ping timer is reset.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Rescheduled GCD timer <OS_dispatch_source: 0x190c5f80> to fire in 110.000 sec.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY ping retry count is reset.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY recv_callback
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Read 12 bytes.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY on_ctrl_recv_callback, type 6
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY SPDYLAY_PING
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY ping timer is reset.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Rescheduled GCD timer <OS_dispatch_source: 0x190c5f80> to fire in 110.000 sec.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Ping roundtrip: 95.873952 ms.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY recv_callback
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY SPDYLAY_ERR_WOULDBLOCK
+Jul 13 18:00:34 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:00:34 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:00:51 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 142
+Jul 13 18:01:11 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 162
+Jul 13 18:01:31 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 182
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [main] #LEGY LEGYProtocolProvider background task expired.
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Disconnecting protocol <LEGYSPDYSession: 0x19163c30> gw-beta.line.naver.jp:443 (SPDY/wifi/secure (LEGY encryption)) (connected)
+	(
+	)
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYConnection _disconnectWithError:]Error Domain=LEGYErrorDomain Code=1001 "The operation couldn?셳 be completed. (LEGYErrorDomain error 1001.)"
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY @@@@@@@ disconnectWithError origin = gw-beta.line.naver.jp:443 (SPDY/wifi/secure (LEGY encryption))
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:hasDisconnectedWithError:]
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Canceled GCD timer <OS_dispatch_source: 0x190c5f80>
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocolProvider connection:hasDisconnectedWithError:] gw-beta.line.naver.jp:443 (SPDY/wifi/secure (LEGY encryption)) (disconnected) Error Domain=LEGYErrorDomain Code=1001 "The operation couldn?셳 be completed. (LEGYErrorDomain error 1001.)"
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSession protocolUnusable:]gw-beta.line.naver.jp:443 (SPDY/wifi/secure (LEGY encryption))
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY protocol.requests.count: 0 _requestsSending.count: 0
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY setSessionStatusChanged oldSessionStatus = 1, newSessionStatus = 2
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Setting origin group level from 0 to -1
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Origin group -1 is incomplete; merging with next level.
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Setting origin group level from -1 to 0
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSession protocolProviderDidGoOffline]
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYFetchOperationRequestResponseHandler protocolProviderDidGoOffline]
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [main] #LEGY Ending LEGYProtocolProvider background task.
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY All connections closed; ending background task.
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #Network LEGY session status changed: 1 => 2
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSession protocolProviderDidGoOffline]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYFetchOperationRequestResponseHandler protocolProviderDidGoOffline]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #Network -[TalkAppDelegate application:didReceiveRemoteNotification:fetchCompletionHandler:] {
+	    aps =     {
+	        badge = 12;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883515;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 129;
+	}
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] -[TalkAppDelegate processRemoteNotification:fetchCompletionHandler:]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] Remote notification from APNS:
+	{
+	    aps =     {
+	        badge = 12;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883515;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 129;
+	}
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #LEGY Receiving content-available remote notification for revision 129.
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 304
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #LEGY -[LEGYSPDYSession dealloc]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #LEGY -[LEGYProtocol dealloc]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #LEGY -[LEGYConnection dealloc]
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:04:34 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:04:40 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:04:43 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:04:43 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:04:43 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:04:43 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:04:44 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:04:44 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:04:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 403
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] #Network -[TalkAppDelegate application:didReceiveRemoteNotification:fetchCompletionHandler:] {
+	    aps =     {
+	        badge = 13;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883819;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 130;
+	}
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] -[TalkAppDelegate processRemoteNotification:fetchCompletionHandler:]
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] Remote notification from APNS:
+	{
+	    aps =     {
+	        badge = 13;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883819;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 130;
+	}
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] #LEGY Receiving content-available remote notification for revision 130.
+Jul 13 18:05:12 iPhone-CN pkd[114] <Warning>: assigning plug-in com.apple.stocks.widget(1.0) to plugin sandbox
+Jul 13 18:05:12 iPhone-CN pkd[114] <Warning>: enabling pid=43 for plug-in com.apple.stocks.widget(1.0) 9C6846CA-0D6C-4603-9B19-D53F51BD0758 /Applications/Stocks.app/PlugIns/StocksWidget.appex
+Jul 13 18:05:12 iPhone-CN StocksWidget[179] <Warning>: CoreAnimation: warning, deleted thread with uncommitted CATransaction; set CA_DEBUG_TRANSACTIONS=1 in environment to log backtraces.
+Jul 13 18:05:12 iPhone-CN StocksWidget[179] <Warning>: host connection <NSXPCConnection: 0x17e83350> connection from pid 43 invalidated
+Jul 13 18:05:12 iPhone-CN StocksWidget[179] <Warning>: Not updating snapshot
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) SYDAccount: no account
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) SYDPIMAccount: no account (null)
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) SYDAlwaysOnAccount: no account (null)
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "ignored" on (null)
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Error) Process with pid 179 is not authorized to access com.apple.stocks
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "ignored" on (null)
+Jul 13 18:05:14 iPhone-CN SpringBoard[43] <Warning>: plugin com.apple.stocks.widget invalidated
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 433
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] #Network -[TalkAppDelegate application:didReceiveRemoteNotification:fetchCompletionHandler:] {
+	    aps =     {
+	        badge = 14;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883907;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 131;
+	}
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] -[TalkAppDelegate processRemoteNotification:fetchCompletionHandler:]
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] Remote notification from APNS:
+	{
+	    aps =     {
+	        badge = 14;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883907;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 131;
+	}
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] #LEGY Receiving content-available remote notification for revision 131.
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 514
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] #Network -[TalkAppDelegate application:didReceiveRemoteNotification:fetchCompletionHandler:] {
+	    aps =     {
+	        badge = 15;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656884028;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 132;
+	}
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] -[TalkAppDelegate processRemoteNotification:fetchCompletionHandler:]
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] Remote notification from APNS:
+	{
+	    aps =     {
+	        badge = 15;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656884028;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 132;
+	}
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] #LEGY Receiving content-available remote notification for revision 132.
+Jul 13 18:07:14 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "ignored" on (null)
+Jul 13 18:07:32 iPhone-CN wifid[69] <Error>: WiFi:[458471252.702489]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:07:32 iPhone-CN wifid[69] <Error>: WiFi:[458471252.912377]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:07:33 iPhone-CN wifid[69] <Error>: WiFi:[458471253.204892]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:07:33 iPhone-CN wifid[69] <Error>: WiFi:[458471253.410951]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:09:18 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:09:18 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:09:19 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 18:09:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:14:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:10 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:11 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:11 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:11 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:12 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:12 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:12 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:12 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:15:12 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:15:13 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:15:13 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:14 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:14 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:14 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:14 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:15 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:15 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:15 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:15 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:15 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:15 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:16 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:15:16 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:16 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:17 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:17 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:17 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:18 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:18 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:18 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:18 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:18 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:19 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:15:19 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.191758 wlan0.N[586] AppleBCMWLANNetManager::handleDeauth():    status = 0 , reason = 6, flags = 0x0, authtype = 0, addr = 44:2a:60:dd:10:ae
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.195121 wlan0.N[587] AppleBCMWLANNetManager::leaveNetworkAsync():  kDeauthdCurrNetwork already set. Skipping call to leaveNetworkASync
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.195477 wlan0.A[588] Active Ports:
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.195621 wlan0.A[589] AppleBCMWLANCore::resetWoWConfig():  Deleted IPv4/IPv6 and Magic packet filters
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: AirPort: Link Down on en0. Reason 1 (Unspecified).
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: en0::stopOutputQueues
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: en0::IO80211Interface::postMessage bssid changed
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.196058 wlan0.A[590] AppleBCMWLANNetManager::resetLinkQualityMetrics(): Report LQM as -2
+Jul 13 18:17:32 iPhone-CN SpringBoard[43] <Warning>: WiFi is associated YES
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.263860 wlan0.A[591] AppleBCMWLANCore::setProperties(): Active during sleep supported (false)
+Jul 13 18:17:32 iPhone-CN SpringBoard[43] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN UserEventAgent[17] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN identityservicesd[42] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN UserEventAgent[17] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN identityservicesd[42] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN apsd[79] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN imagent[26] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN locationd[64] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN locationd[64] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN MobileMail[122] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN MobileMail[122] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN apsd[79] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN imagent[26] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 1 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 2 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 3 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 4 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 5 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 6 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.453040 wlan0.N[592] AppleBCMWLANCore::handleIPv4AddressNotificationGated():  Local IPv4  address 0.0.0.0
+Jul 13 18:17:32 iPhone-CN networkd[83] <Warning>: +[NETLedBelly stopFastFail] Clearing ledbelly failure cache
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic WABServer NetResolverEvent no resolvers, resetting domains
+Jul 13 18:17:32 iPhone-CN configd[24] <Notice>: network changed: v4(en0-:192.168.2.39) DNS- Proxy-
+Jul 13 18:17:32 iPhone-CN configd[24] <Notice>: Captive: CNPluginHandler en0: Inactive
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019859.946237 wlan0.N[593] AppleBCMWLANCore::setASSOCIATE():  [wifid]: lowerAuth = AUTHTYPE_OPEN, upperAuth = AUTHTYPE_WPA2_PSK, key = CIPHER_PMK , don't disassociate    .
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.028808 wlan0.A[594] Active Ports:
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.028953 wlan0.A[595] AppleBCMWLANCore::resetWoWConfig():  Deleted IPv4/IPv6 and Magic packet filters
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.029037 wlan0.A[596] AppleBCMWLANNetManager::prepareToBringUpLink():  Delaying powersave entry in order to get an IP address
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.029212 wlan0.A[597] AppleBCMWLANNetManager::resetLinkQualityMetrics(): Report LQM as -1
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.029391 wlan0.A[598] AppleBCMWLANNetManager::updateLinkQualityMetrics(): Report LQM to User Land 50, fAverageRSSI -85
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: AirPort: Link Up on en0
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0::startOutputQueues (0)
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0: BSSID changed to 44:2a:60:dd:10:ae
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0::IO80211Interface::postMessage bssid changed
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0: BSSID changed to 44:2a:60:dd:10:ae
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0::IO80211Interface::postMessage bssid changed
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.049505 wlan0.N[599] AppleBCMWLANJoinManager::handleSupplicantEvent(): status = 6 WLC_SUP_KEYED, reason = 0 Other reason, flags = 0x0, authtype = 0, addr = 84:fc:fe:9d:b9:1f
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.080725 wlan0.A[600] AppleBCMWLANCore::setProperties(): Active during sleep supported (true)
+Jul 13 18:17:34 iPhone-CN apsd[79] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN MobileMail[122] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN apsd[79] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN MobileMail[122] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.105305 wlan0.N[601] AppleBCMWLANCore::startRoamScan(): 4731 Delaying RoamScan; because  Join Mgr Busy 0 isWaitingforIP 1 
+Jul 13 18:17:34 iPhone-CN locationd[64] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN locationd[64] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN SpringBoard[43] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN SpringBoard[43] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN identityservicesd[42] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN identityservicesd[42] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN UserEventAgent[17] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN imagent[26] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN UserEventAgent[17] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN imagent[26] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.375982 wlan0.N[602] AppleBCMWLANCore::handleIPv4AddressNotificationGated():  Local IPv4  address 192.168.2.39
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: network changed: DNS* Proxy
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: Captive: [CNInfoNetworkActive:1709] en0: SSID 'Ramel-iMac' making interface primary (cache indicates network not captive)
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: Captive: CNPluginHandler en0: Evaluating
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.417714 wlan0.A[603] AppleBCMWLANNetManager::receivedIPv4Address():  Received address 192.168.2.39, entering powersave mode 2
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.417770 wlan0.N[604] AppleBCMWLANCore::startRoamScan(): 4751 starting RoamScan; MultiAPEnv:0 isdualBand:0 isOn5G:0
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: Captive: en0: Not probing 'Ramel-iMac' (cache indicates not captive)
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: Captive: CNPluginHandler en0: Authenticated
+Jul 13 18:17:34 iPhone-CN networkd[83] <Warning>: +[NETLedBelly stopFastFail] Clearing ledbelly failure cache
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: network changed: v4(en0!:192.168.2.39) DNS+ Proxy+
+Jul 13 18:17:34 iPhone-CN networkd[83] <Warning>: +[NETLedBelly stopFastFail] Clearing ledbelly failure cache
+Jul 13 18:17:35 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Current mcc: '450' simulated:'0'.
+Jul 13 18:17:35 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "Location" with mcc 450
+Jul 13 18:17:35 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Not setting time zone to Asia/Seoul from Location because time zone is unchanged
+Jul 13 18:17:36 iPhone-CN wifid[69] <Error>: WiFi:[458471856.067562]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:17:36 iPhone-CN wifid[69] <Error>: WiFi:[458471856.177706]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:17:36 iPhone-CN wifid[69] <Error>: WiFi:[458471856.357493]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:17:36 iPhone-CN wifid[69] <Error>: WiFi:[458471856.467448]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:17:44 iPhone-CN kernel[0] <Notice>: 019870.104901 wlan0.A[605] AppleBCMWLANCore::dumpWmeCounters():  per AC tx counters: 5789 24 51 147, rx counters: 6709 8 0 5 
+Jul 13 18:17:44 iPhone-CN kernel[0] <Notice>: 019870.104979 wlan0.A[606] AppleBCMWLANCore::dumpWmeCounters():                AWDL: Tx 0 0 0 0      Rx: 0 0 0 0 
+Jul 13 18:17:54 iPhone-CN kernel[0] <Notice>: 019880.119128 wlan0.A[607] AppleBCMWLANNetManager::updateLinkQualityMetrics(): Report LQM to User Land 100, fAverageRSSI -68
+Jul 13 18:19:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:24:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:27:32 iPhone-CN wifid[69] <Error>: WiFi:[458472452.508310]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:27:32 iPhone-CN wifid[69] <Error>: WiFi:[458472452.746937]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:27:32 iPhone-CN wifid[69] <Error>: WiFi:[458472452.865152]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:27:33 iPhone-CN wifid[69] <Error>: WiFi:[458472453.042153]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:29:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:34:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:37:32 iPhone-CN wifid[69] <Error>: WiFi:[458473052.711418]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:37:32 iPhone-CN wifid[69] <Error>: WiFi:[458473052.920841]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:37:33 iPhone-CN wifid[69] <Error>: WiFi:[458473053.166707]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:37:33 iPhone-CN wifid[69] <Error>: WiFi:[458473053.337051]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:39:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:44:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:47:32 iPhone-CN wifid[69] <Error>: WiFi:[458473652.679785]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:47:32 iPhone-CN wifid[69] <Error>: WiFi:[458473652.898428]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:47:33 iPhone-CN wifid[69] <Error>: WiFi:[458473653.194522]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:47:33 iPhone-CN wifid[69] <Error>: WiFi:[458473653.396302]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:49:06 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:06 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:07 iPhone-CN syslog_relay[140] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 18:49:07 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableDetect 0
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableType Detached
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: virtual IOReturn AppleUSBDeviceMux::message(UInt32, IOService *, void *) - kMessageInterfaceWasDeActivated
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: AppleUSBDeviceMux::reportStats: USB mux statistics: 
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: USB mux: 625 reads / 0 errors, 6142 writes / 0 errors
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: USB mux: 0 short packets, 0 dups
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: void AppleUSBDeviceMux::asyncWriteComplete(struct USBWriteBuffer *, IOReturn, UInt32) Error sending 175 byte packet: 0xe0004050, failing
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: void AppleUSBDeviceMux::asyncWriteComplete(struct USBWriteBuffer *, IOReturn, UInt32) Error sending 141 byte packet: 0xe0004050, failing
+Jul 13 18:49:11 iPhone-CN ptpd[213] <Notice>: PTP interface has been deactivated.
+Jul 13 18:49:11 iPhone-CN notification_proxy[146] <Error>: 0x3c3000 -[MNPLockdownConnection receiveMessage]: lockdown_receive_message error!
+Jul 13 18:49:11 iPhone-CN notification_proxy[146] <Error>: 0x445000 __37-[MNPLockdownConnection sendMessage:]_block_invoke: lockdown_send_message error, message: {
+	    Command = RelayNotification;
+	    Name = "com.apple.system.powersources.percent";
+	}, connection: <MNPLockdownConnection: 0x15509c70>
+Jul 13 18:49:11 iPhone-CN notification_proxy[146] <Error>: 0x341000 -[MNPLockdownConnection receiveMessage]: lockdown_receive_message error!
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:49:11 iPhone-CN geod[102] <Warning>: Can't get bundle identifier for process 64
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:49:11 iPhone-CN geod[102] <Warning>: Can't get bundle identifier for process 64
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:49:11 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:49:12 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Current mcc: '450' simulated:'0'.
+Jul 13 18:49:12 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "Location" with mcc 450
+Jul 13 18:49:12 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Not setting time zone to Asia/Seoul from Location because time zone is unchanged
+Jul 13 18:49:13 iPhone-CN pipelined[218] <Critical>: *** MESSAGE QUOTA DISABLED FOR THIS PROCESS ***
+Jul 13 18:49:13 iPhone-CN pipelined[218] <Warning>: overridable_setting.h(180): [override::Setting] Forcing override value no_vpn to 1
+Jul 13 18:49:13 iPhone-CN pipelined[218] <Warning>: CLIndoorBackgroundTasks.mm(261): [CLIndoorBackgroundTasks] tile refresh activity registered as ActivityPolicy[interval=1,grace period=0,delay=0 ]. Changing to ActivityPolicy[interval=1,grace period=0,delay=0 ]
+Jul 13 18:49:16 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:49:20 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:49:20 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:49:20 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:49:20 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:49:21 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:49:21 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:49:22 iPhone-CN kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableDetect 1
+Jul 13 18:49:22 iPhone-CN kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableType USBHost
+Jul 13 18:49:22 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:49:22 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:49:23 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:49:23 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:49:23 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:49:23 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN ptpd[220] <Error>: ptpd: startResponder
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN ptpd[220] <Notice>: Photo library available
+Jul 13 18:49:23 iPhone-CN ptpd[220] <Notice>: PTP interface has been activated at high speed.
+Jul 13 18:49:24 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:24 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:24 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:24 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received time 07/13/2015 09:49:22짹60.00 from "MobileLockdown"
+Jul 13 18:49:24 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Want active time in 2886.98min. Need active time in 7886.98min. Remaining retry interval: 0.000000min.
+Jul 13 18:49:24 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Current mcc: '450' simulated:'0'.
+Jul 13 18:49:24 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 18:49:24 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "MobileLockdown" with mcc 450
+Jul 13 18:49:28 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:24 iPhone-CN installd[35] <Notice>: 0x3c1000 -[MIClientConnection lookupUninstalledWithOptions:completion:]: Lookup uninstalled requested by atc (pid 27) with options (null)
+Jul 13 18:49:28 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:25 iPhone-CN installd[35] <Error>: 0x449000 -[MIBundle isApplicableToCurrentOSVersionWithError:]: 333: The system version is lower than the minimum OS version specified for bundle at /private/var/mobile/Containers/Bundle/Application/B782455A-5B65-4D34-827A-43914712511F/LINE.app/PlugIns/LineWatchKitExtension.appex. Have 8.1.3; need 8.2
+Jul 13 18:49:25 iPhone-CN installd[35] <Notice>: 0x449000 -[MIBundle pluginKitBundlesWithError:]: Ignoring plugin at /private/var/mobile/Containers/Bundle/Application/B782455A-5B65-4D34-827A-43914712511F/LINE.app/PlugIns/LineWatchKitExtension.appex because it doesn't work on this OS version
+Jul 13 18:49:26 iPhone-CN installd[35] <Error>: 0x3c1000 -[MIBundle isApplicableToCurrentOSVersionWithError:]: 333: The system version is lower than the minimum OS version specified for bundle at /private/var/mobile/Containers/Bundle/Application/5A57C074-A219-4990-B8D9-85CF054D0DBD/LINE.app/PlugIns/LineWatchKitExtension.appex. Have 8.1.3; need 8.2
+Jul 13 18:49:26 iPhone-CN installd[35] <Notice>: 0x3c1000 -[MIBundle pluginKitBundlesWithError:]: Ignoring plugin at /private/var/mobile/Containers/Bundle/Application/5A57C074-A219-4990-B8D9-85CF054D0DBD/LINE.app/PlugIns/LineWatchKitExtension.appex because it doesn't work on this OS version
+Jul 13 18:49:28 iPhone-CN CacheDeleteGeoTileLoader[148] <Error>: 0x3d5000 diskUsage: Failed to open directory /var/mobile/Library/Caches/MapTiles/MapTiles.sqlitedb : Not a directory
+Jul 13 18:49:28 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:28 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:28 iPhone-CN syncdefaultsd[221] <Notice>: (Note ) SYDAccount: no account
+Jul 13 18:49:28 iPhone-CN syncdefaultsd[221] <Notice>: (Note ) SYDPIMAccount: no account (null)
+Jul 13 18:49:28 iPhone-CN syncdefaultsd[221] <Notice>: (Note ) SYDAlwaysOnAccount: no account (null)
+Jul 13 18:49:29 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:49:29 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:29 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:29 iPhone-CN librariand[130] <Error>: ubiquity account is not configured (or is disabled for this client), not creating collection
+Jul 13 18:49:29 iPhone-CN librariand[130] <Error>: error in _handle_client_request: LibrarianErrorDomain/10/Unable to configure the collection.
+Jul 13 18:49:30 iPhone-CN bird[132] <Error>: unable to determine evictable space: Error Domain=LibrarianErrorDomain Code=10 "The operation couldn?셳 be completed. (LibrarianErrorDomain error 10 - Unable to configure the collection.)" UserInfo=0x1459da00 {NSDescription=Unable to configure the collection.}
+Jul 13 18:49:31 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:49:31 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:49:31 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:49:31 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:49:31 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:49:31 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:49:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:51:28 iPhone-CN syncdefaultsd[221] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "ignored" on (null)
+Jul 13 18:54:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:56:14 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:56:14 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:56:15 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 18:57:32 iPhone-CN wifid[69] <Error>: WiFi:[458474252.533868]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:57:32 iPhone-CN wifid[69] <Error>: WiFi:[458474252.768833]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:57:32 iPhone-CN wifid[69] <Error>: WiFi:[458474252.889816]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:57:33 iPhone-CN wifid[69] <Error>: WiFi:[458474253.062859]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:57:34 iPhone-CN UserEventAgent[17] <Notice>: calling xpc_event_provider_token_fire for client com.apple.OTACrashCopier session com.apple.OTACrashCopier
+Jul 13 18:57:34 iPhone-CN OTACrashCopier[223] <Notice>: (Warn ) <OTACrashCopierController.m __42-[OTACrashCopierController handleRequest:]_block_invoke:447> Creating Power Assertion for 600 secs
+Jul 13 18:59:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:59:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:59:23 iPhone-CN mobile_assertion_agent[143] <Notice>: service_one_connection: Connection closed for client (null).
+Jul 13 18:59:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 19:00:40 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:00:40 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:00:41 iPhone-CN syslog_relay[140] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 19:00:41 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:04:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 19:06:18 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:06:18 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:06:19 iPhone-CN syslog_relay[140] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 19:06:19 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:07:14 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:07:14 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:07:15 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:07:32 iPhone-CN wifid[69] <Error>: WiFi:[458474852.724472]: Enable WoW requested by "UserEventAgent"
+Jul 13 19:07:32 iPhone-CN wifid[69] <Error>: WiFi:[458474852.937190]: Disable WoW requested by "UserEventAgent"
+Jul 13 19:07:33 iPhone-CN wifid[69] <Error>: WiFi:[458474853.237979]: Enable WoW requested by "UserEventAgent"
+Jul 13 19:07:33 iPhone-CN wifid[69] <Error>: WiFi:[458474853.441210]: Disable WoW requested by "UserEventAgent"
+Jul 13 19:09:13 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Current mcc: '450' simulated:'0'.
+Jul 13 19:09:13 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "Location" with mcc 450
+Jul 13 19:09:13 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Not setting time zone to Asia/Seoul from Location because time zone is unchanged
+Jul 13 19:09:19 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:09:19 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:09:20 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:09:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:09:22 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:09:22 iPhone-CN mobile_assertion_agent[143] <Notice>: service_one_connection: Connection closed for client (null).
+Jul 13 19:09:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 19:12:14 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:12:14 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:12:15 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:14:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 19:16:20 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:16:20 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:16:22 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+[connected]
+
+
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 73 for Package <NMSticonPackage: 421732240> id=73, version=1, metaVersion=-1, latestVersion=2, newVersion=1, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/61.1.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 61 for Package <NMSticonPackage: 421796640> id=61, version=1, metaVersion=-1, latestVersion=9, newVersion=1, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/71.1.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 71 for Package <NMSticonPackage: 421774160> id=71, version=1, metaVersion=-1, latestVersion=6, newVersion=2, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/62.1.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 62 for Package <NMSticonPackage: 423398656> id=62, version=1, metaVersion=-1, latestVersion=5, newVersion=1, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/25.3.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 25 for Package <NMSticonPackage: 423366160> id=25, version=3, metaVersion=-1, latestVersion=7, newVersion=0, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/67.1.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 67 for Package <NMSticonPackage: 423385888> id=67, version=1, metaVersion=-1, latestVersion=5, newVersion=1, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/24.3.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 24 for Package <NMSticonPackage: 423359376> id=24, version=3, metaVersion=-1, latestVersion=8, newVersion=0, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/27.3.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 27 for Package <NMSticonPackage: 423367888> id=27, version=3, metaVersion=-1, latestVersion=7, newVersion=0, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/26.3.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 26 for Package <NMSticonPackage: 421807200> id=26, version=3, metaVersion=-1, latestVersion=7, newVersion=0, unzipped=NO
+Jul 13 17:58:45 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:58:50 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 21
+Jul 13 17:58:56 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:00 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 31
+Jul 13 17:59:07 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:10 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 41
+Jul 13 17:59:18 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:19 iPhone-CN kernel[0] <Notice>: AppleH4CamIn::setPowerStateGated: 0
+Jul 13 17:59:19 iPhone-CN kernel[0] <Notice>: AppleH4CamIn::power_off_hardware
+Jul 13 17:59:19 iPhone-CN mediaserverd[36] <Notice>: 'FigPlayer - 41' (pid = 41) setting DiscoveryMode = DiscoveryMode_None, currentDiscoveryMode = DiscoveryMode_PresenceScan
+Jul 13 17:59:19 iPhone-CN mediaserverd[36] <Notice>: 2015-07-13 05:59:19.518624 PM [AirPlay] BTLE client stopping to browse for AirPlay Solo Target Presence.
+Jul 13 17:59:19 iPhone-CN mediaserverd[36] <Notice>: 2015-07-13 05:59:19.520225 PM [AirPlay] BTLE discovery stopped
+Jul 13 17:59:19 iPhone-CN wirelessproxd[45] <Notice>: (Error) trying to stop a scan while the central isn't available
+Jul 13 17:59:20 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 51
+Jul 13 17:59:23 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 17:59:23 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 17:59:23 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 17:59:23 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 17:59:23 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 17:59:23 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:30 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 61
+Jul 13 17:59:51 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 82
+Jul 13 17:59:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 17:59:54 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 17:59:55 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 17:59:55 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 17:59:55 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 17:59:55 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 17:59:56 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 17:59:56 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 17:59:56 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 17:59:56 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:56 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 17:59:56 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 17:59:57 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 17:59:57 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 17:59:57 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 17:59:57 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 17:59:57 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 17:59:57 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 17:59:57 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 17:59:58 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 17:59:58 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 17:59:58 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 17:59:58 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 17:59:58 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 17:59:58 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 17:59:59 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:59 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:00:11 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 102
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:00:25 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:00:31 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 122
+Jul 13 18:00:34 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:00:34 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:00:34 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:00:34 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Not in transaction; writing data directly to output stream.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSPDYSession connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY before_ctrl_send_callback
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY send_callback
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Wrote 12 of 12 bytes.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Wrote 12 bytes to stream. dataLength=12 _bufferOffset=0
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Rescheduled GCD timer <OS_dispatch_source: 0x190c5f80> to fire in 27.500 sec.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY NSStreamEventHasSpaceAvailable
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSPDYSession connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Warning>: -[Reachability isReachableViaWiFi] (632) 
+		Reachability Flags: -R -----l-
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSPDYSession connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY NSStreamEventHasBytesAvailable
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSPDYSession connection:readyToRead:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:readyToRead:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY ping timer is reset.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Rescheduled GCD timer <OS_dispatch_source: 0x190c5f80> to fire in 110.000 sec.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY ping retry count is reset.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY recv_callback
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Read 12 bytes.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY on_ctrl_recv_callback, type 6
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY SPDYLAY_PING
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY ping timer is reset.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Rescheduled GCD timer <OS_dispatch_source: 0x190c5f80> to fire in 110.000 sec.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Ping roundtrip: 95.873952 ms.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY recv_callback
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY SPDYLAY_ERR_WOULDBLOCK
+Jul 13 18:00:34 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:00:34 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:00:51 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 142
+Jul 13 18:01:11 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 162
+Jul 13 18:01:31 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 182
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [main] #LEGY LEGYProtocolProvider background task expired.
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Disconnecting protocol <LEGYSPDYSession: 0x19163c30> gw-beta.line.naver.jp:443 (SPDY/wifi/secure (LEGY encryption)) (connected)
+	(
+	)
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYConnection _disconnectWithError:]Error Domain=LEGYErrorDomain Code=1001 "The operation couldn?셳 be completed. (LEGYErrorDomain error 1001.)"
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY @@@@@@@ disconnectWithError origin = gw-beta.line.naver.jp:443 (SPDY/wifi/secure (LEGY encryption))
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:hasDisconnectedWithError:]
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Canceled GCD timer <OS_dispatch_source: 0x190c5f80>
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocolProvider connection:hasDisconnectedWithError:] gw-beta.line.naver.jp:443 (SPDY/wifi/secure (LEGY encryption)) (disconnected) Error Domain=LEGYErrorDomain Code=1001 "The operation couldn?셳 be completed. (LEGYErrorDomain error 1001.)"
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSession protocolUnusable:]gw-beta.line.naver.jp:443 (SPDY/wifi/secure (LEGY encryption))
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY protocol.requests.count: 0 _requestsSending.count: 0
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY setSessionStatusChanged oldSessionStatus = 1, newSessionStatus = 2
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Setting origin group level from 0 to -1
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Origin group -1 is incomplete; merging with next level.
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Setting origin group level from -1 to 0
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSession protocolProviderDidGoOffline]
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYFetchOperationRequestResponseHandler protocolProviderDidGoOffline]
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [main] #LEGY Ending LEGYProtocolProvider background task.
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY All connections closed; ending background task.
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #Network LEGY session status changed: 1 => 2
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSession protocolProviderDidGoOffline]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYFetchOperationRequestResponseHandler protocolProviderDidGoOffline]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #Network -[TalkAppDelegate application:didReceiveRemoteNotification:fetchCompletionHandler:] {
+	    aps =     {
+	        badge = 12;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883515;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 129;
+	}
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] -[TalkAppDelegate processRemoteNotification:fetchCompletionHandler:]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] Remote notification from APNS:
+	{
+	    aps =     {
+	        badge = 12;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883515;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 129;
+	}
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #LEGY Receiving content-available remote notification for revision 129.
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 304
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #LEGY -[LEGYSPDYSession dealloc]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #LEGY -[LEGYProtocol dealloc]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #LEGY -[LEGYConnection dealloc]
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:04:34 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:04:40 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:04:43 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:04:43 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:04:43 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:04:43 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:04:44 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:04:44 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:04:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 403
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] #Network -[TalkAppDelegate application:didReceiveRemoteNotification:fetchCompletionHandler:] {
+	    aps =     {
+	        badge = 13;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883819;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 130;
+	}
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] -[TalkAppDelegate processRemoteNotification:fetchCompletionHandler:]
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] Remote notification from APNS:
+	{
+	    aps =     {
+	        badge = 13;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883819;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 130;
+	}
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] #LEGY Receiving content-available remote notification for revision 130.
+Jul 13 18:05:12 iPhone-CN pkd[114] <Warning>: assigning plug-in com.apple.stocks.widget(1.0) to plugin sandbox
+Jul 13 18:05:12 iPhone-CN pkd[114] <Warning>: enabling pid=43 for plug-in com.apple.stocks.widget(1.0) 9C6846CA-0D6C-4603-9B19-D53F51BD0758 /Applications/Stocks.app/PlugIns/StocksWidget.appex
+Jul 13 18:05:12 iPhone-CN StocksWidget[179] <Warning>: CoreAnimation: warning, deleted thread with uncommitted CATransaction; set CA_DEBUG_TRANSACTIONS=1 in environment to log backtraces.
+Jul 13 18:05:12 iPhone-CN StocksWidget[179] <Warning>: host connection <NSXPCConnection: 0x17e83350> connection from pid 43 invalidated
+Jul 13 18:05:12 iPhone-CN StocksWidget[179] <Warning>: Not updating snapshot
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) SYDAccount: no account
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) SYDPIMAccount: no account (null)
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) SYDAlwaysOnAccount: no account (null)
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "ignored" on (null)
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Error) Process with pid 179 is not authorized to access com.apple.stocks
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "ignored" on (null)
+Jul 13 18:05:14 iPhone-CN SpringBoard[43] <Warning>: plugin com.apple.stocks.widget invalidated
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 433
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] #Network -[TalkAppDelegate application:didReceiveRemoteNotification:fetchCompletionHandler:] {
+	    aps =     {
+	        badge = 14;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883907;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 131;
+	}
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] -[TalkAppDelegate processRemoteNotification:fetchCompletionHandler:]
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] Remote notification from APNS:
+	{
+	    aps =     {
+	        badge = 14;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883907;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 131;
+	}
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] #LEGY Receiving content-available remote notification for revision 131.
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 514
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] #Network -[TalkAppDelegate application:didReceiveRemoteNotification:fetchCompletionHandler:] {
+	    aps =     {
+	        badge = 15;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656884028;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 132;
+	}
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] -[TalkAppDelegate processRemoteNotification:fetchCompletionHandler:]
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] Remote notification from APNS:
+	{
+	    aps =     {
+	        badge = 15;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656884028;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 132;
+	}
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] #LEGY Receiving content-available remote notification for revision 132.
+Jul 13 18:07:14 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "ignored" on (null)
+Jul 13 18:07:32 iPhone-CN wifid[69] <Error>: WiFi:[458471252.702489]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:07:32 iPhone-CN wifid[69] <Error>: WiFi:[458471252.912377]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:07:33 iPhone-CN wifid[69] <Error>: WiFi:[458471253.204892]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:07:33 iPhone-CN wifid[69] <Error>: WiFi:[458471253.410951]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:09:18 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:09:18 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:09:19 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 18:09:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:14:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:10 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:11 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:11 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:11 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:12 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:12 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:12 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:12 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:15:12 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:15:13 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:15:13 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:14 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:14 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:14 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:14 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:15 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:15 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:15 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:15 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:15 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:15 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:16 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:15:16 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:16 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:17 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:17 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:17 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:18 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:18 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:18 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:18 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:18 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:19 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:15:19 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.191758 wlan0.N[586] AppleBCMWLANNetManager::handleDeauth():    status = 0 , reason = 6, flags = 0x0, authtype = 0, addr = 44:2a:60:dd:10:ae
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.195121 wlan0.N[587] AppleBCMWLANNetManager::leaveNetworkAsync():  kDeauthdCurrNetwork already set. Skipping call to leaveNetworkASync
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.195477 wlan0.A[588] Active Ports:
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.195621 wlan0.A[589] AppleBCMWLANCore::resetWoWConfig():  Deleted IPv4/IPv6 and Magic packet filters
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: AirPort: Link Down on en0. Reason 1 (Unspecified).
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: en0::stopOutputQueues
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: en0::IO80211Interface::postMessage bssid changed
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.196058 wlan0.A[590] AppleBCMWLANNetManager::resetLinkQualityMetrics(): Report LQM as -2
+Jul 13 18:17:32 iPhone-CN SpringBoard[43] <Warning>: WiFi is associated YES
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.263860 wlan0.A[591] AppleBCMWLANCore::setProperties(): Active during sleep supported (false)
+Jul 13 18:17:32 iPhone-CN SpringBoard[43] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN UserEventAgent[17] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN identityservicesd[42] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN UserEventAgent[17] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN identityservicesd[42] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN apsd[79] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN imagent[26] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN locationd[64] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN locationd[64] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN MobileMail[122] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN MobileMail[122] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN apsd[79] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN imagent[26] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 1 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 2 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 3 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 4 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 5 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 6 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.453040 wlan0.N[592] AppleBCMWLANCore::handleIPv4AddressNotificationGated():  Local IPv4  address 0.0.0.0
+Jul 13 18:17:32 iPhone-CN networkd[83] <Warning>: +[NETLedBelly stopFastFail] Clearing ledbelly failure cache
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic WABServer NetResolverEvent no resolvers, resetting domains
+Jul 13 18:17:32 iPhone-CN configd[24] <Notice>: network changed: v4(en0-:192.168.2.39) DNS- Proxy-
+Jul 13 18:17:32 iPhone-CN configd[24] <Notice>: Captive: CNPluginHandler en0: Inactive
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019859.946237 wlan0.N[593] AppleBCMWLANCore::setASSOCIATE():  [wifid]: lowerAuth = AUTHTYPE_OPEN, upperAuth = AUTHTYPE_WPA2_PSK, key = CIPHER_PMK , don't disassociate    .
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.028808 wlan0.A[594] Active Ports:
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.028953 wlan0.A[595] AppleBCMWLANCore::resetWoWConfig():  Deleted IPv4/IPv6 and Magic packet filters
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.029037 wlan0.A[596] AppleBCMWLANNetManager::prepareToBringUpLink():  Delaying powersave entry in order to get an IP address
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.029212 wlan0.A[597] AppleBCMWLANNetManager::resetLinkQualityMetrics(): Report LQM as -1
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.029391 wlan0.A[598] AppleBCMWLANNetManager::updateLinkQualityMetrics(): Report LQM to User Land 50, fAverageRSSI -85
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: AirPort: Link Up on en0
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0::startOutputQueues (0)
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0: BSSID changed to 44:2a:60:dd:10:ae
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0::IO80211Interface::postMessage bssid changed
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0: BSSID changed to 44:2a:60:dd:10:ae
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0::IO80211Interface::postMessage bssid changed
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.049505 wlan0.N[599] AppleBCMWLANJoinManager::handleSupplicantEvent(): status = 6 WLC_SUP_KEYED, reason = 0 Other reason, flags = 0x0, authtype = 0, addr = 84:fc:fe:9d:b9:1f
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.080725 wlan0.A[600] AppleBCMWLANCore::setProperties(): Active during sleep supported (true)
+Jul 13 18:17:34 iPhone-CN apsd[79] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN MobileMail[122] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN apsd[79] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN MobileMail[122] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.105305 wlan0.N[601] AppleBCMWLANCore::startRoamScan(): 4731 Delaying RoamScan; because  Join Mgr Busy 0 isWaitingforIP 1 
+Jul 13 18:17:34 iPhone-CN locationd[64] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN locationd[64] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN SpringBoard[43] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN SpringBoard[43] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN identityservicesd[42] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN identityservicesd[42] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN UserEventAgent[17] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN imagent[26] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN UserEventAgent[17] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN imagent[26] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.375982 wlan0.N[602] AppleBCMWLANCore::handleIPv4AddressNotificationGated():  Local IPv4  address 192.168.2.39
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: network changed: DNS* Proxy
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: Captive: [CNInfoNetworkActive:1709] en0: SSID 'Ramel-iMac' making interface primary (cache indicates network not captive)
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: Captive: CNPluginHandler en0: Evaluating
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.417714 wlan0.A[603] AppleBCMWLANNetManager::receivedIPv4Address():  Received address 192.168.2.39, entering powersave mode 2
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.417770 wlan0.N[604] AppleBCMWLANCore::startRoamScan(): 4751 starting RoamScan; MultiAPEnv:0 isdualBand:0 isOn5G:0
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: Captive: en0: Not probing 'Ramel-iMac' (cache indicates not captive)
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: Captive: CNPluginHandler en0: Authenticated
+Jul 13 18:17:34 iPhone-CN networkd[83] <Warning>: +[NETLedBelly stopFastFail] Clearing ledbelly failure cache
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: network changed: v4(en0!:192.168.2.39) DNS+ Proxy+
+Jul 13 18:17:34 iPhone-CN networkd[83] <Warning>: +[NETLedBelly stopFastFail] Clearing ledbelly failure cache
+Jul 13 18:17:35 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Current mcc: '450' simulated:'0'.
+Jul 13 18:17:35 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "Location" with mcc 450
+Jul 13 18:17:35 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Not setting time zone to Asia/Seoul from Location because time zone is unchanged
+Jul 13 18:17:36 iPhone-CN wifid[69] <Error>: WiFi:[458471856.067562]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:17:36 iPhone-CN wifid[69] <Error>: WiFi:[458471856.177706]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:17:36 iPhone-CN wifid[69] <Error>: WiFi:[458471856.357493]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:17:36 iPhone-CN wifid[69] <Error>: WiFi:[458471856.467448]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:17:44 iPhone-CN kernel[0] <Notice>: 019870.104901 wlan0.A[605] AppleBCMWLANCore::dumpWmeCounters():  per AC tx counters: 5789 24 51 147, rx counters: 6709 8 0 5 
+Jul 13 18:17:44 iPhone-CN kernel[0] <Notice>: 019870.104979 wlan0.A[606] AppleBCMWLANCore::dumpWmeCounters():                AWDL: Tx 0 0 0 0      Rx: 0 0 0 0 
+Jul 13 18:17:54 iPhone-CN kernel[0] <Notice>: 019880.119128 wlan0.A[607] AppleBCMWLANNetManager::updateLinkQualityMetrics(): Report LQM to User Land 100, fAverageRSSI -68
+Jul 13 18:19:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:24:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:27:32 iPhone-CN wifid[69] <Error>: WiFi:[458472452.508310]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:27:32 iPhone-CN wifid[69] <Error>: WiFi:[458472452.746937]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:27:32 iPhone-CN wifid[69] <Error>: WiFi:[458472452.865152]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:27:33 iPhone-CN wifid[69] <Error>: WiFi:[458472453.042153]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:29:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:34:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:37:32 iPhone-CN wifid[69] <Error>: WiFi:[458473052.711418]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:37:32 iPhone-CN wifid[69] <Error>: WiFi:[458473052.920841]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:37:33 iPhone-CN wifid[69] <Error>: WiFi:[458473053.166707]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:37:33 iPhone-CN wifid[69] <Error>: WiFi:[458473053.337051]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:39:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:44:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:47:32 iPhone-CN wifid[69] <Error>: WiFi:[458473652.679785]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:47:32 iPhone-CN wifid[69] <Error>: WiFi:[458473652.898428]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:47:33 iPhone-CN wifid[69] <Error>: WiFi:[458473653.194522]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:47:33 iPhone-CN wifid[69] <Error>: WiFi:[458473653.396302]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:49:06 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:06 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:07 iPhone-CN syslog_relay[140] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 18:49:07 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableDetect 0
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableType Detached
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: virtual IOReturn AppleUSBDeviceMux::message(UInt32, IOService *, void *) - kMessageInterfaceWasDeActivated
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: AppleUSBDeviceMux::reportStats: USB mux statistics: 
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: USB mux: 625 reads / 0 errors, 6142 writes / 0 errors
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: USB mux: 0 short packets, 0 dups
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: void AppleUSBDeviceMux::asyncWriteComplete(struct USBWriteBuffer *, IOReturn, UInt32) Error sending 175 byte packet: 0xe0004050, failing
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: void AppleUSBDeviceMux::asyncWriteComplete(struct USBWriteBuffer *, IOReturn, UInt32) Error sending 141 byte packet: 0xe0004050, failing
+Jul 13 18:49:11 iPhone-CN ptpd[213] <Notice>: PTP interface has been deactivated.
+Jul 13 18:49:11 iPhone-CN notification_proxy[146] <Error>: 0x3c3000 -[MNPLockdownConnection receiveMessage]: lockdown_receive_message error!
+Jul 13 18:49:11 iPhone-CN notification_proxy[146] <Error>: 0x445000 __37-[MNPLockdownConnection sendMessage:]_block_invoke: lockdown_send_message error, message: {
+	    Command = RelayNotification;
+	    Name = "com.apple.system.powersources.percent";
+	}, connection: <MNPLockdownConnection: 0x15509c70>
+Jul 13 18:49:11 iPhone-CN notification_proxy[146] <Error>: 0x341000 -[MNPLockdownConnection receiveMessage]: lockdown_receive_message error!
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:49:11 iPhone-CN geod[102] <Warning>: Can't get bundle identifier for process 64
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:49:11 iPhone-CN geod[102] <Warning>: Can't get bundle identifier for process 64
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:49:11 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:49:12 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Current mcc: '450' simulated:'0'.
+Jul 13 18:49:12 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "Location" with mcc 450
+Jul 13 18:49:12 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Not setting time zone to Asia/Seoul from Location because time zone is unchanged
+Jul 13 18:49:13 iPhone-CN pipelined[218] <Critical>: *** MESSAGE QUOTA DISABLED FOR THIS PROCESS ***
+Jul 13 18:49:13 iPhone-CN pipelined[218] <Warning>: overridable_setting.h(180): [override::Setting] Forcing override value no_vpn to 1
+Jul 13 18:49:13 iPhone-CN pipelined[218] <Warning>: CLIndoorBackgroundTasks.mm(261): [CLIndoorBackgroundTasks] tile refresh activity registered as ActivityPolicy[interval=1,grace period=0,delay=0 ]. Changing to ActivityPolicy[interval=1,grace period=0,delay=0 ]
+Jul 13 18:49:16 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:49:20 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:49:20 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:49:20 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:49:20 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:49:21 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:49:21 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:49:22 iPhone-CN kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableDetect 1
+Jul 13 18:49:22 iPhone-CN kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableType USBHost
+Jul 13 18:49:22 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:49:22 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:49:23 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:49:23 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:49:23 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:49:23 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN ptpd[220] <Error>: ptpd: startResponder
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN ptpd[220] <Notice>: Photo library available
+Jul 13 18:49:23 iPhone-CN ptpd[220] <Notice>: PTP interface has been activated at high speed.
+Jul 13 18:49:24 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:24 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:24 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:24 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received time 07/13/2015 09:49:22짹60.00 from "MobileLockdown"
+Jul 13 18:49:24 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Want active time in 2886.98min. Need active time in 7886.98min. Remaining retry interval: 0.000000min.
+Jul 13 18:49:24 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Current mcc: '450' simulated:'0'.
+Jul 13 18:49:24 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 18:49:24 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "MobileLockdown" with mcc 450
+Jul 13 18:49:28 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:24 iPhone-CN installd[35] <Notice>: 0x3c1000 -[MIClientConnection lookupUninstalledWithOptions:completion:]: Lookup uninstalled requested by atc (pid 27) with options (null)
+Jul 13 18:49:28 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:25 iPhone-CN installd[35] <Error>: 0x449000 -[MIBundle isApplicableToCurrentOSVersionWithError:]: 333: The system version is lower than the minimum OS version specified for bundle at /private/var/mobile/Containers/Bundle/Application/B782455A-5B65-4D34-827A-43914712511F/LINE.app/PlugIns/LineWatchKitExtension.appex. Have 8.1.3; need 8.2
+Jul 13 18:49:25 iPhone-CN installd[35] <Notice>: 0x449000 -[MIBundle pluginKitBundlesWithError:]: Ignoring plugin at /private/var/mobile/Containers/Bundle/Application/B782455A-5B65-4D34-827A-43914712511F/LINE.app/PlugIns/LineWatchKitExtension.appex because it doesn't work on this OS version
+Jul 13 18:49:26 iPhone-CN installd[35] <Error>: 0x3c1000 -[MIBundle isApplicableToCurrentOSVersionWithError:]: 333: The system version is lower than the minimum OS version specified for bundle at /private/var/mobile/Containers/Bundle/Application/5A57C074-A219-4990-B8D9-85CF054D0DBD/LINE.app/PlugIns/LineWatchKitExtension.appex. Have 8.1.3; need 8.2
+Jul 13 18:49:26 iPhone-CN installd[35] <Notice>: 0x3c1000 -[MIBundle pluginKitBundlesWithError:]: Ignoring plugin at /private/var/mobile/Containers/Bundle/Application/5A57C074-A219-4990-B8D9-85CF054D0DBD/LINE.app/PlugIns/LineWatchKitExtension.appex because it doesn't work on this OS version
+Jul 13 18:49:28 iPhone-CN CacheDeleteGeoTileLoader[148] <Error>: 0x3d5000 diskUsage: Failed to open directory /var/mobile/Library/Caches/MapTiles/MapTiles.sqlitedb : Not a directory
+Jul 13 18:49:28 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:28 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:28 iPhone-CN syncdefaultsd[221] <Notice>: (Note ) SYDAccount: no account
+Jul 13 18:49:28 iPhone-CN syncdefaultsd[221] <Notice>: (Note ) SYDPIMAccount: no account (null)
+Jul 13 18:49:28 iPhone-CN syncdefaultsd[221] <Notice>: (Note ) SYDAlwaysOnAccount: no account (null)
+Jul 13 18:49:29 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:49:29 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:29 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:29 iPhone-CN librariand[130] <Error>: ubiquity account is not configured (or is disabled for this client), not creating collection
+Jul 13 18:49:29 iPhone-CN librariand[130] <Error>: error in _handle_client_request: LibrarianErrorDomain/10/Unable to configure the collection.
+Jul 13 18:49:30 iPhone-CN bird[132] <Error>: unable to determine evictable space: Error Domain=LibrarianErrorDomain Code=10 "The operation couldn?셳 be completed. (LibrarianErrorDomain error 10 - Unable to configure the collection.)" UserInfo=0x1459da00 {NSDescription=Unable to configure the collection.}
+Jul 13 18:49:31 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:49:31 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:49:31 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:49:31 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:49:31 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:49:31 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:49:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:51:28 iPhone-CN syncdefaultsd[221] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "ignored" on (null)
+Jul 13 18:54:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:56:14 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:56:14 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:56:15 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 18:57:32 iPhone-CN wifid[69] <Error>: WiFi:[458474252.533868]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:57:32 iPhone-CN wifid[69] <Error>: WiFi:[458474252.768833]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:57:32 iPhone-CN wifid[69] <Error>: WiFi:[458474252.889816]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:57:33 iPhone-CN wifid[69] <Error>: WiFi:[458474253.062859]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:57:34 iPhone-CN UserEventAgent[17] <Notice>: calling xpc_event_provider_token_fire for client com.apple.OTACrashCopier session com.apple.OTACrashCopier
+Jul 13 18:57:34 iPhone-CN OTACrashCopier[223] <Notice>: (Warn ) <OTACrashCopierController.m __42-[OTACrashCopierController handleRequest:]_block_invoke:447> Creating Power Assertion for 600 secs
+Jul 13 18:59:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:59:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:59:23 iPhone-CN mobile_assertion_agent[143] <Notice>: service_one_connection: Connection closed for client (null).
+Jul 13 18:59:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 19:00:40 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:00:40 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:00:41 iPhone-CN syslog_relay[140] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 19:00:41 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:04:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 19:06:18 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:06:18 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:06:19 iPhone-CN syslog_relay[140] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 19:06:19 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:07:14 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:07:14 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:07:15 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:07:32 iPhone-CN wifid[69] <Error>: WiFi:[458474852.724472]: Enable WoW requested by "UserEventAgent"
+Jul 13 19:07:32 iPhone-CN wifid[69] <Error>: WiFi:[458474852.937190]: Disable WoW requested by "UserEventAgent"
+Jul 13 19:07:33 iPhone-CN wifid[69] <Error>: WiFi:[458474853.237979]: Enable WoW requested by "UserEventAgent"
+Jul 13 19:07:33 iPhone-CN wifid[69] <Error>: WiFi:[458474853.441210]: Disable WoW requested by "UserEventAgent"
+Jul 13 19:09:13 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Current mcc: '450' simulated:'0'.
+Jul 13 19:09:13 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "Location" with mcc 450
+Jul 13 19:09:13 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Not setting time zone to Asia/Seoul from Location because time zone is unchanged
+Jul 13 19:09:19 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:09:19 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:09:20 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:09:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:09:22 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:09:22 iPhone-CN mobile_assertion_agent[143] <Notice>: service_one_connection: Connection closed for client (null).
+Jul 13 19:09:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 19:12:14 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:12:14 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:12:15 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:14:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 19:16:20 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:16:20 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:16:22 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:17:32 iPhone-CN wifid[69] <Error>: WiFi:[458475452.670346]: Enable WoW requested by "UserEventAgent"
+Jul 13 19:17:32 iPhone-CN wifid[69] <Error>: WiFi:[458475452.906807]: Disable WoW requested by "UserEventAgent"
+Jul 13 19:17:33 iPhone-CN wifid[69] <Error>: WiFi:[458475453.207239]: Enable WoW requested by "UserEventAgent"
+Jul 13 19:17:33 iPhone-CN wifid[69] <Error>: WiFi:[458475453.411933]: Disable WoW requested by "UserEventAgent"
+Jul 13 19:18:34 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:18:34 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:18:35 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+[connected]
+
+
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/25.3.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 25 for Package <NMSticonPackage: 423366160> id=25, version=3, metaVersion=-1, latestVersion=7, newVersion=0, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/67.1.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 67 for Package <NMSticonPackage: 423385888> id=67, version=1, metaVersion=-1, latestVersion=5, newVersion=1, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/24.3.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 24 for Package <NMSticonPackage: 423359376> id=24, version=3, metaVersion=-1, latestVersion=8, newVersion=0, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/27.3.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 27 for Package <NMSticonPackage: 423367888> id=27, version=3, metaVersion=-1, latestVersion=7, newVersion=0, unzipped=NO
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon path not exist at /private/var/mobile/Containers/Data/Application/D407A657-D6F7-4D50-ACFE-723E0F5F6380/Library/Application Support/Sticon Packages/26.3.linestc/meta
+Jul 13 17:58:44 iPhone-CN LINE[216] <Notice>: [jp.naver.line.sticon-manager] #Sticon (Checking updates) 26 for Package <NMSticonPackage: 421807200> id=26, version=3, metaVersion=-1, latestVersion=7, newVersion=0, unzipped=NO
+Jul 13 17:58:45 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:58:50 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 21
+Jul 13 17:58:56 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:00 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 31
+Jul 13 17:59:07 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:10 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 41
+Jul 13 17:59:18 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:19 iPhone-CN kernel[0] <Notice>: AppleH4CamIn::setPowerStateGated: 0
+Jul 13 17:59:19 iPhone-CN kernel[0] <Notice>: AppleH4CamIn::power_off_hardware
+Jul 13 17:59:19 iPhone-CN mediaserverd[36] <Notice>: 'FigPlayer - 41' (pid = 41) setting DiscoveryMode = DiscoveryMode_None, currentDiscoveryMode = DiscoveryMode_PresenceScan
+Jul 13 17:59:19 iPhone-CN mediaserverd[36] <Notice>: 2015-07-13 05:59:19.518624 PM [AirPlay] BTLE client stopping to browse for AirPlay Solo Target Presence.
+Jul 13 17:59:19 iPhone-CN mediaserverd[36] <Notice>: 2015-07-13 05:59:19.520225 PM [AirPlay] BTLE discovery stopped
+Jul 13 17:59:19 iPhone-CN wirelessproxd[45] <Notice>: (Error) trying to stop a scan while the central isn't available
+Jul 13 17:59:20 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 51
+Jul 13 17:59:23 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 17:59:23 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 17:59:23 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 17:59:23 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 17:59:23 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 17:59:23 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:30 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 61
+Jul 13 17:59:51 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 82
+Jul 13 17:59:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 17:59:54 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 17:59:54 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 17:59:55 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 17:59:55 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 17:59:55 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 17:59:55 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 17:59:56 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 17:59:56 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 17:59:56 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 17:59:56 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:56 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 17:59:56 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 17:59:57 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 17:59:57 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 17:59:57 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 17:59:57 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 17:59:57 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 17:59:57 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 17:59:57 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 17:59:58 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 17:59:58 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 17:59:58 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 17:59:58 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 17:59:58 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 17:59:58 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 17:59:59 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 17:59:59 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:00:11 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 102
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:00:25 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:00:25 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:00:31 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 122
+Jul 13 18:00:34 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:00:34 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:00:34 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:00:34 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Not in transaction; writing data directly to output stream.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSPDYSession connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY before_ctrl_send_callback
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY send_callback
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Wrote 12 of 12 bytes.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Wrote 12 bytes to stream. dataLength=12 _bufferOffset=0
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Rescheduled GCD timer <OS_dispatch_source: 0x190c5f80> to fire in 27.500 sec.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY NSStreamEventHasSpaceAvailable
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSPDYSession connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Warning>: -[Reachability isReachableViaWiFi] (632) 
+		Reachability Flags: -R -----l-
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSPDYSession connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:readyToWrite:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY NSStreamEventHasBytesAvailable
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSPDYSession connection:readyToRead:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:readyToRead:]
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY ping timer is reset.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Rescheduled GCD timer <OS_dispatch_source: 0x190c5f80> to fire in 110.000 sec.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY ping retry count is reset.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY recv_callback
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Read 12 bytes.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY on_ctrl_recv_callback, type 6
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY SPDYLAY_PING
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY ping timer is reset.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Rescheduled GCD timer <OS_dispatch_source: 0x190c5f80> to fire in 110.000 sec.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Ping roundtrip: 95.873952 ms.
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY recv_callback
+Jul 13 18:00:34 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY SPDYLAY_ERR_WOULDBLOCK
+Jul 13 18:00:34 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:00:34 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:00:51 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 142
+Jul 13 18:01:11 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 162
+Jul 13 18:01:31 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 182
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [main] #LEGY LEGYProtocolProvider background task expired.
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Disconnecting protocol <LEGYSPDYSession: 0x19163c30> gw-beta.line.naver.jp:443 (SPDY/wifi/secure (LEGY encryption)) (connected)
+	(
+	)
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYConnection _disconnectWithError:]Error Domain=LEGYErrorDomain Code=1001 "The operation couldn?셳 be completed. (LEGYErrorDomain error 1001.)"
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY @@@@@@@ disconnectWithError origin = gw-beta.line.naver.jp:443 (SPDY/wifi/secure (LEGY encryption))
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocol connection:hasDisconnectedWithError:]
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Canceled GCD timer <OS_dispatch_source: 0x190c5f80>
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYProtocolProvider connection:hasDisconnectedWithError:] gw-beta.line.naver.jp:443 (SPDY/wifi/secure (LEGY encryption)) (disconnected) Error Domain=LEGYErrorDomain Code=1001 "The operation couldn?셳 be completed. (LEGYErrorDomain error 1001.)"
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSession protocolUnusable:]gw-beta.line.naver.jp:443 (SPDY/wifi/secure (LEGY encryption))
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY protocol.requests.count: 0 _requestsSending.count: 0
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY setSessionStatusChanged oldSessionStatus = 1, newSessionStatus = 2
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Setting origin group level from 0 to -1
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Origin group -1 is incomplete; merging with next level.
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY Setting origin group level from -1 to 0
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSession protocolProviderDidGoOffline]
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYFetchOperationRequestResponseHandler protocolProviderDidGoOffline]
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [main] #LEGY Ending LEGYProtocolProvider background task.
+Jul 13 18:01:32 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY All connections closed; ending background task.
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #Network LEGY session status changed: 1 => 2
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYSession protocolProviderDidGoOffline]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [jp.naver.line.LEGY] #LEGY -[LEGYFetchOperationRequestResponseHandler protocolProviderDidGoOffline]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #Network -[TalkAppDelegate application:didReceiveRemoteNotification:fetchCompletionHandler:] {
+	    aps =     {
+	        badge = 12;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883515;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 129;
+	}
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] -[TalkAppDelegate processRemoteNotification:fetchCompletionHandler:]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] Remote notification from APNS:
+	{
+	    aps =     {
+	        badge = 12;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883515;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 129;
+	}
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #LEGY Receiving content-available remote notification for revision 129.
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 304
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #LEGY -[LEGYSPDYSession dealloc]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #LEGY -[LEGYProtocol dealloc]
+Jul 13 18:03:33 iPhone-CN LINE[216] <Notice>: [main] #LEGY -[LEGYConnection dealloc]
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:04:34 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:04:34 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:04:40 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:04:43 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:04:43 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:04:43 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:04:43 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:04:44 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:04:44 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:04:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 403
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] #Network -[TalkAppDelegate application:didReceiveRemoteNotification:fetchCompletionHandler:] {
+	    aps =     {
+	        badge = 13;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883819;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 130;
+	}
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] -[TalkAppDelegate processRemoteNotification:fetchCompletionHandler:]
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] Remote notification from APNS:
+	{
+	    aps =     {
+	        badge = 13;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883819;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 130;
+	}
+Jul 13 18:05:12 iPhone-CN LINE[216] <Notice>: [main] #LEGY Receiving content-available remote notification for revision 130.
+Jul 13 18:05:12 iPhone-CN pkd[114] <Warning>: assigning plug-in com.apple.stocks.widget(1.0) to plugin sandbox
+Jul 13 18:05:12 iPhone-CN pkd[114] <Warning>: enabling pid=43 for plug-in com.apple.stocks.widget(1.0) 9C6846CA-0D6C-4603-9B19-D53F51BD0758 /Applications/Stocks.app/PlugIns/StocksWidget.appex
+Jul 13 18:05:12 iPhone-CN StocksWidget[179] <Warning>: CoreAnimation: warning, deleted thread with uncommitted CATransaction; set CA_DEBUG_TRANSACTIONS=1 in environment to log backtraces.
+Jul 13 18:05:12 iPhone-CN StocksWidget[179] <Warning>: host connection <NSXPCConnection: 0x17e83350> connection from pid 43 invalidated
+Jul 13 18:05:12 iPhone-CN StocksWidget[179] <Warning>: Not updating snapshot
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) SYDAccount: no account
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) SYDPIMAccount: no account (null)
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) SYDAlwaysOnAccount: no account (null)
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "ignored" on (null)
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Error) Process with pid 179 is not authorized to access com.apple.stocks
+Jul 13 18:05:13 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "ignored" on (null)
+Jul 13 18:05:14 iPhone-CN SpringBoard[43] <Warning>: plugin com.apple.stocks.widget invalidated
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 433
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] #Network -[TalkAppDelegate application:didReceiveRemoteNotification:fetchCompletionHandler:] {
+	    aps =     {
+	        badge = 14;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883907;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 131;
+	}
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] -[TalkAppDelegate processRemoteNotification:fetchCompletionHandler:]
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] Remote notification from APNS:
+	{
+	    aps =     {
+	        badge = 14;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656883907;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 131;
+	}
+Jul 13 18:05:42 iPhone-CN LINE[216] <Notice>: [main] #LEGY Receiving content-available remote notification for revision 131.
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] elapsedTime = 514
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] #Network -[TalkAppDelegate application:didReceiveRemoteNotification:fetchCompletionHandler:] {
+	    aps =     {
+	        badge = 15;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656884028;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 132;
+	}
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] -[TalkAppDelegate processRemoteNotification:fetchCompletionHandler:]
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] Remote notification from APNS:
+	{
+	    aps =     {
+	        badge = 15;
+	        "content-available" = 1;
+	    };
+	    f = 2;
+	    i = 656884028;
+	    m = ued5570f4b1fbe54b54137e35515d200d;
+	    o = 1;
+	    r = 132;
+	}
+Jul 13 18:07:03 iPhone-CN LINE[216] <Notice>: [main] #LEGY Receiving content-available remote notification for revision 132.
+Jul 13 18:07:14 iPhone-CN syncdefaultsd[217] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "ignored" on (null)
+Jul 13 18:07:32 iPhone-CN wifid[69] <Error>: WiFi:[458471252.702489]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:07:32 iPhone-CN wifid[69] <Error>: WiFi:[458471252.912377]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:07:33 iPhone-CN wifid[69] <Error>: WiFi:[458471253.204892]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:07:33 iPhone-CN wifid[69] <Error>: WiFi:[458471253.410951]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:09:18 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:09:18 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:09:19 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 18:09:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:14:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:10 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:10 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:11 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:11 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:11 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:12 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:12 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:12 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:12 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:15:12 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:15:13 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:15:13 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:14 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:14 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:14 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:14 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:14 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:15 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:15 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:15 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:15 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:15 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:15 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:16 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:15:16 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:16 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:16 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:17 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:17 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:15:17 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:15:17 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:15:18 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:15:18 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:15:18 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:15:18 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:15:18 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:15:19 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:15:19 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.191758 wlan0.N[586] AppleBCMWLANNetManager::handleDeauth():    status = 0 , reason = 6, flags = 0x0, authtype = 0, addr = 44:2a:60:dd:10:ae
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.195121 wlan0.N[587] AppleBCMWLANNetManager::leaveNetworkAsync():  kDeauthdCurrNetwork already set. Skipping call to leaveNetworkASync
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.195477 wlan0.A[588] Active Ports:
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.195621 wlan0.A[589] AppleBCMWLANCore::resetWoWConfig():  Deleted IPv4/IPv6 and Magic packet filters
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: AirPort: Link Down on en0. Reason 1 (Unspecified).
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: en0::stopOutputQueues
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: en0::IO80211Interface::postMessage bssid changed
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.196058 wlan0.A[590] AppleBCMWLANNetManager::resetLinkQualityMetrics(): Report LQM as -2
+Jul 13 18:17:32 iPhone-CN SpringBoard[43] <Warning>: WiFi is associated YES
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.263860 wlan0.A[591] AppleBCMWLANCore::setProperties(): Active during sleep supported (false)
+Jul 13 18:17:32 iPhone-CN SpringBoard[43] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN UserEventAgent[17] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN identityservicesd[42] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN UserEventAgent[17] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN identityservicesd[42] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN apsd[79] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN imagent[26] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN locationd[64] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN locationd[64] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN MobileMail[122] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN MobileMail[122] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN apsd[79] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN imagent[26] <Warning>: WiFi is associated NO
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 1 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 2 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 3 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 4 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 5 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.2.1 Port 53 errno 49, fd 36, ErrLogCount 6 ResolverIntf:7
+Jul 13 18:17:32 iPhone-CN kernel[0] <Notice>: 019858.453040 wlan0.N[592] AppleBCMWLANCore::handleIPv4AddressNotificationGated():  Local IPv4  address 0.0.0.0
+Jul 13 18:17:32 iPhone-CN networkd[83] <Warning>: +[NETLedBelly stopFastFail] Clearing ledbelly failure cache
+Jul 13 18:17:32 iPhone-CN discoveryd[67] <Notice>: Basic WABServer NetResolverEvent no resolvers, resetting domains
+Jul 13 18:17:32 iPhone-CN configd[24] <Notice>: network changed: v4(en0-:192.168.2.39) DNS- Proxy-
+Jul 13 18:17:32 iPhone-CN configd[24] <Notice>: Captive: CNPluginHandler en0: Inactive
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019859.946237 wlan0.N[593] AppleBCMWLANCore::setASSOCIATE():  [wifid]: lowerAuth = AUTHTYPE_OPEN, upperAuth = AUTHTYPE_WPA2_PSK, key = CIPHER_PMK , don't disassociate    .
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.028808 wlan0.A[594] Active Ports:
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.028953 wlan0.A[595] AppleBCMWLANCore::resetWoWConfig():  Deleted IPv4/IPv6 and Magic packet filters
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.029037 wlan0.A[596] AppleBCMWLANNetManager::prepareToBringUpLink():  Delaying powersave entry in order to get an IP address
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.029212 wlan0.A[597] AppleBCMWLANNetManager::resetLinkQualityMetrics(): Report LQM as -1
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.029391 wlan0.A[598] AppleBCMWLANNetManager::updateLinkQualityMetrics(): Report LQM to User Land 50, fAverageRSSI -85
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: AirPort: Link Up on en0
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0::startOutputQueues (0)
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0: BSSID changed to 44:2a:60:dd:10:ae
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0::IO80211Interface::postMessage bssid changed
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0: BSSID changed to 44:2a:60:dd:10:ae
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: en0::IO80211Interface::postMessage bssid changed
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.049505 wlan0.N[599] AppleBCMWLANJoinManager::handleSupplicantEvent(): status = 6 WLC_SUP_KEYED, reason = 0 Other reason, flags = 0x0, authtype = 0, addr = 84:fc:fe:9d:b9:1f
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.080725 wlan0.A[600] AppleBCMWLANCore::setProperties(): Active during sleep supported (true)
+Jul 13 18:17:34 iPhone-CN apsd[79] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN MobileMail[122] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN apsd[79] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN MobileMail[122] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.105305 wlan0.N[601] AppleBCMWLANCore::startRoamScan(): 4731 Delaying RoamScan; because  Join Mgr Busy 0 isWaitingforIP 1 
+Jul 13 18:17:34 iPhone-CN locationd[64] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN locationd[64] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN SpringBoard[43] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN SpringBoard[43] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN identityservicesd[42] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN identityservicesd[42] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN UserEventAgent[17] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN imagent[26] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN UserEventAgent[17] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN imagent[26] <Warning>: WiFi is associated YES
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.375982 wlan0.N[602] AppleBCMWLANCore::handleIPv4AddressNotificationGated():  Local IPv4  address 192.168.2.39
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: network changed: DNS* Proxy
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: Captive: [CNInfoNetworkActive:1709] en0: SSID 'Ramel-iMac' making interface primary (cache indicates network not captive)
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: Captive: CNPluginHandler en0: Evaluating
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.417714 wlan0.A[603] AppleBCMWLANNetManager::receivedIPv4Address():  Received address 192.168.2.39, entering powersave mode 2
+Jul 13 18:17:34 iPhone-CN kernel[0] <Notice>: 019860.417770 wlan0.N[604] AppleBCMWLANCore::startRoamScan(): 4751 starting RoamScan; MultiAPEnv:0 isdualBand:0 isOn5G:0
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: Captive: en0: Not probing 'Ramel-iMac' (cache indicates not captive)
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: Captive: CNPluginHandler en0: Authenticated
+Jul 13 18:17:34 iPhone-CN networkd[83] <Warning>: +[NETLedBelly stopFastFail] Clearing ledbelly failure cache
+Jul 13 18:17:34 iPhone-CN configd[24] <Notice>: network changed: v4(en0!:192.168.2.39) DNS+ Proxy+
+Jul 13 18:17:34 iPhone-CN networkd[83] <Warning>: +[NETLedBelly stopFastFail] Clearing ledbelly failure cache
+Jul 13 18:17:35 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Current mcc: '450' simulated:'0'.
+Jul 13 18:17:35 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "Location" with mcc 450
+Jul 13 18:17:35 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Not setting time zone to Asia/Seoul from Location because time zone is unchanged
+Jul 13 18:17:36 iPhone-CN wifid[69] <Error>: WiFi:[458471856.067562]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:17:36 iPhone-CN wifid[69] <Error>: WiFi:[458471856.177706]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:17:36 iPhone-CN wifid[69] <Error>: WiFi:[458471856.357493]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:17:36 iPhone-CN wifid[69] <Error>: WiFi:[458471856.467448]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:17:44 iPhone-CN kernel[0] <Notice>: 019870.104901 wlan0.A[605] AppleBCMWLANCore::dumpWmeCounters():  per AC tx counters: 5789 24 51 147, rx counters: 6709 8 0 5 
+Jul 13 18:17:44 iPhone-CN kernel[0] <Notice>: 019870.104979 wlan0.A[606] AppleBCMWLANCore::dumpWmeCounters():                AWDL: Tx 0 0 0 0      Rx: 0 0 0 0 
+Jul 13 18:17:54 iPhone-CN kernel[0] <Notice>: 019880.119128 wlan0.A[607] AppleBCMWLANNetManager::updateLinkQualityMetrics(): Report LQM to User Land 100, fAverageRSSI -68
+Jul 13 18:19:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:24:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:27:32 iPhone-CN wifid[69] <Error>: WiFi:[458472452.508310]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:27:32 iPhone-CN wifid[69] <Error>: WiFi:[458472452.746937]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:27:32 iPhone-CN wifid[69] <Error>: WiFi:[458472452.865152]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:27:33 iPhone-CN wifid[69] <Error>: WiFi:[458472453.042153]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:29:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:34:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:37:32 iPhone-CN wifid[69] <Error>: WiFi:[458473052.711418]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:37:32 iPhone-CN wifid[69] <Error>: WiFi:[458473052.920841]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:37:33 iPhone-CN wifid[69] <Error>: WiFi:[458473053.166707]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:37:33 iPhone-CN wifid[69] <Error>: WiFi:[458473053.337051]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:39:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:44:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:47:32 iPhone-CN wifid[69] <Error>: WiFi:[458473652.679785]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:47:32 iPhone-CN wifid[69] <Error>: WiFi:[458473652.898428]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:47:33 iPhone-CN wifid[69] <Error>: WiFi:[458473653.194522]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:47:33 iPhone-CN wifid[69] <Error>: WiFi:[458473653.396302]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:49:06 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:06 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:07 iPhone-CN syslog_relay[140] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 18:49:07 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableDetect 0
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableType Detached
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: virtual IOReturn AppleUSBDeviceMux::message(UInt32, IOService *, void *) - kMessageInterfaceWasDeActivated
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: AppleUSBDeviceMux::reportStats: USB mux statistics: 
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: USB mux: 625 reads / 0 errors, 6142 writes / 0 errors
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: USB mux: 0 short packets, 0 dups
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: void AppleUSBDeviceMux::asyncWriteComplete(struct USBWriteBuffer *, IOReturn, UInt32) Error sending 175 byte packet: 0xe0004050, failing
+Jul 13 18:49:11 iPhone-CN kernel[0] <Notice>: void AppleUSBDeviceMux::asyncWriteComplete(struct USBWriteBuffer *, IOReturn, UInt32) Error sending 141 byte packet: 0xe0004050, failing
+Jul 13 18:49:11 iPhone-CN ptpd[213] <Notice>: PTP interface has been deactivated.
+Jul 13 18:49:11 iPhone-CN notification_proxy[146] <Error>: 0x3c3000 -[MNPLockdownConnection receiveMessage]: lockdown_receive_message error!
+Jul 13 18:49:11 iPhone-CN notification_proxy[146] <Error>: 0x445000 __37-[MNPLockdownConnection sendMessage:]_block_invoke: lockdown_send_message error, message: {
+	    Command = RelayNotification;
+	    Name = "com.apple.system.powersources.percent";
+	}, connection: <MNPLockdownConnection: 0x15509c70>
+Jul 13 18:49:11 iPhone-CN notification_proxy[146] <Error>: 0x341000 -[MNPLockdownConnection receiveMessage]: lockdown_receive_message error!
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:49:11 iPhone-CN geod[102] <Warning>: Can't get bundle identifier for process 64
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:49:11 iPhone-CN geod[102] <Warning>: Can't get bundle identifier for process 64
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:49:11 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:49:11 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:49:12 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Current mcc: '450' simulated:'0'.
+Jul 13 18:49:12 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "Location" with mcc 450
+Jul 13 18:49:12 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Not setting time zone to Asia/Seoul from Location because time zone is unchanged
+Jul 13 18:49:13 iPhone-CN pipelined[218] <Critical>: *** MESSAGE QUOTA DISABLED FOR THIS PROCESS ***
+Jul 13 18:49:13 iPhone-CN pipelined[218] <Warning>: overridable_setting.h(180): [override::Setting] Forcing override value no_vpn to 1
+Jul 13 18:49:13 iPhone-CN pipelined[218] <Warning>: CLIndoorBackgroundTasks.mm(261): [CLIndoorBackgroundTasks] tile refresh activity registered as ActivityPolicy[interval=1,grace period=0,delay=0 ]. Changing to ActivityPolicy[interval=1,grace period=0,delay=0 ]
+Jul 13 18:49:16 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:49:20 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:49:20 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:49:20 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:49:20 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:49:21 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:49:21 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:49:22 iPhone-CN kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableDetect 1
+Jul 13 18:49:22 iPhone-CN kernel[0] <Notice>: AppleARMPMUCharger: AppleUSBCableType USBHost
+Jul 13 18:49:22 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 13 18:49:22 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 13 18:49:23 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 13 18:49:23 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 13 18:49:23 iPhone-CN backboardd[57] <Notice>: MultitouchHID: device bootloaded
+Jul 13 18:49:23 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN ptpd[220] <Error>: ptpd: startResponder
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:23 iPhone-CN ptpd[220] <Notice>: Photo library available
+Jul 13 18:49:23 iPhone-CN ptpd[220] <Notice>: PTP interface has been activated at high speed.
+Jul 13 18:49:24 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:24 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:24 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:24 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received time 07/13/2015 09:49:22짹60.00 from "MobileLockdown"
+Jul 13 18:49:24 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Want active time in 2886.98min. Need active time in 7886.98min. Remaining retry interval: 0.000000min.
+Jul 13 18:49:24 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Current mcc: '450' simulated:'0'.
+Jul 13 18:49:24 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 18:49:24 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "MobileLockdown" with mcc 450
+Jul 13 18:49:28 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:24 iPhone-CN installd[35] <Notice>: 0x3c1000 -[MIClientConnection lookupUninstalledWithOptions:completion:]: Lookup uninstalled requested by atc (pid 27) with options (null)
+Jul 13 18:49:28 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:24 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:25 iPhone-CN installd[35] <Error>: 0x449000 -[MIBundle isApplicableToCurrentOSVersionWithError:]: 333: The system version is lower than the minimum OS version specified for bundle at /private/var/mobile/Containers/Bundle/Application/B782455A-5B65-4D34-827A-43914712511F/LINE.app/PlugIns/LineWatchKitExtension.appex. Have 8.1.3; need 8.2
+Jul 13 18:49:25 iPhone-CN installd[35] <Notice>: 0x449000 -[MIBundle pluginKitBundlesWithError:]: Ignoring plugin at /private/var/mobile/Containers/Bundle/Application/B782455A-5B65-4D34-827A-43914712511F/LINE.app/PlugIns/LineWatchKitExtension.appex because it doesn't work on this OS version
+Jul 13 18:49:26 iPhone-CN installd[35] <Error>: 0x3c1000 -[MIBundle isApplicableToCurrentOSVersionWithError:]: 333: The system version is lower than the minimum OS version specified for bundle at /private/var/mobile/Containers/Bundle/Application/5A57C074-A219-4990-B8D9-85CF054D0DBD/LINE.app/PlugIns/LineWatchKitExtension.appex. Have 8.1.3; need 8.2
+Jul 13 18:49:26 iPhone-CN installd[35] <Notice>: 0x3c1000 -[MIBundle pluginKitBundlesWithError:]: Ignoring plugin at /private/var/mobile/Containers/Bundle/Application/5A57C074-A219-4990-B8D9-85CF054D0DBD/LINE.app/PlugIns/LineWatchKitExtension.appex because it doesn't work on this OS version
+Jul 13 18:49:28 iPhone-CN CacheDeleteGeoTileLoader[148] <Error>: 0x3d5000 diskUsage: Failed to open directory /var/mobile/Library/Caches/MapTiles/MapTiles.sqlitedb : Not a directory
+Jul 13 18:49:28 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:28 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:28 iPhone-CN syncdefaultsd[221] <Notice>: (Note ) SYDAccount: no account
+Jul 13 18:49:28 iPhone-CN syncdefaultsd[221] <Notice>: (Note ) SYDPIMAccount: no account (null)
+Jul 13 18:49:28 iPhone-CN syncdefaultsd[221] <Notice>: (Note ) SYDAlwaysOnAccount: no account (null)
+Jul 13 18:49:29 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:49:29 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:49:29 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:49:29 iPhone-CN librariand[130] <Error>: ubiquity account is not configured (or is disabled for this client), not creating collection
+Jul 13 18:49:29 iPhone-CN librariand[130] <Error>: error in _handle_client_request: LibrarianErrorDomain/10/Unable to configure the collection.
+Jul 13 18:49:30 iPhone-CN bird[132] <Error>: unable to determine evictable space: Error Domain=LibrarianErrorDomain Code=10 "The operation couldn?셳 be completed. (LibrarianErrorDomain error 10 - Unable to configure the collection.)" UserInfo=0x1459da00 {NSDescription=Unable to configure the collection.}
+Jul 13 18:49:31 iPhone-CN backboardd[57] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 13 18:49:31 iPhone-CN kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 13 18:49:31 iPhone-CN SpringBoard[43] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 13 18:49:31 iPhone-CN backboardd[57] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 13 18:49:31 iPhone-CN locationd[64] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 13 18:49:31 iPhone-CN kernel[0] <Notice>: IOReturn AppleCLCD::setActivePixelBacklightModulation(bool, bool): no power
+Jul 13 18:49:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:51:28 iPhone-CN syncdefaultsd[221] <Notice>: (Note ) marked "com.me.keyvalueservice" topic as "ignored" on (null)
+Jul 13 18:54:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 18:56:14 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:56:14 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:56:15 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 18:57:32 iPhone-CN wifid[69] <Error>: WiFi:[458474252.533868]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:57:32 iPhone-CN wifid[69] <Error>: WiFi:[458474252.768833]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:57:32 iPhone-CN wifid[69] <Error>: WiFi:[458474252.889816]: Enable WoW requested by "UserEventAgent"
+Jul 13 18:57:33 iPhone-CN wifid[69] <Error>: WiFi:[458474253.062859]: Disable WoW requested by "UserEventAgent"
+Jul 13 18:57:34 iPhone-CN UserEventAgent[17] <Notice>: calling xpc_event_provider_token_fire for client com.apple.OTACrashCopier session com.apple.OTACrashCopier
+Jul 13 18:57:34 iPhone-CN OTACrashCopier[223] <Notice>: (Warn ) <OTACrashCopierController.m __42-[OTACrashCopierController handleRequest:]_block_invoke:447> Creating Power Assertion for 600 secs
+Jul 13 18:59:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 18:59:23 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 18:59:23 iPhone-CN mobile_assertion_agent[143] <Notice>: service_one_connection: Connection closed for client (null).
+Jul 13 18:59:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 19:00:40 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:00:40 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:00:41 iPhone-CN syslog_relay[140] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 19:00:41 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:04:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 19:06:18 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:06:18 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:06:19 iPhone-CN syslog_relay[140] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 13 19:06:19 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:07:14 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:07:14 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:07:15 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:07:32 iPhone-CN wifid[69] <Error>: WiFi:[458474852.724472]: Enable WoW requested by "UserEventAgent"
+Jul 13 19:07:32 iPhone-CN wifid[69] <Error>: WiFi:[458474852.937190]: Disable WoW requested by "UserEventAgent"
+Jul 13 19:07:33 iPhone-CN wifid[69] <Error>: WiFi:[458474853.237979]: Enable WoW requested by "UserEventAgent"
+Jul 13 19:07:33 iPhone-CN wifid[69] <Error>: WiFi:[458474853.441210]: Disable WoW requested by "UserEventAgent"
+Jul 13 19:09:13 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Current mcc: '450' simulated:'0'.
+Jul 13 19:09:13 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "Location" with mcc 450
+Jul 13 19:09:13 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Not setting time zone to Asia/Seoul from Location because time zone is unchanged
+Jul 13 19:09:19 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:09:19 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:09:20 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:09:23 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:09:22 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:09:22 iPhone-CN mobile_assertion_agent[143] <Notice>: service_one_connection: Connection closed for client (null).
+Jul 13 19:09:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 19:12:14 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:12:14 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:12:15 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:14:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 19:16:20 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:16:20 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:16:22 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:17:32 iPhone-CN wifid[69] <Error>: WiFi:[458475452.670346]: Enable WoW requested by "UserEventAgent"
+Jul 13 19:17:32 iPhone-CN wifid[69] <Error>: WiFi:[458475452.906807]: Disable WoW requested by "UserEventAgent"
+Jul 13 19:17:33 iPhone-CN wifid[69] <Error>: WiFi:[458475453.207239]: Enable WoW requested by "UserEventAgent"
+Jul 13 19:17:33 iPhone-CN wifid[69] <Error>: WiFi:[458475453.411933]: Disable WoW requested by "UserEventAgent"
+Jul 13 19:18:34 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:18:34 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:18:35 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:19:21 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:19:21 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:19:21 iPhone-CN mobile_assertion_agent[143] <Notice>: service_one_connection: Connection closed for client (null).
+Jul 13 19:19:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 19:20:28 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:20:28 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:20:29 iPhone-CN syslog_relay[140] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 13 19:24:54 iPhone-CN routined[30] <Notice>: CoreLocation: </System/Library/LocationBundles/Routine.bundle> woken up by Core Location
+Jul 13 19:27:32 iPhone-CN wifid[69] <Error>: WiFi:[458476052.666221]: Enable WoW requested by "UserEventAgent"
+Jul 13 19:27:32 iPhone-CN wifid[69] <Error>: WiFi:[458476052.880296]: Disable WoW requested by "UserEventAgent"
+Jul 13 19:27:32 iPhone-CN wifid[69] <Error>: WiFi:[458476052.994142]: Enable WoW requested by "UserEventAgent"
+Jul 13 19:27:33 iPhone-CN wifid[69] <Error>: WiFi:[458476053.177904]: Disable WoW requested by "UserEventAgent"
+Jul 13 19:29:13 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Current mcc: '450' simulated:'0'.
+Jul 13 19:29:13 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Received timezone "Asia/Seoul" from "Location" with mcc 450
+Jul 13 19:29:13 iPhone-CN timed[33] <Notice>: (Note ) CoreTime: Not setting time zone to Asia/Seoul from Location because time zone is unchanged
+Jul 13 19:29:20 iPhone-CN kernel[0] <Notice>: flow_divert_token_set (0): Failed to get the key unit from the token: 22
+Jul 13 19:29:20 iPhone-CN lockdownd[25] <Error>: Could not set socket option SO_OPPORTUNISTIC: Invalid argument
+Jul 13 19:29:20 iPhone-CN mobile_assertion_agent[143] <Notice>: service_one_connection: Connection closed for client (null).

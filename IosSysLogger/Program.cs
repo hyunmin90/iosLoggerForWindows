@@ -46,7 +46,6 @@ namespace IosSysLogger
         }
         static void watcher_USBInserted(object sender, EventArgs e)
         {
-
             MessageBox.Show("Detected");
         }
         static void OnProcessExit(object sender, EventArgs e)
@@ -59,8 +58,6 @@ namespace IosSysLogger
             {
                 proc.Kill();
             }
-
-
         }
     }
 }

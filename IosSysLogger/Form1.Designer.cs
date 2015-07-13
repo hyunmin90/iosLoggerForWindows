@@ -38,7 +38,7 @@
             this.Log = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ctr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.loglevelCheckBox = new System.Windows.Forms.CheckedListBox();
             this.clearSearchBtn = new System.Windows.Forms.Button();
             this.fixScroll = new System.Windows.Forms.CheckBox();
             this.devicename = new System.Windows.Forms.CheckedListBox();
@@ -139,10 +139,10 @@
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
-            // checkedListBox1
+            // loglevelCheckBox
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.loglevelCheckBox.FormattingEnabled = true;
+            this.loglevelCheckBox.Items.AddRange(new object[] {
             "Debug",
             "Info",
             "Notice",
@@ -151,10 +151,10 @@
             "Critical",
             "Alert",
             "Emergency"});
-            this.checkedListBox1.Location = new System.Drawing.Point(505, 45);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(130, 180);
-            this.checkedListBox1.TabIndex = 6;
+            this.loglevelCheckBox.Location = new System.Drawing.Point(505, 45);
+            this.loglevelCheckBox.Name = "loglevelCheckBox";
+            this.loglevelCheckBox.Size = new System.Drawing.Size(130, 180);
+            this.loglevelCheckBox.TabIndex = 6;
             // 
             // clearSearchBtn
             // 
@@ -262,7 +262,7 @@
             this.Controls.Add(this.devicename);
             this.Controls.Add(this.fixScroll);
             this.Controls.Add(this.clearSearchBtn);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.loglevelCheckBox);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.searchBtn);
@@ -281,7 +281,7 @@
         private System.Windows.Forms.Button searchBtn;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox loglevelCheckBox;
         private System.Windows.Forms.Button clearSearchBtn;
         private System.Windows.Forms.CheckBox fixScroll;
         private System.Windows.Forms.CheckedListBox devicename;

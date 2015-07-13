@@ -20,15 +20,17 @@ namespace IosSysLogger
         bool firstRowf = false;
         bool configurationNotice = false;
         bool fixScrollCheck = false;
-        List<string> checkedList = new List<string>();
+        List<string> checkedLoglevel = new List<string>();
         List<string> processlist = new List<string>();
         List<string> selectedProcessList = new List<string>();
         List<string> devicenameList = new List<string>();
         List<string> selectedDeviceList = new List<string>();
+
         public iosSyslogger()
         {
             InitializeComponent();
             var watcher = new ManagementEventWatcher();
+
             //Allow data grid t
             ContextMenuStrip mnu = new ContextMenuStrip();
             ToolStripMenuItem mnuCopy = new ToolStripMenuItem("Copy");
@@ -38,18 +40,20 @@ namespace IosSysLogger
             dataGridView1.ContextMenuStrip = mnu;
 
 
+            //Check boxes handler
+            this.devicename.SelectedIndexChanged += new System.EventHandler(this.devicename_SelectedIndexChanged);
+            this.loglevelCheckBox.SelectedIndexChanged += new System.EventHandler(this.loglevelCheckBox_SelectedIndexChanged);
+            this.processlistname.SelectedIndexChanged += new System.EventHandler(this.processlistname_SelectedIndexChanged);
+
+            //Button Click Handler
             this.highlightBtn.Click += new System.EventHandler(this.highlightBtn_Click);
             this.clearSearchBtn.Click += new System.EventHandler(this.clearSearchBtn_Click);
             this.fixScroll.Click += new System.EventHandler(this.fixScroll_Click);
-            this.devicename.SelectedIndexChanged += new System.EventHandler(this.devicename_SelectedIndexChanged);
-            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
-            this.processlistname.SelectedIndexChanged += new System.EventHandler(this.processlistname_SelectedIndexChanged);
             this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             this.savedatagrid.Click += new System.EventHandler(this.saveBtn_Click);
             this.load.Click += new System.EventHandler(this.loadBtn_click);
-
-           
         }
+
         private void Save()
         {
             string currentPath = System.Environment.CurrentDirectory;
@@ -91,23 +95,15 @@ namespace IosSysLogger
         private void loadXML()
         {
             DataSet dataSet = new DataSet();
-
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "XML-File | *.xml";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 dataSet.ReadXml(openFileDialog.FileName);
                 dataGridView1.DataSource = dataSet.Tables[0];
-
             }
-
-
-            
-
         }
-
-
-
+        
         public String DeviceNameText
         {
             get { return null; }
@@ -130,9 +126,7 @@ namespace IosSysLogger
                     devicename.Items.Add(deviceName);
                     //devicename.Items.Add("Test");
                     //devicename.AppendText("\n");
-
                 }
-
             }
         }
         
@@ -148,7 +142,6 @@ namespace IosSysLogger
                 bool withinCheckNew = false;
                 string[] month = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
                 string[] loglevels = { "<Notice>:", "<Debug>:", "<Info>:", "<Warning>:", "<Error>:", "<Critical>:", "<Alert>:", "<Emergency>:"};
-                
                 if (month.Any(e => value.StartsWith(e))) //Start with one of the month code
                 {
                     addtRow = 0;
@@ -254,7 +247,7 @@ namespace IosSysLogger
                         dataGridView1.Rows[rowNumber].Selected = false;
                     }
                     //MessageBox.Show(checkedListBox1.CheckedItems.Count.ToString());
-                    if (withinCheckNew == false&& checkedListBox1.CheckedItems.Count!=0)
+                    if (withinCheckNew == false&& loglevelCheckBox.CheckedItems.Count!=0)
                     {
                         dataGridView1.Rows[rowNumber].Visible = false;
                         dataGridView1.Rows[rowNumber].Selected = false;
@@ -281,26 +274,15 @@ namespace IosSysLogger
                     scrollToBottom();
                     //MessageBox.Show(value); Need to solve multi line problem
                 }
-                
-
             }
-
         }
 
         private void scrollToBottom()
         {
-
             if (fixScrollCheck != true)
             {
                 dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.RowCount - 1;
-            }
-            
-                
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
+            }           
         }
         private void highlightBtn_Click(object sender, EventArgs e)
         {
@@ -391,7 +373,6 @@ namespace IosSysLogger
 
         private void searchResult(string term)
         {
-
             if (term != null)
             {
                 int i = 0;
@@ -430,8 +411,6 @@ namespace IosSysLogger
                         //dataGridView1.Rows[i].Selected = false;
                         i++;
                     }
-
-
                 }
             }
         }
@@ -467,7 +446,7 @@ namespace IosSysLogger
                 dataGridView1.Rows[i].Visible = false;
                 dataGridView1.Rows[i].Selected = false;
             }
-            foreach (string term in checkedList)
+            foreach (string term in checkedLoglevel)
             {
                 for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
                 {
@@ -479,7 +458,7 @@ namespace IosSysLogger
                     }
                 }
             }
-            checkedList.Clear();
+            checkedLoglevel.Clear();
 
         }
 
@@ -545,21 +524,21 @@ namespace IosSysLogger
         }
 
         
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void loglevelCheckBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (checkedListBox1.CheckedItems.Count == 0)
+            if (loglevelCheckBox.CheckedItems.Count == 0)
             {
                 clearHighlight();
             }
             else
             {
-                foreach (int indexChecked in checkedListBox1.CheckedIndices)
+                foreach (int indexChecked in loglevelCheckBox.CheckedIndices)
                 {
                     // The indexChecked variable contains the index of the item.
-                    string selectedName = checkedListBox1.Items[indexChecked].ToString();
+                    string selectedName = loglevelCheckBox.Items[indexChecked].ToString();
                     //MessageBox.Show(selectedName);
 
-                    checkedList.Add(selectedName);
+                    checkedLoglevel.Add(selectedName);
                     //MessageBox.Show("Index#: " + indexChecked.ToString() + ", is checked. Checked state is:" +
                     // devicename.GetItemCheckState(indexChecked).ToString() + ".");
                 }
