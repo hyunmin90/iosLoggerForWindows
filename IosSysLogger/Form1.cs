@@ -6,7 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
-using System.IO;
 using System.Management;
 
 namespace IosSysLogger
@@ -20,11 +19,12 @@ namespace IosSysLogger
         bool firstRowf = false;
         bool configurationNotice = false;
         bool fixScrollCheck = false;
-        List<string> checkedLoglevel = new List<string>();
+        List<string> selectedLoglevel = new List<string>();
         List<string> processlist = new List<string>();
         List<string> selectedProcessList = new List<string>();
         List<string> devicenameList = new List<string>();
         List<string> selectedDeviceList = new List<string>();
+        Dictionary <string,string> totalSelected = new Dictionary<string, string>();
 
         public iosSyslogger()
         {
@@ -41,9 +41,9 @@ namespace IosSysLogger
 
 
             //Check boxes handler
-            this.devicename.SelectedIndexChanged += new System.EventHandler(this.devicename_SelectedIndexChanged);
-            this.loglevelCheckBox.SelectedIndexChanged += new System.EventHandler(this.loglevelCheckBox_SelectedIndexChanged);
-            this.processlistname.SelectedIndexChanged += new System.EventHandler(this.processlistname_SelectedIndexChanged);
+            this.devicename.SelectedIndexChanged += new System.EventHandler(this.checkbox_SelectedIndexChanged);
+            this.loglevelCheckBox.SelectedIndexChanged += new System.EventHandler(this.checkbox_SelectedIndexChanged);
+            this.processlistname.SelectedIndexChanged += new System.EventHandler(this.checkbox_SelectedIndexChanged);
 
             //Button Click Handler
             this.highlightBtn.Click += new System.EventHandler(this.highlightBtn_Click);
@@ -52,6 +52,11 @@ namespace IosSysLogger
             this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             this.savedatagrid.Click += new System.EventHandler(this.saveBtn_Click);
             this.load.Click += new System.EventHandler(this.loadBtn_click);
+        }
+
+        public void clearCheckbox()
+        {
+            devicename.Items.Clear();
         }
 
         private void Save()
@@ -124,8 +129,6 @@ namespace IosSysLogger
                     }
                     devicenameList.Add(deviceName);
                     devicename.Items.Add(deviceName);
-                    //devicename.Items.Add("Test");
-                    //devicename.AppendText("\n");
                 }
             }
         }
@@ -136,18 +139,26 @@ namespace IosSysLogger
             get { return null; }
             set
             {
+                if(value==null)return;
                 int index = 0;
                 int previous = 0;
-                bool highlightNew = false;
+                bool searchedText = false;
+                bool highLighted = false;
                 bool withinCheckNew = false;
                 string[] month = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
                 string[] loglevels = { "<Notice>:", "<Debug>:", "<Info>:", "<Warning>:", "<Error>:", "<Critical>:", "<Alert>:", "<Emergency>:"};
                 if (month.Any(e => value.StartsWith(e))) //Start with one of the month code
                 {
                     addtRow = 0;
+                    //row init
+                    dataGridView1.Rows[rowNumber].Cells[6].Value = "";
                     dataGridView1.Rows[rowNumber].Cells[5].Value = "0";
+                    dataGridView1.Rows[rowNumber].Cells[0].Value = "";
+                    dataGridView1.Rows[rowNumber].Cells[1].Value = "";
+                    dataGridView1.Rows[rowNumber].Cells[2].Value = "";
+                    dataGridView1.Rows[rowNumber].Cells[3].Value = "";
+                    dataGridView1.Rows[rowNumber].Cells[4].Value = "";
                     dataGridView1.Rows.Add();
-                    //richTextBox1.AppendText(value + Environment.NewLine);
 
                     int midIndex=0;
 
@@ -156,38 +167,51 @@ namespace IosSysLogger
                         if (Array.IndexOf(words, loglevel) != -1)
                             midIndex = Array.IndexOf(words, loglevel);
                     }
-                   // MessageBox.Show(midIndex.ToString());
 
                     if (value.Contains("<Notice>:"))
                     {
+                        dataGridView1.Rows[rowNumber].Cells[6].Value = "ForestGreen";
                         dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.ForestGreen;
                     }
                     else if (value.Contains("<Debug>:"))
                     {
-
+                        dataGridView1.Rows[rowNumber].Cells[6].Value = "Orange";
+                        dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.Orange;
                     }
                     else if (value.Contains("<Info>:"))
                     {
-
+                        dataGridView1.Rows[rowNumber].Cells[6].Value = "Orange";
+                        dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.AntiqueWhite;
                     }
                     else if (value.Contains("<Warning>:"))
                     {
+                        dataGridView1.Rows[rowNumber].Cells[6].Value = "Orange";
                         dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.Orange;
                     }
                     else if (value.Contains("<Error>:"))
                     {
+                        dataGridView1.Rows[rowNumber].Cells[6].Value = "DarkRed";
                         dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.DarkRed;
                     }
                     else if (value.Contains("<Critical>:"))
                     {
+                        dataGridView1.Rows[rowNumber].Cells[6].Value = "DarkRed";
                         dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.DarkRed;
                     }
                     else if (value.Contains("<Alert>:"))
                     {
-
+                        dataGridView1.Rows[rowNumber].Cells[6].Value = "DarkRed";
+                        dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.DarkRed;
                     }
                     else if (value.Contains("<Emergency>:"))
                     {
+                        dataGridView1.Rows[rowNumber].Cells[6].Value = "IndianRed";
+                        dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.IndianRed;
+                    }
+                    else
+                    {
+                        dataGridView1.Rows[rowNumber].Cells[6].Value = "Black";
+                        dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.Black;
 
                     }
                     if (!(devicenameList.Any(e => words.Contains(e))))
@@ -201,9 +225,13 @@ namespace IosSysLogger
 
                     foreach (string word in words)
                     {
-                        if (textBox2.Text != "" && word.Contains(textBox2.Text))
+                        if (searchTxtBox.Text != "" && word.Contains(searchTxtBox.Text))
                         {
-                            highlightNew = true;
+                            searchedText = true;
+                        }
+                        if ((highlightTextBox.Text != "" && word.Contains(highlightTextBox.Text)))
+                        {
+                            highLighted = true;
                         }
                         if (month.Any(e => word.StartsWith(e)))
                         {
@@ -232,30 +260,64 @@ namespace IosSysLogger
                         }
                         index++;
                     }
-                    //if (dataGridView1.Rows[rowNumber].Cells[4].Value.ToString().Contains("Configuration Notice:"))
-                    //{
-                       // configurationNotice = true;
-                   // }
-                    if (highlightNew == true)
+                    if (highLighted == true)
                     {
-                        dataGridView1.Rows[rowNumber].Selected = true;
+                        dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.Red;
                         dataGridView1.Rows[rowNumber].Visible = true;
                     }
-                    else if (highlightNew == false && textBox2.Text != "")
+                    else if (searchedText == false && (searchTxtBox.Text != ""))
                     {
                         dataGridView1.Rows[rowNumber].Visible = false;
                         dataGridView1.Rows[rowNumber].Selected = false;
                     }
-                    //MessageBox.Show(checkedListBox1.CheckedItems.Count.ToString());
-                    if (withinCheckNew == false&& loglevelCheckBox.CheckedItems.Count!=0)
+                    if (withinCheckNew == false&& loglevelCheckBox.CheckedItems.Count>0)
                     {
                         dataGridView1.Rows[rowNumber].Visible = false;
                         dataGridView1.Rows[rowNumber].Selected = false;
+                        
+                            foreach (string term in selectedLoglevel)
+                            {
+                            if (dataGridView1.Rows[rowNumber].Cells[3]!=null && dataGridView1.Rows[rowNumber].Cells[3].Value.ToString().Contains(term))
+                                {
+                                    dataGridView1.Rows[rowNumber].Visible = true;
+                                }
+
+                            }
+                        
+                    }
+                    if (withinCheckNew == false && processlistname.CheckedItems.Count > 0)
+                    {
+                        dataGridView1.Rows[rowNumber].Visible = false;
+                        dataGridView1.Rows[rowNumber].Selected = false;
+
+                        foreach (string term in selectedProcessList)
+                        {
+                            if (dataGridView1.Rows[rowNumber].Cells[2]!=null && dataGridView1.Rows[rowNumber].Cells[2].Value.ToString().Contains(term))
+                            {
+                                dataGridView1.Rows[rowNumber].Visible = true;
+                            }
+
+                        }
+
+                    }
+                    if (withinCheckNew == false && devicename.CheckedItems.Count > 0)
+                    {
+                        dataGridView1.Rows[rowNumber].Visible = false;
+                        dataGridView1.Rows[rowNumber].Selected = false;
+
+                        foreach (string term in selectedDeviceList)
+                        {
+                            if (dataGridView1.Rows[rowNumber].Cells!=null&&term != null&& dataGridView1.Rows[rowNumber] != null&&dataGridView1.Rows[rowNumber].Cells[1]!=null && dataGridView1.Rows[rowNumber].Cells[1].Value.ToString().Contains(term))
+                            {
+                                dataGridView1.Rows[rowNumber].Visible = true;
+                            }
+
+                        }
+
                     }
                     firstRowf = false;
                     rowNumber++;
                     scrollToBottom();
-                    //dataGridView1.Rows[0].Cells[4].Value = value;
                 }
                 else //If current row contain multiple line, this logic counts on the multi row and record such lines of log. 
                 {
@@ -267,13 +329,18 @@ namespace IosSysLogger
                     dataGridView1.Rows[rowNumber].Cells[1].Value = " ";
                     dataGridView1.Rows[rowNumber].Cells[2].Value = " ";
                     dataGridView1.Rows[rowNumber].Cells[3].Value = " ";
+                    dataGridView1.Rows[rowNumber].Cells[6].Value = "Black";
+                    dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.Black;
                     dataGridView1.Rows[rowNumber].Cells[4].Value = value.ToString();
                     dataGridView1.Rows[rowNumber - addtRow ].Cells[5].Value = addtRow;
                     dataGridView1.Rows[rowNumber].Cells[5].Value = "0";
                     rowNumber++;
                     scrollToBottom();
-                    //MessageBox.Show(value); Need to solve multi line problem
                 }
+
+                //For filtering
+                
+
             }
         }
 
@@ -286,7 +353,7 @@ namespace IosSysLogger
         }
         private void highlightBtn_Click(object sender, EventArgs e)
         {
-            string search = textBox2.Text; 
+            string search = highlightTextBox.Text; 
             highLight(search);   
         }
 
@@ -301,13 +368,14 @@ namespace IosSysLogger
         }
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            string search = textBox2.Text;
+            string search = searchTxtBox.Text;
             searchResult(search);
         }
         private void clearSearchBtn_Click(object sender, EventArgs e)
         {
-            textBox2.Text = "";
-            clearHighlight();   
+            searchTxtBox.Text = "";
+            highlightTextBox.Text = "";
+            clearFilter();   
         }
         private void fixScroll_Click(object sender, EventArgs e)
         {
@@ -316,17 +384,39 @@ namespace IosSysLogger
             else
                 fixScrollCheck = false;
         }
-        private void clearHighlight()
+        private void clearFilter()
         {
+            selectedLoglevel.Clear();
+            selectedDeviceList.Clear();
+            selectedProcessList.Clear();
+            foreach (int i in devicename.CheckedIndices)
+            {
+                devicename.SetItemCheckState(i, CheckState.Unchecked);
+            }
+            foreach (int i in processlistname.CheckedIndices)
+            {
+                processlistname.SetItemCheckState(i, CheckState.Unchecked);
+            }
+            foreach (int i in loglevelCheckBox.CheckedIndices)
+            {
+                loglevelCheckBox.SetItemCheckState(i, CheckState.Unchecked);
+            }
+
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
-                    dataGridView1.Rows[i].Selected = false;
-                    dataGridView1.Rows[i].Visible = true;
+                dataGridView1.Rows[i].DefaultCellStyle.ForeColor = Color.FromName(dataGridView1.Rows[i].Cells[6].Value.ToString());
+                dataGridView1.Rows[i].Cells[0].Style.ForeColor = Color.FromName(dataGridView1.Rows[i].Cells[6].Value.ToString());
+                dataGridView1.Rows[i].Cells[1].Style.ForeColor= Color.FromName(dataGridView1.Rows[i].Cells[6].Value.ToString());
+                dataGridView1.Rows[i].Cells[2].Style.ForeColor = Color.FromName(dataGridView1.Rows[i].Cells[6].Value.ToString());
+                dataGridView1.Rows[i].Cells[3].Style.ForeColor = Color.FromName(dataGridView1.Rows[i].Cells[6].Value.ToString());
+                dataGridView1.Rows[i].Cells[4].Style.ForeColor = Color.FromName(dataGridView1.Rows[i].Cells[6].Value.ToString());
+                dataGridView1.Rows[i].Selected = false;
+                dataGridView1.Rows[i].Visible = true;
             }
         }
         private void highLight(string term)
         {
-            
+
             if (term != null)
             {
                 int i = 0;
@@ -335,40 +425,30 @@ namespace IosSysLogger
                     if (dataGridView1.Rows[i].Cells[3] == null)
                     { return; }
 
-                    else if (dataGridView1.Rows[i].Cells[0].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[1].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(term))
+                    else if (dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(term))
                     {
-                        
+                        if (dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term))
+                        {
+                            dataGridView1.Rows[i].Cells[2].Style.ForeColor = System.Drawing.Color.Red;
+                        }
+                          
+                        if (dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term))
+                            dataGridView1.Rows[i].Cells[3].Style.ForeColor = System.Drawing.Color.Red;
+                        if (dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(term))
+                            dataGridView1.Rows[i].Cells[4].Style.ForeColor = System.Drawing.Color.Red;
+
                         string multirow = dataGridView1.Rows[i].Cells[5].Value.ToString();
-                        int count = Convert.ToInt32(multirow);
-                        if (count > 0)
-                        {
-                            int z = 0;
-                           // MessageBox.Show(count.ToString());
-                            for (z = 0; z <= count; z++)
-                            {
-                                
-                                dataGridView1.Rows[i+z].Selected = true;
-                                //dataGridView1.Rows[i+z].Visible = true;
-                            }
-                            i=i+z;
-                        }
-                        else
-                        {
-                            dataGridView1.Rows[i].Selected = true;
-                            //dataGridView1.Rows[i].Visible = true;
-                            i++;
-                        }
+                         i++;
                     }
                     else
                     {
-                        //dataGridView1.Rows[i].Visible = false;
-                        //dataGridView1.Rows[i].Selected = false;
                         i++;
                     }
-                    
+
 
                 }
             }
+
         }
 
         private void searchResult(string term)
@@ -381,7 +461,7 @@ namespace IosSysLogger
                     if (dataGridView1.Rows[i].Cells[3] == null)
                     { return; }
 
-                    else if (dataGridView1.Rows[i].Cells[0].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[1].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(term))
+                    else if ( dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(term))
                     {
 
                         string multirow = dataGridView1.Rows[i].Cells[5].Value.ToString();
@@ -389,18 +469,15 @@ namespace IosSysLogger
                         if (count > 0)
                         {
                             int z = 0;
-                            // MessageBox.Show(count.ToString());
                             for (z = 0; z <= count; z++)
                             {
 
-                                //dataGridView1.Rows[i + z].Selected = true;
                                 dataGridView1.Rows[i + z].Visible = true;
                             }
                             i = i + z;
                         }
                         else
                         {
-                            //dataGridView1.Rows[i].Selected = true;
                             dataGridView1.Rows[i].Visible = true;
                             i++;
                         }
@@ -408,7 +485,6 @@ namespace IosSysLogger
                     else
                     {
                         dataGridView1.Rows[i].Visible = false;
-                        //dataGridView1.Rows[i].Selected = false;
                         i++;
                     }
                 }
@@ -421,23 +497,148 @@ namespace IosSysLogger
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
                 dataGridView1.Rows[i].Visible = false;
-                dataGridView1.Rows[i].Selected = false;
+               dataGridView1.Rows[i].Selected = false;
             }
             foreach (string term in selectedProcessList)
             {
                 //MessageBox.Show(term);
-                for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+                if (searchTxtBox.Text != "")
                 {
-                    if (dataGridView1.Rows[i].Cells[2] == null)
-                        return;
-                    if (dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term) )
+                    for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+                    {
+                        if (dataGridView1.Rows[i].Cells[2] == null)
+                            return;
+                        if (dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term) && (dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(searchTxtBox.Text) || dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(searchTxtBox.Text) || dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(searchTxtBox.Text)))
+                        {
+                            dataGridView1.Rows[i].Visible = true;
+                        }
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+                    {
+                        if (dataGridView1.Rows[i].Cells[2] == null)
+                            return;
+                        if (dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term))
+                        {
+                            dataGridView1.Rows[i].Visible = true;
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        private void ShowTotal()
+        {
+
+            bool test,test1,test2 ;
+            int checkboxCount=0;
+            test = false;
+            test1 = false;
+            test2 = false;
+            int deviceCount = 0;
+            int processCount = 0;
+            int loglevelCount = 0;
+            for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+            {
+                dataGridView1.Rows[i].Visible = false;
+                dataGridView1.Rows[i].Selected = false;
+            }
+            foreach (var item in totalSelected)
+            {
+                if (item.Value == "devicename")
+                    deviceCount++;
+                else if (item.Value == "process")
+                    processCount++;
+                else if (item.Value == "loglevel")
+                    loglevelCount++;
+            }
+
+            for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+            {
+                foreach (var item in totalSelected)
+                {
+                    if (item.Value == "devicename")
+                    {
+                        
+                        if (dataGridView1.Rows[i].Cells[1].Value != null && dataGridView1.Rows[i].Cells[1].Value.ToString().Contains(item.Key))
+                        {
+                            test = true;
+                            //MessageBox.Show("should be called first");
+                        }
+                        
+                    }
+                    else if (item.Value == "process")
+                    {
+
+                        if (dataGridView1.Rows[i].Cells[2].Value != null && dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(item.Key))
+                        {
+                            test1 = true;
+                        }
+                        else
+                            test1 = false;
+                    }
+                    else if (item.Value == "loglevel")
+                    {
+                        
+                        if (dataGridView1.Rows[i].Cells[3].Value != null && dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(item.Key))
+                        {
+                            test2 = true;
+                        }
+                        else
+                            test2 = false;
+                    }
+                }
+
+                if (deviceCount > 0 && processCount > 0 && loglevelCount > 0)
+                {
+                    if (test && test1 && test2)
                     {
                         dataGridView1.Rows[i].Visible = true;
                     }
                 }
-            }
-            selectedProcessList.Clear();
 
+                else if (deviceCount > 0 && processCount > 0 || deviceCount > 0 && loglevelCount > 0 || processCount > 0 && loglevelCount > 0)
+                {
+                    if (test && test1 == true || test1 && test2 || test && test2)
+                    {
+                        dataGridView1.Rows[i].Visible = true;
+                    }
+                }
+
+                else if (deviceCount > 0|| loglevelCount > 0 || processCount > 0)
+                {
+                    if (test || test1 || test2)
+                    {
+                        dataGridView1.Rows[i].Visible = true;
+                    }
+                }
+                
+                
+
+
+
+            }
+
+          
+        }
+
+        private void showByProcessMultiLevel()
+        {
+            foreach (string term in selectedProcessList)
+            {
+                for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+                {
+                    if (dataGridView1.Rows[i].Cells[2].Value != null && dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term) && dataGridView1.Rows[i].Visible == true)
+                    {
+                        dataGridView1.Rows[i].Visible = true;
+                    }
+                    else
+                        dataGridView1.Rows[i].Visible = false;
+                }
+            }
         }
         private void showByLogLevel()
         {
@@ -446,21 +647,51 @@ namespace IosSysLogger
                 dataGridView1.Rows[i].Visible = false;
                 dataGridView1.Rows[i].Selected = false;
             }
-            foreach (string term in checkedLoglevel)
+            foreach (string term in selectedLoglevel)
             {
                 for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
                 {
-                    if (dataGridView1.Rows[i].Cells[3].Value == null)
-                        return;
-                    if (dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term))
+                    
+                    if (dataGridView1.Rows[i].Cells[3].Value != null && dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term))
                     {
                         dataGridView1.Rows[i].Visible = true;
                     }
                 }
             }
-            checkedLoglevel.Clear();
 
         }
+        private void showByLogLevelMultiLayer()
+        {
+            foreach (string term in selectedLoglevel)
+            {
+                for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+                {
+                    if (dataGridView1.Rows[i].Cells[3].Value != null && dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term) && dataGridView1.Rows[i].Visible == true)
+                    {
+                        dataGridView1.Rows[i].Visible = true;
+                    }
+                    else
+                        dataGridView1.Rows[i].Visible = false;
+                }
+            }
+        }
+
+        private void showByDeviceListMultiLayer()
+        {
+            foreach (string term in selectedDeviceList)
+            {
+                for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+                {
+                    if (dataGridView1.Rows[i].Cells[1].Value != null && dataGridView1.Rows[i].Cells[1].Value.ToString().Contains(term) && dataGridView1.Rows[i].Visible == true)
+                    {
+                        dataGridView1.Rows[i].Visible = true;
+                    }
+                    else
+                        dataGridView1.Rows[i].Visible = false;
+                }
+            }
+        }
+
 
         private void showBydeviceName()
         {
@@ -471,17 +702,14 @@ namespace IosSysLogger
             }
             foreach (string term in selectedDeviceList)
             {
-                for (int i = 0; i<dataGridView1.Rows.Count - 1; i++)
+                for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
                 {
-                    if (dataGridView1.Rows[i].Cells[1].Value == null)
-                        return;
-                    if (dataGridView1.Rows[i].Cells[1].Value.ToString().Contains(term))
+                    if (dataGridView1.Rows[i].Cells[1].Value != null && dataGridView1.Rows[i].Cells[1].Value.ToString().Contains(term))
                     {
                         dataGridView1.Rows[i].Visible = true;
                     }
                 }
             }
-            selectedDeviceList.Clear();
 
         }
 
@@ -500,81 +728,152 @@ namespace IosSysLogger
 
         }
 
-        private void processlistname_SelectedIndexChanged(object sender, EventArgs Args)
+        private void checkbox_SelectedIndexChanged(object sender, EventArgs Args)
         {
-            if (processlistname.CheckedItems.Count == 0)
+            if (processlistname.CheckedItems.Count == 0 && devicename.CheckedItems.Count == 0 && loglevelCheckBox.CheckedItems.Count == 0)
             {
-                clearHighlight();
+                selectedProcessList.Clear();
+                clearFilter();
             }
             else
             {
+                totalSelected.Clear();
+                foreach (int indexChecked in processlistname.CheckedIndices)
+                {
+                    totalSelected.Add(processlistname.Items[indexChecked].ToString(), "process");
+                }
+                foreach (int indexChecked in devicename.CheckedIndices)
+                {
+                    totalSelected.Add(devicename.Items[indexChecked].ToString(), "devicename");
+                }
+                foreach (int indexChecked in loglevelCheckBox.CheckedIndices)
+                {
+                    totalSelected.Add(loglevelCheckBox.Items[indexChecked].ToString(), "loglevel");
+                }
+                ShowTotal();
+            }
+        }
+
+        private void processlistname_SelectedIndexChanged(object sender, EventArgs Args)
+        {
+            if (processlistname.CheckedItems.Count == 0 && devicename.CheckedItems.Count ==0 && loglevelCheckBox.CheckedItems.Count==0)
+            {
+                selectedProcessList.Clear();
+                clearFilter();
+            }
+            else if (devicename.CheckedItems.Count > 0)
+            {
+                selectedProcessList.Clear();
+                foreach (int indexChecked in processlistname.CheckedIndices)
+                {
+                    string selectedName = processlistname.Items[indexChecked].ToString();
+                    selectedProcessList.Add(selectedName);
+                }
+                showByProcessMultiLevel();
+            }
+            else if (loglevelCheckBox.CheckedItems.Count > 0)
+            {
+                selectedProcessList.Clear();
+                foreach (int indexChecked in processlistname.CheckedIndices)
+                {
+                    string selectedName = processlistname.Items[indexChecked].ToString();
+                    selectedProcessList.Add(selectedName);
+                }
+                showByProcessMultiLevel();
+            }
+            else
+            {
+                selectedProcessList.Clear();
                 foreach (int indexChecked in processlistname.CheckedIndices)
                 {
                     
                     // The indexChecked variable contains the index of the item.
                     string selectedName = processlistname.Items[indexChecked].ToString();
-                    //MessageBox.Show(selectedName);
 
                     selectedProcessList.Add(selectedName);
-                    //MessageBox.Show("Index#: " + indexChecked.ToString() + ", is checked. Checked state is:" +
-                    // devicename.GetItemCheckState(indexChecked).ToString() + ".");
                 }
                 showByProcess();
             }
         }
-
         
+
         private void loglevelCheckBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (loglevelCheckBox.CheckedItems.Count == 0)
+            if (processlistname.CheckedItems.Count == 0 && devicename.CheckedItems.Count == 0 && loglevelCheckBox.CheckedItems.Count == 0)
             {
-                clearHighlight();
+                selectedLoglevel.Clear();
+                clearFilter();
             }
-            else
+            else if (devicename.CheckedItems.Count > 0)
             {
                 foreach (int indexChecked in loglevelCheckBox.CheckedIndices)
                 {
-                    // The indexChecked variable contains the index of the item.
                     string selectedName = loglevelCheckBox.Items[indexChecked].ToString();
-                    //MessageBox.Show(selectedName);
-
-                    checkedLoglevel.Add(selectedName);
-                    //MessageBox.Show("Index#: " + indexChecked.ToString() + ", is checked. Checked state is:" +
-                    // devicename.GetItemCheckState(indexChecked).ToString() + ".");
+                    selectedLoglevel.Add(selectedName);
                 }
-                showByLogLevel();
+                showByLogLevelMultiLayer();
             }
-
-
-        }
-        private void devicename_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //if (devicename.SelectedItems.Count > 0)
-            //{
-            // MessageBox.Show(devicename.SelectedIndex.ToString());
-            //string selectedName = devicename.GetItemText(devicename.SelectedIndex);
-            //highLight(selectedName);
-            //}
-            if (devicename.CheckedItems.Count == 0)
+            else if (processlistname.CheckedItems.Count > 0)
             {
-                clearHighlight();
+                foreach (int indexChecked in loglevelCheckBox.CheckedIndices)
+                {
+                    string selectedName = loglevelCheckBox.Items[indexChecked].ToString();
+                    selectedLoglevel.Add(selectedName);
+                }
+                showByLogLevelMultiLayer();
             }
             else
             {
+                selectedLoglevel.Clear();
+                foreach (int indexChecked in loglevelCheckBox.CheckedIndices)
+                {
+                    string selectedName = loglevelCheckBox.Items[indexChecked].ToString();
+
+                    selectedLoglevel.Add(selectedName);
+                }
+                showByLogLevel();
+            }
+        }
+        private void devicename_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (processlistname.CheckedItems.Count == 0 && devicename.CheckedItems.Count == 0 && loglevelCheckBox.CheckedItems.Count == 0)
+            {
+                selectedDeviceList.Clear();
+                clearFilter();
+            }
+            else if (loglevelCheckBox.CheckedItems.Count > 0)
+            {
+                MessageBox.Show("log>0");
                 foreach (int indexChecked in devicename.CheckedIndices)
                 {
-                    // The indexChecked variable contains the index of the item.
                     string selectedName = devicename.Items[indexChecked].ToString();
-                    //MessageBox.Show(selectedName);
-
                     selectedDeviceList.Add(selectedName);
-                    //MessageBox.Show("Index#: " + indexChecked.ToString() + ", is checked. Checked state is:" +
-                                   // devicename.GetItemCheckState(indexChecked).ToString() + ".");
+                }
+                showByDeviceListMultiLayer();
+            }
+            else if (processlistname.CheckedItems.Count > 0)
+            {
+                foreach (int indexChecked in devicename.CheckedIndices)
+                {
+                    string selectedName = devicename.Items[indexChecked].ToString();
+                    selectedDeviceList.Add(selectedName);
+                }
+                showByDeviceListMultiLayer();
+            }
+            else
+            {
+                selectedDeviceList.Clear();
+
+                foreach (int indexChecked in devicename.CheckedIndices)
+                {
+                    string selectedName = devicename.Items[indexChecked].ToString();
+                    selectedDeviceList.Add(selectedName);
                 }
                 showBydeviceName();
             }
-            
-        }
+
+            }
     }
 
 }
