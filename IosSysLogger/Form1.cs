@@ -266,12 +266,16 @@ namespace IosSysLogger
                         dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.Red;
                         dataGridView1.Rows[rowNumber].Visible = true;
                     }
+                    if (searchedText == true && dataGridView1.Rows[rowNumber].Visible == true)
+                    {
+                        dataGridView1.Rows[rowNumber].Visible = true;
+                    }
                     else if (searchedText == false && (searchTxtBox.Text != ""))
                     {
                         dataGridView1.Rows[rowNumber].Visible = false;
                         dataGridView1.Rows[rowNumber].Selected = false;
                     }
-                    if (withinCheckNew == false && totalSelected.Count > 0) //Need to fix this very soon For performance reason
+                    if (withinCheckNew == false && totalSelected.Count > 0 && dataGridView1.Rows[rowNumber].Visible!=false) //Need to fix this very soon For performance reason
                     {
                         foreach (KeyValuePair<string, string> entry in totalSelected)
                         {
@@ -334,8 +338,6 @@ namespace IosSysLogger
                 }
 
                 //For filtering
-
-
             }
         }
 
@@ -381,9 +383,7 @@ namespace IosSysLogger
         }
         private void clearFilter()
         {
-            selectedLoglevel.Clear();
-            selectedDeviceList.Clear();
-            selectedProcessList.Clear();
+            totalSelected.Clear();
             foreach (int i in devicename.CheckedIndices)
             {
                 devicename.SetItemCheckState(i, CheckState.Unchecked);
@@ -604,7 +604,7 @@ namespace IosSysLogger
         {
             if (processlistname.CheckedItems.Count == 0 && devicename.CheckedItems.Count == 0 && loglevelCheckBox.CheckedItems.Count == 0)
             {
-                selectedProcessList.Clear();
+                totalSelected.Clear();
                 clearFilter();
             }
             else
