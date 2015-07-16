@@ -529,6 +529,8 @@ namespace IosSysLogger
                 count1 = 1;
                 count2 = 1;
                 count3 = 1;
+                int z = 0;
+
                 foreach (KeyValuePair<string, string> entry in totalSelected)
                 {
 
@@ -536,17 +538,16 @@ namespace IosSysLogger
                     {
                         if (dataGridView1.Rows[i].Cells[1].Value.ToString().Trim().Equals(entry.Key.Trim()))
                         {
-                            string multirow = dataGridView1.Rows[i].Cells[5].Value.ToString();
-                            int count = Convert.ToInt32(multirow);
-                            if (count > 0)
+                            string multirow1 = dataGridView1.Rows[i].Cells[5].Value.ToString();
+                            int counts = Convert.ToInt32(multirow1);
+                            if (counts > 0)
                             {
-                                int z = 0;
-                                for (z = 0; z < count; z++)
+                                for (z = 0; z < counts; z++)
                                 {
 
                                     dataGridView1.Rows[i + z].Visible = true;
                                 }
-                                i = i + z;
+                               
                             }
                             else
                             {
@@ -568,17 +569,16 @@ namespace IosSysLogger
                     {
                         if (dataGridView1.Rows[i].Cells[2].Value.ToString().Trim().Equals(entry.Key.Trim()))
                         {
-                            string multirow = dataGridView1.Rows[i].Cells[5].Value.ToString();
-                            int count = Convert.ToInt32(multirow);
-                            if (count > 0)
+                            string multirow1 = dataGridView1.Rows[i].Cells[5].Value.ToString();
+                            int counts = Convert.ToInt32(multirow1);
+                            if (counts > 0)
                             {
-                                int z = 0;
-                                for (z = 0; z < count; z++)
+                                for (z = 0; z < counts; z++)
                                 {
 
                                     dataGridView1.Rows[i + z].Visible = true;
                                 }
-                                i = i + z;
+                               
                             }
                             else
                             {
@@ -600,17 +600,16 @@ namespace IosSysLogger
                     {
                         if (dataGridView1.Rows[i].Cells[3].Value.ToString().Trim().Contains(entry.Key.Trim()))
                         {
-                            string multirow = dataGridView1.Rows[i].Cells[5].Value.ToString();
-                            int count = Convert.ToInt32(multirow);
-                            if (count > 0)
+                            string multirow1 = dataGridView1.Rows[i].Cells[5].Value.ToString();
+                            int counts = Convert.ToInt32(multirow1);
+                            if (counts > 0)
                             {
-                                int z = 0;
-                                for (z = 0; z < count; z++)
+                                for (z = 0; z < counts; z++)
                                 {
 
                                     dataGridView1.Rows[i + z].Visible = true;
                                 }
-                                i = i + z;
+                                
                             }
                             else
                             {
@@ -631,6 +630,23 @@ namespace IosSysLogger
                     }
                     // do something with entry.Value or entry.Key
                 }
+                string multirow = dataGridView1.Rows[i].Cells[5].Value.ToString();
+                int count = Convert.ToInt32(multirow);
+                if (count > 0&& dataGridView1.Rows[i].Visible==false)
+                {
+                    for (int k = 0; k <= count; k++)
+                    {
+
+                        dataGridView1.Rows[i + k].Visible = false;
+                    }
+
+                }
+
+                i = i + z;
+
+                
+
+
             }
         }
 
