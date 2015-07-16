@@ -85,16 +85,21 @@ namespace IosSysLogger
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-            //Program.GlobalData.uuid.RemoveAt(Program.GlobalData.uuid.Count - 1);
-
+           
             if (Program.GlobalData.usbRemoved == true)
             {
+                
                 foreach (string uuidt in Program.GlobalData.uuid)
                 {
-                    if (!Program.GlobalData.tempuuid.Contains(uuidt))
+                    Process test = new Process();
+                    if (!(crProcess.TryGetValue(uuidt, out test)))
                     {
-                        //MessageBox.Show("Gotcha");
-                        //MessageBox.Show(uuidt);
+                        continue;
+                    }
+                    
+
+                    if (!Program.GlobalData.tempuuid.Contains(uuidt)&&uuidt!=null&& crProcess[uuidt]!=null)
+                    {
                         crProcess[uuidt].Kill();
                         crProcess.Remove(uuidt);
                     }
@@ -105,7 +110,7 @@ namespace IosSysLogger
                 Program.GlobalData.uuid.AddRange(Program.GlobalData.tempuuid);
                 form.BeginInvoke(new Action(() =>
                 {
-                    form.clearCheckbox();
+                    form.clearDeviceName();
                 }));
                 foreach (string uuidstring in Program.GlobalData.uuid)
                 {
@@ -114,31 +119,22 @@ namespace IosSysLogger
                     loggingThread.Start();
                 }
                 Program.GlobalData.usbRemoved = false;
-                //foreach (string uuidname in Program.GlobalData.uuid)
-                //{
-                //   MessageBox.Show(uuidname);
-                //}
-                //return;
                 return;
             }
 
-            //deviceInfoThread(form, tool, "");
 
             else if (Program.GlobalData.usbInserted == true)
             {
-                //MessageBox.Show("Inserted");
                 deviceInfoThread(form, tool, Program.GlobalData.uuid[Program.GlobalData.uuid.Count - 1]);
                 LoggingThread(form, tool, Program.GlobalData.uuid[Program.GlobalData.uuid.Count - 1]);
                 lstThreads[lstThreads.Count - 2].Start();
                 lstThreads[lstThreads.Count - 1].Start();
-                //Program.GlobalData.usbInserted = false;
                 Program.GlobalData.notInit = true;
                 return;
             }
             else if (Program.GlobalData.usbInserted!=true)
             {
                 if (Program.GlobalData.usbInserted == true) return;
-                //MessageBox.Show("Inserted should not be here");
                 foreach (string uuid in Program.GlobalData.uuid)
                 {
                     deviceInfoThread(form, tool, uuid);
@@ -182,7 +178,7 @@ namespace IosSysLogger
                 if (outLine.Data == null) return;
                 else if (Program.GlobalData.uuid.Contains(outLine.Data)) return;
                 else if (!Program.GlobalData.uuid.Contains(outLine.Data))
-                { //MessageBox.Show(outLine.Data.ToString());
+                {
                     Program.GlobalData.uuid.Add(outLine.Data);
                 }
             }
@@ -198,8 +194,6 @@ namespace IosSysLogger
         
         public void OutputHandler(object sendingProcess, DataReceivedEventArgs outLine, iosSyslogger form, string uuid)
         {
-            //*Includes writing to a temporary PATH that need a fix later on *IMPORTANT*
-            //Console.WriteLine(outLine.Data); FOR DEBUGGING PURPOSES
             string currentPath = System.Environment.CurrentDirectory;
             bool exit = false;
             if (exit == true) return;
@@ -210,9 +204,7 @@ namespace IosSysLogger
                 {
                     form.BeginInvoke(new Action(() =>
                     {
-
                         form.TextBoxText = outLine.Data;
-
                     }));
                     file.WriteLine(outLine.Data);
                 }

@@ -57,7 +57,6 @@ namespace IosSysLogger
             MessageBox.Show("New USB detected!");
             if (GlobalData.usbInserted == true) //If this is true, new iOS Device has already been processed 
             {
-                //MessageBox.Show("Been here");
                 return;
             }
             else
@@ -75,6 +74,11 @@ namespace IosSysLogger
             else
             {
                 MessageBox.Show("Removed");
+                window.BeginInvoke(new Action(() =>
+                {
+                    window.clearDevicenameList();
+                    window.clearDeviceName();
+                }));
                 GlobalData.usbRemoved = true;
                 tool.readDeviceUUID(window, tool);
                 //GlobalData.usbRemoved = false;

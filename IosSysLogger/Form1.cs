@@ -21,9 +21,7 @@ namespace IosSysLogger
         bool fixScrollCheck = false;
         List<string> selectedLoglevel = new List<string>();
         List<string> processlist = new List<string>();
-        List<string> selectedProcessList = new List<string>();
         List<string> devicenameList = new List<string>();
-        List<string> selectedDeviceList = new List<string>();
         Dictionary<string, string> totalSelected = new Dictionary<string, string>();
 
         public iosSyslogger()
@@ -54,7 +52,7 @@ namespace IosSysLogger
             this.load.Click += new System.EventHandler(this.loadBtn_click);
         }
 
-        public void clearCheckbox()
+        public void clearDeviceName()
         {
             devicename.Items.Clear();
         }
@@ -76,7 +74,6 @@ namespace IosSysLogger
                 DataRow dataRow = dt.NewRow();
                 for (int i = 0; i < columnCount; i++)
                 {
-                    //returns checkboxes and dropdowns as string with .value..... nearly got it
                     dataRow[i] = dr.Cells[i].Value;
                 }
                 dt.Rows.Add(dataRow);
@@ -108,12 +105,16 @@ namespace IosSysLogger
                 dataGridView1.DataSource = dataSet.Tables[0];
             }
         }
-
+        public void clearDevicenameList()
+        {
+            this.devicenameList.Clear();
+        }
         public String DeviceNameText
         {
             get { return null; }
             set
             {
+                bool flag1 = false;
                 if (value == null) return;
                 if (value.Contains("DeviceName:"))
                 {
@@ -127,8 +128,16 @@ namespace IosSysLogger
                         else
                             deviceName += words[i];
                     }
-                    devicenameList.Add(deviceName);
-                    devicename.Items.Add(deviceName);
+                    foreach (string name in devicenameList)
+                    {
+                        if (name == deviceName)
+                        {
+                            flag1 = true;
+                        }
+                    }
+                    if(flag1==false) devicenameList.Add(deviceName);
+                    if(flag1==false)devicename.Items.Add(deviceName); 
+                    
                 }
             }
         }
@@ -149,6 +158,7 @@ namespace IosSysLogger
                 string[] loglevels = { "<Notice>:", "<Debug>:", "<Info>:", "<Warning>:", "<Error>:", "<Critical>:", "<Alert>:", "<Emergency>:" };
                 if (month.Any(e => value.StartsWith(e))) //Start with one of the month code
                 {
+                    dataGridView1.Rows.Add();
                     addtRow = 0;
                     //row init
                     dataGridView1.Rows[rowNumber].Cells[6].Value = "";
@@ -158,7 +168,7 @@ namespace IosSysLogger
                     dataGridView1.Rows[rowNumber].Cells[2].Value = "";
                     dataGridView1.Rows[rowNumber].Cells[3].Value = "";
                     dataGridView1.Rows[rowNumber].Cells[4].Value = "";
-                    dataGridView1.Rows.Add();
+                    
 
                     int midIndex = 0;
 
@@ -282,7 +292,8 @@ namespace IosSysLogger
 
                             if (entry.Value == "devicename" && dataGridView1.Rows[rowNumber].Cells[1].Value != null)
                             {
-                                if (dataGridView1.Rows[rowNumber].Cells[1].Value.ToString().Contains(entry.Key))
+
+                                if (dataGridView1.Rows[rowNumber].Cells[1].Value.ToString().Trim().Equals(entry.Key.Trim()))
                                     dataGridView1.Rows[rowNumber].Visible = true;
                                 else
                                 {
@@ -292,7 +303,7 @@ namespace IosSysLogger
                             }
                             else if (entry.Value == "process" && dataGridView1.Rows[rowNumber].Cells[2].Value != null)
                             {
-                                if (dataGridView1.Rows[rowNumber].Cells[2].Value.ToString().Contains(entry.Key))
+                                if (dataGridView1.Rows[rowNumber].Cells[2].Value.ToString().Trim().Equals(entry.Key.Trim()))
                                     dataGridView1.Rows[rowNumber].Visible = true;
                                 else
                                 {
@@ -302,7 +313,7 @@ namespace IosSysLogger
                             }
                             else if (entry.Value == "loglevel" && dataGridView1.Rows[rowNumber].Cells[3].Value != null)
                             {
-                                if (dataGridView1.Rows[rowNumber].Cells[3].Value.ToString().Contains(entry.Key))
+                                if (dataGridView1.Rows[rowNumber].Cells[3].Value.ToString().Trim().Equals(entry.Key.Trim()))
                                     dataGridView1.Rows[rowNumber].Visible = true;
                                 else
                                 {
@@ -363,7 +374,7 @@ namespace IosSysLogger
         }
         private void loadBtn_click(object sender, EventArgs e)
         {
-            dataGridView1.Columns.Clear();
+            dataGridView1.Rows.Clear();
             loadXML();
         }
         private void searchBtn_Click(object sender, EventArgs e)
@@ -503,61 +514,27 @@ namespace IosSysLogger
         }
 
 
-        private void showByProcess()
-        {
-            for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
-            {
-                dataGridView1.Rows[i].Visible = false;
-                dataGridView1.Rows[i].Selected = false;
-            }
-            foreach (string term in selectedProcessList)
-            {
-                //MessageBox.Show(term);
-                if (searchTxtBox.Text != "")
-                {
-                    for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
-                    {
-                        if (dataGridView1.Rows[i].Cells[2] == null)
-                            return;
-                        if (dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term) && (dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(searchTxtBox.Text) || dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(searchTxtBox.Text) || dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(searchTxtBox.Text)))
-                        {
-                            dataGridView1.Rows[i].Visible = true;
-                        }
-                    }
-                }
-                else
-                {
-                    for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
-                    {
-                        if (dataGridView1.Rows[i].Cells[2] == null)
-                            return;
-                        if (dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term))
-                        {
-                            dataGridView1.Rows[i].Visible = true;
-                        }
-                    }
-                }
-
-            }
-        }
-
+        
 
         private void ShowTotal()
         {
+            
+            
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
                 dataGridView1.Rows[i].Visible = false;
-                dataGridView1.Rows[i].Selected = false;
-            }
-            for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
-            {
+
                 foreach (KeyValuePair<string, string> entry in totalSelected)
                 {
 
                     if (entry.Value == "devicename" && dataGridView1.Rows[i].Cells[1].Value != null)
                     {
-                        if (dataGridView1.Rows[i].Cells[1].Value.ToString().Contains(entry.Key))
+                        if (dataGridView1.Rows[i].Cells[1].Value.ToString().Trim().Equals(entry.Key.Trim()))
                             dataGridView1.Rows[i].Visible = true;
+                        else if (devicename.CheckedItems.Count > 1)
+                        {
+                            continue;
+                        }
                         else
                         {
                             dataGridView1.Rows[i].Visible = false;
@@ -566,8 +543,12 @@ namespace IosSysLogger
                     }
                     else if (entry.Value == "process" && dataGridView1.Rows[i].Cells[2].Value != null)
                     {
-                        if (dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(entry.Key))
+                        if (dataGridView1.Rows[i].Cells[2].Value.ToString().Trim().Equals(entry.Key.Trim()))
                             dataGridView1.Rows[i].Visible = true;
+                        else if (processlistname.CheckedItems.Count > 1)
+                        {
+                            continue;
+                        }
                         else
                         {
                             dataGridView1.Rows[i].Visible = false;
@@ -576,8 +557,12 @@ namespace IosSysLogger
                     }
                     else if (entry.Value == "loglevel" && dataGridView1.Rows[i].Cells[3].Value != null)
                     {
-                        if (dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(entry.Key))
+                        if (dataGridView1.Rows[i].Cells[3].Value.ToString().Trim().Contains(entry.Key.Trim()))
                             dataGridView1.Rows[i].Visible = true;
+                        else if (loglevelCheckBox.CheckedItems.Count > 1)
+                        {
+                            continue;
+                        }
                         else
                         {
                             dataGridView1.Rows[i].Visible = false;
