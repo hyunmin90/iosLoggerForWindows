@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
-using System.Windows.Forms;
-using System.Collections.Generic;
 
 namespace IosSysLogger
 {
