@@ -374,7 +374,9 @@ namespace IosSysLogger
         }
         private void loadBtn_click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
+
+            //ON LOAD BUTTON NEED TO CLEAR EVERYTHING OUT !!! KILL ALL THE PROCESS (BC ITS GONNA GET MESSSY)
+            //dataGridView1.Columns.Clear();
             loadXML();
         }
         private void searchBtn_Click(object sender, EventArgs e)
@@ -523,16 +525,37 @@ namespace IosSysLogger
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
                 dataGridView1.Rows[i].Visible = false;
-
+                int count1,count2,count3=0;
+                count1 = 1;
+                count2 = 1;
+                count3 = 1;
                 foreach (KeyValuePair<string, string> entry in totalSelected)
                 {
 
                     if (entry.Value == "devicename" && dataGridView1.Rows[i].Cells[1].Value != null)
                     {
                         if (dataGridView1.Rows[i].Cells[1].Value.ToString().Trim().Equals(entry.Key.Trim()))
-                            dataGridView1.Rows[i].Visible = true;
-                        else if (devicename.CheckedItems.Count > 1)
                         {
+                            string multirow = dataGridView1.Rows[i].Cells[5].Value.ToString();
+                            int count = Convert.ToInt32(multirow);
+                            if (count > 0)
+                            {
+                                int z = 0;
+                                for (z = 0; z < count; z++)
+                                {
+
+                                    dataGridView1.Rows[i + z].Visible = true;
+                                }
+                                i = i + z;
+                            }
+                            else
+                            {
+                                dataGridView1.Rows[i].Visible = true;
+                            }
+                        }
+                        else if (devicename.CheckedItems.Count > 1&&count1!= devicename.CheckedItems.Count)
+                        {
+                            count1++;
                             continue;
                         }
                         else
@@ -544,12 +567,30 @@ namespace IosSysLogger
                     else if (entry.Value == "process" && dataGridView1.Rows[i].Cells[2].Value != null)
                     {
                         if (dataGridView1.Rows[i].Cells[2].Value.ToString().Trim().Equals(entry.Key.Trim()))
-                            dataGridView1.Rows[i].Visible = true;
-                        else if (processlistname.CheckedItems.Count > 1)
                         {
+                            string multirow = dataGridView1.Rows[i].Cells[5].Value.ToString();
+                            int count = Convert.ToInt32(multirow);
+                            if (count > 0)
+                            {
+                                int z = 0;
+                                for (z = 0; z < count; z++)
+                                {
+
+                                    dataGridView1.Rows[i + z].Visible = true;
+                                }
+                                i = i + z;
+                            }
+                            else
+                            {
+                                dataGridView1.Rows[i].Visible = true;
+                            }
+                        }
+                        else if (processlistname.CheckedItems.Count > 1 && count2 != processlistname.CheckedItems.Count)
+                        {
+                            count2++;
                             continue;
                         }
-                        else
+                        else 
                         {
                             dataGridView1.Rows[i].Visible = false;
                             break;
@@ -558,9 +599,28 @@ namespace IosSysLogger
                     else if (entry.Value == "loglevel" && dataGridView1.Rows[i].Cells[3].Value != null)
                     {
                         if (dataGridView1.Rows[i].Cells[3].Value.ToString().Trim().Contains(entry.Key.Trim()))
-                            dataGridView1.Rows[i].Visible = true;
-                        else if (loglevelCheckBox.CheckedItems.Count > 1)
                         {
+                            string multirow = dataGridView1.Rows[i].Cells[5].Value.ToString();
+                            int count = Convert.ToInt32(multirow);
+                            if (count > 0)
+                            {
+                                int z = 0;
+                                for (z = 0; z < count; z++)
+                                {
+
+                                    dataGridView1.Rows[i + z].Visible = true;
+                                }
+                                i = i + z;
+                            }
+                            else
+                            {
+                                dataGridView1.Rows[i].Visible = true;
+                            }
+                            continue;
+                        }
+                        else if (loglevelCheckBox.CheckedItems.Count > 1 && count3 != loglevelCheckBox.CheckedItems.Count)
+                        {
+                            count3++;
                             continue;
                         }
                         else
@@ -617,6 +677,15 @@ namespace IosSysLogger
             }
         }
 
+        private void loglevelCheckBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iosSyslogger_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
