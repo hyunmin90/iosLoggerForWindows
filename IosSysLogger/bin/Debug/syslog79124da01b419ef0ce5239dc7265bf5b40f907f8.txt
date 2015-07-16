@@ -18406,3 +18406,619 @@ Jul 16 11:51:41 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the dat
 Jul 16 11:51:41 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
 Jul 16 11:51:42 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
 Jul 16 11:51:42 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+[connected]
+
+
+Jul 16 11:53:06 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:07 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:07 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:08 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:08 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:08 iPhone syslog_relay[143] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 16 11:53:09 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:09 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:10 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:10 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:11 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:11 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:12 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:12 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:13 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 16 11:53:13 iPhone wifid[37] <Error>: WiFi:[458707993.305742]: multi-stage auto-join: Error scanning for previous network, err=-3900
+Jul 16 11:53:13 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:13 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:13 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:13 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:13 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 16 11:53:13 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:13 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:13 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:13 iPhone sharingd[57] <Notice>: 11:53:13.594 : Stopping Handoff scanning
+Jul 16 11:53:14 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:14 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:15 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:15 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:16 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:16 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:17 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:17 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:17 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:17 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:17 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:17 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:17 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:17 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:17 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:17 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 16 11:53:17 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:17 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:17 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:17 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:17 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:17 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:17 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:17 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:17 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:17 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:18 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:18 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 16 11:53:18 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:18 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:18 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:18 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:18 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:18 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:18 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:18 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:18 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:18 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:18 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:18 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 16 11:53:19 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:19 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:19 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:19 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:19 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:19 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:19 iPhone locationd[58] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 16 11:53:19 iPhone sharingd[57] <Notice>: 11:53:19.729 : Stopping Handoff scanning
+Jul 16 11:53:19 iPhone lsuseractivityd[136] <Notice>: UPDATEADVERTISMENT: -- SBSEventObserverEventDimmed, scheduling removal of any active advertisement item in 3 seconds (CornerActionManager.m #2667)
+Jul 16 11:53:19 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0100
+Jul 16 11:53:19 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:20 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:20 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 16 11:53:20 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:20 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:20 iPhone sharingd[57] <Notice>: 11:53:20.162 : Stopping Handoff scanning
+Jul 16 11:53:20 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:20 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:20 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:20 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:20 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:20 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:20 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:20 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:20 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:20 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:20 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:20 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:20 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:20 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:20 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:20 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:20 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:20 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->255
+Jul 16 11:53:20 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:20 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:20 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:20 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:21 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:21 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 16 11:53:21 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:21 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:21 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:21 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:21 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:21 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:21 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:21 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:21 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:22 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:22 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:22 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 16 11:53:22 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:22 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:22 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:22 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:22 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:22 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:22 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:22 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:22 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:22 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:22 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:22 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 16 11:53:23 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:23 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:23 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:23 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:23 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:23 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:23 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:23 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:23 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:24 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:24 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:24 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 16 11:53:24 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:24 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:24 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:24 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:24 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:24 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:24 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:24 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:24 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:24 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:24 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:24 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:24 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:24 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:24 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:24 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:24 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->255
+Jul 16 11:53:24 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:24 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:24 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:24 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:25 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:25 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:25 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:25 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:25 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:25 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:25 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->255
+Jul 16 11:53:25 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:25 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:25 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:25 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:25 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:25 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:25 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:25 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:25 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:25 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:25 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:25 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:25 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->255
+Jul 16 11:53:25 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:25 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:25 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:25 iPhone locationd[58] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 16 11:53:25 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:25 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:25 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:26 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:26 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:26 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:26 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:26 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->255
+Jul 16 11:53:26 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:26 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:26 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:26 iPhone locationd[58] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 16 11:53:26 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:26 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:26 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:26 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:26 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:26 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:26 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:26 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:26 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:26 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:26 iPhone locationd[58] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 16 11:53:26 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:26 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:26 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:26 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:26 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:26 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:26 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:26 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->255
+Jul 16 11:53:26 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:26 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:26 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:27 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:27 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:27 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:27 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:27 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:27 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:27 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:27 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->255
+Jul 16 11:53:27 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Jul 16 11:53:27 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Enabling lock screen media controls updates for screen turning on.
+Jul 16 11:53:27 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Updating supported commands for now playing application.
+Jul 16 11:53:27 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 255->6 (deferring until bootloaded)
+Jul 16 11:53:27 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:27 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:27 iPhone backboardd[54] <Notice>: MultitouchHID: device bootloaded
+Jul 16 11:53:27 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->6
+Jul 16 11:53:27 iPhone backboardd[54] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Jul 16 11:53:27 iPhone kernel[0] <Notice>: AppleMultitouchN1SPI: updating power statistics
+Jul 16 11:53:27 iPhone SpringBoard[51] <Warning>: [MPUSystemMediaControls] Disabling lock screen media controls updates for screen turning off.
+Jul 16 11:53:27 iPhone backboardd[54] <Notice>: MultitouchHID: detection mode: 6->255
+Jul 16 11:53:28 iPhone sharingd[57] <Notice>: 11:53:28.391 : Stopping Handoff scanning
+Jul 16 11:53:28 iPhone locationd[58] <Notice>: Gesture EnabledForTopCLient: 0, EnabledInDaemonSettings: 0
+Jul 16 11:53:28 iPhone lsuseractivityd[136] <Notice>: UPDATEADVERTISMENT: -- SBSEventObserverEventDimmed, scheduling removal of any active advertisement item in 3 seconds (CornerActionManager.m #2667)
+Jul 16 11:53:28 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:28 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:29 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:29 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:30 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:30 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:31 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:31 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:32 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:32 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:33 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:33 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:34 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:34 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:35 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:35 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:36 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:36 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:37 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:37 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:38 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:38 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:39 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:39 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:40 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:40 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:41 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:41 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:42 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:42 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:43 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:43 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:44 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:44 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:45 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:45 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:46 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:46 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:47 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:47 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:48 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:48 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:49 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:49 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:50 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:50 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:51 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:51 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:52 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:52 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:53 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:53 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:54 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:54 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:55 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:55 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:56 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:56 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:57 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:57 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:58 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:58 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:59 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:53:59 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:00 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:00 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:01 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:01 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:02 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:02 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:03 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:03 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:04 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:04 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:05 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:05 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:06 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:06 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:07 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:07 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:08 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:08 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:09 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:09 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:10 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:10 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:11 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:11 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:12 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:12 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:13 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:13 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:14 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:14 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:15 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:15 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:16 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:16 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:17 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:17 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:18 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:18 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:19 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:19 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:20 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:20 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:21 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:21 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:22 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:22 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:23 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:23 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:24 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:24 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:25 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:25 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:26 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:26 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:27 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:27 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:28 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:28 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:29 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:29 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:30 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:30 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:31 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:31 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:32 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:32 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:33 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:33 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:34 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:34 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:35 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:35 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:36 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:36 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:37 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:37 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:38 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:38 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:39 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:39 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:40 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:40 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:41 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:41 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:42 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:42 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:43 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:43 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:44 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:44 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:45 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:45 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:46 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:46 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:47 iPhone CommCenterMobileHelper[248] <Error>: server_CCMobileHelperRequestCountryCodeFromLocation 
+Jul 16 11:54:47 iPhone geod[157] <Warning>: Can't get bundle identifier for process 248
+Jul 16 11:54:47 iPhone geod[157] <Warning>: PBRequester failed with Error Error Domain=NSURLErrorDomain Code=-1009 "The Internet connection appears to be offline." UserInfo=0x15dec58c0 {NSUnderlyingError=0x15decc530 "The Internet connection appears to be offline.", NSErrorFailingURLStringKey=https://gsp-sl01-ssl.ls.apple.com/dispatcher.arpc, NSErrorFailingURLKey=https://gsp-sl01-ssl.ls.apple.com/dispatcher.arpc, _kCFStreamErrorDomainKey=12, _kCFStreamErrorCodeKey=8, NSLocalizedDescription=The Internet connection appears to be offline.}
+Jul 16 11:54:47 iPhone CommCenterMobileHelper[248] <Error>: _RequestCountryNameFromLatitudeLongitude error: (Error Domain=GEOErrorDomain Code=-900 "The operation couldn?셳 be completed. (GEOErrorDomain error -900.)")
+Jul 16 11:54:47 iPhone CommCenterMobileHelper[248] <Error>: _RequestCountryNameFromLatitudeLongitude didn't get any mapItems
+Jul 16 11:54:47 iPhone CommCenterMobileHelper[248] <Notice>: sendCountryCodeToCT sent country info to CommCenter successfully
+Jul 16 11:54:47 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:47 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:48 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:48 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:49 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:49 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:50 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:50 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:51 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:51 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:52 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:52 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:53 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:53 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:54 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:54 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:55 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:55 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:56 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:56 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:57 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:57 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:58 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:58 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:59 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:54:59 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:00 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:00 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:01 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:01 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:02 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:02 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:03 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:03 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:04 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:04 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:05 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:05 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:06 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:06 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:07 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:07 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:08 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:08 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:09 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:09 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:10 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:10 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:11 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:11 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:12 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:12 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:13 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:13 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:14 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:14 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:15 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:15 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:16 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:16 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:17 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:17 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:18 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:18 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:19 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:19 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:20 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:20 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:21 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:21 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:22 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:22 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:23 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:23 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:24 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:24 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:25 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:25 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:26 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:26 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:27 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:27 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:28 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:28 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:29 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:29 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:30 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:30 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:31 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:31 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:32 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:32 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:33 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:33 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:34 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:34 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:35 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:35 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:36 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:36 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:37 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:37 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:38 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:38 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:39 iPhone syslog_relay[143] <Notice>: syslog_relay read 51 total bytes: 
+	========================
+	ASL is here to serve you
+Jul 16 11:55:39 iPhone syslog_relay[143] <Notice>: syslog_relay found the ASL prompt. Starting...
+Jul 16 11:55:39 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:39 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:40 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:40 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:41 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:41 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:42 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:42 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:43 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:43 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:44 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:44 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:45 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:45 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:46 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:46 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:47 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:47 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:48 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:48 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:49 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:49 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:50 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:50 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:51 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:51 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:52 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:52 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:53 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:53 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:54 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:54 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:55 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:55 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:56 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:56 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:57 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:57 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:58 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:58 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:59 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:55:59 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:00 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:00 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:01 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:01 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:02 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:02 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:03 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:03 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:04 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:04 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:05 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:05 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:06 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:06 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:07 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:07 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:08 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:08 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:09 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:09 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:10 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:10 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:11 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:11 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:12 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:12 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:13 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:13 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:14 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:14 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:15 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:15 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:16 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:16 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:17 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:17 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:18 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:18 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:19 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:19 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:20 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:20 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:21 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:21 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:22 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:22 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:23 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:23 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:24 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:24 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:25 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:25 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:26 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:26 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:27 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime
+Jul 16 11:56:27 iPhone MobileSMS[239] <Warning>: [Warning] Failed to get the data usage policy for bundle com.apple.facetime

@@ -351,7 +351,10 @@ namespace IosSysLogger
         private void highlightBtn_Click(object sender, EventArgs e)
         {
             string search = highlightTextBox.Text;
-            highLight(search);
+            if (search == "")
+                return;
+            else
+                highLight(search);
         }
 
         private void saveBtn_Click(object sender, EventArgs e)
@@ -366,7 +369,10 @@ namespace IosSysLogger
         private void searchBtn_Click(object sender, EventArgs e)
         {
             string search = searchTxtBox.Text;
-            searchResult(search);
+            if (search == "")
+                return;
+            else
+                searchResult(search);
         }
         private void clearSearchBtn_Click(object sender, EventArgs e)
         {
