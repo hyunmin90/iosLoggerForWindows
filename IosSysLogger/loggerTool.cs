@@ -9,6 +9,7 @@ namespace IosSysLogger
     {
         List<Thread> lstThreads = new List<Thread>();
         Dictionary<string, Process> crProcess = new Dictionary<string, Process>();
+        List<String> WriteToTxt = new List<String>();
         public void readLog(iosSyslogger form,string uuid)
         {
 
@@ -200,14 +201,17 @@ namespace IosSysLogger
 
             try
             {
-                using (System.IO.StreamWriter file = new System.IO.StreamWriter(currentPath + @"\syslog" + uuid + ".txt", true))
+                form.BeginInvoke(new Action(() =>
                 {
-                    form.BeginInvoke(new Action(() =>
-                    {
-                        form.insertLogText = outLine.Data;
-                    }));
-                    file.WriteLine(outLine.Data);
-                }
+                    form.insertLogText = outLine.Data;
+                }));
+
+
+               using (System.IO.StreamWriter file = new System.IO.StreamWriter(currentPath + @"\syslog" + uuid + ".txt", true))
+               {
+                 file.WriteLine(outLine.Data);
+               }
+
             }
             catch 
             {

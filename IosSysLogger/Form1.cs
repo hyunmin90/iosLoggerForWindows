@@ -339,7 +339,7 @@ namespace IosSysLogger
                             }
                             else if (entry.Value == "loglevel" && dataGridView1.Rows[rowNumber].Cells[3].Value != null)
                             {
-                                if (dataGridView1.Rows[rowNumber].Cells[3].Value.ToString().Trim().Equals(entry.Key.Trim()))
+                                if (dataGridView1.Rows[rowNumber].Cells[3].Value.ToString().Trim().Contains(entry.Key.Trim()))
                                     dataGridView1.Rows[rowNumber].Visible = true;
                                 else
                                 {
@@ -349,11 +349,6 @@ namespace IosSysLogger
                             }
                             // do something with entry.Value or entry.Key
                         }
-
-                      
-
-                        
-
                     }
 
                     firstRowf = false;
@@ -529,6 +524,10 @@ namespace IosSysLogger
                     }
                     else if (dataGridView1.Rows[i].Visible == true && dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(term))
                     {
+                        if (dataGridView1.Rows[i].Cells[0].Value.ToString() == " " && dataGridView1.Rows[i].Cells[0].Value.ToString() == " ")
+                        {
+                            
+                        }
 
                         string multirow = dataGridView1.Rows[i].Cells[5].Value.ToString();
                         int count = Convert.ToInt32(multirow);

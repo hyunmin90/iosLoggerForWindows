@@ -31,13 +31,6 @@
             this.searchTxtBox = new System.Windows.Forms.TextBox();
             this.searchBtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.device = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Process = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LogLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Log = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ctr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fontcolor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.loglevelCheckBox = new System.Windows.Forms.CheckedListBox();
             this.clearSearchBtn = new System.Windows.Forms.Button();
@@ -52,6 +45,13 @@
             this.load = new System.Windows.Forms.Button();
             this.highlightTextBox = new System.Windows.Forms.TextBox();
             this.clearData = new System.Windows.Forms.Button();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.device = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Process = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LogLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Log = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ctr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fontcolor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,52 +97,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1266, 282);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // date
-            // 
-            this.date.FillWeight = 50.9684F;
-            this.date.HeaderText = "Date";
-            this.date.Name = "date";
-            // 
-            // device
-            // 
-            this.device.FillWeight = 47.36657F;
-            this.device.HeaderText = "Device";
-            this.device.Name = "device";
-            this.device.Width = 93;
-            // 
-            // Process
-            // 
-            this.Process.FillWeight = 46.5834F;
-            this.Process.HeaderText = "Process";
-            this.Process.Name = "Process";
-            this.Process.Width = 91;
-            // 
-            // LogLevel
-            // 
-            this.LogLevel.FillWeight = 48.57244F;
-            this.LogLevel.HeaderText = "LogLevel";
-            this.LogLevel.Name = "LogLevel";
-            this.LogLevel.Width = 96;
-            // 
-            // Log
-            // 
-            this.Log.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Log.FillWeight = 306.5092F;
-            this.Log.HeaderText = "Log";
-            this.Log.Name = "Log";
-            // 
-            // ctr
-            // 
-            this.ctr.HeaderText = "ctr";
-            this.ctr.Name = "ctr";
-            this.ctr.Visible = false;
-            // 
-            // fontcolor
-            // 
-            this.fontcolor.HeaderText = "fontcolor";
-            this.fontcolor.Name = "fontcolor";
-            this.fontcolor.Visible = false;
             // 
             // richTextBox1
             // 
@@ -315,6 +269,52 @@
             this.clearData.Text = "clear data";
             this.clearData.UseVisualStyleBackColor = false;
             // 
+            // date
+            // 
+            this.date.FillWeight = 50.9684F;
+            this.date.HeaderText = "Date";
+            this.date.Name = "date";
+            // 
+            // device
+            // 
+            this.device.FillWeight = 47.36657F;
+            this.device.HeaderText = "Device";
+            this.device.Name = "device";
+            this.device.Width = 93;
+            // 
+            // Process
+            // 
+            this.Process.FillWeight = 46.5834F;
+            this.Process.HeaderText = "Process";
+            this.Process.Name = "Process";
+            this.Process.Width = 91;
+            // 
+            // LogLevel
+            // 
+            this.LogLevel.FillWeight = 48.57244F;
+            this.LogLevel.HeaderText = "LogLevel";
+            this.LogLevel.Name = "LogLevel";
+            this.LogLevel.Width = 96;
+            // 
+            // Log
+            // 
+            this.Log.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Log.FillWeight = 306.5092F;
+            this.Log.HeaderText = "Log";
+            this.Log.Name = "Log";
+            // 
+            // ctr
+            // 
+            this.ctr.HeaderText = "ctr";
+            this.ctr.Name = "ctr";
+            this.ctr.Visible = false;
+            // 
+            // fontcolor
+            // 
+            this.fontcolor.HeaderText = "fontcolor";
+            this.fontcolor.Name = "fontcolor";
+            this.fontcolor.Visible = false;
+            // 
             // iosSyslogger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -364,6 +364,8 @@
         private System.Windows.Forms.Label loglevelLabel;
         private System.Windows.Forms.Button savedatagrid;
         private System.Windows.Forms.Button load;
+        private System.Windows.Forms.TextBox highlightTextBox;
+        private System.Windows.Forms.Button clearData;
         private System.Windows.Forms.DataGridViewTextBoxColumn date;
         private System.Windows.Forms.DataGridViewTextBoxColumn device;
         private System.Windows.Forms.DataGridViewTextBoxColumn Process;
@@ -371,8 +373,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Log;
         private System.Windows.Forms.DataGridViewTextBoxColumn ctr;
         private System.Windows.Forms.DataGridViewTextBoxColumn fontcolor;
-        private System.Windows.Forms.TextBox highlightTextBox;
-        private System.Windows.Forms.Button clearData;
     }
 }
 
