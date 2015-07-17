@@ -51,6 +51,7 @@
             this.savedatagrid = new System.Windows.Forms.Button();
             this.load = new System.Windows.Forms.Button();
             this.highlightTextBox = new System.Windows.Forms.TextBox();
+            this.clearData = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -194,7 +195,7 @@
             // 
             this.fixScroll.AutoSize = true;
             this.fixScroll.Font = new System.Drawing.Font("휴먼모음T", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.fixScroll.Location = new System.Drawing.Point(1112, 57);
+            this.fixScroll.Location = new System.Drawing.Point(964, 221);
             this.fixScroll.Name = "fixScroll";
             this.fixScroll.Size = new System.Drawing.Size(87, 21);
             this.fixScroll.TabIndex = 8;
@@ -274,7 +275,7 @@
             this.savedatagrid.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.savedatagrid.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.savedatagrid.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.savedatagrid.Location = new System.Drawing.Point(1112, 97);
+            this.savedatagrid.Location = new System.Drawing.Point(1112, 28);
             this.savedatagrid.Name = "savedatagrid";
             this.savedatagrid.Size = new System.Drawing.Size(90, 23);
             this.savedatagrid.TabIndex = 16;
@@ -286,7 +287,7 @@
             this.load.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.load.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.load.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.load.Location = new System.Drawing.Point(1112, 137);
+            this.load.Location = new System.Drawing.Point(1112, 68);
             this.load.Name = "load";
             this.load.Size = new System.Drawing.Size(90, 23);
             this.load.TabIndex = 17;
@@ -300,12 +301,27 @@
             this.highlightTextBox.Size = new System.Drawing.Size(200, 21);
             this.highlightTextBox.TabIndex = 18;
             // 
+            // clearData
+            // 
+            this.clearData.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.clearData.FlatAppearance.BorderSize = 0;
+            this.clearData.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.clearData.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearData.Location = new System.Drawing.Point(1112, 107);
+            this.clearData.Name = "clearData";
+            this.clearData.Padding = new System.Windows.Forms.Padding(0, 1, 1, 1);
+            this.clearData.Size = new System.Drawing.Size(90, 53);
+            this.clearData.TabIndex = 19;
+            this.clearData.Text = "clear data";
+            this.clearData.UseVisualStyleBackColor = false;
+            // 
             // iosSyslogger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1275, 576);
+            this.Controls.Add(this.clearData);
             this.Controls.Add(this.highlightTextBox);
             this.Controls.Add(this.load);
             this.Controls.Add(this.savedatagrid);
@@ -356,6 +372,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ctr;
         private System.Windows.Forms.DataGridViewTextBoxColumn fontcolor;
         private System.Windows.Forms.TextBox highlightTextBox;
+        private System.Windows.Forms.Button clearData;
     }
 }
 

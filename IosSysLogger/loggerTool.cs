@@ -188,7 +188,7 @@ namespace IosSysLogger
         {
             form.BeginInvoke(new Action(() =>
             {
-                form.DeviceNameText = outLine.Data;
+                form.insertDeviceName = outLine.Data;
             }));
         }
         
@@ -204,7 +204,7 @@ namespace IosSysLogger
                 {
                     form.BeginInvoke(new Action(() =>
                     {
-                        form.TextBoxText = outLine.Data;
+                        form.insertLogText = outLine.Data;
                     }));
                     file.WriteLine(outLine.Data);
                 }

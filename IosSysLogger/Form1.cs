@@ -29,13 +29,12 @@ namespace IosSysLogger
             InitializeComponent();
             var watcher = new ManagementEventWatcher();
 
-            //Allow data grid t
+            //Allow data copy here 
             ContextMenuStrip mnu = new ContextMenuStrip();
             ToolStripMenuItem mnuCopy = new ToolStripMenuItem("Copy");
-            ToolStripMenuItem mnuCut = new ToolStripMenuItem("Cut");
-            ToolStripMenuItem mnuPaste = new ToolStripMenuItem("Paste");
-            mnu.Items.AddRange(new ToolStripItem[] { mnuCopy, mnuCut, mnuPaste });
+            mnu.Items.AddRange(new ToolStripItem[] { mnuCopy });
             dataGridView1.ContextMenuStrip = mnu;
+            mnuCopy.Click += new EventHandler(copyMnu_Click);
 
 
             //Check boxes handler
@@ -50,6 +49,7 @@ namespace IosSysLogger
             this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             this.savedatagrid.Click += new System.EventHandler(this.saveBtn_Click);
             this.load.Click += new System.EventHandler(this.loadBtn_click);
+            this.clearData.Click += new System.EventHandler(this.clearDataBtn_Click);
         }
 
         public void clearDeviceName()
@@ -109,7 +109,7 @@ namespace IosSysLogger
         {
             this.devicenameList.Clear();
         }
-        public String DeviceNameText
+        public String insertDeviceName
         {
             get { return null; }
             set
@@ -143,7 +143,7 @@ namespace IosSysLogger
         }
 
 
-        public string TextBoxText
+        public string insertLogText
         {
             get { return null; }
             set
@@ -233,7 +233,7 @@ namespace IosSysLogger
                             dataGridView1.Rows[rowNumber - previous].Cells[4].Value += word + "";
                         }
                     }
-
+                    int switchindex = 0;
                     foreach (string word in words)
                     {
                         if (searchTxtBox.Text != "" && word.Contains(searchTxtBox.Text))
@@ -252,9 +252,13 @@ namespace IosSysLogger
                         if (firstRowf == true && index < midIndex - 2) //Date
                             dataGridView1.Rows[rowNumber].Cells[0].Value += word + " ";
                         else if (firstRowf == true && devicenameList.Any(e => word.Contains(e))) //Device
+                        {
                             dataGridView1.Rows[rowNumber].Cells[1].Value += word + " ";
+                            switchindex = 1;
+                        }
                         else if (firstRowf == true && index == midIndex - 1) //Process
                         {
+                            switchindex = 2;
                             dataGridView1.Rows[rowNumber].Cells[2].Value += word + " ";
                             if (!(processlist.Contains(word)))
                             {
@@ -263,9 +267,14 @@ namespace IosSysLogger
                             }
                         }
                         else if (firstRowf == true && (loglevels.Any(e => word.Contains(e)))) //LogLevel
+                        {
+
+                            switchindex = 3;
                             dataGridView1.Rows[rowNumber].Cells[3].Value += word + " ";
+                        }
                         else if (firstRowf == true && index > midIndex)//Log
                         {
+                            switchindex = 4;
                             dataGridView1.Rows[rowNumber].Cells[4].Value += word + " ";
                             dataGridView1.Rows[rowNumber].Cells[5].Value = 0;
                         }
@@ -273,8 +282,25 @@ namespace IosSysLogger
                     }
                     if (highLighted == true)
                     {
-                        dataGridView1.Rows[rowNumber].DefaultCellStyle.ForeColor = Color.Red;
-                        dataGridView1.Rows[rowNumber].Visible = true;
+                        switch (switchindex)
+                        {
+                            case 1:
+                                dataGridView1.Rows[rowNumber].Cells[1].Style.BackColor = Color.Yellow;
+                                dataGridView1.Rows[rowNumber].Visible = true;
+                                break;
+                            case 2:
+                                dataGridView1.Rows[rowNumber].Cells[2].Style.BackColor = Color.Yellow;
+                                dataGridView1.Rows[rowNumber].Visible = true;
+                                break;
+                            case 3:
+                                dataGridView1.Rows[rowNumber].Cells[3].Style.BackColor = Color.Yellow;
+                                dataGridView1.Rows[rowNumber].Visible = true;
+                                break;
+                            case 4:
+                                dataGridView1.Rows[rowNumber].Cells[4].Style.BackColor = Color.Yellow;
+                                dataGridView1.Rows[rowNumber].Visible = true;
+                                break;
+                        }
                     }
                     if (searchedText == true && dataGridView1.Rows[rowNumber].Visible == true)
                     {
@@ -323,6 +349,11 @@ namespace IosSysLogger
                             }
                             // do something with entry.Value or entry.Key
                         }
+
+                      
+
+                        
+
                     }
 
                     firstRowf = false;
@@ -344,6 +375,8 @@ namespace IosSysLogger
                     dataGridView1.Rows[rowNumber].Cells[4].Value = value.ToString();
                     dataGridView1.Rows[rowNumber - addtRow].Cells[5].Value = addtRow;
                     dataGridView1.Rows[rowNumber].Cells[5].Value = "0";
+                    if (dataGridView1.Rows[rowNumber - addtRow].Visible == false)
+                        dataGridView1.Rows[rowNumber].Visible = false;
                     rowNumber++;
                     scrollToBottom();
                 }
@@ -376,7 +409,7 @@ namespace IosSysLogger
         {
 
             //ON LOAD BUTTON NEED TO CLEAR EVERYTHING OUT !!! KILL ALL THE PROCESS (BC ITS GONNA GET MESSSY)
-            //dataGridView1.Columns.Clear();
+            dataGridView1.Rows.Clear();
             loadXML();
         }
         private void searchBtn_Click(object sender, EventArgs e)
@@ -387,6 +420,16 @@ namespace IosSysLogger
             else
                 searchResult(search);
         }
+        private void clearDataBtn_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            rowNumber = 0;
+        }
+        private void copyMnu_Click(object sender, EventArgs e)
+        {
+            SendKeys.Send("^{c}");
+        }
+
         private void clearSearchBtn_Click(object sender, EventArgs e)
         {
             searchTxtBox.Text = "";
@@ -418,13 +461,12 @@ namespace IosSysLogger
 
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
-                dataGridView1.Rows[i].DefaultCellStyle.ForeColor = Color.FromName(dataGridView1.Rows[i].Cells[6].Value.ToString());
-                dataGridView1.Rows[i].Cells[0].Style.ForeColor = Color.FromName(dataGridView1.Rows[i].Cells[6].Value.ToString());
-                dataGridView1.Rows[i].Cells[1].Style.ForeColor = Color.FromName(dataGridView1.Rows[i].Cells[6].Value.ToString());
-                dataGridView1.Rows[i].Cells[2].Style.ForeColor = Color.FromName(dataGridView1.Rows[i].Cells[6].Value.ToString());
-                dataGridView1.Rows[i].Cells[3].Style.ForeColor = Color.FromName(dataGridView1.Rows[i].Cells[6].Value.ToString());
-                dataGridView1.Rows[i].Cells[4].Style.ForeColor = Color.FromName(dataGridView1.Rows[i].Cells[6].Value.ToString());
-                dataGridView1.Rows[i].Selected = false;
+
+                dataGridView1.Rows[i].Cells[0].Style.BackColor = Color.White;
+                dataGridView1.Rows[i].Cells[1].Style.BackColor = Color.White;
+                dataGridView1.Rows[i].Cells[2].Style.BackColor = Color.White;
+                dataGridView1.Rows[i].Cells[3].Style.BackColor = Color.White;
+                dataGridView1.Rows[i].Cells[4].Style.BackColor = Color.White;
                 dataGridView1.Rows[i].Visible = true;
             }
         }
@@ -446,13 +488,13 @@ namespace IosSysLogger
                     {
                         if (dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term))
                         {
-                            dataGridView1.Rows[i].Cells[2].Style.ForeColor = System.Drawing.Color.Red;
+                            dataGridView1.Rows[i].Cells[2].Style.BackColor = System.Drawing.Color.Yellow;
                         }
 
                         if (dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term))
-                            dataGridView1.Rows[i].Cells[3].Style.ForeColor = System.Drawing.Color.Red;
+                            dataGridView1.Rows[i].Cells[3].Style.BackColor = System.Drawing.Color.Yellow;
                         if (dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(term))
-                            dataGridView1.Rows[i].Cells[4].Style.ForeColor = System.Drawing.Color.Red;
+                            dataGridView1.Rows[i].Cells[4].Style.BackColor = System.Drawing.Color.Yellow;
 
                         string multirow = dataGridView1.Rows[i].Cells[5].Value.ToString();
                         i++;
