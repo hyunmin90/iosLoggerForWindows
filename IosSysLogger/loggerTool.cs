@@ -203,7 +203,7 @@ namespace IosSysLogger
             {
                 form.BeginInvoke(new Action(() =>
                 {
-                    form.insertLogText = outLine.Data;
+                    form.insertToDataSource = outLine.Data;
                 }));
 
 

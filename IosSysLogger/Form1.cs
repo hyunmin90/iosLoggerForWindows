@@ -19,6 +19,9 @@ namespace IosSysLogger
         bool firstRowf = false;
         bool configurationNotice = false;
         bool fixScrollCheck = false;
+
+        DataTable logParserView = new DataTable();
+
         List<string> selectedLoglevel = new List<string>();
         List<string> processlist = new List<string>();
         List<string> devicenameList = new List<string>();
@@ -36,6 +39,15 @@ namespace IosSysLogger
             dataGridView1.ContextMenuStrip = mnu;
             mnuCopy.Click += new EventHandler(copyMnu_Click);
 
+            logParserView.Columns.Add("Date", typeof(string));
+            logParserView.Columns.Add("Device", typeof(string));
+            logParserView.Columns.Add("Process", typeof(string));
+            logParserView.Columns.Add("LogLevel", typeof(string));
+            logParserView.Columns.Add("Log", typeof(string));
+            logParserView.Columns.Add("Ctr", typeof(string));
+            logParserView.Columns.Add("FontColor", typeof(string));
+
+            dataGridView1.DataSource = logParserView;
 
             //Check boxes handler
             this.devicename.SelectedIndexChanged += new System.EventHandler(this.checkbox_SelectedIndexChanged);
@@ -141,7 +153,131 @@ namespace IosSysLogger
                 }
             }
         }
+        public string insertToDataSource
+        {
+            get { return null; }
+            set
+            {
+                if (value == null) return;
+                int index = 0;
+                int previous = 0;
+                string[] month = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
+                string[] loglevels = { "<Notice>:", "<Debug>:", "<Info>:", "<Warning>:", "<Error>:", "<Critical>:", "<Alert>:", "<Emergency>:" };
+                if (month.Any(e => value.StartsWith(e))) //Start with one of the month code
+                {
+                    logParserView.Rows.Add();
+                    addtRow = 0;
+                    //row init
+                    logParserView.Rows[rowNumber][0] = "";
+                    logParserView.Rows[rowNumber][1] = "";
+                    logParserView.Rows[rowNumber][2] = "";
+                    logParserView.Rows[rowNumber][3] = "";
+                    logParserView.Rows[rowNumber][4] = "";
+                    logParserView.Rows[rowNumber][5] = "0";
+                    logParserView.Rows[rowNumber][6] = "";
 
+
+                    int midIndex = 0;
+
+                    string[] words = value.Split(' ');
+                    foreach (string loglevel in loglevels)
+                    {
+                        if (Array.IndexOf(words, loglevel) != -1)
+                            midIndex = Array.IndexOf(words, loglevel);
+                    }
+
+                    if (value.Contains("<Notice>:"))
+                    {
+                        logParserView.Rows[rowNumber][6] = "ForestGreen";
+                    }
+                    else if (value.Contains("<Debug>:"))
+                    {
+                        logParserView.Rows[rowNumber][6] = "Orange";
+                    }
+                    else if (value.Contains("<Info>:"))
+                    {
+                        logParserView.Rows[rowNumber][6] = "Orange";
+                    }
+                    else if (value.Contains("<Warning>:"))
+                    {
+                        logParserView.Rows[rowNumber][6] = "Orange";
+                    }
+                    else if (value.Contains("<Error>:"))
+                    {
+                        logParserView.Rows[rowNumber][6] = "DarkRed";
+                    }
+                    else if (value.Contains("<Critical>:"))
+                    {
+                        logParserView.Rows[rowNumber][6] = "DarkRed";
+                    }
+                    else if (value.Contains("<Alert>:"))
+                    {
+                        logParserView.Rows[rowNumber][6] = "DarkRed";
+                    }
+                    else if (value.Contains("<Emergency>:"))
+                    {
+                        logParserView.Rows[rowNumber][6] = "IndianRed";
+                    }
+                    else
+                    {
+                        logParserView.Rows[rowNumber][6] = "Black";
+
+                    }
+                    if (!(devicenameList.Any(e => words.Contains(e))))
+                    {
+                        previous++;
+                        //foreach (string word in words)
+                       // {
+                         //   logParserView.Rows[rowNumber - previous][4] += word + "";
+                        //}
+                    }
+                    int switchindex = 0;
+                    foreach (string word in words)
+                    {
+                        
+                        if (month.Any(e => word.StartsWith(e)))
+                        {
+                            firstRowf = true;
+                        }
+
+                        if (firstRowf == true && index < midIndex - 2) //Date
+                            logParserView.Rows[rowNumber][0] += word + " ";
+                        else if (firstRowf == true && devicenameList.Any(e => word.Contains(e))) //Device
+                        {
+                            logParserView.Rows[rowNumber][1] += word + " ";
+                            switchindex = 1;
+                        }
+                        else if (firstRowf == true && index == midIndex - 1) //Process
+                        {
+                            switchindex = 2;
+                            logParserView.Rows[rowNumber][2] += word + " ";
+                            if (!(processlist.Contains(word)))
+                            {
+                                processlist.Add(word);
+                                processlistname.Items.Add(word);
+                            }
+                        }
+                        else if (firstRowf == true && (loglevels.Any(e => word.Contains(e)))) //LogLevel
+                        {
+
+                            switchindex = 3;
+                            logParserView.Rows[rowNumber][3] += word + " ";
+                        }
+                        else if (firstRowf == true && index > midIndex)//Log
+                        {
+                            switchindex = 4;
+                            logParserView.Rows[rowNumber][4] += word + " ";
+                            logParserView.Rows[rowNumber][5] = 0;
+
+                        }
+                        index++;
+                    }
+                    firstRowf = false;
+                    rowNumber++;
+                    scrollToBottom();
+                }
+            }
+        }
 
         public string insertLogText
         {
@@ -162,7 +298,7 @@ namespace IosSysLogger
                     addtRow = 0;
                     //row init
                     dataGridView1.Rows[rowNumber].Cells[6].Value = "";
-                    dataGridView1.Rows[rowNumber].Cells[5].Value = "0";
+                    dataGridView1.Rows[rowNumber].Cells[5].Value = "";
                     dataGridView1.Rows[rowNumber].Cells[0].Value = "";
                     dataGridView1.Rows[rowNumber].Cells[1].Value = "";
                     dataGridView1.Rows[rowNumber].Cells[2].Value = "";
@@ -311,6 +447,9 @@ namespace IosSysLogger
                         dataGridView1.Rows[rowNumber].Visible = false;
                         dataGridView1.Rows[rowNumber].Selected = false;
                     }
+                    int count1 = 1;
+                    int count2 = 1;
+                    int count3 = 1;
                     if (withinCheckNew == false && totalSelected.Count > 0 && dataGridView1.Rows[rowNumber].Visible!=false) //Need to fix this very soon For performance reason
                     {
                         foreach (KeyValuePair<string, string> entry in totalSelected)
@@ -321,6 +460,11 @@ namespace IosSysLogger
 
                                 if (dataGridView1.Rows[rowNumber].Cells[1].Value.ToString().Trim().Equals(entry.Key.Trim()))
                                     dataGridView1.Rows[rowNumber].Visible = true;
+                                else if (devicename.CheckedItems.Count > 1 && count1 != devicename.CheckedItems.Count)
+                                {
+                                    count1++;
+                                    continue;
+                                }
                                 else
                                 {
                                     dataGridView1.Rows[rowNumber].Visible = false;
@@ -331,6 +475,11 @@ namespace IosSysLogger
                             {
                                 if (dataGridView1.Rows[rowNumber].Cells[2].Value.ToString().Trim().Equals(entry.Key.Trim()))
                                     dataGridView1.Rows[rowNumber].Visible = true;
+                                else if (processlistname.CheckedItems.Count > 1 && count2 != processlistname.CheckedItems.Count)
+                                {
+                                    count2++;
+                                    continue;
+                                }
                                 else
                                 {
                                     dataGridView1.Rows[rowNumber].Visible = false;
@@ -341,6 +490,11 @@ namespace IosSysLogger
                             {
                                 if (dataGridView1.Rows[rowNumber].Cells[3].Value.ToString().Trim().Contains(entry.Key.Trim()))
                                     dataGridView1.Rows[rowNumber].Visible = true;
+                                else if (loglevelCheckBox.CheckedItems.Count > 1 && count3 != loglevelCheckBox.CheckedItems.Count)
+                                {
+                                    count3++;
+                                    continue;
+                                }
                                 else
                                 {
                                     dataGridView1.Rows[rowNumber].Visible = false;
@@ -402,18 +556,13 @@ namespace IosSysLogger
         }
         private void loadBtn_click(object sender, EventArgs e)
         {
-
-            //ON LOAD BUTTON NEED TO CLEAR EVERYTHING OUT !!! KILL ALL THE PROCESS (BC ITS GONNA GET MESSSY)
             dataGridView1.Rows.Clear();
             loadXML();
         }
         private void searchBtn_Click(object sender, EventArgs e)
         {
             string search = searchTxtBox.Text;
-            if (search == "")
-                return;
-            else
-                searchResult(search);
+                searchResultTest(search);
         }
         private void clearDataBtn_Click(object sender, EventArgs e)
         {
@@ -498,11 +647,57 @@ namespace IosSysLogger
                     {
                         i++;
                     }
-
-
                 }
             }
+        }
 
+
+        private void searchResultTest(string term)
+        {
+            DataView dv = new DataView(logParserView);
+            dv.RowFilter= "Date LIKE  '*" + term+"*'"+ "or Device LIKE  '*" + term + "*'or  Process LIKE  '*" + term + "*' or LogLevel LIKE  '*" + term + "*' or Log LIKE  '*" + term + "*'";
+            dataGridView1.DataSource = dv;
+        }
+
+        private void TotalcheckBox()
+        {
+            DataView dv = new DataView(logParserView);
+
+            int count = totalSelected.Count;
+            int tempCounter = 1;
+            String Filter ="";
+            foreach (KeyValuePair<string, string> entry in totalSelected)
+            {
+
+                if (entry.Value == "devicename")
+                {
+                    if (tempCounter == count)
+                    {
+                        dv.RowFilter += "Device LIKE '*" + entry.Key + "*'";
+                    }
+                    else
+                        dv.RowFilter += "Device LIKE '*" + entry.Key + "*' AND";
+                    tempCounter++;
+                }
+                else if (entry.Value == "process")
+                {
+                    string keyValue = entry.Key;
+                    keyValue = keyValue.Remove(keyValue.IndexOf('['));
+                    if (tempCounter == count)
+                    {
+                        Filter += "Process LIKE '*" + keyValue + "*'";
+                    }
+                    else
+                        Filter += "Process LIKE '*" + keyValue + "*' OR ";
+                    tempCounter++;
+                }
+                    
+                else if (entry.Value == "loglevel")
+                    dv.RowFilter += "Process LIKE '*" + entry.Key + "*' AND";
+            }
+            MessageBox.Show(Filter);
+            dv.RowFilter = Filter;
+            dataGridView1.DataSource = dv;
         }
 
         private void searchResult(string term)
@@ -522,13 +717,8 @@ namespace IosSysLogger
                         i++;
                         continue;
                     }
-                    else if (dataGridView1.Rows[i].Visible == true && dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(term))
+                    else if (dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(term))
                     {
-                        if (dataGridView1.Rows[i].Cells[0].Value.ToString() == " " && dataGridView1.Rows[i].Cells[0].Value.ToString() == " ")
-                        {
-                            
-                        }
-
                         string multirow = dataGridView1.Rows[i].Cells[5].Value.ToString();
                         int count = Convert.ToInt32(multirow);
                         if (count > 0)
@@ -730,7 +920,7 @@ namespace IosSysLogger
                 {
                     totalSelected.Add(loglevelCheckBox.Items[indexChecked].ToString(), "loglevel");
                 }
-                ShowTotal();
+                TotalcheckBox();
             }
         }
 

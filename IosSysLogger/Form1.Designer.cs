@@ -45,13 +45,6 @@
             this.load = new System.Windows.Forms.Button();
             this.highlightTextBox = new System.Windows.Forms.TextBox();
             this.clearData = new System.Windows.Forms.Button();
-            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.device = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Process = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LogLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Log = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ctr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fontcolor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,14 +75,6 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.date,
-            this.device,
-            this.Process,
-            this.LogLevel,
-            this.Log,
-            this.ctr,
-            this.fontcolor});
             this.dataGridView1.Location = new System.Drawing.Point(3, 266);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
@@ -269,52 +254,6 @@
             this.clearData.Text = "clear data";
             this.clearData.UseVisualStyleBackColor = false;
             // 
-            // date
-            // 
-            this.date.FillWeight = 50.9684F;
-            this.date.HeaderText = "Date";
-            this.date.Name = "date";
-            // 
-            // device
-            // 
-            this.device.FillWeight = 47.36657F;
-            this.device.HeaderText = "Device";
-            this.device.Name = "device";
-            this.device.Width = 93;
-            // 
-            // Process
-            // 
-            this.Process.FillWeight = 46.5834F;
-            this.Process.HeaderText = "Process";
-            this.Process.Name = "Process";
-            this.Process.Width = 91;
-            // 
-            // LogLevel
-            // 
-            this.LogLevel.FillWeight = 48.57244F;
-            this.LogLevel.HeaderText = "LogLevel";
-            this.LogLevel.Name = "LogLevel";
-            this.LogLevel.Width = 96;
-            // 
-            // Log
-            // 
-            this.Log.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Log.FillWeight = 306.5092F;
-            this.Log.HeaderText = "Log";
-            this.Log.Name = "Log";
-            // 
-            // ctr
-            // 
-            this.ctr.HeaderText = "ctr";
-            this.ctr.Name = "ctr";
-            this.ctr.Visible = false;
-            // 
-            // fontcolor
-            // 
-            this.fontcolor.HeaderText = "fontcolor";
-            this.fontcolor.Name = "fontcolor";
-            this.fontcolor.Visible = false;
-            // 
             // iosSyslogger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -366,13 +305,6 @@
         private System.Windows.Forms.Button load;
         private System.Windows.Forms.TextBox highlightTextBox;
         private System.Windows.Forms.Button clearData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn device;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Process;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LogLevel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Log;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ctr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fontcolor;
     }
 }
 
