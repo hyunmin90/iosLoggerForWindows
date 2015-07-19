@@ -31,6 +31,13 @@
             this.searchTxtBox = new System.Windows.Forms.TextBox();
             this.searchBtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Device = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Process = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LogLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Log = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ctr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FontColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.loglevelCheckBox = new System.Windows.Forms.CheckedListBox();
             this.clearSearchBtn = new System.Windows.Forms.Button();
@@ -50,9 +57,9 @@
             // 
             // searchTxtBox
             // 
-            this.searchTxtBox.Location = new System.Drawing.Point(748, 57);
+            this.searchTxtBox.Location = new System.Drawing.Point(641, 62);
             this.searchTxtBox.Name = "searchTxtBox";
-            this.searchTxtBox.Size = new System.Drawing.Size(200, 21);
+            this.searchTxtBox.Size = new System.Drawing.Size(172, 20);
             this.searchTxtBox.TabIndex = 1;
             // 
             // searchBtn
@@ -60,9 +67,9 @@
             this.searchBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.searchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.searchBtn.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBtn.Location = new System.Drawing.Point(748, 97);
+            this.searchBtn.Location = new System.Drawing.Point(641, 105);
             this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(90, 36);
+            this.searchBtn.Size = new System.Drawing.Size(77, 39);
             this.searchBtn.TabIndex = 2;
             this.searchBtn.Text = "search";
             this.searchBtn.UseVisualStyleBackColor = false;
@@ -75,19 +82,66 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.Location = new System.Drawing.Point(3, 266);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Date,
+            this.Device,
+            this.Process,
+            this.LogLevel,
+            this.Log,
+            this.Ctr,
+            this.FontColor});
+            this.dataGridView1.Location = new System.Drawing.Point(3, 288);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.Size = new System.Drawing.Size(1266, 282);
+            this.dataGridView1.Size = new System.Drawing.Size(1085, 306);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView_CellFormatting);
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            // 
+            // Device
+            // 
+            this.Device.HeaderText = "Device";
+            this.Device.Name = "Device";
+            // 
+            // Process
+            // 
+            this.Process.HeaderText = "Process";
+            this.Process.Name = "Process";
+            // 
+            // LogLevel
+            // 
+            this.LogLevel.HeaderText = "LogLevel";
+            this.LogLevel.Name = "LogLevel";
+            // 
+            // Log
+            // 
+            this.Log.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Log.HeaderText = "Log";
+            this.Log.Name = "Log";
+            // 
+            // Ctr
+            // 
+            this.Ctr.HeaderText = "Ctr";
+            this.Ctr.Name = "Ctr";
+            this.Ctr.Visible = false;
+            // 
+            // FontColor
+            // 
+            this.FontColor.HeaderText = "FontColor";
+            this.FontColor.Name = "FontColor";
+            this.FontColor.Visible = false;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(1017, 266);
+            this.richTextBox1.Location = new System.Drawing.Point(872, 288);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(10, 10);
+            this.richTextBox1.Size = new System.Drawing.Size(9, 11);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
@@ -108,11 +162,11 @@
             "Critical",
             "Alert",
             "Emergency"});
-            this.loglevelCheckBox.Location = new System.Drawing.Point(500, 57);
-            this.loglevelCheckBox.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.loglevelCheckBox.Location = new System.Drawing.Point(429, 62);
+            this.loglevelCheckBox.Margin = new System.Windows.Forms.Padding(3, 11, 3, 11);
             this.loglevelCheckBox.Name = "loglevelCheckBox";
             this.loglevelCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.loglevelCheckBox.Size = new System.Drawing.Size(188, 172);
+            this.loglevelCheckBox.Size = new System.Drawing.Size(161, 172);
             this.loglevelCheckBox.TabIndex = 6;
             this.loglevelCheckBox.SelectedIndexChanged += new System.EventHandler(this.loglevelCheckBox_SelectedIndexChanged);
             // 
@@ -122,10 +176,10 @@
             this.clearSearchBtn.FlatAppearance.BorderSize = 0;
             this.clearSearchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clearSearchBtn.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearSearchBtn.Location = new System.Drawing.Point(1112, 176);
+            this.clearSearchBtn.Location = new System.Drawing.Point(953, 191);
             this.clearSearchBtn.Name = "clearSearchBtn";
             this.clearSearchBtn.Padding = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.clearSearchBtn.Size = new System.Drawing.Size(90, 53);
+            this.clearSearchBtn.Size = new System.Drawing.Size(77, 57);
             this.clearSearchBtn.TabIndex = 7;
             this.clearSearchBtn.Text = "clear filter";
             this.clearSearchBtn.UseVisualStyleBackColor = false;
@@ -133,10 +187,10 @@
             // fixScroll
             // 
             this.fixScroll.AutoSize = true;
-            this.fixScroll.Font = new System.Drawing.Font("휴먼모음T", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.fixScroll.Location = new System.Drawing.Point(964, 221);
+            this.fixScroll.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.fixScroll.Location = new System.Drawing.Point(826, 239);
             this.fixScroll.Name = "fixScroll";
-            this.fixScroll.Size = new System.Drawing.Size(87, 21);
+            this.fixScroll.Size = new System.Drawing.Size(81, 22);
             this.fixScroll.TabIndex = 8;
             this.fixScroll.Text = "fix scroll";
             this.fixScroll.UseVisualStyleBackColor = true;
@@ -148,9 +202,9 @@
             this.devicename.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.devicename.ForeColor = System.Drawing.SystemColors.Desktop;
             this.devicename.FormattingEnabled = true;
-            this.devicename.Location = new System.Drawing.Point(124, 57);
+            this.devicename.Location = new System.Drawing.Point(106, 62);
             this.devicename.Name = "devicename";
-            this.devicename.Size = new System.Drawing.Size(120, 172);
+            this.devicename.Size = new System.Drawing.Size(103, 172);
             this.devicename.TabIndex = 9;
             // 
             // processlistname
@@ -161,9 +215,9 @@
             this.processlistname.ForeColor = System.Drawing.SystemColors.Desktop;
             this.processlistname.FormattingEnabled = true;
             this.processlistname.HorizontalScrollbar = true;
-            this.processlistname.Location = new System.Drawing.Point(281, 57);
+            this.processlistname.Location = new System.Drawing.Point(241, 62);
             this.processlistname.Name = "processlistname";
-            this.processlistname.Size = new System.Drawing.Size(195, 172);
+            this.processlistname.Size = new System.Drawing.Size(167, 172);
             this.processlistname.TabIndex = 10;
             // 
             // highlightBtn
@@ -171,9 +225,9 @@
             this.highlightBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.highlightBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.highlightBtn.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.highlightBtn.Location = new System.Drawing.Point(748, 193);
+            this.highlightBtn.Location = new System.Drawing.Point(641, 209);
             this.highlightBtn.Name = "highlightBtn";
-            this.highlightBtn.Size = new System.Drawing.Size(90, 36);
+            this.highlightBtn.Size = new System.Drawing.Size(77, 39);
             this.highlightBtn.TabIndex = 12;
             this.highlightBtn.Text = "highlight";
             this.highlightBtn.UseVisualStyleBackColor = false;
@@ -182,7 +236,7 @@
             // 
             this.DevicenameLabel.AutoSize = true;
             this.DevicenameLabel.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DevicenameLabel.Location = new System.Drawing.Point(120, 21);
+            this.DevicenameLabel.Location = new System.Drawing.Point(103, 23);
             this.DevicenameLabel.Name = "DevicenameLabel";
             this.DevicenameLabel.Size = new System.Drawing.Size(108, 19);
             this.DevicenameLabel.TabIndex = 13;
@@ -192,7 +246,7 @@
             // 
             this.ProcessLabel.AutoSize = true;
             this.ProcessLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProcessLabel.Location = new System.Drawing.Point(278, 22);
+            this.ProcessLabel.Location = new System.Drawing.Point(238, 24);
             this.ProcessLabel.Name = "ProcessLabel";
             this.ProcessLabel.Size = new System.Drawing.Size(80, 18);
             this.ProcessLabel.TabIndex = 14;
@@ -203,7 +257,7 @@
             // 
             this.loglevelLabel.AutoSize = true;
             this.loglevelLabel.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loglevelLabel.Location = new System.Drawing.Point(496, 21);
+            this.loglevelLabel.Location = new System.Drawing.Point(425, 23);
             this.loglevelLabel.Name = "loglevelLabel";
             this.loglevelLabel.Size = new System.Drawing.Size(90, 19);
             this.loglevelLabel.TabIndex = 15;
@@ -214,9 +268,9 @@
             this.savedatagrid.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.savedatagrid.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.savedatagrid.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.savedatagrid.Location = new System.Drawing.Point(1112, 28);
+            this.savedatagrid.Location = new System.Drawing.Point(953, 30);
             this.savedatagrid.Name = "savedatagrid";
-            this.savedatagrid.Size = new System.Drawing.Size(90, 23);
+            this.savedatagrid.Size = new System.Drawing.Size(77, 25);
             this.savedatagrid.TabIndex = 16;
             this.savedatagrid.Text = "save ";
             this.savedatagrid.UseVisualStyleBackColor = false;
@@ -226,18 +280,18 @@
             this.load.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.load.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.load.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.load.Location = new System.Drawing.Point(1112, 68);
+            this.load.Location = new System.Drawing.Point(953, 74);
             this.load.Name = "load";
-            this.load.Size = new System.Drawing.Size(90, 23);
+            this.load.Size = new System.Drawing.Size(77, 25);
             this.load.TabIndex = 17;
             this.load.Text = "load";
             this.load.UseVisualStyleBackColor = false;
             // 
             // highlightTextBox
             // 
-            this.highlightTextBox.Location = new System.Drawing.Point(748, 149);
+            this.highlightTextBox.Location = new System.Drawing.Point(641, 161);
             this.highlightTextBox.Name = "highlightTextBox";
-            this.highlightTextBox.Size = new System.Drawing.Size(200, 21);
+            this.highlightTextBox.Size = new System.Drawing.Size(172, 20);
             this.highlightTextBox.TabIndex = 18;
             // 
             // clearData
@@ -246,20 +300,20 @@
             this.clearData.FlatAppearance.BorderSize = 0;
             this.clearData.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clearData.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearData.Location = new System.Drawing.Point(1112, 107);
+            this.clearData.Location = new System.Drawing.Point(953, 116);
             this.clearData.Name = "clearData";
             this.clearData.Padding = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.clearData.Size = new System.Drawing.Size(90, 53);
+            this.clearData.Size = new System.Drawing.Size(77, 57);
             this.clearData.TabIndex = 19;
             this.clearData.Text = "clear data";
             this.clearData.UseVisualStyleBackColor = false;
             // 
             // iosSyslogger
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1275, 576);
+            this.ClientSize = new System.Drawing.Size(1093, 624);
             this.Controls.Add(this.clearData);
             this.Controls.Add(this.highlightTextBox);
             this.Controls.Add(this.load);
@@ -305,6 +359,13 @@
         private System.Windows.Forms.Button load;
         private System.Windows.Forms.TextBox highlightTextBox;
         private System.Windows.Forms.Button clearData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Device;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Process;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LogLevel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Log;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ctr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FontColor;
     }
 }
 

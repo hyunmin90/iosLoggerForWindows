@@ -126,12 +126,19 @@ namespace IosSysLogger
 
             else if (Program.GlobalData.usbInserted == true)
             {
-                deviceInfoThread(form, tool, Program.GlobalData.uuid[Program.GlobalData.uuid.Count - 1]);
-                LoggingThread(form, tool, Program.GlobalData.uuid[Program.GlobalData.uuid.Count - 1]);
-                lstThreads[lstThreads.Count - 2].Start();
-                lstThreads[lstThreads.Count - 1].Start();
-                Program.GlobalData.notInit = true;
-                return;
+                if (Program.GlobalData.uuid[Program.GlobalData.uuid.Count - 1] == null)
+                    return;
+                else
+                {
+                    deviceInfoThread(form, tool, Program.GlobalData.uuid[Program.GlobalData.uuid.Count - 1]);
+                    LoggingThread(form, tool, Program.GlobalData.uuid[Program.GlobalData.uuid.Count - 1]);
+                    lstThreads[lstThreads.Count - 2].Start();
+                    lstThreads[lstThreads.Count - 1].Start();
+                    Program.GlobalData.notInit = true;
+                    return;
+
+                }
+                
             }
             else if (Program.GlobalData.usbInserted!=true)
             {

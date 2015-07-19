@@ -54,7 +54,7 @@ namespace IosSysLogger
         }
         static void watcher_USBInserted(object sender, EventArgs e,iosSyslogger window, loggerTool tool)
         {
-            MessageBox.Show("New USB detected!");
+            //MessageBox.Show("New USB detected!");
             if (GlobalData.usbInserted == true) //If this is true, new iOS Device has already been processed 
             {
                 return;
@@ -73,7 +73,7 @@ namespace IosSysLogger
                 return;
             else
             {
-                MessageBox.Show("Removed");
+               // MessageBox.Show("Removed");
                 window.BeginInvoke(new Action(() =>
                 {
                     window.clearDevicenameList();
