@@ -20,11 +20,18 @@ namespace IosSysLogger
         bool fixScrollCheck = false;
         bool filterApplied = false;
         String Filter = "";
+        String selectedTab = "";
 
         DataView filteredView = new DataView();
         DataTable logParserView = new DataTable();
         DataTable jsonView = new DataTable();
 
+        Dictionary<string,DataTable> dataTables = new Dictionary<string,DataTable>();
+        Dictionary<string, DataTable> jsonTables = new Dictionary<string,DataTable>();
+        Dictionary<string,DataGridView> dataGrids = new Dictionary<string,DataGridView>();
+        Dictionary<string,DataView> filteredTable = new Dictionary<string,DataView>();
+        Dictionary<string, TabPage> tabpages = new Dictionary<string, TabPage>();
+         
         List<string> selectedLoglevel = new List<string>();
         List<string> processlist = new List<string>();
         List<string> devicenameList = new List<string>();
@@ -33,33 +40,35 @@ namespace IosSysLogger
         List<string> chkdevice = new List<string>();
         List<string> chkprocess = new List<string>();
         List<string> chkloglevel = new List<string>();
-
+        ContextMenuStrip mnu;
         public iosSyslogger()
         {
             InitializeComponent();
+            
+
             var watcher = new ManagementEventWatcher();
 
             //Allow data copy here 
-            ContextMenuStrip mnu = new ContextMenuStrip();
+            mnu = new ContextMenuStrip();
             ToolStripMenuItem mnuCopy = new ToolStripMenuItem("Copy");
             mnu.Items.AddRange(new ToolStripItem[] { mnuCopy });
-            dataGridView1.ContextMenuStrip = mnu;
+
+            //dataGridView1.ContextMenuStrip = mnu;
             mnuCopy.Click += new EventHandler(copyMnu_Click);
 
-            
+           // foreach (DataGridViewColumn col in dataGridView1.Columns)
+            //{
+           //     logParserView.Columns.Add(col.Name);
+            //    col.DataPropertyName = col.Name;
+           // }
 
-            foreach (DataGridViewColumn col in dataGridView1.Columns)
-            {
-                logParserView.Columns.Add(col.Name);
-                col.DataPropertyName = col.Name;
-            }
 
-            dataGridView1.DataSource = logParserView;
+
+           // dataGridView1.DataSource = logParserView;
             //Check boxes handler
-            this.devicename.SelectedIndexChanged += new System.EventHandler(this.checkbox_SelectedIndexChanged);
+            //this.devicename.SelectedIndexChanged += new System.EventHandler(this.checkbox_SelectedIndexChanged);
             this.loglevelCheckBox.SelectedIndexChanged += new System.EventHandler(this.checkbox_SelectedIndexChanged);
             this.processlistname.SelectedIndexChanged += new System.EventHandler(this.checkbox_SelectedIndexChanged);
-
             //Button Click Handler
             this.highlightBtn.Click += new System.EventHandler(this.highlightBtn_Click);
             this.clearSearchBtn.Click += new System.EventHandler(this.clearSearchBtn_Click);
@@ -68,11 +77,12 @@ namespace IosSysLogger
             this.savedatagrid.Click += new System.EventHandler(this.saveBtn_Click);
             this.load.Click += new System.EventHandler(this.loadBtn_click);
             this.clearData.Click += new System.EventHandler(this.clearDataBtn_Click);
+
         }
 
         public void clearDeviceName()
         {
-            devicename.Items.Clear();
+            //devicename.Items.Clear();
         }
 
 
@@ -97,9 +107,9 @@ namespace IosSysLogger
 
 
 
-        private void saveToJson()
+        private void saveToJson(string devicename)
         {
-            string json = JsonConvert.SerializeObject(logParserView);
+            string json = JsonConvert.SerializeObject(dataTables[devicename]);
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "JSON-File | *.json";
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
@@ -120,7 +130,7 @@ namespace IosSysLogger
             //    col.DataPropertyName = col.Name;
           //  }
 
-            dataGridView1.DataSource = jsonView;
+            //dataGridView1.DataSource = jsonView;
         }
 
 
@@ -155,53 +165,100 @@ namespace IosSysLogger
                         }
                     }
                     if(flag1==false) devicenameList.Add(deviceName);
-                    if(flag1==false)devicename.Items.Add(deviceName); 
-                    
+                    //if(flag1==false)devicename.Items.Add(deviceName); 
+                    addTabcontrol(deviceName);
+
                 }
+              
+                
             }
         }
 
+        private void addTabcontrol(string devicename)
+        {
+
+
+            DataGridView DatagridView = new DataGridView();
+            //DatagridView.AutoSize = true;
+            DatagridView.Width = 1230;
+            DatagridView.Height = 407;
+            TabPage myTabPage = new TabPage(devicename); //Create each tab
+            DataTable tabview = new DataTable();
+
+            DatagridView.Columns.Add("Date", "Date");
+            DatagridView.Columns.Add("Device", "Device");
+            DatagridView.Columns.Add("Process", "Process");
+            DatagridView.Columns.Add("LogLevel", "LogLevel");
+            DatagridView.Columns.Add("Log", "Log");
+            DatagridView.Columns.Add("Ctr", "Ctr");
+
+            DatagridView.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            DatagridView.Columns[5].Visible = true;
+
+            foreach (DataGridViewColumn col in DatagridView.Columns)
+            {
+                tabview.Columns.Add(col.Name);
+                col.DataPropertyName = col.Name;
+            }
+            DatagridView.Anchor = (AnchorStyles.Top | AnchorStyles.Right|AnchorStyles.Bottom|AnchorStyles.Left);
+            DatagridView.CellFormatting += dataGridView_CellFormatting;
+            DatagridView.DataSource = tabview;
+            DatagridView.ContextMenuStrip = mnu;
+            //add it to the list.
+            dataGrids.Add(devicename, DatagridView);
+            dataTables.Add(devicename, tabview);
+            tabpages.Add(devicename, myTabPage);
+            
+            DatagridView.ScrollBars = ScrollBars.Both;
+            myTabPage.Controls.Add(DatagridView);
+            myTabPage.AutoScroll = true;
+            tabControl1.TabPages.Add(myTabPage);
+
+        }
+
+       
         private void dataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (this.dataGridView1.Columns[e.ColumnIndex].Name == "LogLevel")
+            
+            if (((DataGridView)sender).Columns[e.ColumnIndex].Name == "LogLevel")
             {
                 if (e.Value != null)
                 {
                     if (e.Value.ToString().Contains("<Notice>:"))
                     {
-                        this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.ForestGreen;
+                        ((DataGridView)sender).Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.ForestGreen;
                     }
                     else if (e.Value.ToString().Contains("<Debug>:"))
                     {
-                        this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.Orange;
+                        ((DataGridView)sender).Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.Orange;
                     }
                     else if (e.Value.ToString().Contains("<Info>:"))
                     {
-                        this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.AntiqueWhite;
+                        ((DataGridView)sender).Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.AntiqueWhite;
                     }
                     else if (e.Value.ToString().Contains("<Warning>:"))
                     {
-                        this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.Orange;
+                        ((DataGridView)sender).Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.Orange;
                     }
                     else if (e.Value.ToString().Contains("<Error>:"))
                     {
-                        this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.DarkRed;
+                        ((DataGridView)sender).Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.DarkRed;
                     }
                     else if (e.Value.ToString().Contains("<Critical>:"))
                     {
-                        this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.DarkRed;
+                        ((DataGridView)sender).Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.DarkRed;
                     }
                     else if (e.Value.ToString().Contains("<Alert>:"))
                     {
-                        this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.DarkRed;
+                        ((DataGridView)sender).Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.DarkRed;
                     }
                     else if (e.Value.ToString().Contains("<Emergency>:"))
                     {
-                        this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.IndianRed;
+                        ((DataGridView)sender).Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.IndianRed;
                     }
                     else
                     {
-                        this.dataGridView1.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.Black;
+                        ((DataGridView)sender).Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.Black;
 
                     }
 
@@ -209,31 +266,31 @@ namespace IosSysLogger
             }
            
         }
-        public string insertToDataSource
+        public void insertToDataSource(string value, string devicename)
         {
-            get { return null; }
-            set
-            {
-                if (value == null) return;
+            
+                if (value == null)  return;
                 int index = 0;
                 int previous = 0;
                 string[] month = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
                 string[] loglevels = { "<Notice>:", "<Debug>:", "<Info>:", "<Warning>:", "<Error>:", "<Critical>:", "<Alert>:", "<Emergency>:" };
                 int rowNumber = 0;
+
+
+
                 if (month.Any(e => value.StartsWith(e))) //Start with one of the month code
                 {
-                    logParserView.Rows.Add();
+                    dataTables[devicename].Rows.Add();
                     addtRow = 0;
                     //row init
-                    rowNumber=logParserView.Rows.Count-1;
-                    int dataGDrowNo = dataGridView1.Rows.Count - 1;
-                    logParserView.Rows[rowNumber][0] = "";
-                    logParserView.Rows[rowNumber][1] = "";
-                    logParserView.Rows[rowNumber][2] = "";
-                    logParserView.Rows[rowNumber][3] = "";
-                    logParserView.Rows[rowNumber][4] = "";
-                    logParserView.Rows[rowNumber][5] = "0";
-                    logParserView.Rows[rowNumber][6] = "";
+                    rowNumber= dataTables[devicename].Rows.Count-1;
+                    int dataGDrowNo = dataTables[devicename].Rows.Count - 1;
+                    dataTables[devicename].Rows[rowNumber][0] = "";
+                    dataTables[devicename].Rows[rowNumber][1] = "";
+                    dataTables[devicename].Rows[rowNumber][2] = "";
+                    dataTables[devicename].Rows[rowNumber][3] = "";
+                    dataTables[devicename].Rows[rowNumber][4] = "";
+                    dataTables[devicename].Rows[rowNumber][5] = "0";
 
 
                     int midIndex = 0;
@@ -250,10 +307,10 @@ namespace IosSysLogger
                         previous++;
                         foreach (string word in words)
                         {
-                            logParserView.Rows[rowNumber - previous][4] += word + "";
+                            dataTables[devicename].Rows[rowNumber - previous][4] += word + "";
                         }
                     }
-                    int switchindex = 0;
+                    int newline = 0;
                     foreach (string word in words)
                     {
                         
@@ -263,16 +320,14 @@ namespace IosSysLogger
                         }
 
                         if (firstRowf == true && index < midIndex - 2) //Date
-                            logParserView.Rows[rowNumber][0] += word + " ";
+                            dataTables[devicename].Rows[rowNumber][0] += word + " ";
                         else if (firstRowf == true && devicenameList.Any(e => word.Contains(e))) //Device
                         {
-                            logParserView.Rows[rowNumber][1] += word + " ";
-                            switchindex = 1;
+                            dataTables[devicename].Rows[rowNumber][1] += word + " ";
                         }
                         else if (firstRowf == true && index == midIndex - 1) //Process
                         {
-                            switchindex = 2;
-                            logParserView.Rows[rowNumber][2] += word + " ";
+                            dataTables[devicename].Rows[rowNumber][2] += word + " ";
                             if (!(processlist.Contains(word)))
                             {
                                 processlist.Add(word);
@@ -282,14 +337,12 @@ namespace IosSysLogger
                         else if (firstRowf == true && (loglevels.Any(e => word.Contains(e)))) //LogLevel
                         {
 
-                            switchindex = 3;
-                            logParserView.Rows[rowNumber][3] += word + " ";
+                            dataTables[devicename].Rows[rowNumber][3] += word + " ";
                         }
                         else if (firstRowf == true && index > midIndex)//Log
                         {
-                            switchindex = 4;
-                            logParserView.Rows[rowNumber][4] += word + " ";
-                            logParserView.Rows[rowNumber][5] = 0;
+                            dataTables[devicename].Rows[rowNumber][4] += word + " ";
+                            dataTables[devicename].Rows[rowNumber][5] = 0;
 
                         }
                         index++;
@@ -299,22 +352,25 @@ namespace IosSysLogger
                 }
                 else //If current row contain multiple line, this logic counts on the multi row and record such lines of log. 
                 {
-                    logParserView.Rows.Add();
-                    rowNumber = logParserView.Rows.Count - 1;
-                    if (rowNumber == 0) addtRow = 0;
+                    dataTables[devicename].Rows.Add();
+                    rowNumber = dataTables[devicename].Rows.Count - 1;
+                    if (rowNumber == 0 || rowNumber == 1) addtRow = 0;
                     else
                         addtRow++;
-                    logParserView.Rows[rowNumber][0] = " ";
-                    logParserView.Rows[rowNumber][1] = " ";
-                    logParserView.Rows[rowNumber][2] = " ";
-                    logParserView.Rows[rowNumber][3] = " ";
-                    logParserView.Rows[rowNumber][4] = value.ToString();
-                    logParserView.Rows[rowNumber][6] = "Black";
-                    logParserView.Rows[rowNumber - addtRow][5] = addtRow;
-                    logParserView.Rows[rowNumber][5] = "0";
+
+                    dataTables[devicename].Rows[rowNumber][0] = " ";
+                    dataTables[devicename].Rows[rowNumber][1] = " ";
+                    dataTables[devicename].Rows[rowNumber][2] = " ";
+                    dataTables[devicename].Rows[rowNumber][3] = " ";
+                    dataTables[devicename].Rows[rowNumber][4] = value.ToString();
+                    if(rowNumber-addtRow<0)
+                        dataTables[devicename].Rows[rowNumber][5] = addtRow;
+                    else
+                        dataTables[devicename].Rows[rowNumber - addtRow][5] = addtRow;
+                    dataTables[devicename].Rows[rowNumber][5] = "0";
                     scrollToBottom();
                 }
-            }
+            
         }
 
         public static string EscapeLikeValue(string searchterm)
@@ -335,13 +391,18 @@ namespace IosSysLogger
 
         private void scrollToBottom()
         {
-            if (dataGridView1.FirstDisplayedScrollingRowIndex == 0 || dataGridView1.FirstDisplayedScrollingRowIndex == -1)
+            if (dataGrids.ContainsKey(tabControl1.TabPages[tabControl1.SelectedIndex].Text) == false) return;
+
+            if (dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].FirstDisplayedScrollingRowIndex == 0 || dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].FirstDisplayedScrollingRowIndex == -1)
                 return;
             if (fixScrollCheck != true)
             {
-                dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.RowCount - 1;
+                dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].FirstDisplayedScrollingRowIndex = dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].RowCount - 1;
             }
         }
+
+        
+
         private void highlightBtn_Click(object sender, EventArgs e)
         {
             string search = highlightTextBox.Text;
@@ -353,7 +414,7 @@ namespace IosSysLogger
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
-            saveToJson();
+            saveToJson(tabControl1.TabPages[tabControl1.SelectedIndex].Text);
         }
         private void loadBtn_click(object sender, EventArgs e)
         {
@@ -366,7 +427,7 @@ namespace IosSysLogger
         }
         private void clearDataBtn_Click(object sender, EventArgs e)
         {
-            logParserView.Clear(); //Clear all virtual table.
+            dataTables[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Clear(); //Clear all virtual table.
         }
         private void copyMnu_Click(object sender, EventArgs e)
         {
@@ -399,10 +460,10 @@ namespace IosSysLogger
         {
             totalSelected.Clear();
             filterApplied = false;
-            foreach (int i in devicename.CheckedIndices)
-            {
-                devicename.SetItemCheckState(i, CheckState.Unchecked);
-            }
+            //foreach (int i in devicename.CheckedIndices)
+           // {
+            //    devicename.SetItemCheckState(i, CheckState.Unchecked);
+           // }
             foreach (int i in processlistname.CheckedIndices)
             {
                 processlistname.SetItemCheckState(i, CheckState.Unchecked);
@@ -411,38 +472,45 @@ namespace IosSysLogger
             {
                 loglevelCheckBox.SetItemCheckState(i, CheckState.Unchecked);
             }
-            for(int i =0; i<dataGridView1.Rows.Count;i++)
-                dataGridView1.Rows[i].DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            for (int i = 0; i < dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows.Count; i++)
+            {
+                dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[0].Style.BackColor = System.Drawing.Color.White;
+                dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[1].Style.BackColor = System.Drawing.Color.White;
+                dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[2].Style.BackColor = System.Drawing.Color.White;
+                dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[3].Style.BackColor = System.Drawing.Color.White;
+                dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[4].Style.BackColor = System.Drawing.Color.White;
+                dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[5].Style.BackColor = System.Drawing.Color.White;
 
-            dataGridView1.DataSource = logParserView;
+            }
+            dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].DataSource = dataTables[tabControl1.TabPages[tabControl1.SelectedIndex].Text];
         }
         private void highLight(string term)
         {
-
+            
             if (term != null)
             {
                 int i = 0;
-                while (i < dataGridView1.Rows.Count - 1)
+                while (i < dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows.Count - 1)
                 {
-                    if (dataGridView1.Rows[i].Cells[3] == null)
+                    if (dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[3] == null)
                     {
                         i++;
                         continue;
                     }
 
-                    else if (dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term) || dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(term))
+                    else if (dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[2].Value.ToString().Contains(term) || dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[3].Value.ToString().Contains(term) || dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[4].Value.ToString().Contains(term))
                     {
-                        if (dataGridView1.Rows[i].Cells[2].Value.ToString().Contains(term))
+                        if (dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[2].Value.ToString().Contains(term))
                         {
-                            dataGridView1.Rows[i].Cells[2].Style.BackColor = System.Drawing.Color.Yellow;
+                            dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[2].Style.BackColor = System.Drawing.Color.Yellow;
                         }
 
-                        if (dataGridView1.Rows[i].Cells[3].Value.ToString().Contains(term))
-                            dataGridView1.Rows[i].Cells[3].Style.BackColor = System.Drawing.Color.Yellow;
-                        if (dataGridView1.Rows[i].Cells[4].Value.ToString().Contains(term))
-                            dataGridView1.Rows[i].Cells[4].Style.BackColor = System.Drawing.Color.Yellow;
+                        if (dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[3].Value.ToString().Contains(term))
+                            dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[3].Style.BackColor = System.Drawing.Color.Yellow;
+                        if (dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[4].Value.ToString().Contains(term))
+                            dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[4].Style.BackColor = System.Drawing.Color.Yellow;
 
-                        string multirow = dataGridView1.Rows[i].Cells[5].Value.ToString();
+                        string multirow = dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[5].Value.ToString();
                         i++;
                     }
                     else
@@ -456,26 +524,26 @@ namespace IosSysLogger
 
         private void searchResult(string term)
         {
-            string FilterRow = "";
+           string FilterRow = "";
             if (filterApplied == true)
             {
                 FilterRow = "( "+Filter+") "+" AND "+"( Date LIKE  '*" + term + "*'" + "or Device LIKE  '*" + term + "*'or  Process LIKE  '*" + term + "*' or LogLevel LIKE  '*" + term + "*' or Log LIKE  '*" + term + "*' )";
-                filteredView.RowFilter = FilterRow;
-                dataGridView1.DataSource = filteredView;
+                filteredTable[tabControl1.TabPages[tabControl1.SelectedIndex].Text].RowFilter = FilterRow;
+                dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].DataSource = filteredView;
             }
             else
             {
-                DataView dv = new DataView(logParserView);
+                DataView dv = new DataView(dataTables[tabControl1.TabPages[tabControl1.SelectedIndex].Text]);
                 FilterRow = "Date LIKE  '*" + term + "*'" + "or Device LIKE  '*" + term + "*'or  Process LIKE  '*" + term + "*' or LogLevel LIKE  '*" + term + "*' or Log LIKE  '*" + term + "*'";
                 dv.RowFilter = FilterRow;
-                dataGridView1.DataSource = dv;
+                dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].DataSource = dv;
             }
         }
 
         private void TotalcheckBox()
         {
-            DataView dv = new DataView(logParserView);
-            filteredView = new DataView(logParserView);
+            DataView dv = new DataView(dataTables[tabControl1.TabPages[tabControl1.SelectedIndex].Text]);
+            filteredView = new DataView(dataTables[tabControl1.TabPages[tabControl1.SelectedIndex].Text]);
             int count = totalSelected.Count;
             int tempCounter1 = 1;
             int tempCounte2 = 1;
@@ -536,7 +604,7 @@ namespace IosSysLogger
            // MessageBox.Show(Filter);
             dv.RowFilter = Filter;
             filteredView.RowFilter = Filter;
-            dataGridView1.DataSource = dv;
+            dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].DataSource = dv;
         }
 
       
@@ -549,7 +617,7 @@ namespace IosSysLogger
 
         private void checkbox_SelectedIndexChanged(object sender, EventArgs Args)
         {
-            if (processlistname.CheckedItems.Count == 0 && devicename.CheckedItems.Count == 0 && loglevelCheckBox.CheckedItems.Count == 0)
+            if (processlistname.CheckedItems.Count == 0 && loglevelCheckBox.CheckedItems.Count == 0)
             {
                 filterApplied = false;
                 chkprocess.Clear();
@@ -567,10 +635,10 @@ namespace IosSysLogger
                 {
                     chkprocess.Add(processlistname.Items[indexChecked].ToString());
                 }
-                foreach (int indexChecked in devicename.CheckedIndices)
-                {
-                    chkdevice.Add(devicename.Items[indexChecked].ToString());
-                }
+                //foreach (int indexChecked in devicename.CheckedIndices)
+                //{
+                 //   chkdevice.Add(devicename.Items[indexChecked].ToString());
+                //}
                 foreach (int indexChecked in loglevelCheckBox.CheckedIndices)
                 {
                     chkloglevel.Add(loglevelCheckBox.Items[indexChecked].ToString());
@@ -588,7 +656,20 @@ namespace IosSysLogger
 
         private void iosSyslogger_Load(object sender, EventArgs e)
         {
+ 
 
+
+        }
+
+  
+        private void tabControl1_ControlAdded(object sender, ControlEventArgs e)
+        {
+          
+        }
+
+        private void tabControl1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 

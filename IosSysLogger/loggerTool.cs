@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
+using System.Linq;
 
 namespace IosSysLogger
 {
@@ -10,6 +11,7 @@ namespace IosSysLogger
         List<Thread> lstThreads = new List<Thread>();
         Dictionary<string, Process> crProcess = new Dictionary<string, Process>();
         List<String> WriteToTxt = new List<String>();
+        Dictionary<string, string> uuidToName = new Dictionary<string, string>();
         public void readLog(iosSyslogger form,string uuid)
         {
 
@@ -58,7 +60,7 @@ namespace IosSysLogger
             process.StartInfo.RedirectStandardOutput = true;
             process.StartInfo.RedirectStandardError = true;
 
-            process.OutputDataReceived += new DataReceivedEventHandler((source, e) => deviceInfoHandler(source, e, form));
+            process.OutputDataReceived += new DataReceivedEventHandler((source, e) => deviceInfoHandler(source, e, form,uuid));
 
             //* Start process and handlers
             process.Start();
@@ -192,10 +194,25 @@ namespace IosSysLogger
             }
         }
 
-        private void deviceInfoHandler(object sendingProcess, DataReceivedEventArgs outLine, iosSyslogger form)
+        private void deviceInfoHandler(object sendingProcess, DataReceivedEventArgs outLine, iosSyslogger form,string uuid)
         {
             form.BeginInvoke(new Action(() =>
             {
+                if(outLine.Data==null) return;
+                if (outLine.Data.Contains("DeviceName:"))
+                {
+                    string[] words = outLine.Data.Split(' ');
+                    words = words.Where(w => w != words[0]).ToArray();
+                    string deviceName = "";
+                    for (int i = 0; i < words.Length; i++)
+                    {
+                        if (i < words.Length - 1)
+                            deviceName += words[i] + "-";
+                        else
+                            deviceName += words[i];
+                    }
+                    uuidToName.Add(uuid, deviceName);
+                }
                 form.insertDeviceName = outLine.Data;
             }));
         }
@@ -210,7 +227,8 @@ namespace IosSysLogger
             {
                 form.BeginInvoke(new Action(() =>
                 {
-                    form.insertToDataSource = outLine.Data;
+                    if (uuidToName.ContainsKey(uuid)==false) return;
+                    form.insertToDataSource(outLine.Data,uuidToName[uuid]);
                 }));
 
 
