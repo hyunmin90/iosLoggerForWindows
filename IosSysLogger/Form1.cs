@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.Xml;
 using System.Management;
 using Newtonsoft.Json;
+using System.Text;
+using System.Text.RegularExpressions;
 
 namespace IosSysLogger
 {
@@ -18,7 +18,7 @@ namespace IosSysLogger
         int addtRow = 0;
         bool firstRowf = false;
         bool fixScrollCheck = false;
-        bool filterApplied = true;
+        bool filterApplied = false;
         String Filter = "";
 
         DataView filteredView = new DataView();
@@ -317,10 +317,26 @@ namespace IosSysLogger
             }
         }
 
-        
+        public static string EscapeLikeValue(string searchterm)
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < searchterm.Length; i++)
+            {
+                char c = searchterm[i];
+                if (c == '*' || c == '%' || c == '[' || c == ']')
+                    sb.Append("[").Append(c).Append("]");
+                else if (c == '\'')
+                    sb.Append("''");
+                else
+                    sb.Append(c);
+            }
+            return sb.ToString();
+        }
 
         private void scrollToBottom()
         {
+            if (dataGridView1.FirstDisplayedScrollingRowIndex == 0 || dataGridView1.FirstDisplayedScrollingRowIndex == -1)
+                return;
             if (fixScrollCheck != true)
             {
                 dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.RowCount - 1;
@@ -345,16 +361,25 @@ namespace IosSysLogger
         }
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            string search = searchTxtBox.Text;
+            string search = EscapeLikeValue(searchTxtBox.Text);
             searchResult(search);
         }
         private void clearDataBtn_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
+            logParserView.Clear(); //Clear all virtual table.
         }
         private void copyMnu_Click(object sender, EventArgs e)
         {
             SendKeys.Send("^{c}");
+        }
+        private void addProcess_Click(object sender, EventArgs e)
+        {
+            string input = Microsoft.VisualBasic.Interaction.InputBox("Add Process", "add Process", "Default", -1, -1);
+            if (input.Length > 0)
+            {
+                processlistname.Items.Add(input);
+            }
+            
         }
 
         private void clearSearchBtn_Click(object sender, EventArgs e)
@@ -386,6 +411,9 @@ namespace IosSysLogger
             {
                 loglevelCheckBox.SetItemCheckState(i, CheckState.Unchecked);
             }
+            for(int i =0; i<dataGridView1.Rows.Count;i++)
+                dataGridView1.Rows[i].DefaultCellStyle.BackColor = System.Drawing.Color.White;
+
             dataGridView1.DataSource = logParserView;
         }
         private void highLight(string term)
@@ -428,16 +456,18 @@ namespace IosSysLogger
 
         private void searchResult(string term)
         {
+            string FilterRow = "";
             if (filterApplied == true)
             {
-                filteredView.RowFilter = "( "+Filter+") "+" AND "+"( Date LIKE  '*" + term + "*'" + "or Device LIKE  '*" + term + "*'or  Process LIKE  '*" + term + "*' or LogLevel LIKE  '*" + term + "*' or Log LIKE  '*" + term + "*' )";
-                MessageBox.Show(filteredView.RowFilter);
+                FilterRow = "( "+Filter+") "+" AND "+"( Date LIKE  '*" + term + "*'" + "or Device LIKE  '*" + term + "*'or  Process LIKE  '*" + term + "*' or LogLevel LIKE  '*" + term + "*' or Log LIKE  '*" + term + "*' )";
+                filteredView.RowFilter = FilterRow;
                 dataGridView1.DataSource = filteredView;
             }
             else
             {
                 DataView dv = new DataView(logParserView);
-                dv.RowFilter = "Date LIKE  '*" + term + "*'" + "or Device LIKE  '*" + term + "*'or  Process LIKE  '*" + term + "*' or LogLevel LIKE  '*" + term + "*' or Log LIKE  '*" + term + "*'";
+                FilterRow = "Date LIKE  '*" + term + "*'" + "or Device LIKE  '*" + term + "*'or  Process LIKE  '*" + term + "*' or LogLevel LIKE  '*" + term + "*' or Log LIKE  '*" + term + "*'";
+                dv.RowFilter = FilterRow;
                 dataGridView1.DataSource = dv;
             }
         }
@@ -457,7 +487,7 @@ namespace IosSysLogger
             String Filter1 ="";
             String Filter2 = "";
             String Filter3 = "";
-
+            String trimming = "";
             foreach (string term in chkdevice)
             {
                 deviceV = true;
@@ -467,13 +497,21 @@ namespace IosSysLogger
                     Filter1 += "Device LIKE '*" + term + "*'";
                 tempCounter1++;
             }
+        
             foreach (string term in chkprocess)
             {
+                if (term.IndexOf('[') != -1)
+                {
+                    trimming = term.Remove(term.IndexOf('['));
+                }
+                else
+                    trimming = term;
+
                 processV = true;
                 if (tempCounte2 != chkprocess.Count)
-                    Filter2 += "Process LIKE '*" + term.Remove(term.IndexOf('[')) + "*' OR ";
+                    Filter2 += "Process LIKE '*" + trimming + "*' OR ";
                 else
-                    Filter2 += "Process LIKE '*" + term.Remove(term.IndexOf('[')) + "*'";
+                    Filter2 += "Process LIKE '*" + trimming + "*'";
                 tempCounte2++;
 
             }

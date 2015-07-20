@@ -20,3 +20,15 @@ C:\Users\Steve\Documents\Visual Studio 2015\Projects\githubios\IosSysLogger\obj\
 C:\Users\Steve\Documents\Visual Studio 2015\Projects\githubios\IosSysLogger\obj\Debug\iOSloggerUI.csproj.GenerateResource.Cache
 C:\Users\Steve\Documents\Visual Studio 2015\Projects\githubios\IosSysLogger\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Steve\Documents\Visual Studio 2015\Projects\githubios\IosSysLogger\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubiOSsyslogger\IosSysLogger\bin\Debug\IosSysLogger.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubiOSsyslogger\IosSysLogger\bin\Debug\IosSysLogger.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubiOSsyslogger\IosSysLogger\bin\Debug\IosSysLogger.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubiOSsyslogger\IosSysLogger\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubiOSsyslogger\IosSysLogger\bin\Debug\System.Management.Automation.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubiOSsyslogger\IosSysLogger\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubiOSsyslogger\IosSysLogger\obj\Debug\iOSloggerUI.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubiOSsyslogger\IosSysLogger\obj\Debug\IosSysLogger.iosSyslogger.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubiOSsyslogger\IosSysLogger\obj\Debug\IosSysLogger.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubiOSsyslogger\IosSysLogger\obj\Debug\iOSloggerUI.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubiOSsyslogger\IosSysLogger\obj\Debug\IosSysLogger.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\githubiOSsyslogger\IosSysLogger\obj\Debug\IosSysLogger.pdb
