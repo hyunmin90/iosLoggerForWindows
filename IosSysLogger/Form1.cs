@@ -179,29 +179,31 @@ namespace IosSysLogger
 
 
             DataGridView DatagridView = new DataGridView();
-            //DatagridView.AutoSize = true;
-            DatagridView.Width = 1230;
-            DatagridView.Height = 407;
+            
             TabPage myTabPage = new TabPage(devicename); //Create each tab
             DataTable tabview = new DataTable();
-
             DatagridView.Columns.Add("Date", "Date");
             DatagridView.Columns.Add("Device", "Device");
             DatagridView.Columns.Add("Process", "Process");
             DatagridView.Columns.Add("LogLevel", "LogLevel");
             DatagridView.Columns.Add("Log", "Log");
-            DatagridView.Columns.Add("Ctr", "Ctr");
 
+            DatagridView.Columns[4].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            DatagridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            //DatagridView.Height = 480;
             DatagridView.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            DatagridView.Columns[5].Visible = true;
 
             foreach (DataGridViewColumn col in DatagridView.Columns)
             {
                 tabview.Columns.Add(col.Name);
                 col.DataPropertyName = col.Name;
             }
+            
             DatagridView.Anchor = (AnchorStyles.Top | AnchorStyles.Right|AnchorStyles.Bottom|AnchorStyles.Left);
+            DatagridView.MaximumSize= new System.Drawing.Size(tabControl1.Width-20, tabControl1.Height-30);
+            DatagridView.BringToFront();
             DatagridView.CellFormatting += dataGridView_CellFormatting;
+            DatagridView.ScrollBars = ScrollBars.Vertical;
             DatagridView.DataSource = tabview;
             DatagridView.ContextMenuStrip = mnu;
             //add it to the list.
@@ -209,7 +211,6 @@ namespace IosSysLogger
             dataTables.Add(devicename, tabview);
             tabpages.Add(devicename, myTabPage);
             
-            DatagridView.ScrollBars = ScrollBars.Both;
             myTabPage.Controls.Add(DatagridView);
             myTabPage.AutoScroll = true;
             tabControl1.TabPages.Add(myTabPage);
@@ -219,7 +220,8 @@ namespace IosSysLogger
        
         private void dataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            
+
+
             if (((DataGridView)sender).Columns[e.ColumnIndex].Name == "LogLevel")
             {
                 if (e.Value != null)
@@ -290,7 +292,6 @@ namespace IosSysLogger
                     dataTables[devicename].Rows[rowNumber][2] = "";
                     dataTables[devicename].Rows[rowNumber][3] = "";
                     dataTables[devicename].Rows[rowNumber][4] = "";
-                    dataTables[devicename].Rows[rowNumber][5] = "0";
 
 
                     int midIndex = 0;
@@ -342,7 +343,6 @@ namespace IosSysLogger
                         else if (firstRowf == true && index > midIndex)//Log
                         {
                             dataTables[devicename].Rows[rowNumber][4] += word + " ";
-                            dataTables[devicename].Rows[rowNumber][5] = 0;
 
                         }
                         index++;
@@ -352,22 +352,14 @@ namespace IosSysLogger
                 }
                 else //If current row contain multiple line, this logic counts on the multi row and record such lines of log. 
                 {
-                    dataTables[devicename].Rows.Add();
                     rowNumber = dataTables[devicename].Rows.Count - 1;
-                    if (rowNumber == 0 || rowNumber == 1) addtRow = 0;
-                    else
+                    
                         addtRow++;
 
-                    dataTables[devicename].Rows[rowNumber][0] = " ";
-                    dataTables[devicename].Rows[rowNumber][1] = " ";
-                    dataTables[devicename].Rows[rowNumber][2] = " ";
-                    dataTables[devicename].Rows[rowNumber][3] = " ";
-                    dataTables[devicename].Rows[rowNumber][4] = value.ToString();
-                    if(rowNumber-addtRow<0)
-                        dataTables[devicename].Rows[rowNumber][5] = addtRow;
-                    else
-                        dataTables[devicename].Rows[rowNumber - addtRow][5] = addtRow;
-                    dataTables[devicename].Rows[rowNumber][5] = "0";
+                if (rowNumber - addtRow > 0)
+                {
+                    dataTables[devicename].Rows[rowNumber][4] += Environment.NewLine + value.ToString();
+                }
                     scrollToBottom();
                 }
             
@@ -479,7 +471,6 @@ namespace IosSysLogger
                 dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[2].Style.BackColor = System.Drawing.Color.White;
                 dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[3].Style.BackColor = System.Drawing.Color.White;
                 dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[4].Style.BackColor = System.Drawing.Color.White;
-                dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[5].Style.BackColor = System.Drawing.Color.White;
 
             }
             dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].DataSource = dataTables[tabControl1.TabPages[tabControl1.SelectedIndex].Text];
@@ -510,7 +501,6 @@ namespace IosSysLogger
                         if (dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[4].Value.ToString().Contains(term))
                             dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[4].Style.BackColor = System.Drawing.Color.Yellow;
 
-                        string multirow = dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[5].Value.ToString();
                         i++;
                     }
                     else
@@ -525,15 +515,16 @@ namespace IosSysLogger
         private void searchResult(string term)
         {
            string FilterRow = "";
+            DataView dv = new DataView(dataTables[tabControl1.TabPages[tabControl1.SelectedIndex].Text]);
             if (filterApplied == true)
             {
                 FilterRow = "( "+Filter+") "+" AND "+"( Date LIKE  '*" + term + "*'" + "or Device LIKE  '*" + term + "*'or  Process LIKE  '*" + term + "*' or LogLevel LIKE  '*" + term + "*' or Log LIKE  '*" + term + "*' )";
-                filteredTable[tabControl1.TabPages[tabControl1.SelectedIndex].Text].RowFilter = FilterRow;
-                dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].DataSource = filteredView;
+                dv.RowFilter = FilterRow;
+                dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].DataSource = dv;
             }
             else
             {
-                DataView dv = new DataView(dataTables[tabControl1.TabPages[tabControl1.SelectedIndex].Text]);
+                
                 FilterRow = "Date LIKE  '*" + term + "*'" + "or Device LIKE  '*" + term + "*'or  Process LIKE  '*" + term + "*' or LogLevel LIKE  '*" + term + "*' or Log LIKE  '*" + term + "*'";
                 dv.RowFilter = FilterRow;
                 dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].DataSource = dv;
@@ -670,6 +661,11 @@ namespace IosSysLogger
         private void tabControl1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
