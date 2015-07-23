@@ -671,6 +671,11 @@ namespace IosSysLogger
         }
 
 
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Created by Steve Hyounmin Wang \n\n\nContacts & bug reporting: hyunmin90@gmail.com");
+        }
     }
 
 }
