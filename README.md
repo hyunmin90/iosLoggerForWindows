@@ -4,9 +4,15 @@ This is iOS system log viewer windows.
 
 I am using c# as framing the UI and parsing the log.
 
-I am also using the libmobiledevice library for getting syslog line by line.
+I am also using the libmobiledevice library for getting syslog and getting informations regarding device.
+
+
+![Image of iosSyslgoger](https://github.com/hyunmin90/iosLoggerForWindows/blob/master/syslogger.png) 
+
+###Details
 
 Execution file is included at Zip file at the root directory of this repo.  iosSyslogger.exe is the exe with UI support that lets you filter logs and search within.  
+
 
 library was compiled in mingw environment and I highly recommend you build your own version of libimobiledevice library for customization if you intend to develop a tool for iOS devices. 
 
@@ -16,9 +22,11 @@ It also support UTF-8 encoding unlike the native library provided by libimobiled
 
 I am always welcome to receive opinions and improvements so please reach out to me with ideas for improving system log viewer for ios. 
 
-TIPS for compiling libimobiledevice in Windows environment.
+
+###TIPS for compiling libimobiledevice in Windows environment.
 
 Install below
+  ```
 mingw 
 mingw-developer-toolkit
 mingw32-base
@@ -26,9 +34,8 @@ mingw32-gcc-g++
 msys-base
 msys-wget
 pthreads
-
-###Compiling libimobiledevice on windows platform using mingw
- 
+  ```
+  
 create a new file in C:\MinGW\msys\1.0\etc\fstab and add a line below using text editor
 c:/mingw  /mingw
 glib, pkg-config and pkg-config-dev must be included in each folder it correspond to inside mingw 
