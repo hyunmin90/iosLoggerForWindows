@@ -38,15 +38,18 @@ glib, pkg-config and pkg-config-dev must be included in each folder it correspon
  in order to compile libimobiledevice, you must have 
  libxml2(always install the newest version), libplist, libusbmuxd, zlib 
  ( zlib has special compile instructions
-        make -f win32/Makefile.gcc
-        BINARY_PATH=/mingw/bin INCLUDE_PATH=/mingw/include LIBRARY_PATH=/mingw/lib make install -f win32/Makefile.gcc       SHARED_MODE=1)
-
+ 
+ ```
+make -f win32/Makefile.gcc
+BINARY_PATH=/mingw/bin INCLUDE_PATH=/mingw/include LIBRARY_PATH=/mingw/lib make install -f win32/Makefile.gcc SHARED_MODE=1)
+```
 and finally openSSL (it also has special instruction for installation) 
-        ./Configure mingw shared no-jpake no-krb5 no-md2 no-rc5 no-static-engine --prefix=/mingw
-        make depend
-        make
-        make install
-
+ ```
+./Configure mingw shared no-jpake no-krb5 no-md2 no-rc5 no-static-engine --prefix=/mingw
+make depend
+make
+make install
+ ```
 For those of you installing in windows environment might run in to a compilation issue while installing libusmuxd. 
 define sleep new Sleep(x*1000) requires ; ()  sort of error. Go ahead and delete this line in your /src/libuxmuxd.c and try to compile it again. This will solve your problem completely. 
 
