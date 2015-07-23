@@ -15,10 +15,9 @@ namespace IosSysLogger
         Dictionary<string, Process> crProcess = new Dictionary<string, Process>();
         List<String> WriteToTxt = new List<String>();
         Dictionary<string, string> uuidToName = new Dictionary<string, string>();
+
         public void readLog(iosSyslogger form,string uuid)
         {
-
-           
             string currentPath = System.Environment.CurrentDirectory;                      
             Process process = new Process();
             
@@ -29,6 +28,7 @@ namespace IosSysLogger
             process.StartInfo.RedirectStandardOutput = true;
             process.StartInfo.RedirectStandardError = true;
             process.StartInfo.StandardOutputEncoding = Encoding.UTF8;
+
             if (uuid != null || process != null || crProcess != null)
             {
                 try
@@ -41,22 +41,19 @@ namespace IosSysLogger
                 }//Keep gettign null point exception here 
             }
             //* Set output and error (asynchronous) handlers
-            process.OutputDataReceived += new DataReceivedEventHandler((source, e)=>OutputHandler(source,e,form,uuid));
-            process.ErrorDataReceived += new DataReceivedEventHandler((source, e) => OutputHandler(source, e, form,uuid));
+            process.OutputDataReceived += new DataReceivedEventHandler((source, e)=> logOutputHandler(source,e,form,uuid));
+            process.ErrorDataReceived += new DataReceivedEventHandler((source, e) => logOutputHandler(source, e, form,uuid));
             //* Start process and handlers
             process.Start();
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-
         }
+
         public void readDeviceinfo(iosSyslogger form, string uuid)
         {
             string currentPath = System.Environment.CurrentDirectory;
-            
-
             Process process = new Process();
-            
             process.StartInfo.FileName = currentPath + @"\iOSdeviceinfo.exe";
             process.StartInfo.Arguments = "-u" + " "+uuid;
             process.StartInfo.UseShellExecute = false;
@@ -93,9 +90,8 @@ namespace IosSysLogger
             process.BeginErrorReadLine();
             process.WaitForExit();
            
-            if (Program.GlobalData.usbRemoved == true)
+            if (Program.GlobalData.usbRemoved == true) //Called after usb waas removed
             {
-                
                 foreach (string uuidt in Program.GlobalData.uuid)
                 {
                     Process test = new Process();
@@ -103,22 +99,15 @@ namespace IosSysLogger
                     {
                         continue;
                     }
-                    
-
                     if (!Program.GlobalData.tempuuid.Contains(uuidt)&&uuidt!=null&& crProcess[uuidt]!=null)
                     {
                         crProcess[uuidt].Kill();
                         crProcess.Remove(uuidt);
                     }
-
                 }
-
                 Program.GlobalData.uuid.Clear();
                 Program.GlobalData.uuid.AddRange(Program.GlobalData.tempuuid);
-                form.BeginInvoke(new Action(() =>
-                {
-                    form.clearDeviceName();
-                }));
+                
                 foreach (string uuidstring in Program.GlobalData.uuid)
                 {
                     Thread loggingThread = new Thread(() => tool.readDeviceinfo(form, uuidstring));
@@ -129,8 +118,7 @@ namespace IosSysLogger
                 return;
             }
 
-
-            else if (Program.GlobalData.usbInserted == true)
+            else if (Program.GlobalData.usbInserted == true) //Called after usb was inserted 
             {
                 if (Program.GlobalData.uuid[Program.GlobalData.uuid.Count - 1] == null)
                     return;
@@ -146,7 +134,7 @@ namespace IosSysLogger
                 }
                 
             }
-            else if (Program.GlobalData.usbInserted!=true)
+            else if (Program.GlobalData.usbInserted!=true) //First time initiated
             {
                 if (Program.GlobalData.usbInserted == true) return;
                 foreach (string uuid in Program.GlobalData.uuid)
@@ -164,19 +152,20 @@ namespace IosSysLogger
             else
                 return;
         }
-        public void LoggingThread(iosSyslogger form, loggerTool tool,string uuid)
+
+        public void LoggingThread(iosSyslogger form, loggerTool tool,string uuid) //Creating thread for Logger
         {
             Thread loggingThread = new Thread(() => tool.readLog(form,uuid));
             loggingThread.IsBackground = true;
             lstThreads.Add(loggingThread);
         }
-        public void deviceInfoThread(iosSyslogger form, loggerTool tool, string uuid)
+
+        public void deviceInfoThread(iosSyslogger form, loggerTool tool, string uuid) //Create thread for Device info reader
         {
             Thread deviceInfoThread = new Thread(() => tool.readDeviceinfo(form,uuid));
             deviceInfoThread.IsBackground = true;
             lstThreads.Add(deviceInfoThread);
         }
-
 
         private void uuidinfoHandler(object sendingProcess, DataReceivedEventArgs outLine, iosSyslogger form)
         {
@@ -223,18 +212,16 @@ namespace IosSysLogger
                     {
                         return;
                     }
-                        
                 }
                 form.insertDeviceName = outLine.Data;
             }));
         }
         
-        public void OutputHandler(object sendingProcess, DataReceivedEventArgs outLine, iosSyslogger form, string uuid)
+        public void logOutputHandler(object sendingProcess, DataReceivedEventArgs outLine, iosSyslogger form, string uuid) //Log output hander
         {
             string currentPath = System.Environment.CurrentDirectory;
             bool exit = false;
             if (exit == true) return;
-
             try
             {
                 form.BeginInvoke(new Action(() =>
@@ -243,12 +230,10 @@ namespace IosSysLogger
                     form.insertToDataSource(outLine.Data,uuidToName[uuid]);
                 }));
 
-
                using (System.IO.StreamWriter file = new System.IO.StreamWriter(currentPath + @"\syslog" + uuid + ".txt", true))
                {
                  file.WriteLine(outLine.Data);
                }
-
             }
             catch 
             {
@@ -256,6 +241,5 @@ namespace IosSysLogger
             }
             //*Most of the logic for outputing the log should be dealt from this output Handler
         }
-
     }
 }

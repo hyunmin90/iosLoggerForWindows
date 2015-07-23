@@ -42,11 +42,9 @@ namespace IosSysLogger
         List<string> chkloglevel = new List<string>();
         ContextMenuStrip mnu;
 
-
         public iosSyslogger()
         {
             InitializeComponent();
-            
 
             var watcher = new ManagementEventWatcher();
 
@@ -59,6 +57,7 @@ namespace IosSysLogger
 
             this.loglevelCheckBox.SelectedIndexChanged += new System.EventHandler(this.checkbox_SelectedIndexChanged);
             this.processlistname.SelectedIndexChanged += new System.EventHandler(this.checkbox_SelectedIndexChanged);
+
             //Button Click Handler
             this.highlightBtn.Click += new System.EventHandler(this.highlightBtn_Click);
             this.clearSearchBtn.Click += new System.EventHandler(this.clearSearchBtn_Click);
@@ -69,13 +68,6 @@ namespace IosSysLogger
             this.clearData.Click += new System.EventHandler(this.clearDataBtn_Click);
 
         }
-
-
-        public void clearDeviceName()
-        {
-         //devicenameList.Clear();
-        }
-
 
         public DataTable LoadJson()
         {
@@ -94,7 +86,6 @@ namespace IosSysLogger
                 return null;
         }
 
-
         private void saveToJson(string devicename)
         {
             string json = JsonConvert.SerializeObject(dataTables[devicename]);
@@ -109,7 +100,6 @@ namespace IosSysLogger
             }
         }
 
-
         private void loadFromJSON()
         {
             addTabcontrol("Load"+ loadTab);
@@ -118,9 +108,8 @@ namespace IosSysLogger
             dataGrids["Load"+ loadTab].DataSource = dataTables["Load"+ loadTab];
             loadTab++;
         }
-        
 
-        public String insertDeviceName
+        public String insertDeviceName //Device name setter
         {
             get { return null; }
             set
@@ -129,8 +118,6 @@ namespace IosSysLogger
                 if (value == null) return;
                 if (value.Contains("DeviceName:"))
                 {
-
-               
                     string[] words = value.Split(' ');
                     words = words.Where(w => w != words[0]).ToArray();
                     string deviceName = "";
@@ -145,7 +132,6 @@ namespace IosSysLogger
                     {
                         if (name == deviceName)
                         {
-                            MessageBox.Show("here");
                             flag1 = true;
                         }
                     }
@@ -161,23 +147,24 @@ namespace IosSysLogger
             DataGridView DatagridView = new DataGridView();
             TabPage myTabPage = new TabPage(devicename); //Create each tab
             DataTable tabview = new DataTable();
-            DatagridView.AllowUserToAddRows = false;
-            DatagridView.Columns.Add("Date", "Date");
-            DatagridView.Columns.Add("Device", "Device");
-            DatagridView.Columns.Add("Process", "Process");
-            DatagridView.Columns.Add("LogLevel", "LogLevel");
-            DatagridView.Columns.Add("Log", "Log");
-            DatagridView.Columns.Add("ctr", "ctr");
-            DatagridView.Columns[5].Visible = false;
+            string[] columnName = { "Date", "Device", "Process", "LogLevel", "Log", "ctr"};
+
+            foreach (string name in columnName)
+            {
+                DatagridView.Columns.Add(name, name);
+            }
+
+            DatagridView.DefaultCellStyle.Font = new Font("Consolas", 9);
             DatagridView.RowTemplate.Height = 80;
             DatagridView.CellBorderStyle = DataGridViewCellBorderStyle.None;
             DatagridView.AllowUserToResizeRows = true;
-            DatagridView.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            DatagridView.Columns[4].MinimumWidth = 2500; 
-            DatagridView.Columns[5].Width = 10;
+            DatagridView.AllowUserToAddRows = false;
             DatagridView.Columns[0].Width = 130;
             DatagridView.Columns[2].Width = 120;
-            DatagridView.DefaultCellStyle.Font = new Font("Consolas", 9);
+            DatagridView.Columns[4].MinimumWidth = 2500;
+            DatagridView.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            DatagridView.Columns[5].Width = 10;
+            DatagridView.Columns[5].Visible = false;
 
             foreach (DataGridViewColumn col in DatagridView.Columns)
             {
@@ -192,13 +179,7 @@ namespace IosSysLogger
             DatagridView.DataSource = tabview;
             DatagridView.ContextMenuStrip = mnu;
             DatagridView.CellFormatting += dataGridView_CellFormatting;
-            DatagridView.Columns[0].Frozen = false;
-            DatagridView.Columns[1].Frozen = false;
-            DatagridView.Columns[2].Frozen = false;
-            DatagridView.Columns[3].Frozen = false;
-            DatagridView.Columns[4].Frozen = false;
-            DatagridView.Columns[5].Frozen = false;
-            DatagridView.Columns[4].Width = 2000;
+            
             //add it to the list.
             dataGrids.Add(devicename, DatagridView);
             dataTables.Add(devicename, tabview);
@@ -208,7 +189,6 @@ namespace IosSysLogger
             myTabPage.AutoScroll = true;
             tabControl1.TabPages.Add(myTabPage);
         }
-
        
         private void dataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
@@ -273,15 +253,13 @@ namespace IosSysLogger
                 {
                     return;
                 }
-                
             }
 
             ((DataGridView)sender).Columns[4].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             ((DataGridView)sender).AllowUserToResizeRows = true;
         }
 
-
-        public void insertToDataSource(string value, string devicename)
+        public void insertToDataSource(string value, string devicename) //Setter logic for log viewer text box
         {
 
             if (value == null)  return;
@@ -330,7 +308,6 @@ namespace IosSysLogger
                         }
                     }
                 }
-                int newline = 0;
                 foreach (string word in words)
                 {
                     try
@@ -374,7 +351,6 @@ namespace IosSysLogger
                 firstRowf = false;
                 scrollToBottom();
             } 
-
             else //If current row contain multiple line, this logic counts on the multi row and record such lines of log. 
             {
                 try
@@ -405,8 +381,7 @@ namespace IosSysLogger
             }
         }
 
-
-        public static string EscapeLikeValue(string searchterm)
+        private static string EscapeLikeValue(string searchterm)
         {
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < searchterm.Length; i++)
@@ -422,7 +397,6 @@ namespace IosSysLogger
             return sb.ToString();
         }
 
-
         private void scrollToBottom()
         {
             if (dataGrids.ContainsKey(tabControl1.TabPages[tabControl1.SelectedIndex].Text) == false) return;
@@ -437,8 +411,6 @@ namespace IosSysLogger
 
         }
 
-        
-
         private void highlightBtn_Click(object sender, EventArgs e)
         {
             string search = highlightTextBox.Text;
@@ -448,18 +420,15 @@ namespace IosSysLogger
                 highLight(search);
         }
 
-
         private void saveBtn_Click(object sender, EventArgs e)
         {
             saveToJson(tabControl1.TabPages[tabControl1.SelectedIndex].Text);
         }
 
-
         private void loadBtn_click(object sender, EventArgs e)
         {
             loadFromJSON();
         }
-
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
@@ -467,18 +436,15 @@ namespace IosSysLogger
             searchResult(search);
         }
 
-
         private void clearDataBtn_Click(object sender, EventArgs e)
         {
             dataTables[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Clear(); //Clear all virtual table.
         }
 
-
         private void copyMnu_Click(object sender, EventArgs e)
         {
             SendKeys.Send("^{c}");
         }
-
 
         private void addProcess_Click(object sender, EventArgs e)
         {
@@ -489,14 +455,12 @@ namespace IosSysLogger
             }
         }
 
-
         private void clearSearchBtn_Click(object sender, EventArgs e)
         {
             searchTxtBox.Text = "";
             highlightTextBox.Text = "";
             clearFilter();
         }
-
 
         private void fixScroll_Click(object sender, EventArgs e)
         {
@@ -505,7 +469,6 @@ namespace IosSysLogger
             else
                 fixScrollCheck = false;
         }
-
 
         private void clearFilter()
         {
@@ -557,7 +520,6 @@ namespace IosSysLogger
                             dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[3].Style.BackColor = System.Drawing.Color.Yellow;
                         if (dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[4].Value.ToString().Contains(term))
                             dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[4].Style.BackColor = System.Drawing.Color.Yellow;
-
                         i++;
                     }
                     else
@@ -567,7 +529,6 @@ namespace IosSysLogger
                 }
             }
         }
-
 
         private void searchResult(string term)
         {
@@ -581,13 +542,11 @@ namespace IosSysLogger
             }
             else
             {
-                
                 FilterRow = "Date LIKE  '*" + term + "*'" + "or Device LIKE  '*" + term + "*'or  Process LIKE  '*" + term + "*' or LogLevel LIKE  '*" + term + "*' or Log LIKE  '*" + term + "*'";
                 dv.RowFilter = FilterRow;
                 dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].DataSource = dv;
             }
         }
-
 
         private void TotalcheckBox()
         {
@@ -656,8 +615,6 @@ namespace IosSysLogger
             dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].DataSource = dv;
         }
 
-
-
         private void checkbox_SelectedIndexChanged(object sender, EventArgs Args)
         {
             if (processlistname.CheckedItems.Count == 0 && loglevelCheckBox.CheckedItems.Count == 0)
@@ -687,7 +644,6 @@ namespace IosSysLogger
             }
         }
 
-
         private void searchTxtBox_keyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -696,7 +652,6 @@ namespace IosSysLogger
             }
         }
 
-
         private void highlight_keyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -704,7 +659,6 @@ namespace IosSysLogger
                 highlightBtn_Click(this, new EventArgs());
             }
         }
-
 
         private void removeProcessFromList_Click(object sender, EventArgs e)
         {
