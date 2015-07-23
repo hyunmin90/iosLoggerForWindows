@@ -22,9 +22,11 @@ It also support UTF-8 encoding unlike the native library provided by libimobiled
 
 I am always welcome to receive opinions and improvements so please reach out to me with ideas for improving system log viewer for ios. 
 
-TIPS for compiling libimobiledevice in Windows environment.
+
+###TIPS for compiling libimobiledevice in Windows environment.
 
 Install below
+  ```
 mingw 
 mingw-developer-toolkit
 mingw32-base
@@ -32,9 +34,8 @@ mingw32-gcc-g++
 msys-base
 msys-wget
 pthreads
-
-###Compiling libimobiledevice on windows platform using mingw
- 
+  ```
+  
 create a new file in C:\MinGW\msys\1.0\etc\fstab and add a line below using text editor
 c:/mingw  /mingw
 glib, pkg-config and pkg-config-dev must be included in each folder it correspond to inside mingw 
