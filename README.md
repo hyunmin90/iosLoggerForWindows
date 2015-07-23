@@ -6,7 +6,7 @@ I am using c# as framing the UI and parsing the log.
 
 I am also using the libmobiledevice library for getting syslog line by line.
 
-Execution file is included at Zip file at the root directory of this repo. Have a try at the iosSyslogger.exe with full UI support. 
+Execution file is included at Zip file at the root directory of this repo.  iosSyslogger.exe is the exe with UI support that lets you filter logs and search within.  
 
 library was compiled in mingw environment and I highly recommend you build your own version of libimobiledevice library for customization if you intend to develop a tool for iOS devices. 
 
@@ -14,7 +14,7 @@ Some of the functionalities of this tool are log selection, log search, log high
 
 It also support UTF-8 encoding unlike the native library provided by libimobiledevice. ( I have compiled the code in UTF-8 format to solve this issue in mingw). 
 
-for details, you can reach out to me at hyunmin90@gmail.com 
+I am always welcome to receive opinions and improvements so please reach out to me with ideas for improving system log viewer for ios. 
 
 TIPS for compiling libimobiledevice in Windows environment.
 
