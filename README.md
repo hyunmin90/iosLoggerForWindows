@@ -4,9 +4,15 @@ This is iOS system log viewer windows.
 
 I am using c# as framing the UI and parsing the log.
 
-I am also using the libmobiledevice library for getting syslog line by line.
+I am also using the libmobiledevice library for getting syslog and getting informations regarding device.
+
+
 ![Image of iosSyslgoger](https://github.com/hyunmin90/iosLoggerForWindows/blob/master/syslogger.png) 
+
+###Details
+
 Execution file is included at Zip file at the root directory of this repo.  iosSyslogger.exe is the exe with UI support that lets you filter logs and search within.  
+
 
 library was compiled in mingw environment and I highly recommend you build your own version of libimobiledevice library for customization if you intend to develop a tool for iOS devices. 
 
