@@ -1,7 +1,5 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Diagnostics;
@@ -20,6 +18,7 @@ namespace IosSysLogger
 
         static void Main()
         {
+
             string currentPath = System.Environment.CurrentDirectory;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -76,7 +75,6 @@ namespace IosSysLogger
                // MessageBox.Show("Removed");
                 window.BeginInvoke(new Action(() =>
                 {
-                    window.clearDevicenameList();
                     window.clearDeviceName();
                 }));
                 GlobalData.usbRemoved = true;

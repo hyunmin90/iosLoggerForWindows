@@ -45,32 +45,34 @@
             this.clearData = new System.Windows.Forms.Button();
             this.addProcess = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.removeProcess = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // searchTxtBox
             // 
-            this.searchTxtBox.Location = new System.Drawing.Point(449, 31);
+            this.searchTxtBox.Location = new System.Drawing.Point(524, 29);
             this.searchTxtBox.Name = "searchTxtBox";
-            this.searchTxtBox.Size = new System.Drawing.Size(172, 20);
+            this.searchTxtBox.Size = new System.Drawing.Size(200, 21);
             this.searchTxtBox.TabIndex = 1;
+            this.searchTxtBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchTxtBox_keyDown);
             // 
             // searchBtn
             // 
             this.searchBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.searchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.searchBtn.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBtn.Location = new System.Drawing.Point(633, 31);
+            this.searchBtn.Location = new System.Drawing.Point(738, 29);
             this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(77, 36);
+            this.searchBtn.Size = new System.Drawing.Size(90, 33);
             this.searchBtn.TabIndex = 2;
             this.searchBtn.Text = "search";
             this.searchBtn.UseVisualStyleBackColor = false;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(872, 288);
+            this.richTextBox1.Location = new System.Drawing.Point(1017, 266);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(9, 11);
+            this.richTextBox1.Size = new System.Drawing.Size(10, 10);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
@@ -91,13 +93,12 @@
             "Critical",
             "Alert",
             "Emergency"});
-            this.loglevelCheckBox.Location = new System.Drawing.Point(260, 30);
-            this.loglevelCheckBox.Margin = new System.Windows.Forms.Padding(3, 11, 3, 11);
+            this.loglevelCheckBox.Location = new System.Drawing.Point(303, 28);
+            this.loglevelCheckBox.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.loglevelCheckBox.Name = "loglevelCheckBox";
             this.loglevelCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.loglevelCheckBox.Size = new System.Drawing.Size(185, 70);
+            this.loglevelCheckBox.Size = new System.Drawing.Size(215, 70);
             this.loglevelCheckBox.TabIndex = 6;
-            this.loglevelCheckBox.SelectedIndexChanged += new System.EventHandler(this.loglevelCheckBox_SelectedIndexChanged);
             // 
             // clearSearchBtn
             // 
@@ -105,10 +106,10 @@
             this.clearSearchBtn.FlatAppearance.BorderSize = 0;
             this.clearSearchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clearSearchBtn.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearSearchBtn.Location = new System.Drawing.Point(798, 75);
+            this.clearSearchBtn.Location = new System.Drawing.Point(931, 69);
             this.clearSearchBtn.Name = "clearSearchBtn";
             this.clearSearchBtn.Padding = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.clearSearchBtn.Size = new System.Drawing.Size(90, 37);
+            this.clearSearchBtn.Size = new System.Drawing.Size(105, 34);
             this.clearSearchBtn.TabIndex = 7;
             this.clearSearchBtn.Text = "clear filter";
             this.clearSearchBtn.UseVisualStyleBackColor = false;
@@ -117,7 +118,7 @@
             // 
             this.fixScroll.AutoSize = true;
             this.fixScroll.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.fixScroll.Location = new System.Drawing.Point(633, 3);
+            this.fixScroll.Location = new System.Drawing.Point(738, 3);
             this.fixScroll.Name = "fixScroll";
             this.fixScroll.Size = new System.Drawing.Size(81, 22);
             this.fixScroll.TabIndex = 8;
@@ -132,9 +133,9 @@
             this.processlistname.ForeColor = System.Drawing.SystemColors.Desktop;
             this.processlistname.FormattingEnabled = true;
             this.processlistname.HorizontalScrollbar = true;
-            this.processlistname.Location = new System.Drawing.Point(10, 30);
+            this.processlistname.Location = new System.Drawing.Point(12, 28);
             this.processlistname.Name = "processlistname";
-            this.processlistname.Size = new System.Drawing.Size(227, 70);
+            this.processlistname.Size = new System.Drawing.Size(265, 70);
             this.processlistname.TabIndex = 10;
             // 
             // highlightBtn
@@ -142,9 +143,9 @@
             this.highlightBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.highlightBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.highlightBtn.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.highlightBtn.Location = new System.Drawing.Point(633, 74);
+            this.highlightBtn.Location = new System.Drawing.Point(738, 68);
             this.highlightBtn.Name = "highlightBtn";
-            this.highlightBtn.Size = new System.Drawing.Size(77, 38);
+            this.highlightBtn.Size = new System.Drawing.Size(90, 35);
             this.highlightBtn.TabIndex = 12;
             this.highlightBtn.Text = "highlight";
             this.highlightBtn.UseVisualStyleBackColor = false;
@@ -153,7 +154,7 @@
             // 
             this.DevicenameLabel.AutoSize = true;
             this.DevicenameLabel.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DevicenameLabel.Location = new System.Drawing.Point(103, 23);
+            this.DevicenameLabel.Location = new System.Drawing.Point(120, 21);
             this.DevicenameLabel.Name = "DevicenameLabel";
             this.DevicenameLabel.Size = new System.Drawing.Size(0, 19);
             this.DevicenameLabel.TabIndex = 13;
@@ -162,7 +163,7 @@
             // 
             this.ProcessLabel.AutoSize = true;
             this.ProcessLabel.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProcessLabel.Location = new System.Drawing.Point(11, 8);
+            this.ProcessLabel.Location = new System.Drawing.Point(13, 7);
             this.ProcessLabel.Name = "ProcessLabel";
             this.ProcessLabel.Size = new System.Drawing.Size(80, 18);
             this.ProcessLabel.TabIndex = 14;
@@ -173,7 +174,7 @@
             // 
             this.loglevelLabel.AutoSize = true;
             this.loglevelLabel.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loglevelLabel.Location = new System.Drawing.Point(256, 7);
+            this.loglevelLabel.Location = new System.Drawing.Point(299, 6);
             this.loglevelLabel.Name = "loglevelLabel";
             this.loglevelLabel.Size = new System.Drawing.Size(90, 19);
             this.loglevelLabel.TabIndex = 15;
@@ -184,9 +185,9 @@
             this.savedatagrid.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.savedatagrid.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.savedatagrid.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.savedatagrid.Location = new System.Drawing.Point(716, 31);
+            this.savedatagrid.Location = new System.Drawing.Point(835, 29);
             this.savedatagrid.Name = "savedatagrid";
-            this.savedatagrid.Size = new System.Drawing.Size(77, 37);
+            this.savedatagrid.Size = new System.Drawing.Size(90, 34);
             this.savedatagrid.TabIndex = 16;
             this.savedatagrid.Text = "save ";
             this.savedatagrid.UseVisualStyleBackColor = false;
@@ -196,19 +197,20 @@
             this.load.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.load.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.load.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.load.Location = new System.Drawing.Point(716, 75);
+            this.load.Location = new System.Drawing.Point(835, 69);
             this.load.Name = "load";
-            this.load.Size = new System.Drawing.Size(77, 37);
+            this.load.Size = new System.Drawing.Size(90, 34);
             this.load.TabIndex = 17;
             this.load.Text = "load";
             this.load.UseVisualStyleBackColor = false;
             // 
             // highlightTextBox
             // 
-            this.highlightTextBox.Location = new System.Drawing.Point(449, 74);
+            this.highlightTextBox.Location = new System.Drawing.Point(524, 68);
             this.highlightTextBox.Name = "highlightTextBox";
-            this.highlightTextBox.Size = new System.Drawing.Size(172, 20);
+            this.highlightTextBox.Size = new System.Drawing.Size(200, 21);
             this.highlightTextBox.TabIndex = 18;
+            this.highlightTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.highlight_keyDown);
             // 
             // clearData
             // 
@@ -216,10 +218,10 @@
             this.clearData.FlatAppearance.BorderSize = 0;
             this.clearData.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clearData.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearData.Location = new System.Drawing.Point(798, 30);
+            this.clearData.Location = new System.Drawing.Point(931, 28);
             this.clearData.Name = "clearData";
             this.clearData.Padding = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.clearData.Size = new System.Drawing.Size(90, 38);
+            this.clearData.Size = new System.Drawing.Size(105, 35);
             this.clearData.TabIndex = 19;
             this.clearData.Text = "clear data";
             this.clearData.UseVisualStyleBackColor = false;
@@ -229,9 +231,9 @@
             this.addProcess.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.addProcess.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addProcess.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addProcess.Location = new System.Drawing.Point(219, 2);
+            this.addProcess.Location = new System.Drawing.Point(230, 4);
             this.addProcess.Name = "addProcess";
-            this.addProcess.Size = new System.Drawing.Size(19, 25);
+            this.addProcess.Size = new System.Drawing.Size(22, 23);
             this.addProcess.TabIndex = 20;
             this.addProcess.Text = "+";
             this.addProcess.UseVisualStyleBackColor = false;
@@ -242,21 +244,32 @@
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Location = new System.Drawing.Point(14, 118);
+            this.tabControl1.Location = new System.Drawing.Point(16, 120);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1184, 701);
+            this.tabControl1.Size = new System.Drawing.Size(1381, 636);
             this.tabControl1.TabIndex = 21;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
-            this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
-            this.tabControl1.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.tabControl1_ControlAdded);
+            // 
+            // removeProcess
+            // 
+            this.removeProcess.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.removeProcess.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.removeProcess.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeProcess.Location = new System.Drawing.Point(255, 4);
+            this.removeProcess.Name = "removeProcess";
+            this.removeProcess.Size = new System.Drawing.Size(22, 23);
+            this.removeProcess.TabIndex = 22;
+            this.removeProcess.Text = "-";
+            this.removeProcess.UseVisualStyleBackColor = false;
+            this.removeProcess.Click += new System.EventHandler(this.removeProcessFromList_Click);
             // 
             // iosSyslogger
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1210, 839);
+            this.ClientSize = new System.Drawing.Size(1412, 774);
+            this.Controls.Add(this.removeProcess);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.addProcess);
             this.Controls.Add(this.clearData);
@@ -277,7 +290,6 @@
             this.Name = "iosSyslogger";
             this.Opacity = 0.97D;
             this.Text = "iosSysLogger";
-            this.Load += new System.EventHandler(this.iosSyslogger_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,6 +313,7 @@
         private System.Windows.Forms.Button clearData;
         private System.Windows.Forms.Button addProcess;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.Button removeProcess;
     }
 }
 

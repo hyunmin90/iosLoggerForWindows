@@ -1,11 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 using System.Linq;
+using System.Text;
 
 namespace IosSysLogger
 {
+    
+
     class loggerTool
     {
         List<Thread> lstThreads = new List<Thread>();
@@ -25,6 +28,7 @@ namespace IosSysLogger
             process.StartInfo.CreateNoWindow = true;
             process.StartInfo.RedirectStandardOutput = true;
             process.StartInfo.RedirectStandardError = true;
+            process.StartInfo.StandardOutputEncoding = Encoding.UTF8;
             if (uuid != null || process != null || crProcess != null)
             {
                 try
@@ -59,7 +63,7 @@ namespace IosSysLogger
             process.StartInfo.CreateNoWindow = true;
             process.StartInfo.RedirectStandardOutput = true;
             process.StartInfo.RedirectStandardError = true;
-
+            process.StartInfo.StandardOutputEncoding = Encoding.UTF8;
             process.OutputDataReceived += new DataReceivedEventHandler((source, e) => deviceInfoHandler(source, e, form,uuid));
 
             //* Start process and handlers
@@ -72,7 +76,7 @@ namespace IosSysLogger
         public void readDeviceUUID(iosSyslogger form, loggerTool tool)
         {
             string currentPath = System.Environment.CurrentDirectory;
-
+            
             Process process = new Process();
             process.StartInfo.FileName = currentPath + @"\deviceid.exe";
             process.StartInfo.Arguments = "-l";
@@ -211,7 +215,15 @@ namespace IosSysLogger
                         else
                             deviceName += words[i];
                     }
-                    uuidToName.Add(uuid, deviceName);
+                    try
+                    {
+                        uuidToName.Add(uuid, deviceName);
+                    }
+                    catch (Exception)
+                    {
+                        return;
+                    }
+                        
                 }
                 form.insertDeviceName = outLine.Data;
             }));
