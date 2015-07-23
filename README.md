@@ -42,7 +42,7 @@ make
 make install
 
 For those of you installing in windows environment might run in to a compilation issue while installing libusmuxd. 
-#define sleep new Sleep(x*1000) requires ; ()  sort of error. Go ahead and delete this line in your /src/libuxmuxd.c and try to compile it again. This will solve your problem completely. 
+define sleep new Sleep(x*1000) requires ; ()  sort of error. Go ahead and delete this line in your /src/libuxmuxd.c and try to compile it again. This will solve your problem completely. 
 
 Your compile process should be easy afterwarad. 
 Special thansk to good instruction for compiling (http://quamotion.mobi/iMobileDevice/Article/compiling) 
