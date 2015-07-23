@@ -89,9 +89,11 @@ namespace IosSysLogger
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-           
+
+            
             if (Program.GlobalData.usbRemoved == true) //Called after usb waas removed
             {
+                
                 foreach (string uuidt in Program.GlobalData.uuid)
                 {
                     Process test = new Process();
@@ -99,7 +101,7 @@ namespace IosSysLogger
                     {
                         continue;
                     }
-                    if (!Program.GlobalData.tempuuid.Contains(uuidt)&&uuidt!=null&& crProcess[uuidt]!=null)
+                    if (!Program.GlobalData.tempuuid.Contains(uuidt) && uuidt != null && crProcess[uuidt] != null)
                     {
                         crProcess[uuidt].Kill();
                         crProcess.Remove(uuidt);

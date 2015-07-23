@@ -292,8 +292,8 @@ namespace IosSysLogger
                     if (Array.IndexOf(words, loglevel) != -1)
                         midIndex = Array.IndexOf(words, loglevel);
                 }
-                   
-                if (!(devicenameList.Any(e => words.Contains(e))))
+
+                /*if (!(devicenameList.Any(e => words.Contains(e))))
                 {
                     previous++;
                     foreach (string word in words)
@@ -307,7 +307,8 @@ namespace IosSysLogger
                             continue;
                         }
                     }
-                }
+                }*/
+                dataTables[devicename].Rows[rowNumber][1] = devicename;
                 foreach (string word in words)
                 {
                     try
@@ -319,10 +320,10 @@ namespace IosSysLogger
 
                         if (firstRowf == true && index < midIndex - 2) //Date
                             dataTables[devicename].Rows[rowNumber][0] += word + " ";
-                        else if (firstRowf == true && devicenameList.Any(e => word.Contains(e))) //Device
-                        {
-                            dataTables[devicename].Rows[rowNumber][1] += word + " ";
-                        }
+                        //else if (firstRowf == true && devicenameList.Any(e => word.Contains(e))) //Device
+                        //{
+                            
+                        //}
                         else if (firstRowf == true && index == midIndex - 1) //Process
                         {
                             dataTables[devicename].Rows[rowNumber][2] += word + " ";
