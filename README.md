@@ -27,7 +27,7 @@ msys-base
 msys-wget
 pthreads
 
-###Compiling
+###Compiling libimobiledevice on windows platform using mingw
  
 create a new file in C:\MinGW\msys\1.0\etc\fstab and add a line below using text editor
 c:/mingw  /mingw
@@ -35,9 +35,18 @@ glib, pkg-config and pkg-config-dev must be included in each folder it correspon
  
 
  
- in order to compile libimobiledevice, you must have 
- libxml2(always install the newest version), libplist, libusbmuxd, zlib 
- ( zlib has special compile instructions
+ in order to compile libimobiledevice, you must obtain 
+ libxml2(always install the newest version), libplist, libusbmuxd, zlib, openssl 
+ 
+ most of the package should be compiled installed using 
+  ```
+  ./autogen.sh --prefix=/mingw --without-cython
+  make
+  make install
+   ```
+ Without cython refers to ignoring python clibrary which is not necessarily need for this procedures. If you proceed without
+ cython, it will let you avoid python not found errors.
+ zlib has special compile instructions
  
  ```
 make -f win32/Makefile.gcc
@@ -51,10 +60,10 @@ make
 make install
  ```
 For those of you installing in windows environment might run in to a compilation issue while installing libusmuxd. 
-define sleep new Sleep(x*1000) requires ; ()  sort of error. Go ahead and delete this line in your /src/libuxmuxd.c and try to compile it again. This will solve your problem completely. 
+define sleep new Sleep(x*1000) requires ; ()  might cause syntax error on the way. Go ahead and delete this line in your /src/libuxmuxd.c and try to compile it again. This will solve your problem completely. 
 
 Your compile process should be easy afterwarad. 
-Special thansk to good instruction for compiling (http://quamotion.mobi/iMobileDevice/Article/compiling) 
+Detail instruction on how to compile can be found here (http://quamotion.mobi/iMobileDevice/Article/compiling) 
 
 
 
