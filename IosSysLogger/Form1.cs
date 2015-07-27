@@ -502,7 +502,7 @@ namespace IosSysLogger
             if (term != null)
             {
                 int i = 0;
-                while (i < dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows.Count - 1)
+                while (i < dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows.Count)
                 {
                     if (dataGrids[tabControl1.TabPages[tabControl1.SelectedIndex].Text].Rows[i].Cells[3] == null)
                     {
@@ -672,10 +672,6 @@ namespace IosSysLogger
 
 
 
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Created by Steve Hyounmin Wang \n\n\nContacts & bug reporting: hyunmin90@gmail.com");
-        }
     }
 
 }
