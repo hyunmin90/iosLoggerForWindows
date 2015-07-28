@@ -11,16 +11,13 @@ I am also using the libmobiledevice library for getting syslog and getting infor
 
 ###Details
 
-Execution file is included at Zip file at the root directory of this repo.  iosSyslogger.exe is the exe with UI support that lets you filter logs and search within.  
-
+Execution file is included inside Zip file at the root directory of this repo.  iosSyslogger.exe is the exe with UI support that lets you filter and search system log.  
 
 library was compiled in mingw environment and I highly recommend you build your own version of libimobiledevice library for customization if you intend to develop a tool for iOS devices. 
 
-Some of the functionalities of this tool are log selection, log search, log highlight, log filtering and saving log in JSON format and loading it.  
+Some of the functionalities of this tool are searching, highlighting, filtering saving log in JSON format and loading previsouly saved log .  
 
-It also support UTF-8 encoding unlike the native library provided by libimobiledevice. ( I have compiled the code in UTF-8 format to solve this issue in mingw). 
-
-I am always welcome to receive opinions and improvements so please reach out to me with ideas for improving system log viewer for ios. 
+It also support UTF-8 encoding unlike the native library provided by libimobiledevice.
 
 
 ###TIPS for compiling libimobiledevice in Windows environment.
@@ -72,5 +69,8 @@ define sleep new Sleep(x*1000) requires ; ()  might cause syntax error on the wa
 Your compile process should be easy afterwarad. 
 Detail instruction on how to compile can be found here (http://quamotion.mobi/iMobileDevice/Article/compiling) 
 
+###MAC VERSION BY JONGYOON AHN
+My co-worker has also built mac version of iOS log viewer tool for mac. Link can be found here
+https://github.com/gmggae/DeviceLogView
 
 
