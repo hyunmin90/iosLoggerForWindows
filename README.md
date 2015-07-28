@@ -69,7 +69,7 @@ define sleep new Sleep(x*1000) requires ; ()  might cause syntax error on the wa
 Your compile process should be easy afterwarad. 
 Detail instruction on how to compile can be found here (http://quamotion.mobi/iMobileDevice/Article/compiling) 
 
-###MAC VERSION BY JONGYOON AHN
+###MAC VERSION 
 My co-worker has also built mac version of iOS log viewer tool for mac. Link can be found here
 https://github.com/gmggae/DeviceLogView
 
