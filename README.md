@@ -1,4 +1,4 @@
-# iosLoggerForWindows
+# iOSlogViewerForWindows
 
 This is iOS system log viewer windows. 
 
